@@ -10,13 +10,34 @@ on:
         default: true
   push:
     branches: [main]
-    paths: ['benchmark/**', 'docs/**', '.github/workflows/daily.yml', 'pyproject.toml']
+    paths: ['src/**', 'scripts/**', 'tests/**', 'benchmark/**', 'docs/**', '.github/workflows/daily.yml', 'pyproject.toml', 'package*.json', 'tsconfig.json', 'eslint.config.js']
+  pull_request:
+    paths: ['src/**', 'scripts/**', 'tests/**', 'benchmark/**', 'docs/**', '.github/workflows/daily.yml', 'package*.json', 'tsconfig.json', 'eslint.config.js']
 permissions:
   contents: read
 jobs:
+  validate:
+    name: TypeScript checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - name: Check committed view bundle and schemas
+        run: |
+          npm run build
+          git diff --exit-code -- docs/app.js docs/index.html docs/schemas
   collect:
     name: Collect benchmark data
     if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.measure)
+    needs: validate
     concurrency:
       group: memory-collection
       cancel-in-progress: false
@@ -32,6 +53,13 @@ jobs:
         with:
           python-version: '3.12'
           enable-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Install latest fbuild build tool
+        run: uv sync --upgrade-package fbuild
       - name: Restore toolchains and framework caches
         uses: actions/cache@v4
         with:
@@ -44,7 +72,7 @@ jobs:
         id: benchmark
         # Site updates publish existing data; scheduled/manual runs measure.
         continue-on-error: true
-        run: uv run --upgrade-package fbuild python benchmark/run.py
+        run: npm run benchmark
       - name: Archive benchmark evidence
         if: always() && steps.benchmark.outcome != 'skipped'
         uses: actions/upload-artifact@v4
@@ -56,9 +84,9 @@ jobs:
             .cache/build/**/symbols/report.json
           retention-days: 30
       - name: Install screenshot browser
-        run: uv run --with playwright python -m playwright install --with-deps chromium
+        run: npx playwright install --with-deps chromium
       - name: Refresh README Chart.js overview screenshot
-        run: uv run --with playwright python benchmark/screenshot.py
+        run: npm run screenshot
       - name: Commit measurements and daily history
         run: |
           git config user.name 'github-actions[bot]'
@@ -76,8 +104,8 @@ jobs:
           exit 1
   publish:
     name: Publish dashboard view
-    needs: collect
-    if: always() && !cancelled()
+    needs: [collect, validate]
+    if: always() && !cancelled() && needs.validate.result == 'success' && github.event_name != 'pull_request'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     concurrency:

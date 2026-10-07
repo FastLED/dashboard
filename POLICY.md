@@ -33,14 +33,30 @@
 - Validate incoming JSON before accepting or rendering it and validate outgoing
   JSON before writing or publishing it. Invalid transport must produce a clear
   validation error, rather than partially populated tables or coerced values.
-- At the benchmark's JSON input boundary, eagerly convert validated payloads
-  into typed Python dataclasses, including nested measurements, provenance and
-  symbol rows. Benchmark logic operates on dataclass attributes and typed
-  collections, never dictionaries or loosely typed JSON objects. Dictionaries
-  may exist only transiently within schema validation and serialization code.
-- Serialize dataclasses back to the schema-defined transport at output
+- At the benchmark's JSON input boundary, eagerly parse validated payloads
+  into typed TypeScript models, including nested measurements, provenance and
+  symbol rows. Use discriminated unions for success and failure measurements.
+  Benchmark logic operates on typed attributes and collections, never arbitrary
+  dictionaries or loosely typed JSON objects. Untrusted JSON stays `unknown`
+  until schema validation succeeds. This supersedes the Python dataclass design.
+- Serialize typed models back to the schema-defined transport at output
   boundaries. Keep model types, schema versions and table columns consistent;
   schema changes require explicit versioning and migration handling.
+
+## Implementation and quality checks
+
+- Implement the view, benchmark orchestration, screenshot capture and tests
+  in TypeScript, run with Node.js 24 or newer. No Python application scripts;
+  Python/uv is retained solely to install and invoke the external fbuild tool.
+- Enable TypeScript strict checking, ESLint (including no explicit `any`) and
+  Prettier checks. Run these checks and unit/schema tests before publishing.
+  Keep animation, report rendering, transport models and collection separate.
+- Generate the committed browser bundle and JSON Schema documents from typed
+  sources. CI rejects a stale bundle/schema or invalid transport. Site publishing
+  serves these artifacts directly and does not run collection or browser setup.
+- Test axis transitions in a browser: labels remain attached to fixed values,
+  log grid lines are evenly spaced, entering/exiting lines fade smoothly, and
+  the same renderer/styles are used throughout to avoid flashes at completion.
 
 ## Recompute policy
 

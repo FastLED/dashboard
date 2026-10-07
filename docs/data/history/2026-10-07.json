@@ -13,6 +13,7 @@
       "attributed_ram": 153,
       "protocol": "a9bb0d42758bcc82d0699cbd0ff2909e87dd59e1cc61b4fa93873290cb0b6e2f",
       "source_digest": "b0e387ef2209169d3f23c6c834a17298bf6667e94e8b34dd2e2a6967d9bcd27f",
+      "bloat_report": "data/reports/uno/971beb60288dc45009d502a4bec48f8d839d40b5-a9bb0d42758b.json",
       "fbuild": "2.5.37",
       "serial_symbols": [],
       "toolchain": "/home/niteris/.fbuild/prod/cache/toolchains/arduino-tools/08e1a7271edb2765/7.3.0-atmel3.6.1-arduino7/avr/bin/avr-gcc",
@@ -63,8 +64,7 @@
         "-fpermissive"
       ],
       "config": "[env:uno]\nboard = uno\nplatform = atmelavr\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "834525c19e8b508017cf6f390a8ad5a2721a640ae98839d7c2b9df88256f1f3f",
-      "bloat_report": "data/reports/uno/971beb60288dc45009d502a4bec48f8d839d40b5-a9bb0d42758b.json"
+      "elf_digest": "834525c19e8b508017cf6f390a8ad5a2721a640ae98839d7c2b9df88256f1f3f"
     },
     {
       "board": "uno",
@@ -78,6 +78,7 @@
       "attributed_ram": 153,
       "protocol": "a9bb0d42758bcc82d0699cbd0ff2909e87dd59e1cc61b4fa93873290cb0b6e2f",
       "source_digest": "979ca59b9b5791decf25c39fdeb216eb0e21cf9d5e68cf0664ad946cc07ff948",
+      "bloat_report": "data/reports/uno/dec101a1268e013ef42deee644ff58883179d61a-a9bb0d42758b.json",
       "fbuild": "2.5.37",
       "serial_symbols": [],
       "toolchain": "/home/niteris/.fbuild/prod/cache/toolchains/arduino-tools/08e1a7271edb2765/7.3.0-atmel3.6.1-arduino7/avr/bin/avr-gcc",
@@ -128,8 +129,7 @@
         "-fpermissive"
       ],
       "config": "[env:uno]\nboard = uno\nplatform = atmelavr\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "834525c19e8b508017cf6f390a8ad5a2721a640ae98839d7c2b9df88256f1f3f",
-      "bloat_report": "data/reports/uno/dec101a1268e013ef42deee644ff58883179d61a-a9bb0d42758b.json"
+      "elf_digest": "834525c19e8b508017cf6f390a8ad5a2721a640ae98839d7c2b9df88256f1f3f"
     },
     {
       "board": "uno",
@@ -143,6 +143,7 @@
       "attributed_ram": 153,
       "protocol": "a9bb0d42758bcc82d0699cbd0ff2909e87dd59e1cc61b4fa93873290cb0b6e2f",
       "source_digest": "9201242a6e02f52dbf7c71487b7168286f310aa9a07c34d2a062db5b866408a7",
+      "bloat_report": "data/reports/uno/3d1f9fe373b295254354f6266030557a497594cf-a9bb0d42758b.json",
       "fbuild": "2.5.37",
       "serial_symbols": [],
       "toolchain": "/home/niteris/.fbuild/prod/cache/toolchains/arduino-tools/08e1a7271edb2765/7.3.0-atmel3.6.1-arduino7/avr/bin/avr-gcc",
@@ -193,21 +194,20 @@
         "-fpermissive"
       ],
       "config": "[env:uno]\nboard = uno\nplatform = atmelavr\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "e0dd1c43e0fd93c64bf97a8808b5f5d4c6b2fe4caf7dd3ea8ea50a5762ca7514",
-      "bloat_report": "data/reports/uno/3d1f9fe373b295254354f6266030557a497594cf-a9bb0d42758b.json"
+      "elf_digest": "e0dd1c43e0fd93c64bf97a8808b5f5d4c6b2fe4caf7dd3ea8ea50a5762ca7514"
     },
     {
       "board": "uno",
       "version": "3.10.3",
       "sha": "20667c3a6413ed46a828f78ec95fb57e58d753f8",
-      "measured_at": "2026-10-07T18:06:38.582814+00:00",
+      "measured_at": "2026-10-07T19:30:39.408Z",
       "status": "ok",
       "flash": 3784,
       "ram": 131,
       "image_flash": 3784,
       "attributed_ram": 153,
       "protocol": "a9bb0d42758bcc82d0699cbd0ff2909e87dd59e1cc61b4fa93873290cb0b6e2f",
-      "source_digest": "fd438792c0127e2d7cbc54d9b7240badb22ef44f03e4799f615937582ae02a70",
+      "source_digest": "3578db9833af58ce57e281eaf24db006be431eb147ca47b3a6b9a2b6b9c4e037",
       "bloat_report": "data/reports/uno/20667c3a6413ed46a828f78ec95fb57e58d753f8-a9bb0d42758b.json",
       "fbuild": "2.5.37",
       "serial_symbols": [],
@@ -273,6 +273,7 @@
       "attributed_ram": 365,
       "protocol": "a9bb0d42758bcc82d0699cbd0ff2909e87dd59e1cc61b4fa93873290cb0b6e2f",
       "source_digest": "b290af65addb18eaec34fa68436aaba603eb921b6c4566471ee61ff79dfc6790",
+      "bloat_report": "data/reports/uno/adedfc40e73fb80f8e930318781036d8fe1dbd9f-a9bb0d42758b.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial",
@@ -332,8 +333,7 @@
         "-fpermissive"
       ],
       "config": "[env:uno]\nboard = uno\nplatform = atmelavr\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "48b533badd336abb12a59982ba41c92ecaf6155b764065ad064fee913b86ae6e",
-      "bloat_report": "data/reports/uno/adedfc40e73fb80f8e930318781036d8fe1dbd9f-a9bb0d42758b.json"
+      "elf_digest": "48b533badd336abb12a59982ba41c92ecaf6155b764065ad064fee913b86ae6e"
     },
     {
       "board": "uno",
@@ -347,6 +347,7 @@
       "attributed_ram": 365,
       "protocol": "a9bb0d42758bcc82d0699cbd0ff2909e87dd59e1cc61b4fa93873290cb0b6e2f",
       "source_digest": "2d4f0a11776c250b730525fcde149899ca8fc5bd7ed23638ededcfd4467b07a6",
+      "bloat_report": "data/reports/uno/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-a9bb0d42758b.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial",
@@ -406,8 +407,7 @@
         "-fpermissive"
       ],
       "config": "[env:uno]\nboard = uno\nplatform = atmelavr\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "48b533badd336abb12a59982ba41c92ecaf6155b764065ad064fee913b86ae6e",
-      "bloat_report": "data/reports/uno/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-a9bb0d42758b.json"
+      "elf_digest": "48b533badd336abb12a59982ba41c92ecaf6155b764065ad064fee913b86ae6e"
     },
     {
       "board": "uno",
@@ -421,6 +421,7 @@
       "attributed_ram": 441,
       "protocol": "a9bb0d42758bcc82d0699cbd0ff2909e87dd59e1cc61b4fa93873290cb0b6e2f",
       "source_digest": "78d4181047333c4ee92e0e135e7b9107c13f42ec16af7c55afc8cad149e748cf",
+      "bloat_report": "data/reports/uno/ebf8c2823c486158a046d8e1e682d3143580ae4e-a9bb0d42758b.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial",
@@ -480,21 +481,20 @@
         "-fpermissive"
       ],
       "config": "[env:uno]\nboard = uno\nplatform = atmelavr\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "de0191bfc6d2b89db2c8bcaff7420ba206f8c7c66d2ef05b6a67e6adf59966a0",
-      "bloat_report": "data/reports/uno/ebf8c2823c486158a046d8e1e682d3143580ae4e-a9bb0d42758b.json"
+      "elf_digest": "de0191bfc6d2b89db2c8bcaff7420ba206f8c7c66d2ef05b6a67e6adf59966a0"
     },
     {
       "board": "uno",
       "version": "master",
       "sha": "a439902ac6af64e600031c01b5c2ac0df2e690bc",
-      "measured_at": "2026-10-07T18:06:39.830698+00:00",
+      "measured_at": "2026-10-07T19:30:40.141Z",
       "status": "ok",
       "flash": 3914,
       "ram": 266,
       "image_flash": 3914,
       "attributed_ram": 260,
       "protocol": "a9bb0d42758bcc82d0699cbd0ff2909e87dd59e1cc61b4fa93873290cb0b6e2f",
-      "source_digest": "15adb6cb9eeffc78c74b077978400a267abf9b1715ced9319fb299379b3bdba7",
+      "source_digest": "637f0fbab8ebcaa48a6495ec712fc254be17febe888ff66ef0178b61e3c32770",
       "bloat_report": "data/reports/uno/a439902ac6af64e600031c01b5c2ac0df2e690bc-a9bb0d42758b.json",
       "fbuild": "2.5.37",
       "serial_symbols": [],
@@ -560,6 +560,7 @@
       "attributed_ram": 37769,
       "protocol": "2c2f645d82935d7fd75ef2c70761b061f6c9f51933a117dff48fbeb2471575f2",
       "source_digest": "b0e387ef2209169d3f23c6c834a17298bf6667e94e8b34dd2e2a6967d9bcd27f",
+      "bloat_report": "data/reports/esp32s3/971beb60288dc45009d502a4bec48f8d839d40b5-2c2f645d8293.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::HardwareSerial(unsigned char)",
@@ -759,8 +760,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32s3/971beb60288dc45009d502a4bec48f8d839d40b5-2c2f645d8293/.fbuild/build/esp32s3/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32s3]\nboard = esp32-s3-devkitc-1\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.flash_size = 4MB\nboard_upload.flash_size = 4MB\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -DARDUINO_USB_MODE=1\n    -DARDUINO_USB_CDC_ON_BOOT=1\n    -DARDUINO_LOOP_STACK_SIZE=16384\nbuild_unflags = -DFASTLED_RMT5=0 -DFASTLED_RMT5\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\nlib_deps = FS,LittleFS\n",
-      "elf_digest": "a9797b1df7fb33ba196b180584f6928796ce2a581ddbee06bd6e90778ef2d9d2",
-      "bloat_report": "data/reports/esp32s3/971beb60288dc45009d502a4bec48f8d839d40b5-2c2f645d8293.json"
+      "elf_digest": "a9797b1df7fb33ba196b180584f6928796ce2a581ddbee06bd6e90778ef2d9d2"
     },
     {
       "board": "esp32s3",
@@ -774,6 +774,7 @@
       "attributed_ram": 37769,
       "protocol": "2c2f645d82935d7fd75ef2c70761b061f6c9f51933a117dff48fbeb2471575f2",
       "source_digest": "979ca59b9b5791decf25c39fdeb216eb0e21cf9d5e68cf0664ad946cc07ff948",
+      "bloat_report": "data/reports/esp32s3/dec101a1268e013ef42deee644ff58883179d61a-2c2f645d8293.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::HardwareSerial(unsigned char)",
@@ -973,8 +974,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32s3/dec101a1268e013ef42deee644ff58883179d61a-2c2f645d8293/.fbuild/build/esp32s3/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32s3]\nboard = esp32-s3-devkitc-1\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.flash_size = 4MB\nboard_upload.flash_size = 4MB\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -DARDUINO_USB_MODE=1\n    -DARDUINO_USB_CDC_ON_BOOT=1\n    -DARDUINO_LOOP_STACK_SIZE=16384\nbuild_unflags = -DFASTLED_RMT5=0 -DFASTLED_RMT5\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\nlib_deps = FS,LittleFS\n",
-      "elf_digest": "0e3bc22afa5d688900b35563c08d78a5b0540aa505146dbabbc46bfb0b3d46f0",
-      "bloat_report": "data/reports/esp32s3/dec101a1268e013ef42deee644ff58883179d61a-2c2f645d8293.json"
+      "elf_digest": "0e3bc22afa5d688900b35563c08d78a5b0540aa505146dbabbc46bfb0b3d46f0"
     },
     {
       "board": "esp32s3",
@@ -988,6 +988,7 @@
       "attributed_ram": 37777,
       "protocol": "2c2f645d82935d7fd75ef2c70761b061f6c9f51933a117dff48fbeb2471575f2",
       "source_digest": "9201242a6e02f52dbf7c71487b7168286f310aa9a07c34d2a062db5b866408a7",
+      "bloat_report": "data/reports/esp32s3/3d1f9fe373b295254354f6266030557a497594cf-2c2f645d8293.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::HardwareSerial(unsigned char)",
@@ -1188,8 +1189,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32s3/3d1f9fe373b295254354f6266030557a497594cf-2c2f645d8293/.fbuild/build/esp32s3/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32s3]\nboard = esp32-s3-devkitc-1\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.flash_size = 4MB\nboard_upload.flash_size = 4MB\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -DARDUINO_USB_MODE=1\n    -DARDUINO_USB_CDC_ON_BOOT=1\n    -DARDUINO_LOOP_STACK_SIZE=16384\nbuild_unflags = -DFASTLED_RMT5=0 -DFASTLED_RMT5\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\nlib_deps = FS,LittleFS\n",
-      "elf_digest": "503775384f5469359e8b7ca5dae55b80185f0cd0f68681a747b9d3e958a5a2b6",
-      "bloat_report": "data/reports/esp32s3/3d1f9fe373b295254354f6266030557a497594cf-2c2f645d8293.json"
+      "elf_digest": "503775384f5469359e8b7ca5dae55b80185f0cd0f68681a747b9d3e958a5a2b6"
     },
     {
       "board": "esp32s3",
@@ -1203,6 +1203,7 @@
       "attributed_ram": 37777,
       "protocol": "2c2f645d82935d7fd75ef2c70761b061f6c9f51933a117dff48fbeb2471575f2",
       "source_digest": "fd438792c0127e2d7cbc54d9b7240badb22ef44f03e4799f615937582ae02a70",
+      "bloat_report": "data/reports/esp32s3/20667c3a6413ed46a828f78ec95fb57e58d753f8-2c2f645d8293.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::HardwareSerial(unsigned char)",
@@ -1403,8 +1404,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32s3/20667c3a6413ed46a828f78ec95fb57e58d753f8-2c2f645d8293/.fbuild/build/esp32s3/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32s3]\nboard = esp32-s3-devkitc-1\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.flash_size = 4MB\nboard_upload.flash_size = 4MB\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -DARDUINO_USB_MODE=1\n    -DARDUINO_USB_CDC_ON_BOOT=1\n    -DARDUINO_LOOP_STACK_SIZE=16384\nbuild_unflags = -DFASTLED_RMT5=0 -DFASTLED_RMT5\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\nlib_deps = FS,LittleFS\n",
-      "elf_digest": "c44b4b08a21e121f5171915715bf1c4cd22e920cc8359871a76797fe754e7afa",
-      "bloat_report": "data/reports/esp32s3/20667c3a6413ed46a828f78ec95fb57e58d753f8-2c2f645d8293.json"
+      "elf_digest": "c44b4b08a21e121f5171915715bf1c4cd22e920cc8359871a76797fe754e7afa"
     },
     {
       "board": "esp32s3",
@@ -1418,6 +1418,7 @@
       "attributed_ram": 40657,
       "protocol": "2c2f645d82935d7fd75ef2c70761b061f6c9f51933a117dff48fbeb2471575f2",
       "source_digest": "b290af65addb18eaec34fa68436aaba603eb921b6c4566471ee61ff79dfc6790",
+      "bloat_report": "data/reports/esp32s3/adedfc40e73fb80f8e930318781036d8fe1dbd9f-2c2f645d8293.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::HardwareSerial(unsigned char)",
@@ -1621,8 +1622,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32s3/adedfc40e73fb80f8e930318781036d8fe1dbd9f-2c2f645d8293/.fbuild/build/esp32s3/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32s3]\nboard = esp32-s3-devkitc-1\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.flash_size = 4MB\nboard_upload.flash_size = 4MB\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -DARDUINO_USB_MODE=1\n    -DARDUINO_USB_CDC_ON_BOOT=1\n    -DARDUINO_LOOP_STACK_SIZE=16384\nbuild_unflags = -DFASTLED_RMT5=0 -DFASTLED_RMT5\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\nlib_deps = FS,LittleFS\n",
-      "elf_digest": "d416817e5be2424996af6b072933879d3b7508e39fb8cf5a5f8dd91da9f2990b",
-      "bloat_report": "data/reports/esp32s3/adedfc40e73fb80f8e930318781036d8fe1dbd9f-2c2f645d8293.json"
+      "elf_digest": "d416817e5be2424996af6b072933879d3b7508e39fb8cf5a5f8dd91da9f2990b"
     },
     {
       "board": "esp32s3",
@@ -1636,6 +1636,7 @@
       "attributed_ram": 40657,
       "protocol": "2c2f645d82935d7fd75ef2c70761b061f6c9f51933a117dff48fbeb2471575f2",
       "source_digest": "2d4f0a11776c250b730525fcde149899ca8fc5bd7ed23638ededcfd4467b07a6",
+      "bloat_report": "data/reports/esp32s3/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-2c2f645d8293.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::HardwareSerial(unsigned char)",
@@ -1839,8 +1840,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32s3/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-2c2f645d8293/.fbuild/build/esp32s3/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32s3]\nboard = esp32-s3-devkitc-1\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.flash_size = 4MB\nboard_upload.flash_size = 4MB\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -DARDUINO_USB_MODE=1\n    -DARDUINO_USB_CDC_ON_BOOT=1\n    -DARDUINO_LOOP_STACK_SIZE=16384\nbuild_unflags = -DFASTLED_RMT5=0 -DFASTLED_RMT5\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\nlib_deps = FS,LittleFS\n",
-      "elf_digest": "f67fee26eb120c1e60148961a80e9963f90b8d903498a6fdbd6663c85ac0bf6a",
-      "bloat_report": "data/reports/esp32s3/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-2c2f645d8293.json"
+      "elf_digest": "f67fee26eb120c1e60148961a80e9963f90b8d903498a6fdbd6663c85ac0bf6a"
     },
     {
       "board": "esp32s3",
@@ -1854,6 +1854,7 @@
       "attributed_ram": 40097,
       "protocol": "2c2f645d82935d7fd75ef2c70761b061f6c9f51933a117dff48fbeb2471575f2",
       "source_digest": "78d4181047333c4ee92e0e135e7b9107c13f42ec16af7c55afc8cad149e748cf",
+      "bloat_report": "data/reports/esp32s3/ebf8c2823c486158a046d8e1e682d3143580ae4e-2c2f645d8293.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::HardwareSerial(unsigned char)",
@@ -2058,21 +2059,21 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32s3/ebf8c2823c486158a046d8e1e682d3143580ae4e-2c2f645d8293/.fbuild/build/esp32s3/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32s3]\nboard = esp32-s3-devkitc-1\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.flash_size = 4MB\nboard_upload.flash_size = 4MB\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -DARDUINO_USB_MODE=1\n    -DARDUINO_USB_CDC_ON_BOOT=1\n    -DARDUINO_LOOP_STACK_SIZE=16384\nbuild_unflags = -DFASTLED_RMT5=0 -DFASTLED_RMT5\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\nlib_deps = FS,LittleFS\n",
-      "elf_digest": "4e6d0e8bd25df8fbf6a33775e129515372ca22fd5a9ec66bdbf735af47f329b4",
-      "bloat_report": "data/reports/esp32s3/ebf8c2823c486158a046d8e1e682d3143580ae4e-2c2f645d8293.json"
+      "elf_digest": "4e6d0e8bd25df8fbf6a33775e129515372ca22fd5a9ec66bdbf735af47f329b4"
     },
     {
       "board": "esp32s3",
       "version": "master",
       "sha": "a439902ac6af64e600031c01b5c2ac0df2e690bc",
-      "measured_at": "2026-10-07T17:55:34.816201+00:00",
+      "measured_at": "2026-10-07T19:30:42.290Z",
       "status": "ok",
       "flash": 407048,
       "ram": 78008,
       "image_flash": 366583,
       "attributed_ram": 38323,
       "protocol": "2c2f645d82935d7fd75ef2c70761b061f6c9f51933a117dff48fbeb2471575f2",
-      "source_digest": "15adb6cb9eeffc78c74b077978400a267abf9b1715ced9319fb299379b3bdba7",
+      "source_digest": "637f0fbab8ebcaa48a6495ec712fc254be17febe888ff66ef0178b61e3c32770",
+      "bloat_report": "data/reports/esp32s3/a439902ac6af64e600031c01b5c2ac0df2e690bc-2c2f645d8293.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::HardwareSerial(unsigned char)",
@@ -2277,8 +2278,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32s3/a439902ac6af64e600031c01b5c2ac0df2e690bc-2c2f645d8293/.fbuild/build/esp32s3/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32s3]\nboard = esp32-s3-devkitc-1\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.flash_size = 4MB\nboard_upload.flash_size = 4MB\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -DARDUINO_USB_MODE=1\n    -DARDUINO_USB_CDC_ON_BOOT=1\n    -DARDUINO_LOOP_STACK_SIZE=16384\nbuild_unflags = -DFASTLED_RMT5=0 -DFASTLED_RMT5\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\nlib_deps = FS,LittleFS\n",
-      "elf_digest": "4788b9555320e211280deb11472091dc2b0b9084632ac0b6b331ccfcd6509f22",
-      "bloat_report": "data/reports/esp32s3/a439902ac6af64e600031c01b5c2ac0df2e690bc-2c2f645d8293.json"
+      "elf_digest": "4788b9555320e211280deb11472091dc2b0b9084632ac0b6b331ccfcd6509f22"
     },
     {
       "board": "esp32dev",
@@ -2292,6 +2292,7 @@
       "attributed_ram": 31931,
       "protocol": "0a53b8e4f9de57fa7d6f74a52ef3ca8cba7cd17f54661d52ff2d542e2bf5e8e9",
       "source_digest": "b0e387ef2209169d3f23c6c834a17298bf6667e94e8b34dd2e2a6967d9bcd27f",
+      "bloat_report": "data/reports/esp32dev/971beb60288dc45009d502a4bec48f8d839d40b5-0a53b8e4f9de.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::end()",
@@ -2471,8 +2472,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/971beb60288dc45009d502a4bec48f8d839d40b5-0a53b8e4f9de/.fbuild/build/esp32dev/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32dev]\nboard = esp32dev\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -Os\n    -fno-exceptions\n    -fno-rtti\n    -fno-unwind-tables\n    -fno-asynchronous-unwind-tables\n    -ffunction-sections\n    -fdata-sections\n    -DNDEBUG\n    -UDEBUG\n    -UFASTLED_DEBUG\n    -DCORE_DEBUG_LEVEL=0\n    -DLOG_LOCAL_LEVEL=ESP_LOG_NONE\nbuild_unflags = -Og -g\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "2632fec05c9f7388def124bc1577dc1cff8757f1eb5cbd499489793ddfa7f889",
-      "bloat_report": "data/reports/esp32dev/971beb60288dc45009d502a4bec48f8d839d40b5-0a53b8e4f9de.json"
+      "elf_digest": "2632fec05c9f7388def124bc1577dc1cff8757f1eb5cbd499489793ddfa7f889"
     },
     {
       "board": "esp32dev",
@@ -2486,6 +2486,7 @@
       "attributed_ram": 31931,
       "protocol": "0a53b8e4f9de57fa7d6f74a52ef3ca8cba7cd17f54661d52ff2d542e2bf5e8e9",
       "source_digest": "979ca59b9b5791decf25c39fdeb216eb0e21cf9d5e68cf0664ad946cc07ff948",
+      "bloat_report": "data/reports/esp32dev/dec101a1268e013ef42deee644ff58883179d61a-0a53b8e4f9de.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::end()",
@@ -2665,8 +2666,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/dec101a1268e013ef42deee644ff58883179d61a-0a53b8e4f9de/.fbuild/build/esp32dev/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32dev]\nboard = esp32dev\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -Os\n    -fno-exceptions\n    -fno-rtti\n    -fno-unwind-tables\n    -fno-asynchronous-unwind-tables\n    -ffunction-sections\n    -fdata-sections\n    -DNDEBUG\n    -UDEBUG\n    -UFASTLED_DEBUG\n    -DCORE_DEBUG_LEVEL=0\n    -DLOG_LOCAL_LEVEL=ESP_LOG_NONE\nbuild_unflags = -Og -g\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "0c3cf6f04a703f2f13f72652923987b9311974af76d57e62efa192a5ea799c6b",
-      "bloat_report": "data/reports/esp32dev/dec101a1268e013ef42deee644ff58883179d61a-0a53b8e4f9de.json"
+      "elf_digest": "0c3cf6f04a703f2f13f72652923987b9311974af76d57e62efa192a5ea799c6b"
     },
     {
       "board": "esp32dev",
@@ -2680,6 +2680,7 @@
       "attributed_ram": 31939,
       "protocol": "0a53b8e4f9de57fa7d6f74a52ef3ca8cba7cd17f54661d52ff2d542e2bf5e8e9",
       "source_digest": "9201242a6e02f52dbf7c71487b7168286f310aa9a07c34d2a062db5b866408a7",
+      "bloat_report": "data/reports/esp32dev/3d1f9fe373b295254354f6266030557a497594cf-0a53b8e4f9de.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::end()",
@@ -2861,8 +2862,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/3d1f9fe373b295254354f6266030557a497594cf-0a53b8e4f9de/.fbuild/build/esp32dev/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32dev]\nboard = esp32dev\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -Os\n    -fno-exceptions\n    -fno-rtti\n    -fno-unwind-tables\n    -fno-asynchronous-unwind-tables\n    -ffunction-sections\n    -fdata-sections\n    -DNDEBUG\n    -UDEBUG\n    -UFASTLED_DEBUG\n    -DCORE_DEBUG_LEVEL=0\n    -DLOG_LOCAL_LEVEL=ESP_LOG_NONE\nbuild_unflags = -Og -g\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "f45ad9a09aeddff9fb0b03010985556066be06a14a16df73ae7efc8ee11ff7e4",
-      "bloat_report": "data/reports/esp32dev/3d1f9fe373b295254354f6266030557a497594cf-0a53b8e4f9de.json"
+      "elf_digest": "f45ad9a09aeddff9fb0b03010985556066be06a14a16df73ae7efc8ee11ff7e4"
     },
     {
       "board": "esp32dev",
@@ -2876,6 +2876,7 @@
       "attributed_ram": 31939,
       "protocol": "0a53b8e4f9de57fa7d6f74a52ef3ca8cba7cd17f54661d52ff2d542e2bf5e8e9",
       "source_digest": "fd438792c0127e2d7cbc54d9b7240badb22ef44f03e4799f615937582ae02a70",
+      "bloat_report": "data/reports/esp32dev/20667c3a6413ed46a828f78ec95fb57e58d753f8-0a53b8e4f9de.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::end()",
@@ -3057,8 +3058,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/20667c3a6413ed46a828f78ec95fb57e58d753f8-0a53b8e4f9de/.fbuild/build/esp32dev/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32dev]\nboard = esp32dev\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -Os\n    -fno-exceptions\n    -fno-rtti\n    -fno-unwind-tables\n    -fno-asynchronous-unwind-tables\n    -ffunction-sections\n    -fdata-sections\n    -DNDEBUG\n    -UDEBUG\n    -UFASTLED_DEBUG\n    -DCORE_DEBUG_LEVEL=0\n    -DLOG_LOCAL_LEVEL=ESP_LOG_NONE\nbuild_unflags = -Og -g\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "f45ad9a09aeddff9fb0b03010985556066be06a14a16df73ae7efc8ee11ff7e4",
-      "bloat_report": "data/reports/esp32dev/20667c3a6413ed46a828f78ec95fb57e58d753f8-0a53b8e4f9de.json"
+      "elf_digest": "f45ad9a09aeddff9fb0b03010985556066be06a14a16df73ae7efc8ee11ff7e4"
     },
     {
       "board": "esp32dev",
@@ -3072,6 +3072,7 @@
       "attributed_ram": 34957,
       "protocol": "0a53b8e4f9de57fa7d6f74a52ef3ca8cba7cd17f54661d52ff2d542e2bf5e8e9",
       "source_digest": "b290af65addb18eaec34fa68436aaba603eb921b6c4566471ee61ff79dfc6790",
+      "bloat_report": "data/reports/esp32dev/adedfc40e73fb80f8e930318781036d8fe1dbd9f-0a53b8e4f9de.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::end()",
@@ -3253,8 +3254,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/adedfc40e73fb80f8e930318781036d8fe1dbd9f-0a53b8e4f9de/.fbuild/build/esp32dev/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32dev]\nboard = esp32dev\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -Os\n    -fno-exceptions\n    -fno-rtti\n    -fno-unwind-tables\n    -fno-asynchronous-unwind-tables\n    -ffunction-sections\n    -fdata-sections\n    -DNDEBUG\n    -UDEBUG\n    -UFASTLED_DEBUG\n    -DCORE_DEBUG_LEVEL=0\n    -DLOG_LOCAL_LEVEL=ESP_LOG_NONE\nbuild_unflags = -Og -g\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "106e40947c21ea937376f31da81cfb4f724aa2cf4793d3680f78b8620acea734",
-      "bloat_report": "data/reports/esp32dev/adedfc40e73fb80f8e930318781036d8fe1dbd9f-0a53b8e4f9de.json"
+      "elf_digest": "106e40947c21ea937376f31da81cfb4f724aa2cf4793d3680f78b8620acea734"
     },
     {
       "board": "esp32dev",
@@ -3268,6 +3268,7 @@
       "attributed_ram": 34957,
       "protocol": "0a53b8e4f9de57fa7d6f74a52ef3ca8cba7cd17f54661d52ff2d542e2bf5e8e9",
       "source_digest": "2d4f0a11776c250b730525fcde149899ca8fc5bd7ed23638ededcfd4467b07a6",
+      "bloat_report": "data/reports/esp32dev/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-0a53b8e4f9de.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::end()",
@@ -3449,8 +3450,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-0a53b8e4f9de/.fbuild/build/esp32dev/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32dev]\nboard = esp32dev\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -Os\n    -fno-exceptions\n    -fno-rtti\n    -fno-unwind-tables\n    -fno-asynchronous-unwind-tables\n    -ffunction-sections\n    -fdata-sections\n    -DNDEBUG\n    -UDEBUG\n    -UFASTLED_DEBUG\n    -DCORE_DEBUG_LEVEL=0\n    -DLOG_LOCAL_LEVEL=ESP_LOG_NONE\nbuild_unflags = -Og -g\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "106e40947c21ea937376f31da81cfb4f724aa2cf4793d3680f78b8620acea734",
-      "bloat_report": "data/reports/esp32dev/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-0a53b8e4f9de.json"
+      "elf_digest": "106e40947c21ea937376f31da81cfb4f724aa2cf4793d3680f78b8620acea734"
     },
     {
       "board": "esp32dev",
@@ -3464,6 +3464,7 @@
       "attributed_ram": 34398,
       "protocol": "0a53b8e4f9de57fa7d6f74a52ef3ca8cba7cd17f54661d52ff2d542e2bf5e8e9",
       "source_digest": "78d4181047333c4ee92e0e135e7b9107c13f42ec16af7c55afc8cad149e748cf",
+      "bloat_report": "data/reports/esp32dev/ebf8c2823c486158a046d8e1e682d3143580ae4e-0a53b8e4f9de.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::end()",
@@ -3647,21 +3648,21 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/ebf8c2823c486158a046d8e1e682d3143580ae4e-0a53b8e4f9de/.fbuild/build/esp32dev/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32dev]\nboard = esp32dev\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -Os\n    -fno-exceptions\n    -fno-rtti\n    -fno-unwind-tables\n    -fno-asynchronous-unwind-tables\n    -ffunction-sections\n    -fdata-sections\n    -DNDEBUG\n    -UDEBUG\n    -UFASTLED_DEBUG\n    -DCORE_DEBUG_LEVEL=0\n    -DLOG_LOCAL_LEVEL=ESP_LOG_NONE\nbuild_unflags = -Og -g\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "3f7896a71ce99823c2cc1018c20447fcec4ea049e4abde409c0f512aafa41e15",
-      "bloat_report": "data/reports/esp32dev/ebf8c2823c486158a046d8e1e682d3143580ae4e-0a53b8e4f9de.json"
+      "elf_digest": "3f7896a71ce99823c2cc1018c20447fcec4ea049e4abde409c0f512aafa41e15"
     },
     {
       "board": "esp32dev",
       "version": "master",
       "sha": "a439902ac6af64e600031c01b5c2ac0df2e690bc",
-      "measured_at": "2026-10-07T17:59:50.501810+00:00",
+      "measured_at": "2026-10-07T19:30:44.450Z",
       "status": "ok",
       "flash": 296140,
       "ram": 25884,
       "image_flash": 298919,
       "attributed_ram": 33950,
       "protocol": "0a53b8e4f9de57fa7d6f74a52ef3ca8cba7cd17f54661d52ff2d542e2bf5e8e9",
-      "source_digest": "15adb6cb9eeffc78c74b077978400a267abf9b1715ced9319fb299379b3bdba7",
+      "source_digest": "637f0fbab8ebcaa48a6495ec712fc254be17febe888ff66ef0178b61e3c32770",
+      "bloat_report": "data/reports/esp32dev/a439902ac6af64e600031c01b5c2ac0df2e690bc-0a53b8e4f9de.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "HardwareSerial::end()",
@@ -3845,8 +3846,7 @@
         "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/a439902ac6af64e600031c01b5c2ac0df2e690bc-0a53b8e4f9de/.fbuild/build/esp32dev/release/core/main_2172.cpp.o"
       ],
       "config": "[env:esp32dev]\nboard = esp32dev\nplatform = https://github.com/pioarduino/platform-espressif32/releases/download/55.03.311/platform-espressif32.zip\nframework = arduino\nboard_build.partitions = huge_app.csv\nbuild_flags =\n    -Os\n    -fno-exceptions\n    -fno-rtti\n    -fno-unwind-tables\n    -fno-asynchronous-unwind-tables\n    -ffunction-sections\n    -fdata-sections\n    -DNDEBUG\n    -UDEBUG\n    -UFASTLED_DEBUG\n    -DCORE_DEBUG_LEVEL=0\n    -DLOG_LOCAL_LEVEL=ESP_LOG_NONE\nbuild_unflags = -Og -g\nmonitor_filters =\n    default\n    esp32_exception_decoder\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "18e8c5965c2d03c663bf87b568d1f72243a1fbf2a149c4e5d785525c0187d115",
-      "bloat_report": "data/reports/esp32dev/a439902ac6af64e600031c01b5c2ac0df2e690bc-0a53b8e4f9de.json"
+      "elf_digest": "18e8c5965c2d03c663bf87b568d1f72243a1fbf2a149c4e5d785525c0187d115"
     },
     {
       "board": "teensy41",
@@ -3860,6 +3860,7 @@
       "attributed_ram": 25080,
       "protocol": "72c54c2f881718c0e35d9474905a5076020866cac7885afac605539022b3af77",
       "source_digest": "b0e387ef2209169d3f23c6c834a17298bf6667e94e8b34dd2e2a6967d9bcd27f",
+      "bloat_report": "data/reports/teensy41/971beb60288dc45009d502a4bec48f8d839d40b5-72c54c2f8817.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial"
@@ -4015,8 +4016,7 @@
         "-fno-threadsafe-statics"
       ],
       "config": "[env:teensy41]\nboard = teensy41\nplatform = teensy\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "9e825fcb96933b1e695f671fb579a7252a6440d6b3654dfcd6671ceff6ad7a64",
-      "bloat_report": "data/reports/teensy41/971beb60288dc45009d502a4bec48f8d839d40b5-72c54c2f8817.json"
+      "elf_digest": "9e825fcb96933b1e695f671fb579a7252a6440d6b3654dfcd6671ceff6ad7a64"
     },
     {
       "board": "teensy41",
@@ -4030,6 +4030,7 @@
       "attributed_ram": 25080,
       "protocol": "72c54c2f881718c0e35d9474905a5076020866cac7885afac605539022b3af77",
       "source_digest": "979ca59b9b5791decf25c39fdeb216eb0e21cf9d5e68cf0664ad946cc07ff948",
+      "bloat_report": "data/reports/teensy41/dec101a1268e013ef42deee644ff58883179d61a-72c54c2f8817.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial"
@@ -4185,8 +4186,7 @@
         "-fno-threadsafe-statics"
       ],
       "config": "[env:teensy41]\nboard = teensy41\nplatform = teensy\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "9e825fcb96933b1e695f671fb579a7252a6440d6b3654dfcd6671ceff6ad7a64",
-      "bloat_report": "data/reports/teensy41/dec101a1268e013ef42deee644ff58883179d61a-72c54c2f8817.json"
+      "elf_digest": "9e825fcb96933b1e695f671fb579a7252a6440d6b3654dfcd6671ceff6ad7a64"
     },
     {
       "board": "teensy41",
@@ -4200,6 +4200,7 @@
       "attributed_ram": 28028,
       "protocol": "72c54c2f881718c0e35d9474905a5076020866cac7885afac605539022b3af77",
       "source_digest": "9201242a6e02f52dbf7c71487b7168286f310aa9a07c34d2a062db5b866408a7",
+      "bloat_report": "data/reports/teensy41/3d1f9fe373b295254354f6266030557a497594cf-72c54c2f8817.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial"
@@ -4355,8 +4356,7 @@
         "-fno-threadsafe-statics"
       ],
       "config": "[env:teensy41]\nboard = teensy41\nplatform = teensy\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "c1475736fd0d4bae7477f1caa3b68d736c6d4b6ec420fab96408087b8ed279e9",
-      "bloat_report": "data/reports/teensy41/3d1f9fe373b295254354f6266030557a497594cf-72c54c2f8817.json"
+      "elf_digest": "c1475736fd0d4bae7477f1caa3b68d736c6d4b6ec420fab96408087b8ed279e9"
     },
     {
       "board": "teensy41",
@@ -4370,6 +4370,7 @@
       "attributed_ram": 28028,
       "protocol": "72c54c2f881718c0e35d9474905a5076020866cac7885afac605539022b3af77",
       "source_digest": "fd438792c0127e2d7cbc54d9b7240badb22ef44f03e4799f615937582ae02a70",
+      "bloat_report": "data/reports/teensy41/20667c3a6413ed46a828f78ec95fb57e58d753f8-72c54c2f8817.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial"
@@ -4525,8 +4526,7 @@
         "-fno-threadsafe-statics"
       ],
       "config": "[env:teensy41]\nboard = teensy41\nplatform = teensy\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "21ac8cabbc97bc449119ad6a47168a158368fec1b11745e6f4c44190856045f2",
-      "bloat_report": "data/reports/teensy41/20667c3a6413ed46a828f78ec95fb57e58d753f8-72c54c2f8817.json"
+      "elf_digest": "21ac8cabbc97bc449119ad6a47168a158368fec1b11745e6f4c44190856045f2"
     },
     {
       "board": "teensy41",
@@ -4540,6 +4540,7 @@
       "attributed_ram": 30429,
       "protocol": "72c54c2f881718c0e35d9474905a5076020866cac7885afac605539022b3af77",
       "source_digest": "b290af65addb18eaec34fa68436aaba603eb921b6c4566471ee61ff79dfc6790",
+      "bloat_report": "data/reports/teensy41/adedfc40e73fb80f8e930318781036d8fe1dbd9f-72c54c2f8817.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial"
@@ -4695,8 +4696,7 @@
         "-fno-threadsafe-statics"
       ],
       "config": "[env:teensy41]\nboard = teensy41\nplatform = teensy\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "e8465ff8df0de50faa1b26c5dd27ff4b183db288aee24efba15d7f4b77f1fb5a",
-      "bloat_report": "data/reports/teensy41/adedfc40e73fb80f8e930318781036d8fe1dbd9f-72c54c2f8817.json"
+      "elf_digest": "e8465ff8df0de50faa1b26c5dd27ff4b183db288aee24efba15d7f4b77f1fb5a"
     },
     {
       "board": "teensy41",
@@ -4710,6 +4710,7 @@
       "attributed_ram": 30429,
       "protocol": "72c54c2f881718c0e35d9474905a5076020866cac7885afac605539022b3af77",
       "source_digest": "2d4f0a11776c250b730525fcde149899ca8fc5bd7ed23638ededcfd4467b07a6",
+      "bloat_report": "data/reports/teensy41/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-72c54c2f8817.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial"
@@ -4865,8 +4866,7 @@
         "-fno-threadsafe-statics"
       ],
       "config": "[env:teensy41]\nboard = teensy41\nplatform = teensy\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "e8465ff8df0de50faa1b26c5dd27ff4b183db288aee24efba15d7f4b77f1fb5a",
-      "bloat_report": "data/reports/teensy41/4880ae48cb6f9ceaefd4d15b5f25f4c43de95f4e-72c54c2f8817.json"
+      "elf_digest": "e8465ff8df0de50faa1b26c5dd27ff4b183db288aee24efba15d7f4b77f1fb5a"
     },
     {
       "board": "teensy41",
@@ -4880,6 +4880,7 @@
       "attributed_ram": 64423,
       "protocol": "72c54c2f881718c0e35d9474905a5076020866cac7885afac605539022b3af77",
       "source_digest": "78d4181047333c4ee92e0e135e7b9107c13f42ec16af7c55afc8cad149e748cf",
+      "bloat_report": "data/reports/teensy41/ebf8c2823c486158a046d8e1e682d3143580ae4e-72c54c2f8817.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial"
@@ -5035,21 +5036,21 @@
         "-fno-threadsafe-statics"
       ],
       "config": "[env:teensy41]\nboard = teensy41\nplatform = teensy\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "b6d04b4c0889c874f875feac2a6e62512c7123734dff98f9ed0e323d0453474d",
-      "bloat_report": "data/reports/teensy41/ebf8c2823c486158a046d8e1e682d3143580ae4e-72c54c2f8817.json"
+      "elf_digest": "b6d04b4c0889c874f875feac2a6e62512c7123734dff98f9ed0e323d0453474d"
     },
     {
       "board": "teensy41",
       "version": "master",
       "sha": "a439902ac6af64e600031c01b5c2ac0df2e690bc",
-      "measured_at": "2026-10-07T18:01:59.215744+00:00",
+      "measured_at": "2026-10-07T19:30:46.050Z",
       "status": "ok",
       "flash": 50176,
       "ram": 28384,
       "image_flash": 50176,
       "attributed_ram": 23095,
       "protocol": "72c54c2f881718c0e35d9474905a5076020866cac7885afac605539022b3af77",
-      "source_digest": "15adb6cb9eeffc78c74b077978400a267abf9b1715ced9319fb299379b3bdba7",
+      "source_digest": "637f0fbab8ebcaa48a6495ec712fc254be17febe888ff66ef0178b61e3c32770",
+      "bloat_report": "data/reports/teensy41/a439902ac6af64e600031c01b5c2ac0df2e690bc-72c54c2f8817.json",
       "fbuild": "2.5.37",
       "serial_symbols": [
         "Serial"
@@ -5205,11 +5206,10 @@
         "-fno-threadsafe-statics"
       ],
       "config": "[env:teensy41]\nboard = teensy41\nplatform = teensy\nframework = arduino\nbuild_flags =\nlib_ldf_mode = chain\nlib_archive = true\n",
-      "elf_digest": "ca289327b5c078a3b15fb8d90dc02594875c03b3bb2cae6a26830c08b0500402",
-      "bloat_report": "data/reports/teensy41/a439902ac6af64e600031c01b5c2ac0df2e690bc-72c54c2f8817.json"
+      "elf_digest": "ca289327b5c078a3b15fb8d90dc02594875c03b3bb2cae6a26830c08b0500402"
     }
   ],
-  "updated_at": "2026-10-07T18:06:39.831051+00:00",
+  "updated_at": "2026-10-07T19:30:46.050Z",
   "versions": [
     "3.10.0",
     "3.10.1",

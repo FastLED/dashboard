@@ -54,18 +54,24 @@ This dedicated benchmark workflow does not invoke FastLED CI Full.
 Site-only pushes publish existing data directly, skipping benchmark builds,
 toolchain setup and screenshot-browser installation. Daily measurement runs
 refresh the data and screenshot. When changing the chart overview, regenerate
-its screenshot locally with `uv run --with playwright python benchmark/screenshot.py`.
+its screenshot locally with `npm run screenshot`.
 
 Collection and publishing run in separate jobs and concurrency groups. The
 view reads committed JSON artifacts; a long collection run does not block
 publishing a new layout or interaction using the existing measurements.
 
 ```sh
-uv run --upgrade-package fbuild python benchmark/run.py
+npm ci
+npm run check             # strict TypeScript, ESLint, formatting and schema tests
+npm run build             # browser bundle and versioned JSON Schema artifacts
+uv sync --upgrade-package fbuild  # external firmware tool only
+npm run benchmark
 # A focused run, using an existing FastLED clone without modifying its checkout:
-uv run python benchmark/run.py --source /path/to/FastLED --boards uno --versions 3.10.3 master
-uv run python -m unittest discover -s tests
-uv run python -m http.server 8080 --directory docs
+npm run benchmark -- --source /path/to/FastLED --boards uno --versions 3.10.3 master
+npx playwright install chromium
+npm run test:view
+npm run screenshot
+npm run dev
 ```
 
 No git worktrees are created. Git archives read revisions without switching
@@ -73,3 +79,9 @@ the FastLED checkout. SDK downloads, build outputs and logs live in `.cache/`.
 Historical snapshots retain daily master history; the main charts show the
 release progression ending with the latest master datapoint. Each source SHA
 links directly to its upstream commit.
+
+The application and collection scripts are TypeScript on Node.js 24+. fbuild
+remains an external tool installed through uv; no Python dashboard scripts remain.
+Transport is validated eagerly with strict shared schemas and inferred TypeScript
+models, with published JSON Schema files in `docs/schemas/`. The browser view is
+generated from `src/`; edit those files, then run `npm run build` before committing.

@@ -51,6 +51,11 @@ This dedicated benchmark workflow does not invoke FastLED CI Full.
 
 ## Run locally
 
+Site-only pushes publish existing data directly, skipping benchmark builds,
+toolchain setup and screenshot-browser installation. Daily measurement runs
+refresh the data and screenshot. When changing the chart overview, regenerate
+its screenshot locally with `uv run --with playwright python benchmark/screenshot.py`.
+
 ```sh
 uv run --upgrade-package fbuild python benchmark/run.py
 # A focused run, using an existing FastLED clone without modifying its checkout:

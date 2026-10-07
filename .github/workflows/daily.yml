@@ -22,13 +22,17 @@ jobs:
   benchmark:
     runs-on: ubuntu-24.04
     timeout-minutes: 180
+    env:
+      MEASURE: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.measure) }}
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
+        if: env.MEASURE == 'true'
         with:
           python-version: '3.12'
           enable-cache: true
       - name: Restore toolchains and framework caches
+        if: env.MEASURE == 'true'
         uses: actions/cache@v4
         with:
           path: |
@@ -39,7 +43,7 @@ jobs:
       - name: Measure all four boards sequentially
         id: benchmark
         # Site updates publish existing data; scheduled/manual runs measure.
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.measure)
+        if: env.MEASURE == 'true'
         continue-on-error: true
         run: uv run --upgrade-package fbuild python benchmark/run.py
       - name: Archive benchmark evidence
@@ -53,10 +57,13 @@ jobs:
             .cache/build/**/symbols/report.json
           retention-days: 30
       - name: Install screenshot browser
+        if: env.MEASURE == 'true'
         run: uv run --with playwright python -m playwright install --with-deps chromium
       - name: Refresh README Chart.js overview screenshot
+        if: env.MEASURE == 'true'
         run: uv run --with playwright python benchmark/screenshot.py
       - name: Commit measurements and daily history
+        if: env.MEASURE == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

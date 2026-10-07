@@ -12,27 +12,27 @@ on:
     branches: [main]
     paths: ['benchmark/**', 'docs/**', '.github/workflows/daily.yml', 'pyproject.toml']
 permissions:
-  contents: write
-  pages: write
-  id-token: write
-concurrency:
-  group: memory-dashboard
-  cancel-in-progress: false
+  contents: read
 jobs:
-  benchmark:
+  collect:
+    name: Collect benchmark data
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.measure)
+    concurrency:
+      group: memory-collection
+      cancel-in-progress: false
+    permissions:
+      contents: write
     runs-on: ubuntu-24.04
     timeout-minutes: 180
-    env:
-      MEASURE: ${{ github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.measure) }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: astral-sh/setup-uv@v6
-        if: env.MEASURE == 'true'
         with:
           python-version: '3.12'
           enable-cache: true
       - name: Restore toolchains and framework caches
-        if: env.MEASURE == 'true'
         uses: actions/cache@v4
         with:
           path: |
@@ -43,7 +43,6 @@ jobs:
       - name: Measure all four boards sequentially
         id: benchmark
         # Site updates publish existing data; scheduled/manual runs measure.
-        if: env.MEASURE == 'true'
         continue-on-error: true
         run: uv run --upgrade-package fbuild python benchmark/run.py
       - name: Archive benchmark evidence
@@ -57,21 +56,42 @@ jobs:
             .cache/build/**/symbols/report.json
           retention-days: 30
       - name: Install screenshot browser
-        if: env.MEASURE == 'true'
         run: uv run --with playwright python -m playwright install --with-deps chromium
       - name: Refresh README Chart.js overview screenshot
-        if: env.MEASURE == 'true'
         run: uv run --with playwright python benchmark/screenshot.py
       - name: Commit measurements and daily history
-        if: env.MEASURE == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/data docs/assets
           if ! git diff --cached --quiet; then
             git commit -m 'data: daily Blink memory measurements'
+            git pull --rebase origin main
             git push
           fi
+      - name: Report any failed measurements
+        if: steps.benchmark.outcome == 'failure'
+        run: |
+          echo 'One or more benchmarks failed. Collected results contain explicit gaps; the publish job will deploy them.'
+          exit 1
+  publish:
+    name: Publish dashboard view
+    needs: collect
+    if: always() && !cancelled()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    concurrency:
+      group: memory-site-publish
+      cancel-in-progress: true
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Use the latest view plus any newly committed collection results.
+          ref: main
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -79,11 +99,6 @@ jobs:
       - name: Deploy dashboard
         id: deploy
         uses: actions/deploy-pages@v4
-      - name: Report any failed measurements
-        if: steps.benchmark.outcome == 'failure'
-        run: |
-          echo 'One or more benchmarks failed. Successful results and explicit gaps were published.'
-          exit 1
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

@@ -44,6 +44,17 @@
 
 ## Recompute policy
 
+- Updates are incremental. HTML, CSS, JavaScript and other site-only changes
+  deploy the committed site and measurement data directly. They must not
+  trigger benchmark builds, toolchain cache restoration, Python dependency
+  installation, browser installation or automatic screenshot regeneration.
+- Daily scheduled runs and explicitly requested measurement runs perform the
+  full latest-seven-releases-plus-master recomputation, refresh the screenshot
+  and publish results. A manual publish-only run uses the same fast site path.
+- When an overview layout changes, regenerate and commit its README screenshot
+  locally as part of that change. Report-popup-only changes reuse the existing
+  overview graphic. Reuse build and toolchain caches for measurement runs.
+
 - Recompute the **latest seven stable FastLED release tags plus master** for
   every platform and sketch, once daily. The initial horizon is 3.10.0–3.10.6.
   Advance the horizon automatically when a new stable release tag appears.

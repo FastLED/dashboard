@@ -22,8 +22,35 @@ function versionLabel(element, row) {
 let results = [];
 let chartVersions = [...versions];
 const charts = {};
+const axisTicks = chart => chart.scales.y.ticks.filter(tick => tick.label != null).map(tick => ({ value: tick.value, y: chart.scales.y.getPixelForValue(tick.value) }));
+const scaleTransition = {
+  id: 'scaleTransition',
+  afterUpdate(chart) {
+    const scale = chart.scales.y;
+    if (scale.$transitionDraw) return;
+    for (const method of ['drawGrid', 'drawLabels', 'drawBorder', 'drawTitle']) {
+      const draw = scale[method].bind(scale);
+      scale[method] = (...args) => { if (!chart.$scaleTransition) draw(...args); };
+    }
+    scale.$transitionDraw = true;
+  },
+  beforeDatasetsDraw(chart) {
+    const transition = chart.$scaleTransition;
+    if (!transition) return;
+    const { ctx, chartArea } = chart;
+    ctx.save(); ctx.font = '12px sans-serif'; ctx.textAlign = 'right'; ctx.textBaseline = 'middle';
+    for (const tick of transition.ticks) {
+      ctx.globalAlpha = tick.opacity;
+      ctx.strokeStyle = '#263143'; ctx.beginPath(); ctx.moveTo(chartArea.left, tick.y); ctx.lineTo(chartArea.right, tick.y); ctx.stroke();
+      ctx.fillStyle = '#8594aa'; ctx.fillText(Math.round(tick.value).toLocaleString('en-US'), chartArea.left - 10, tick.y);
+    }
+    ctx.restore();
+  },
+  beforeDestroy(chart) { cancelAnimationFrame(chart.$scaleFrame); },
+};
 const modal = document.getElementById('bloat-modal');
 let reportRequest = 0;
+const reportCache = new Map();
 document.getElementById('close-modal').addEventListener('click', () => modal.close());
 modal.addEventListener('click', event => { if (event.target === modal) modal.close(); });
 async function openBloat(row) {
@@ -36,9 +63,13 @@ async function openBloat(row) {
   const container = document.getElementById('bloat-report'); container.textContent = 'Loading symbol report…';
   if (!modal.open) modal.showModal();
   try {
-    const response = await fetch(row.bloat_report);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const report = await response.json();
+    if (!reportCache.has(row.bloat_report)) {
+      reportCache.set(row.bloat_report, fetch(row.bloat_report).then(response => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      }).catch(error => { reportCache.delete(row.bloat_report); throw error; }));
+    }
+    const report = await reportCache.get(row.bloat_report);
     if (request !== reportRequest) return;
     container.replaceChildren();
     const summary = document.createElement('p');
@@ -55,17 +86,21 @@ async function openBloat(row) {
       const head = document.createElement('thead'); const tr = document.createElement('tr');
       ['Region', 'Bytes', 'Symbol', 'Object'].forEach(text => { const th = document.createElement('th'); th.textContent = text; tr.append(th); }); head.append(tr); table.append(head);
       const body = document.createElement('tbody');
-      symbols.forEach((symbol, index) => {
+      const renderRows = expanded => {
+      const fragment = document.createDocumentFragment();
+      (expanded ? symbols : symbols.slice(0, 5)).forEach(symbol => {
         const tr = document.createElement('tr');
-        tr.hidden = index >= 5;
-        [symbol.region, symbol.size.toLocaleString('en-US'), symbol.demangled, symbol.object || '—'].forEach(text => { const td = document.createElement('td'); td.textContent = text; tr.append(td); }); body.append(tr);
+        [symbol.region, symbol.size.toLocaleString('en-US'), symbol.demangled, symbol.object || '—'].forEach(text => { const td = document.createElement('td'); td.textContent = text; tr.append(td); }); fragment.append(tr);
       });
+      body.replaceChildren(fragment);
+      };
+      renderRows(false);
       table.append(body); if (symbols.length) section.append(table);
       if (symbols.length > 5) {
         const more = document.createElement('button'); more.className = 'bloat-more'; more.textContent = `More (${(symbols.length - 5).toLocaleString('en-US')} remaining)`; more.setAttribute('aria-expanded', 'false'); more.setAttribute('aria-controls', table.id);
         more.addEventListener('click', () => {
           const expanded = more.getAttribute('aria-expanded') !== 'true';
-          [...body.rows].forEach((row, index) => { row.hidden = !expanded && index >= 5; });
+          renderRows(expanded);
           more.setAttribute('aria-expanded', String(expanded)); more.textContent = expanded ? 'Show top five' : `More (${(symbols.length - 5).toLocaleString('en-US')} remaining)`;
           note.textContent = expanded ? 'Largest symbols first. Showing all symbols.' : 'Largest symbols first. Showing the top five.';
         });
@@ -85,13 +120,14 @@ function chart(metric) {
     return {label:platform.name, borderColor:platform.color, backgroundColor:platform.color, pointRadius:5, pointHoverRadius:8, pointHitRadius:12, borderWidth:2.5, spanGaps:false, rows, data:rows.map(row => row && Number.isFinite(row[metric]) && (!log || row[metric]>0) ? row[metric] : null)};
   });
   charts[metric] = new Chart(canvas, {
+    plugins: [scaleTransition],
     type:'line', data:{labels:chartVersions.map(version => version === 'master' ? ['master', ...new Set(results.filter(row => row.version === 'master' && enabled.has(row.board)).map(row => localDate(row.measured_at)))] : version),datasets}, options:{
       responsive:true, maintainAspectRatio:false, animation:false,
       interaction:{mode:'nearest',intersect:true},
       onHover:(event,elements) => { canvas.style.cursor = elements.length ? 'pointer' : 'default'; },
       onClick:(event,elements,chart) => { if(elements.length) { const p=elements[0]; openBloat(chart.data.datasets[p.datasetIndex].rows[p.index]); } },
       plugins:{legend:{display:false},tooltip:{backgroundColor:'#0c111c',padding:12,callbacks:{label:context=>`${context.dataset.label}: ${bytes(context.parsed.y)}`,afterLabel:context=> { const row = context.dataset.rows[context.dataIndex]; return [`Measured ${localTimestamp(row.measured_at)}`, `SHA ${row.sha.slice(0,10)} · click for bloat`]; }}}},
-      scales:{x:{grid:{display:false},ticks:{color:'#8594aa'}},y:{type:log?'logarithmic':'linear',beginAtZero:!log,grid:{color:'#263143'},ticks:{color:'#8594aa',callback:value=>Number(value).toLocaleString('en-US')}}}
+      scales:{x:{grid:{display:false},ticks:{color:'#8594aa'}},y:{afterFit:scale => { scale.width = 84; },type:log?'logarithmic':'linear',beginAtZero:!log,grid:{color:'#263143'},ticks:{maxTicksLimit:8,color:'#8594aa',callback:value=>Number(value).toLocaleString('en-US')}}}
     }
   });
 }
@@ -121,13 +157,43 @@ platforms.forEach(platform => {
 document.getElementById('log').addEventListener('change', () => {
   const log = document.getElementById('log').checked;
   for (const [metric, chart] of Object.entries(charts)) {
-    chart.options.animation = { duration: 650, easing: 'easeInOutCubic' };
+    cancelAnimationFrame(chart.$scaleFrame);
+    const fromTicks = chart.$scaleTransition?.ticks || axisTicks(chart);
+    const fromPoints = chart.data.datasets.map((dataset, index) => chart.getDatasetMeta(index).data.map(point => ({ x: point.x, y: point.y })));
+    chart.$scaleTransition = { ticks: fromTicks };
+    chart.options.animation = false;
     chart.options.scales.y.type = log ? 'logarithmic' : 'linear';
     chart.options.scales.y.beginAtZero = !log;
     for (const dataset of chart.data.datasets) {
       dataset.data = dataset.rows.map(row => row && Number.isFinite(row[metric]) && (!log || row[metric] > 0) ? row[metric] : null);
     }
-    chart.update();
+    chart.update('none');
+    const toTicks = axisTicks(chart);
+    const toPoints = chart.data.datasets.map((dataset, index) => chart.getDatasetMeta(index).data.map(point => ({ x: point.x, y: point.y })));
+    const count = Math.max(fromTicks.length, toTicks.length);
+    const started = performance.now();
+    const interpolate = (a, b, progress) => a + (b - a) * progress;
+    const animate = now => {
+      const elapsed = Math.min(1, (now - started) / 1000);
+      const progress = elapsed < 0.5 ? 4 * elapsed ** 3 : 1 - (-2 * elapsed + 2) ** 3 / 2;
+      chart.$scaleTransition.ticks = Array.from({ length: count }, (_, index) => {
+        const from = fromTicks[Math.min(index, fromTicks.length - 1)];
+        const to = toTicks[Math.min(index, toTicks.length - 1)];
+        return { value: interpolate(from.value, to.value, progress), y: interpolate(from.y, to.y, progress), opacity: interpolate(index < fromTicks.length ? 1 : 0, index < toTicks.length ? 1 : 0, progress) };
+      });
+      chart.data.datasets.forEach((dataset, index) => {
+        const meta = chart.getDatasetMeta(index);
+        meta.dataset._path = undefined;
+        meta.data.forEach((point, pointIndex) => {
+        const from = fromPoints[index][pointIndex], to = toPoints[index][pointIndex];
+        point.x = interpolate(from.x, to.x, progress); point.y = interpolate(from.y, to.y, progress);
+        });
+      });
+      if (elapsed === 1) chart.$scaleTransition = null;
+      chart.draw();
+      if (elapsed < 1) chart.$scaleFrame = requestAnimationFrame(animate);
+    };
+    animate(started);
   }
 });
 try {

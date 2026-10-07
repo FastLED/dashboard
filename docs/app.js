@@ -118,7 +118,18 @@ platforms.forEach(platform => {
   const key = document.createElement('span'); key.className = 'platform-key'; key.style.setProperty('--color', platform.color);
   label.append(input, key, document.createTextNode(platform.name)); document.getElementById('platforms').append(label);
 });
-document.getElementById('log').addEventListener('change', render);
+document.getElementById('log').addEventListener('change', () => {
+  const log = document.getElementById('log').checked;
+  for (const [metric, chart] of Object.entries(charts)) {
+    chart.options.animation = { duration: 650, easing: 'easeInOutCubic' };
+    chart.options.scales.y.type = log ? 'logarithmic' : 'linear';
+    chart.options.scales.y.beginAtZero = !log;
+    for (const dataset of chart.data.datasets) {
+      dataset.data = dataset.rows.map(row => row && Number.isFinite(row[metric]) && (!log || row[metric] > 0) ? row[metric] : null);
+    }
+    chart.update();
+  }
+});
 try {
   const response = await fetch('data/latest.json', { cache: 'no-store' });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);

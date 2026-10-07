@@ -10,6 +10,9 @@
   Clicking a point opens an accessible popup with the full **fbuild bloat**
   symbol report for that exact platform, FastLED revision and measurement run.
   Equivalent report buttons in the data table support keyboard users.
+- Split each popup into Flash and RAM sections, independently sorted by symbol
+  size. Show the top five in each section, with a separate More button to reveal
+  all remaining symbols and an option to collapse back to the top five.
 - Show a prominent live-site link in the README. Embed a real overview
   screenshot as a noninteractive PNG, linked to the interactive Pages site.
   Regenerate that screenshot whenever the daily data is published.

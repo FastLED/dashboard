@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "elf_path": {
+      "type": "string"
+    },
+    "map_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "total_flash": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "total_ram": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "image_flash": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "symbols": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mangled": {
+            "type": "string"
+          },
+          "demangled": {
+            "type": "string"
+          },
+          "address": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "size": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "sym_type": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string",
+            "enum": [
+              "flash",
+              "ram"
+            ]
+          },
+          "archive": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "object": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "output_section": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": "string"
+          },
+          "referenced_by": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "archive": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "object": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "archive",
+                "object"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "references_to": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "called_by": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "mangled",
+          "demangled",
+          "address",
+          "size",
+          "sym_type",
+          "region",
+          "archive",
+          "object",
+          "output_section",
+          "source",
+          "referenced_by",
+          "references_to",
+          "called_by"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "archive": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "object": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "output_section": {
+            "type": "string"
+          },
+          "bytes": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          }
+        },
+        "required": [
+          "archive",
+          "object",
+          "output_section",
+          "bytes"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "elf_path",
+    "map_path",
+    "total_flash",
+    "total_ram",
+    "image_flash",
+    "symbols",
+    "sections"
+  ],
+  "additionalProperties": false
+}

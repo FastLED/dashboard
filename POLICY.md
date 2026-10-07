@@ -16,6 +16,28 @@
 - Show a prominent live-site link in the README. Embed a real overview
   screenshot as a noninteractive PNG, linked to the interactive Pages site.
   Regenerate that screenshot whenever the daily data is published.
+- Every master label must include a secondary measurement-date label in UTC
+  (`YYYY-MM-DD`), including chart axes, table version cells and report headings.
+  Use the point's measurement timestamp, not the page viewing date or commit
+  date. Hover details retain the exact timestamp and source SHA.
+
+## JSON transport and typed benchmark data
+
+- Strictly enforce a versioned JSON Schema for dashboard data, daily snapshots
+  and the symbol-report transport used to render tables. The schema defines
+  required fields, types, allowed regions/platforms/statuses, nullable failure
+  fields and table-row structure; reject unknown fields and invalid values.
+- Validate incoming JSON before accepting or rendering it and validate outgoing
+  JSON before writing or publishing it. Invalid transport must produce a clear
+  validation error, rather than partially populated tables or coerced values.
+- At the benchmark's JSON input boundary, eagerly convert validated payloads
+  into typed Python dataclasses, including nested measurements, provenance and
+  symbol rows. Benchmark logic operates on dataclass attributes and typed
+  collections, never dictionaries or loosely typed JSON objects. Dictionaries
+  may exist only transiently within schema validation and serialization code.
+- Serialize dataclasses back to the schema-defined transport at output
+  boundaries. Keep model types, schema versions and table columns consistent;
+  schema changes require explicit versioning and migration handling.
 
 ## Recompute policy
 

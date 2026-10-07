@@ -2,7 +2,12 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { latestReleases, parseSize } from "../scripts/benchmark.ts";
-import { dashboardSchema, reportSchema } from "../src/models.ts";
+import {
+  dashboardSchema,
+  reportSchema,
+  boardSchema,
+  sketchSchema,
+} from "../src/models.ts";
 test("latest seven stable tags sorted numerically, excluding prereleases", () => {
   assert.deepEqual(
     latestReleases([
@@ -58,6 +63,13 @@ test("workloads stay distinct and every sketch avoids Serial", () => {
     (row) => `${row.sketch}/${row.board}/${row.version}`,
   );
   assert.equal(new Set(keys).size, keys.length);
+  for (const sketch of sketchSchema.options)
+    for (const board of boardSchema.options)
+      for (const version of data.versions)
+        assert.ok(
+          keys.includes(`${sketch}/${board}/${version}`),
+          `Missing ${sketch}/${board}/${version}`,
+        );
   for (const name of ["Blink", "SPI", "Rainbow"]) {
     assert.ok(
       !readFileSync(`benchmark/${name}.ino`, "utf8").includes("Serial"),

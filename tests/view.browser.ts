@@ -385,15 +385,23 @@ test("sketch sections isolate controls and keyboard reports", async () => {
         await page.locator(`#${id}-scale-status`).textContent(),
         "Auto · Linear",
       );
-    const canvas = page.locator("#blink-flash-canvas");
-    await canvas.focus();
-    await page.keyboard.press("ArrowRight");
-    await page.keyboard.press("Enter");
-    await page.waitForSelector(".bloat-section");
-    assert.match(
-      (await page.locator("#bloat-title").textContent()) ?? "",
-      /^Blink · Uno AVR/,
-    );
+    for (const [sketch, title] of [
+      ["blink", "Blink"],
+      ["spi", "APA102"],
+      ["rainbow", "Rainbow"],
+    ]) {
+      const canvas = page.locator(`#${sketch}-flash-canvas`);
+      await canvas.focus();
+      await page.keyboard.press("ArrowRight");
+      await page.keyboard.press("Enter");
+      await page.waitForSelector(".bloat-section");
+      assert.ok(
+        (await page.locator("#bloat-title").textContent())?.startsWith(
+          `${title} · Uno AVR`,
+        ),
+      );
+      await page.locator("#close-modal").click();
+    }
   } finally {
     await browser.close();
     await server.close();

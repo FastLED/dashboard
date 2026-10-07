@@ -52,7 +52,11 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
       }
     });
     for (const log of [true, false, true]) {
-      await page.locator("#log").setChecked(log);
+      for (const metric of ["flash", "ram"])
+        await page
+          .locator(`#${metric}-scale label`)
+          .filter({ hasText: log ? "Logarithmic" : "Linear" })
+          .click();
       await page.waitForTimeout(180);
       const first = await page.evaluate(() =>
         Object.values(window.dashboardCharts).map(
@@ -115,9 +119,17 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
       assert.equal(await flash.locator("tbody tr").count(), 5);
       await page.keyboard.press("Escape");
     }
-    await page.locator("#log").uncheck();
+    for (const metric of ["flash", "ram"])
+      await page
+        .locator(`#${metric}-scale label`)
+        .filter({ hasText: "Linear" })
+        .click();
     await page.waitForTimeout(150);
-    await page.locator("#log").check();
+    for (const metric of ["flash", "ram"])
+      await page
+        .locator(`#${metric}-scale label`)
+        .filter({ hasText: "Logarithmic" })
+        .click();
     await page.waitForTimeout(1100);
     assert.ok(
       await page.evaluate(() =>
@@ -135,7 +147,11 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
     );
     for (const checkbox of await page.locator("#platforms input").all())
       await checkbox.uncheck();
-    await page.locator("#log").uncheck();
+    for (const metric of ["flash", "ram"])
+      await page
+        .locator(`#${metric}-scale label`)
+        .filter({ hasText: "Linear" })
+        .click();
     await page.waitForTimeout(1100);
     assert.deepEqual(errors, []);
   } finally {
@@ -186,9 +202,13 @@ test("first painted scale frame preserves points and hides entering ticks", asyn
           };
           return { chart, before, source, frames, draw };
         });
-        const toggle = document.getElementById("log") as HTMLInputElement;
-        toggle.checked = logarithmic;
-        toggle.dispatchEvent(new Event("change"));
+        for (const metric of ["flash", "ram"]) {
+          const toggle = document.querySelector<HTMLInputElement>(
+            `input[name="${metric}-scale"][value="${logarithmic ? "logarithmic" : "linear"}"]`,
+          )!;
+          toggle.checked = true;
+          toggle.dispatchEvent(new Event("change", { bubbles: true }));
+        }
         return traces.map(({ chart, before, source, frames, draw }) => {
           chart.draw = draw;
           return {
@@ -226,6 +246,100 @@ test("first painted scale frame preserves points and hides entering ticks", asyn
       }
       await page.waitForTimeout(1100);
     }
+  } finally {
+    await browser.close();
+    await server.close();
+  }
+});
+
+test("Auto hysteresis, independent controls, pins and filter persistence", async () => {
+  const server = await preview(),
+    browser = await chromium.launch();
+  try {
+    const page = await browser.newPage({
+      viewport: { width: 1440, height: 900 },
+    });
+    await page.goto(server.url, { waitUntil: "networkidle" });
+    await page.waitForSelector("#results tbody button");
+    await page.evaluate(async () => {
+      const module: { charts: Window["dashboardCharts"] } = await import(
+        document.querySelector<HTMLScriptElement>("script[type=module]")!.src
+      );
+      window.dashboardCharts = module.charts;
+    });
+    const actual = () =>
+      page.evaluate(() =>
+        Object.fromEntries(
+          Object.entries(window.dashboardCharts).map(([name, chart]) => [
+            name,
+            chart?.scales.y.type,
+          ]),
+        ),
+      );
+    const move = async (metric: "flash" | "ram", fraction: number) => {
+      const target = await page.evaluate(
+        ({ metric, fraction }) => {
+          const c = window.dashboardCharts[metric]!,
+            rect = c.canvas.getBoundingClientRect(),
+            a = c.chartArea;
+          return {
+            x: rect.left + (((a.left + a.right) / 2) * rect.width) / c.width,
+            y:
+              rect.top +
+              ((a.top + (a.bottom - a.top) * fraction) * rect.height) /
+                c.height,
+          };
+        },
+        { metric, fraction },
+      );
+      await page.mouse.move(target.x, target.y);
+    };
+    assert.deepEqual(await actual(), { flash: "linear", ram: "linear" });
+    assert.equal(await page.locator('input[value="auto"]:checked').count(), 2);
+    await move("ram", 0.96);
+    await page.waitForTimeout(1100);
+    assert.deepEqual(await actual(), { flash: "linear", ram: "logarithmic" });
+    for (const p of [0.8, 0.5, 0.1]) {
+      await move("ram", p);
+      assert.equal((await actual()).ram, "logarithmic");
+    }
+    await move("ram", 0.03);
+    await page.waitForTimeout(1100);
+    assert.equal((await actual()).ram, "linear");
+    await page
+      .locator("#ram-scale label")
+      .filter({ hasText: "Linear" })
+      .click();
+    await move("ram", 0.98);
+    assert.equal((await actual()).ram, "linear");
+    await page
+      .locator("#ram-scale label")
+      .filter({ hasText: "Logarithmic" })
+      .click();
+    await page.waitForTimeout(1100);
+    await move("ram", 0.02);
+    assert.equal((await actual()).ram, "logarithmic");
+    await page
+      .locator("#flash-scale label")
+      .filter({ hasText: "Logarithmic" })
+      .click();
+    await page.waitForTimeout(1100);
+    await page.locator("#platforms input").first().uncheck();
+    assert.deepEqual(await actual(), {
+      flash: "logarithmic",
+      ram: "logarithmic",
+    });
+    await page.locator("#ram-scale label").filter({ hasText: "Auto" }).click();
+    await move("ram", 0.04);
+    await page.waitForTimeout(1100);
+    assert.equal((await actual()).ram, "linear");
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.waitForTimeout(200);
+    assert.ok(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    );
   } finally {
     await browser.close();
     await server.close();

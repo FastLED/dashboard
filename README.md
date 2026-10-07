@@ -12,6 +12,10 @@ the exact platform/version fbuild bloat report.
 
 Two line charts for **Blink only**: flash consumption on the left and static
 RAM usage on the right. Four series: Uno AVR, ESP32-S3, ESP32 Dev, Teensy4.1.
+Each chart has its own **Auto / Linear / Logarithmic** selector. Auto starts linear;
+move into the bottom 7% of a plot to reveal small targets with logarithmic scaling,
+or into the top 7% to return to linear. The middle retains the current scale.
+Select Linear or Logarithmic to pin that chart's scale.
 Latest seven stable releases plus the latest master SHA; initially 3.10.0–3.10.6.
 
 ## Benchmark protocol

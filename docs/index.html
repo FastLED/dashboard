@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>FastLED · Memory history</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=205b9aa9c1bf">
 </head>
 <body>
   <main>
@@ -11,14 +11,14 @@
       <p>One LED. No Serial. The same Blink workload across every version.</p>
       <div class="status"><span class="dot"></span><span id="updated">Loading benchmark results…</span><a href="https://github.com/FastLED/dashboard">Repository ↗</a></div>
     </header>
-    <section class="toolbar" aria-label="Chart controls"><div id="platforms"></div><label><input type="checkbox" id="log"> Logarithmic scale</label></section>
+    <section class="toolbar" aria-label="Chart controls"><div id="platforms"></div></section>
     <div class="charts">
-      <section class="panel"><div class="panel-head"><h2>Flash consumption</h2><span>BYTES</span></div><div id="flash" class="chart"></div></section>
-      <section class="panel"><div class="panel-head"><h2>RAM usage</h2><span>BYTES</span></div><div id="ram" class="chart"></div></section>
+      <section class="panel"><div class="panel-head"><h2>Flash consumption</h2><span>BYTES</span></div><fieldset id="flash-scale" class="scale-controls" title="Auto switches to logarithmic in the bottom 7% of the plot, and back to linear only in the top 7%."><legend class="sr-only">Flash scale</legend><span class="scale-thumb" aria-hidden="true"></span><label><input type="radio" name="flash-scale" value="auto" checked><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2l1.6 4.4L14 8l-4.4 1.6L8 14l-1.6-4.4L2 8l4.4-1.6Z"/></svg>Auto</span></label><label><input type="radio" name="flash-scale" value="linear"><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 12 13 3M3 3v10h10"/></svg>Linear</span></label><label><input type="radio" name="flash-scale" value="logarithmic"><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3v10h10M4 11c1-5 3-6 8-7"/></svg>Logarithmic</span></label></fieldset><div class="scale-description"><p class="scale-note">Auto: bottom 7% → log · top 7% → linear</p><span id="flash-scale-status" class="scale-status" role="status" aria-atomic="true">Auto · Linear</span></div><div id="flash" class="chart"></div></section>
+      <section class="panel"><div class="panel-head"><h2>RAM usage</h2><span>BYTES</span></div><fieldset id="ram-scale" class="scale-controls" title="Auto switches to logarithmic in the bottom 7% of the plot, and back to linear only in the top 7%."><legend class="sr-only">RAM scale</legend><span class="scale-thumb" aria-hidden="true"></span><label><input type="radio" name="ram-scale" value="auto" checked><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2l1.6 4.4L14 8l-4.4 1.6L8 14l-1.6-4.4L2 8l4.4-1.6Z"/></svg>Auto</span></label><label><input type="radio" name="ram-scale" value="linear"><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 12 13 3M3 3v10h10"/></svg>Linear</span></label><label><input type="radio" name="ram-scale" value="logarithmic"><span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3v10h10M4 11c1-5 3-6 8-7"/></svg>Logarithmic</span></label></fieldset><div class="scale-description"><p class="scale-note">Auto: bottom 7% → log · top 7% → linear</p><span id="ram-scale-status" class="scale-status" role="status" aria-atomic="true">Auto · Linear</span></div><div id="ram" class="chart"></div></section>
     </div>
     <section class="panel measurements"><div class="panel-head"><h2>Measurements</h2><a href="data/latest.json">Download JSON ↗</a></div><p class="note">Hover a chart point for exact bytes. Click a point to open its fbuild bloat report. Select platforms to inspect smaller targets. Missing or failed measurements appear as gaps.</p><div class="table-scroll"><table id="results"><caption class="sr-only">Blink flash and static RAM by platform and version</caption><thead><tr><th>Version</th><th>Platform</th><th>Flash</th><th>RAM</th><th>Source</th><th>Status</th><th>Bloat</th></tr></thead><tbody></tbody></table></div></section>
     <footer><p>Recomputed daily · Latest seven releases + master · <a href="https://github.com/FastLED/dashboard/blob/main/benchmark/Blink.ino">Benchmark sketch</a></p><p>Flash and RAM are fbuild’s board-aware ELF measurements (static RAM; runtime heap and stack excluded). Historical values may change with fbuild updates. Provenance and daily snapshots are saved with the results.</p></footer>
   </main>
   <dialog id="bloat-modal" aria-labelledby="bloat-title"><div class="modal-head"><h2 id="bloat-title">Bloat report</h2><button id="close-modal" aria-label="Close bloat report">×</button></div><p id="bloat-meta"></p><div id="bloat-report"></div></dialog>
-  <script type="module" src="app.js?v=3a7e93347617"></script>
+  <script type="module" src="app.js?v=c852be1a7d4a"></script>
 </body></html>

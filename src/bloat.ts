@@ -9,7 +9,10 @@ element("close-modal").addEventListener("click", () => modal.close());
 modal.addEventListener("click", (event) => {
   if (event.target === modal) modal.close();
 });
-export async function openBloat(row: Success | undefined) {
+export async function openBloat(
+  row: Success | undefined,
+  region: "flash" | "ram",
+) {
   if (!row) return;
   const request = ++reportRequest;
   const platform = platforms.find((p) => p.id === row.board);
@@ -17,7 +20,7 @@ export async function openBloat(row: Success | undefined) {
   const sketchName = { blink: "Blink", spi: "APA102", rainbow: "Rainbow" }[
     row.sketch
   ];
-  title.textContent = `${sketchName} · ${platform?.name} · ${row.version} · fbuild bloat`;
+  title.textContent = `${sketchName} · ${platform?.name} · ${row.version} · ${region === "flash" ? "Flash" : "RAM"} bloat`;
   if (row.version === "master") {
     const date = document.createElement("span");
     date.className = "measurement-date";
@@ -25,7 +28,7 @@ export async function openBloat(row: Success | undefined) {
     title.append(date);
   }
   element("bloat-meta").textContent =
-    `SHA ${row.sha.slice(0, 10)} · fbuild ${row.fbuild} · flash ${bytes(row.flash)} · static RAM ${bytes(row.ram)} · measured ${localTimestamp(row.measured_at)}`;
+    `SHA ${row.sha.slice(0, 10)} · fbuild ${row.fbuild} · ${region === "flash" ? "flash" : "static RAM"} ${bytes(row[region])} · measured ${localTimestamp(row.measured_at)}`;
   const container = element("bloat-report");
   container.textContent = "Loading symbol report…";
   if (!modal.open) modal.showModal();
@@ -48,16 +51,17 @@ export async function openBloat(row: Success | undefined) {
     if (request !== reportRequest) return;
     container.replaceChildren();
     const summary = document.createElement("p");
-    summary.textContent = `Allocated image: ${bytes(report.image_flash)} · attributed flash: ${bytes(report.total_flash)} · attributed RAM: ${bytes(report.total_ram)}. Attributed totals may overlap and differ from board totals.`;
+    summary.textContent =
+      region === "flash"
+        ? `Allocated image: ${bytes(report.image_flash)} · attributed flash: ${bytes(report.total_flash)}. Attributed totals may overlap and differ from board totals.`
+        : `Attributed RAM: ${bytes(report.total_ram)}. Static RAM excludes runtime heap and stack; attributed totals may differ from board totals.`;
     container.append(summary);
     const download = document.createElement("a");
     download.href = row.bloat_report;
     download.textContent = "Download full fbuild bloat JSON ↗";
     container.append(download);
-    for (const [region, title] of [
-      ["flash", "Flash"],
-      ["ram", "RAM"],
-    ] as const) {
+    {
+      const title = region === "flash" ? "Flash" : "RAM";
       const symbols = report.symbols
         .filter((s) => s.size > 0 && s.region === region)
         .sort((a, b) => b.size - a.size);
@@ -69,7 +73,7 @@ export async function openBloat(row: Success | undefined) {
       const note = document.createElement("p");
       note.className = "note";
       note.textContent = symbols.length
-        ? "Largest symbols first. Showing the top five."
+        ? "Largest symbols first. Showing the top 10."
         : "No attributed symbols in this region.";
       section.append(note);
       const table = document.createElement("table");
@@ -88,9 +92,17 @@ export async function openBloat(row: Success | undefined) {
       head.append(tr);
       table.append(head);
       const body = document.createElement("tbody");
-      const renderRows = (expanded: boolean) => {
+      let page = 0;
+      const pageCount =
+        symbols.length <= 10 ? 1 : 1 + Math.ceil((symbols.length - 10) / 50);
+      const renderRows = () => {
         const fragment = document.createDocumentFragment();
-        (expanded ? symbols : symbols.slice(0, 5)).forEach((symbol) => {
+        const start = page === 0 ? 0 : 10 + (page - 1) * 50;
+        const end = Math.min(symbols.length, start + (page === 0 ? 10 : 50));
+        note.textContent = symbols.length
+          ? `Largest symbols first · ${start + 1}–${end} of ${symbols.length.toLocaleString()} · Page ${page + 1} of ${pageCount}`
+          : "No attributed symbols in this region.";
+        symbols.slice(start, end).forEach((symbol) => {
           const tr = document.createElement("tr");
           [
             symbol.region,
@@ -106,27 +118,41 @@ export async function openBloat(row: Success | undefined) {
         });
         body.replaceChildren(fragment);
       };
-      renderRows(false);
+      renderRows();
       table.append(body);
       if (symbols.length) section.append(table);
-      if (symbols.length > 5) {
-        const more = document.createElement("button");
-        more.className = "bloat-more";
-        more.textContent = `More (${(symbols.length - 5).toLocaleString("en-US")} remaining)`;
-        more.setAttribute("aria-expanded", "false");
-        more.setAttribute("aria-controls", table.id);
-        more.addEventListener("click", () => {
-          const expanded = more.getAttribute("aria-expanded") !== "true";
-          renderRows(expanded);
-          more.setAttribute("aria-expanded", String(expanded));
-          more.textContent = expanded
-            ? "Show top five"
-            : `More (${(symbols.length - 5).toLocaleString("en-US")} remaining)`;
-          note.textContent = expanded
-            ? "Largest symbols first. Showing all symbols."
-            : "Largest symbols first. Showing the top five.";
+      if (pageCount > 1) {
+        const navigation = document.createElement("nav");
+        navigation.className = "bloat-pagination";
+        navigation.setAttribute("aria-label", `${title} symbol pages`);
+        const previous = document.createElement("button");
+        const next = document.createElement("button");
+        previous.textContent = "Previous";
+        next.textContent = "Next 50";
+        for (const button of [previous, next])
+          button.setAttribute("aria-controls", table.id);
+        const update = () => {
+          renderRows();
+          previous.disabled = page === 0;
+          next.disabled = page === pageCount - 1;
+          next.textContent =
+            page === pageCount - 1
+              ? "Next"
+              : `Next ${Math.min(50, symbols.length - (page === 0 ? 10 : 10 + page * 50))}`;
+        };
+        previous.addEventListener("click", () => {
+          page--;
+          update();
         });
-        section.append(more);
+        next.addEventListener("click", () => {
+          page++;
+          update();
+        });
+        note.setAttribute("role", "status");
+        note.setAttribute("aria-live", "polite");
+        navigation.append(previous, next);
+        section.append(navigation);
+        update();
       }
       container.append(section);
     }

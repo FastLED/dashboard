@@ -10,6 +10,21 @@ try {
     });
     await page.goto(server.url, { waitUntil: "networkidle" });
     await page.waitForSelector("#blink-flash canvas");
+    const firstSection = await page
+      .locator(".sketch-section")
+      .first()
+      .boundingBox();
+    if (!firstSection) throw new Error("Missing overview section");
+    await page.screenshot({
+      path: "docs/assets/preview.png",
+      fullPage: true,
+      clip: {
+        x: 0,
+        y: 0,
+        width: 1440,
+        height: Math.ceil(firstSection.y + firstSection.height + 20),
+      },
+    });
     await page.screenshot({
       path: "docs/assets/dashboard.png",
       fullPage: true,

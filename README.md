@@ -6,7 +6,9 @@
 
 The image is a noninteractive screenshot of the actual Chart.js overview. Click
 it for the full interactive site: hover points for bytes and click them to open
-the exact platform/version fbuild bloat report.
+the selected Flash or RAM symbol report for that platform/version. Reports show
+the top 10 symbols, then pages of 50. [Site preview image](docs/assets/preview.png)
+is also generated from the actual dashboard for social link previews.
 
 [Benchmark policy and decisions](POLICY.md)
 

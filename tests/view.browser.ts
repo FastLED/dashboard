@@ -122,10 +122,13 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
       await page.waitForSelector(".bloat-section");
       assert.equal(await page.locator("#bloat-report tbody tr").count(), 10);
       const flash = page.locator(".bloat-section").first();
-      await flash.getByRole("button").click();
-      assert.ok((await flash.locator("tbody tr").count()) > 5);
-      await flash.getByRole("button").click();
-      assert.equal(await flash.locator("tbody tr").count(), 5);
+      assert.equal(await page.locator(".bloat-section").count(), 1);
+      assert.equal(await page.locator("#bloat-ram-symbols").count(), 0);
+      await flash.getByRole("button", { name: /^Next/ }).click();
+      assert.ok((await flash.locator("tbody tr").count()) <= 50);
+      assert.ok((await flash.locator("tbody tr").count()) > 0);
+      await flash.getByRole("button", { name: "Previous" }).click();
+      assert.equal(await flash.locator("tbody tr").count(), 10);
       await page.keyboard.press("Escape");
     }
     for (const metric of ["flash", "ram"])
@@ -402,6 +405,77 @@ test("sketch sections isolate controls and keyboard reports", async () => {
       );
       await page.locator("#close-modal").click();
     }
+  } finally {
+    await browser.close();
+    await server.close();
+  }
+});
+
+test("metric reports stay isolated and paginate in batches of 50", async () => {
+  const server = await preview();
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage({
+      viewport: { width: 1440, height: 900 },
+    });
+    await page.goto(server.url, { waitUntil: "networkidle" });
+    await page.locator("#blink-platforms input").first().uncheck();
+    await page.locator("#blink-ram-canvas").focus();
+    await page.keyboard.press("Enter");
+    await page.waitForSelector("#bloat-ram-symbols");
+    assert.equal(await page.locator("#bloat-flash-symbols").count(), 0);
+    assert.ok(
+      (await page.locator("#bloat-ram-symbols tbody tr").count()) <= 10,
+    );
+    assert.ok(
+      !(await page.locator("#bloat-meta").textContent())?.includes("flash"),
+    );
+    await page.locator("#close-modal").click();
+    await page.locator("#blink-flash-canvas").focus();
+    await page.keyboard.press("Enter");
+    await page.waitForSelector("#bloat-flash-symbols");
+    assert.equal(await page.locator("#bloat-ram-symbols").count(), 0);
+    const previous = page.getByRole("button", {
+      name: "Previous",
+      exact: true,
+    });
+    const next = page.getByRole("button", { name: /^Next/ });
+    assert.equal(await previous.isDisabled(), true);
+    const first = await page
+      .locator("#bloat-flash-symbols tbody")
+      .textContent();
+    await next.click();
+    assert.equal(
+      await page.locator("#bloat-flash-symbols tbody tr").count(),
+      50,
+    );
+    assert.match(
+      (await page.locator(".bloat-section .note").textContent()) ?? "",
+      /11–60/,
+    );
+    const second = await page
+      .locator("#bloat-flash-symbols tbody")
+      .textContent();
+    await next.click();
+    assert.equal(
+      await page.locator("#bloat-flash-symbols tbody tr").count(),
+      50,
+    );
+    assert.match(
+      (await page.locator(".bloat-section .note").textContent()) ?? "",
+      /61–110/,
+    );
+    await previous.click();
+    assert.equal(
+      await page.locator("#bloat-flash-symbols tbody").textContent(),
+      second,
+    );
+    await previous.click();
+    assert.equal(
+      await page.locator("#bloat-flash-symbols tbody").textContent(),
+      first,
+    );
+    assert.equal(await previous.isDisabled(), true);
   } finally {
     await browser.close();
     await server.close();

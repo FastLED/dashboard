@@ -147,6 +147,7 @@ function mountSection(root: HTMLElement, sketch: Sketch, data: Dashboard) {
             const p = elements[0];
             openBloat(
               (chart.data.datasets[p.datasetIndex] as RowDataset).rows[p.index],
+              metric,
             );
           }
         },
@@ -236,7 +237,7 @@ function mountSection(root: HTMLElement, sketch: Sketch, data: Dashboard) {
         );
       } else if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
-        void openBloat(rows[selected]);
+        void openBloat(rows[selected], metric);
       }
     });
     canvas.addEventListener("pointermove", (event) => {

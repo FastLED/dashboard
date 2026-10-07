@@ -19,16 +19,18 @@
   changes without a destination-frame flash. Use accessible, polished segmented
   selectors with a sliding highlight and independent accents for each chart.
 - Every plot point supports mouse hover with exact bytes/platform/version.
-  Clicking a point opens an accessible popup with the full **fbuild bloat**
+  Clicking a point opens an accessible popup for that graph’s region only
+  (Flash or RAM), backed by the full **fbuild bloat**
   symbol report for that exact platform, FastLED revision and measurement run.
   Keyboard users can focus a chart, navigate its points with arrow keys and
   open the selected report with Enter or Space.
-- Split each popup into Flash and RAM sections, independently sorted by symbol
-  size. Show the top five in each section, with a separate More button to reveal
-  all remaining symbols and an option to collapse back to the top five.
+- Sort the selected region’s symbols by size. Show the top 10 on the first page,
+  then 50 per subsequent page, with Previous/Next controls and visible ranges.
+  Render only the current page; never expand hundreds of rows at once.
 - Show a prominent live-site link in the README. Embed a real overview
   screenshot as a noninteractive PNG, linked to the interactive Pages site.
-  Regenerate that screenshot whenever the daily data is published.
+  Regenerate that screenshot whenever the daily data is published. Also generate
+  an actual-site preview PNG for Open Graph and social link previews.
 - Every master label must include a secondary measurement-date label converted
   to the viewer's local time zone and locale, including chart axes
   and report headings. Store timestamps in UTC and convert on display.

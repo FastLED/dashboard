@@ -22,8 +22,9 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
     const errors: string[] = [];
     page.on("pageerror", (error) => errors.push(error.message));
     await page.goto(server.url, { waitUntil: "networkidle" });
-    await page.waitForSelector("#results tbody button");
-    assert.equal(await page.locator("#results tbody tr").count(), 32);
+    await page.waitForSelector("#blink-flash canvas");
+    assert.equal(await page.locator(".sketch-section").count(), 3);
+    assert.equal(await page.locator("#results").count(), 0);
     await page.evaluate(async () => {
       const script = document.querySelector<HTMLScriptElement>(
         "script[type=module]",
@@ -52,11 +53,15 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
       }
     });
     for (const log of [true, false, true]) {
-      for (const metric of ["flash", "ram"])
-        await page
-          .locator(`#${metric}-scale label`)
-          .filter({ hasText: log ? "Logarithmic" : "Linear" })
-          .click();
+      await page.evaluate((log) => {
+        for (const metric of ["flash", "ram"]) {
+          const input = document.querySelector<HTMLInputElement>(
+            `input[name="blink-${metric}-scale"][value="${log ? "logarithmic" : "linear"}"]`,
+          )!;
+          input.checked = true;
+          input.dispatchEvent(new Event("change", { bubbles: true }));
+        }
+      }, log);
       await page.waitForTimeout(180);
       const first = await page.evaluate(() =>
         Object.values(window.dashboardCharts).map(
@@ -104,12 +109,16 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
       new Set(["12px sans-serif"]),
     );
     for (const platform of ["Uno AVR", "ESP32-S3", "ESP32 Dev", "Teensy 4.1"]) {
-      await page
-        .locator("#results tbody tr")
-        .filter({ hasText: platform })
-        .first()
-        .getByRole("button")
-        .click();
+      const location = await page.evaluate((platform) => {
+        const chart = window.dashboardCharts.flash!;
+        const dataset = chart.data.datasets.findIndex(
+          (d) => d.label === platform,
+        );
+        const point = chart.getDatasetMeta(dataset).data[0];
+        const rect = chart.canvas.getBoundingClientRect();
+        return { x: rect.left + point.x, y: rect.top + point.y };
+      }, platform);
+      await page.mouse.click(location.x, location.y);
       await page.waitForSelector(".bloat-section");
       assert.equal(await page.locator("#bloat-report tbody tr").count(), 10);
       const flash = page.locator(".bloat-section").first();
@@ -121,13 +130,13 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
     }
     for (const metric of ["flash", "ram"])
       await page
-        .locator(`#${metric}-scale label`)
+        .locator(`#blink-${metric}-scale label`)
         .filter({ hasText: "Linear" })
         .click();
     await page.waitForTimeout(150);
     for (const metric of ["flash", "ram"])
       await page
-        .locator(`#${metric}-scale label`)
+        .locator(`#blink-${metric}-scale label`)
         .filter({ hasText: "Logarithmic" })
         .click();
     await page.waitForTimeout(1100);
@@ -145,11 +154,11 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
         () => document.documentElement.scrollWidth <= innerWidth,
       ),
     );
-    for (const checkbox of await page.locator("#platforms input").all())
+    for (const checkbox of await page.locator("#blink-platforms input").all())
       await checkbox.uncheck();
     for (const metric of ["flash", "ram"])
       await page
-        .locator(`#${metric}-scale label`)
+        .locator(`#blink-${metric}-scale label`)
         .filter({ hasText: "Linear" })
         .click();
     await page.waitForTimeout(1100);
@@ -166,7 +175,7 @@ test("first painted scale frame preserves points and hides entering ticks", asyn
   try {
     const page = await browser.newPage();
     await page.goto(server.url, { waitUntil: "networkidle" });
-    await page.waitForSelector("#results tbody button");
+    await page.waitForSelector("#blink-flash canvas");
     for (const log of [true, false]) {
       const states = await page.evaluate(async (logarithmic) => {
         const script = document.querySelector<HTMLScriptElement>(
@@ -204,7 +213,7 @@ test("first painted scale frame preserves points and hides entering ticks", asyn
         });
         for (const metric of ["flash", "ram"]) {
           const toggle = document.querySelector<HTMLInputElement>(
-            `input[name="${metric}-scale"][value="${logarithmic ? "logarithmic" : "linear"}"]`,
+            `input[name="blink-${metric}-scale"][value="${logarithmic ? "logarithmic" : "linear"}"]`,
           )!;
           toggle.checked = true;
           toggle.dispatchEvent(new Event("change", { bubbles: true }));
@@ -260,7 +269,7 @@ test("Auto hysteresis, independent controls, pins and filter persistence", async
       viewport: { width: 1440, height: 900 },
     });
     await page.goto(server.url, { waitUntil: "networkidle" });
-    await page.waitForSelector("#results tbody button");
+    await page.waitForSelector("#blink-flash canvas");
     await page.evaluate(async () => {
       const module: { charts: Window["dashboardCharts"] } = await import(
         document.querySelector<HTMLScriptElement>("script[type=module]")!.src
@@ -295,7 +304,7 @@ test("Auto hysteresis, independent controls, pins and filter persistence", async
       await page.mouse.move(target.x, target.y);
     };
     assert.deepEqual(await actual(), { flash: "linear", ram: "linear" });
-    assert.equal(await page.locator('input[value="auto"]:checked').count(), 2);
+    assert.equal(await page.locator('input[value="auto"]:checked').count(), 6);
     await move("ram", 0.96);
     await page.waitForTimeout(1100);
     assert.deepEqual(await actual(), { flash: "linear", ram: "logarithmic" });
@@ -307,29 +316,32 @@ test("Auto hysteresis, independent controls, pins and filter persistence", async
     await page.waitForTimeout(1100);
     assert.equal((await actual()).ram, "linear");
     await page
-      .locator("#ram-scale label")
+      .locator("#blink-ram-scale label")
       .filter({ hasText: "Linear" })
       .click();
     await move("ram", 0.98);
     assert.equal((await actual()).ram, "linear");
     await page
-      .locator("#ram-scale label")
+      .locator("#blink-ram-scale label")
       .filter({ hasText: "Logarithmic" })
       .click();
     await page.waitForTimeout(1100);
     await move("ram", 0.02);
     assert.equal((await actual()).ram, "logarithmic");
     await page
-      .locator("#flash-scale label")
+      .locator("#blink-flash-scale label")
       .filter({ hasText: "Logarithmic" })
       .click();
     await page.waitForTimeout(1100);
-    await page.locator("#platforms input").first().uncheck();
+    await page.locator("#blink-platforms input").first().uncheck();
     assert.deepEqual(await actual(), {
       flash: "logarithmic",
       ram: "logarithmic",
     });
-    await page.locator("#ram-scale label").filter({ hasText: "Auto" }).click();
+    await page
+      .locator("#blink-ram-scale label")
+      .filter({ hasText: "Auto" })
+      .click();
     await move("ram", 0.04);
     await page.waitForTimeout(1100);
     assert.equal((await actual()).ram, "linear");
@@ -340,6 +352,56 @@ test("Auto hysteresis, independent controls, pins and filter persistence", async
         () => document.documentElement.scrollWidth <= innerWidth,
       ),
     );
+  } finally {
+    await browser.close();
+    await server.close();
+  }
+});
+
+test("sketch sections isolate controls and keyboard reports", async () => {
+  const server = await preview();
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage({
+      viewport: { width: 1440, height: 900 },
+    });
+    await page.goto(server.url, { waitUntil: "networkidle" });
+    assert.equal(await page.locator("canvas").count(), 6);
+    await page
+      .locator('#spi-flash-scale input[value="logarithmic"]')
+      .check({ force: true });
+    assert.equal(
+      await page.locator("#spi-flash-scale-status").textContent(),
+      "Pinned · Logarithmic",
+    );
+    for (const id of [
+      "blink-flash",
+      "blink-ram",
+      "spi-ram",
+      "rainbow-flash",
+      "rainbow-ram",
+    ])
+      assert.equal(
+        await page.locator(`#${id}-scale-status`).textContent(),
+        "Auto · Linear",
+      );
+    for (const [sketch, title] of [
+      ["blink", "Blink"],
+      ["spi", "APA102"],
+      ["rainbow", "Rainbow"],
+    ]) {
+      const canvas = page.locator(`#${sketch}-flash-canvas`);
+      await canvas.focus();
+      await page.keyboard.press("ArrowRight");
+      await page.keyboard.press("Enter");
+      await page.waitForSelector(".bloat-section");
+      assert.ok(
+        (await page.locator("#bloat-title").textContent())?.startsWith(
+          `${title} · Uno AVR`,
+        ),
+      );
+      await page.locator("#close-modal").click();
+    }
   } finally {
     await browser.close();
     await server.close();

@@ -23,6 +23,8 @@ import { parse } from "shell-quote";
 import { z } from "zod";
 import {
   boardSchema,
+  sketchSchema,
+  type Sketch,
   dashboardSchema,
   reportSchema,
   successSchema,
@@ -64,7 +66,7 @@ function command(args: string[], cwd = ROOT): string {
     });
   } catch (error) {
     throw new Error(
-      `Command failed: ${args.join(" ")}\n${String(error).slice(-8000)}`,
+      `Command failed: ${args.join(" ")}\n${error instanceof Error && "stderr" in error ? String(error.stderr).slice(-8000) : String(error).slice(-8000)}`,
       { cause: error },
     );
   }
@@ -106,12 +108,18 @@ function files(directory: string): string[] {
 }
 function measure(
   source: string,
+  workload: Sketch,
   board: Board,
   version: string,
   sha: string,
   fbuild: string,
 ): Success {
-  const sketch = readFileSync(join(ROOT, "benchmark/Blink.ino")),
+  const sketch = readFileSync(
+      join(
+        ROOT,
+        `benchmark/${{ blink: "Blink", spi: "SPI", rainbow: "Rainbow" }[workload]}.ino`,
+      ),
+    ),
     config = readFileSync(join(ROOT, `benchmark/config/${board}.ini`));
   const protocol = hash(sketch, config, fbuild, "stub-v1-delay0");
   const project = join(
@@ -218,6 +226,7 @@ function measure(
     digest.update(content);
   }
   return successSchema.parse({
+    sketch: workload,
     board,
     version,
     sha,
@@ -250,18 +259,25 @@ function measure(
 export function main(args = process.argv.slice(2)): void {
   let source = join(ROOT, ".cache/FastLED"),
     boards: Board[] = [...BOARDS],
+    sketches: Sketch[] = [...sketchSchema.options],
     versions: string[] | undefined,
     noFetch = false;
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
     if (arg === "--no-fetch") noFetch = true;
     else if (arg === "--source") source = resolve(args[++i]);
-    else if (arg === "--boards" || arg === "--versions") {
+    else if (
+      arg === "--boards" ||
+      arg === "--versions" ||
+      arg === "--sketches"
+    ) {
       const values: string[] = [];
       while (args[i + 1] && !args[i + 1].startsWith("--"))
         values.push(args[++i]);
       if (!values.length) throw new Error(`Values required for ${arg}`);
       if (arg === "--boards") boards = values.map((v) => boardSchema.parse(v));
+      else if (arg === "--sketches")
+        sketches = values.map((v) => sketchSchema.parse(v));
       else versions = values;
     } else throw new Error(`Unknown option ${arg}`);
   }
@@ -310,7 +326,7 @@ export function main(args = process.argv.slice(2)): void {
   let data: Dashboard = existsSync(path)
     ? dashboardSchema.parse(json(path))
     : {
-        schema: 1,
+        schema: 2,
         results: [],
         versions: horizon,
         fbuild,
@@ -319,49 +335,53 @@ export function main(args = process.argv.slice(2)): void {
   const results = new Map(
     data.results
       .filter((r) => horizon.includes(r.version))
-      .map((r) => [`${r.board}/${r.version}`, r]),
+      .map((r) => [`${r.sketch}/${r.board}/${r.version}`, r]),
   );
   let failures = 0;
-  for (const board of boards)
-    for (const version of versions) {
-      const sha = shas.get(version)!;
-      console.log(`Benchmark ${board} ${version} ${sha.slice(0, 10)}`);
-      let row: Measurement;
-      try {
-        row = measure(source, board, version, sha, fbuild);
-      } catch (error) {
-        failures++;
-        row = {
-          board,
-          version,
-          sha,
-          status: "error",
-          flash: null,
-          ram: null,
-          measured_at: new Date().toISOString(),
-          error: error instanceof Error ? error.message : String(error),
-        };
-        console.error(row.error);
+  for (const workload of sketches)
+    for (const board of boards)
+      for (const version of versions) {
+        const sha = shas.get(version)!;
+        console.log(
+          `Benchmark ${workload} ${board} ${version} ${sha.slice(0, 10)}`,
+        );
+        let row: Measurement;
+        try {
+          row = measure(source, workload, board, version, sha, fbuild);
+        } catch (error) {
+          failures++;
+          row = {
+            sketch: workload,
+            board,
+            version,
+            sha,
+            status: "error",
+            flash: null,
+            ram: null,
+            measured_at: new Date().toISOString(),
+            error: error instanceof Error ? error.message : String(error),
+          };
+          console.error(row.error);
+        }
+        results.set(`${workload}/${board}/${version}`, row);
+        data = dashboardSchema.parse({
+          ...data,
+          updated_at: new Date().toISOString(),
+          versions: horizon,
+          fbuild,
+          results: [...results.values()],
+        });
+        saveJson(path, data);
+        saveJson(
+          join(
+            ROOT,
+            "docs/data/history",
+            new Date().toISOString().slice(0, 10) + ".json",
+          ),
+          data,
+        );
+        console.log(`  ${row.status}: flash=${row.flash} RAM=${row.ram}`);
       }
-      results.set(`${board}/${version}`, row);
-      data = dashboardSchema.parse({
-        ...data,
-        updated_at: new Date().toISOString(),
-        versions: horizon,
-        fbuild,
-        results: [...results.values()],
-      });
-      saveJson(path, data);
-      saveJson(
-        join(
-          ROOT,
-          "docs/data/history",
-          new Date().toISOString().slice(0, 10) + ".json",
-        ),
-        data,
-      );
-      console.log(`  ${row.status}: flash=${row.flash} RAM=${row.ram}`);
-    }
   if (failures)
     throw new Error(
       `${failures} benchmark rows failed; explicit gaps published`,

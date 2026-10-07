@@ -9,8 +9,11 @@ try {
       deviceScaleFactor: 1,
     });
     await page.goto(server.url, { waitUntil: "networkidle" });
-    await page.waitForSelector("#results tbody button");
-    await page.screenshot({ path: "docs/assets/dashboard.png" });
+    await page.waitForSelector("#blink-flash canvas");
+    await page.screenshot({
+      path: "docs/assets/dashboard.png",
+      fullPage: true,
+    });
   } finally {
     await browser.close();
   }

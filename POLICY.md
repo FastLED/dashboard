@@ -25,8 +25,9 @@
   Keyboard users can focus a chart, navigate its points with arrow keys and
   open the selected report with Enter or Space.
 - Sort the selected region’s symbols by size. Show the top 10 on the first page,
-  then 50 per subsequent page, with Previous/Next controls and visible ranges.
-  Render only the current page; never expand hundreds of rows at once.
+  then append up to 50 more per “Load more” click. Preserve existing rows and
+  scroll position so users can keep scrolling through accumulated symbols.
+  Show loaded/total counts and disable the button when all symbols are loaded.
 - Show a prominent live-site link in the README. Embed a real overview
   screenshot as a noninteractive PNG, linked to the interactive Pages site.
   Regenerate that screenshot whenever the daily data is published. Also generate

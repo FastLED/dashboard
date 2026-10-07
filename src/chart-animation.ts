@@ -11,6 +11,7 @@ const axisTicks = (chart: MotionChart): Tick[] =>
     .map((tick) => ({
       value: tick.value,
       y: chart.scales.y.getPixelForValue(tick.value),
+      opacity: 1,
     }));
 export const scaleTransition: Plugin<"line"> = {
   id: "scaleTransition",
@@ -45,7 +46,8 @@ export const scaleTransition: Plugin<"line"> = {
     ctx.textAlign = "right";
     ctx.textBaseline = "middle";
     for (const tick of ticks) {
-      ctx.globalAlpha = tick.opacity ?? 1;
+      if (tick.opacity <= 0) continue;
+      ctx.globalAlpha = tick.opacity;
       ctx.strokeStyle = "#263143";
       ctx.beginPath();
       ctx.moveTo(chartArea.left, tick.y);
@@ -96,7 +98,16 @@ export function animateScale(
         : null,
     );
   }
-  chart.update("none");
+  // update('none') normally renders the destination immediately. Compute its
+  // layout without painting, then publish the complete zero-progress frame.
+  // This prevents a destination-frame flash before entering ticks are hidden.
+  const render = chart.render;
+  chart.render = () => {};
+  try {
+    chart.update("none");
+  } finally {
+    chart.render = render;
+  }
   const toTicks = axisTicks(chart);
   const newScale = chart.scales.y;
   const toPosition = (value: number) => newScale.getPixelForValue(value);

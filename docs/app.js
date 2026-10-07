@@ -159,6 +159,8 @@ document.getElementById('log').addEventListener('change', () => {
   for (const [metric, chart] of Object.entries(charts)) {
     cancelAnimationFrame(chart.$scaleFrame);
     const fromTicks = chart.$scaleTransition?.ticks || axisTicks(chart);
+    const oldScale = chart.scales.y;
+    const fromPosition = chart.$scaleTransition?.positionForValue || (value => oldScale.getPixelForValue(value));
     const fromPoints = chart.data.datasets.map((dataset, index) => chart.getDatasetMeta(index).data.map(point => ({ x: point.x, y: point.y })));
     chart.$scaleTransition = { ticks: fromTicks };
     chart.options.animation = false;
@@ -169,18 +171,29 @@ document.getElementById('log').addEventListener('change', () => {
     }
     chart.update('none');
     const toTicks = axisTicks(chart);
+    const newScale = chart.scales.y;
+    const toPosition = value => newScale.getPixelForValue(value);
     const toPoints = chart.data.datasets.map((dataset, index) => chart.getDatasetMeta(index).data.map(point => ({ x: point.x, y: point.y })));
-    const count = Math.max(fromTicks.length, toTicks.length);
+    // Match by numeric value: ticks move with their unchanged labels. New
+    // ticks enter at their old-scale positions; obsolete ticks move and exit.
+    const sourceTicks = new Map(fromTicks.map(tick => [tick.value, tick]));
+    const targetTicks = new Map(toTicks.map(tick => [tick.value, tick]));
+    const tickValues = [...new Set([...sourceTicks.keys(), ...targetTicks.keys()])];
+    const clampPosition = pixel => Number.isFinite(pixel) ? Math.max(chart.chartArea.top, Math.min(chart.chartArea.bottom, pixel)) : chart.chartArea.bottom;
+    const tickMotion = tickValues.map(value => ({
+      value,
+      fromY: sourceTicks.get(value)?.y ?? clampPosition(fromPosition(value)),
+      toY: targetTicks.get(value)?.y ?? clampPosition(toPosition(value)),
+      fromOpacity: sourceTicks.get(value)?.opacity ?? (sourceTicks.has(value) ? 1 : 0),
+      toOpacity: targetTicks.has(value) ? 1 : 0,
+    }));
     const started = performance.now();
     const interpolate = (a, b, progress) => a + (b - a) * progress;
     const animate = now => {
       const elapsed = Math.min(1, (now - started) / 1000);
       const progress = elapsed < 0.5 ? 4 * elapsed ** 3 : 1 - (-2 * elapsed + 2) ** 3 / 2;
-      chart.$scaleTransition.ticks = Array.from({ length: count }, (_, index) => {
-        const from = fromTicks[Math.min(index, fromTicks.length - 1)];
-        const to = toTicks[Math.min(index, toTicks.length - 1)];
-        return { value: interpolate(from.value, to.value, progress), y: interpolate(from.y, to.y, progress), opacity: interpolate(index < fromTicks.length ? 1 : 0, index < toTicks.length ? 1 : 0, progress) };
-      });
+      chart.$scaleTransition.positionForValue = value => interpolate(clampPosition(fromPosition(value)), clampPosition(toPosition(value)), progress);
+      chart.$scaleTransition.ticks = tickMotion.map(tick => ({ value: tick.value, y: interpolate(tick.fromY, tick.toY, progress), opacity: interpolate(tick.fromOpacity, tick.toOpacity, progress) }));
       chart.data.datasets.forEach((dataset, index) => {
         const meta = chart.getDatasetMeta(index);
         meta.dataset._path = undefined;

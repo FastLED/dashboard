@@ -1,9 +1,18 @@
+import { referencePopover } from "./reference-popover.ts";
+import {
+  auditUrl,
+  auditMatches,
+  referenceAuditSchema,
+  referenceState,
+  type ReferenceAudit,
+} from "./references.ts";
 import { reportSchema, type Success, type BloatReport } from "./models.ts";
 import { element } from "./dom.ts";
 import { platforms } from "./platforms.ts";
 import { bytes, localDate, localTimestamp } from "./format.ts";
 const modal = element<HTMLDialogElement>("bloat-modal");
 let reportRequest = 0;
+let referenceView: ReturnType<typeof referencePopover> | null = null;
 const reportCache = new Map<string, Promise<BloatReport>>();
 element("close-modal").addEventListener("click", () => modal.close());
 modal.addEventListener("click", (event) => {
@@ -15,6 +24,8 @@ export async function openBloat(
 ) {
   if (!row) return;
   const request = ++reportRequest;
+  referenceView?.dispose();
+  referenceView = null;
   const platform = platforms.find((p) => p.id === row.board);
   const title = element("bloat-title");
   const sketchName = { blink: "Blink", spi: "APA102", rainbow: "Rainbow" }[
@@ -49,6 +60,22 @@ export async function openBloat(
     }
     const report = await reportCache.get(row.bloat_report)!;
     if (request !== reportRequest) return;
+    let audit: ReferenceAudit | null = null;
+    let auditError = "";
+    try {
+      const response = await fetch(auditUrl(row.bloat_report));
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const parsed = referenceAuditSchema.parse(await response.json());
+      if (!auditMatches(parsed, row))
+        throw new Error("Reference audit provenance mismatch");
+      audit = parsed;
+    } catch (error) {
+      auditError = (
+        error instanceof Error ? error.message : String(error)
+      ).slice(0, 200);
+    }
+    if (request !== reportRequest) return;
+    referenceView = referencePopover(modal, report, audit);
     container.replaceChildren();
     const summary = document.createElement("p");
     summary.textContent =
@@ -60,6 +87,16 @@ export async function openBloat(
     download.href = row.bloat_report;
     download.textContent = "Download full fbuild bloat JSON ↗";
     container.append(download);
+    const referenceNote = document.createElement("p");
+    referenceNote.className = "note";
+    const unexplained = report.symbols.filter(
+      (symbol) =>
+        symbol.region === region &&
+        symbol.size > 0 &&
+        referenceState(symbol, audit).includes("retention unexplained"),
+    ).length;
+    referenceNote.textContent = `Hover, focus or click a symbol for direct incoming references.${audit?.disassembly === "analyzed" ? ` ${unexplained.toLocaleString()} ${region === "flash" ? "Flash" : "RAM"} rows have unexplained retention.` : ` Reference analysis unavailable: ${auditError || audit?.warnings.join("; ") || "no disassembly provenance"}`}`;
+    container.append(referenceNote);
     {
       const title = region === "flash" ? "Flash" : "RAM";
       const symbols = report.symbols
@@ -107,9 +144,11 @@ export async function openBloat(
             symbol.size.toLocaleString("en-US"),
             symbol.demangled,
             symbol.object || "—",
-          ].forEach((text) => {
+          ].forEach((text, column) => {
             const td = document.createElement("td");
-            td.textContent = text;
+            if (column === 2 && referenceView)
+              td.append(referenceView.button(symbol));
+            else td.textContent = text;
             tr.append(td);
           });
           fragment.append(tr);

@@ -4846,15 +4846,15 @@
       "bytes": 292
     },
     {
-      "archive": null,
-      "object": "ccl5V284.ltrans0.ltrans.o",
-      "output_section": ".text.progmem",
-      "bytes": 256
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-malignr.o",
       "output_section": ".text.itcm",
+      "bytes": 256
+    },
+    {
+      "archive": null,
+      "object": "ccl5V284.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
       "bytes": 256
     },
     {
@@ -4864,14 +4864,14 @@
       "bytes": 136
     },
     {
-      "archive": null,
-      "object": "crtbegin.o",
+      "archive": "libc.a",
+      "object": "libc_a-init.o",
       "output_section": ".text.itcm",
       "bytes": 72
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-init.o",
+      "archive": null,
+      "object": "crtbegin.o",
       "output_section": ".text.itcm",
       "bytes": 72
     },
@@ -4907,6 +4907,12 @@
     },
     {
       "archive": "libc.a",
+      "object": "libc_a-mlock.o",
+      "output_section": ".text.itcm",
+      "bytes": 24
+    },
+    {
+      "archive": "libc.a",
       "object": "libc_a-aligned_alloc.o",
       "output_section": ".text.itcm",
       "bytes": 24
@@ -4918,16 +4924,16 @@
       "bytes": 24
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-mlock.o",
-      "output_section": ".text.itcm",
-      "bytes": 24
-    },
-    {
       "archive": null,
       "object": "linker stubs",
       "output_section": ".text.itcm",
       "bytes": 16
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-cxa_atexit.o",
+      "output_section": ".text.itcm",
+      "bytes": 12
     },
     {
       "archive": "libc.a",
@@ -4943,9 +4949,9 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-cxa_atexit.o",
+      "object": "libc_a-lock.o",
       "output_section": ".text.itcm",
-      "bytes": 12
+      "bytes": 8
     },
     {
       "archive": null,
@@ -4955,9 +4961,9 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-lock.o",
-      "output_section": ".text.itcm",
-      "bytes": 8
+      "object": "libc_a-reent.o",
+      "output_section": ".bss",
+      "bytes": 4
     },
     {
       "archive": "libc.a",
@@ -4966,15 +4972,15 @@
       "bytes": 4
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-reent.o",
-      "output_section": ".bss",
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".data",
       "bytes": 4
     },
     {
       "archive": null,
       "object": "crtbegin.o",
-      "output_section": ".data",
+      "output_section": ".text.code",
       "bytes": 4
     },
     {
@@ -4987,12 +4993,6 @@
       "archive": "libc.a",
       "object": "libc_a-__call_atexit.o",
       "output_section": ".bss",
-      "bytes": 4
-    },
-    {
-      "archive": null,
-      "object": "crtbegin.o",
-      "output_section": ".text.code",
       "bytes": 4
     },
     {

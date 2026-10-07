@@ -13052,13 +13052,13 @@
     },
     {
       "archive": "libc.a",
-      "object": "libm_a-s_frexp.o",
+      "object": "libc_a-callocr.o",
       "output_section": ".text.itcm",
       "bytes": 120
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-callocr.o",
+      "object": "libm_a-s_frexp.o",
       "output_section": ".text.itcm",
       "bytes": 120
     },
@@ -13111,8 +13111,8 @@
       "bytes": 76
     },
     {
-      "archive": null,
-      "object": "crtbegin.o",
+      "archive": "libc.a",
+      "object": "libc_a-init.o",
       "output_section": ".text.itcm",
       "bytes": 72
     },
@@ -13123,8 +13123,8 @@
       "bytes": 72
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-init.o",
+      "archive": null,
+      "object": "crtbegin.o",
       "output_section": ".text.itcm",
       "bytes": 72
     },
@@ -13135,15 +13135,15 @@
       "bytes": 68
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-assert.o",
-      "output_section": ".text.itcm",
-      "bytes": 64
-    },
-    {
       "archive": null,
       "object": "linker stubs",
       "output_section": ".text.code",
+      "bytes": 64
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-assert.o",
+      "output_section": ".text.itcm",
       "bytes": 64
     },
     {
@@ -13166,20 +13166,14 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-mbtowc_r.o",
-      "output_section": ".text.itcm",
-      "bytes": 44
-    },
-    {
-      "archive": "libc.a",
       "object": "libc_a-readr.o",
       "output_section": ".text.itcm",
       "bytes": 44
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-fstatr.o",
-      "output_section": ".text.itcm",
+      "archive": null,
+      "object": "ccOZKYlZ.ltrans0.ltrans.o",
+      "output_section": ".text.headers",
       "bytes": 44
     },
     {
@@ -13195,16 +13189,16 @@
       "bytes": 44
     },
     {
-      "archive": null,
-      "object": "ccOZKYlZ.ltrans0.ltrans.o",
-      "output_section": ".text.headers",
+      "archive": "libc.a",
+      "object": "libc_a-mbtowc_r.o",
+      "output_section": ".text.itcm",
       "bytes": 44
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-fiprintf.o",
+      "object": "libc_a-fstatr.o",
       "output_section": ".text.itcm",
-      "bytes": 40
+      "bytes": 44
     },
     {
       "archive": "libgcc.a",
@@ -13214,13 +13208,19 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-isattyr.o",
+      "object": "libc_a-fiprintf.o",
+      "output_section": ".text.itcm",
+      "bytes": 40
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-closer.o",
       "output_section": ".text.itcm",
       "bytes": 36
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-closer.o",
+      "object": "libc_a-isattyr.o",
       "output_section": ".text.itcm",
       "bytes": 36
     },
@@ -13243,9 +13243,9 @@
       "bytes": 28
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-mlock.o",
-      "output_section": ".text.itcm",
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".bss",
       "bytes": 24
     },
     {
@@ -13261,14 +13261,14 @@
       "bytes": 24
     },
     {
-      "archive": null,
-      "object": "crtbegin.o",
-      "output_section": ".bss",
+      "archive": "libc.a",
+      "object": "libc_a-aligned_alloc.o",
+      "output_section": ".text.itcm",
       "bytes": 24
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-aligned_alloc.o",
+      "object": "libc_a-mlock.o",
       "output_section": ".text.itcm",
       "bytes": 24
     },
@@ -13286,6 +13286,18 @@
     },
     {
       "archive": "libc.a",
+      "object": "libc_a-locale.o",
+      "output_section": ".text.itcm",
+      "bytes": 12
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-findfp.o",
+      "output_section": ".data",
+      "bytes": 12
+    },
+    {
+      "archive": "libc.a",
       "object": "libc_a-errno.o",
       "output_section": ".text.itcm",
       "bytes": 12
@@ -13298,19 +13310,7 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-findfp.o",
-      "output_section": ".data",
-      "bytes": 12
-    },
-    {
-      "archive": "libc.a",
       "object": "libc_a-cxa_atexit.o",
-      "output_section": ".text.itcm",
-      "bytes": 12
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-locale.o",
       "output_section": ".text.itcm",
       "bytes": 12
     },
@@ -13327,6 +13327,24 @@
       "bytes": 8
     },
     {
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".text.code",
+      "bytes": 4
+    },
+    {
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".data",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".data",
+      "bytes": 4
+    },
+    {
       "archive": "libc.a",
       "object": "libc_a-__call_atexit.o",
       "output_section": ".bss",
@@ -13334,8 +13352,14 @@
     },
     {
       "archive": null,
-      "object": "ccOZKYlZ.ltrans1.ltrans.o",
+      "object": "crti.o",
       "output_section": ".text.code",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-reent.o",
+      "output_section": ".bss",
       "bytes": 4
     },
     {
@@ -13346,32 +13370,8 @@
     },
     {
       "archive": null,
-      "object": "crtbegin.o",
+      "object": "ccOZKYlZ.ltrans1.ltrans.o",
       "output_section": ".text.code",
-      "bytes": 4
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-__call_atexit.o",
-      "output_section": ".data",
-      "bytes": 4
-    },
-    {
-      "archive": null,
-      "object": "crti.o",
-      "output_section": ".text.code",
-      "bytes": 4
-    },
-    {
-      "archive": null,
-      "object": "crtbegin.o",
-      "output_section": ".data",
-      "bytes": 4
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-reent.o",
-      "output_section": ".bss",
       "bytes": 4
     },
     {

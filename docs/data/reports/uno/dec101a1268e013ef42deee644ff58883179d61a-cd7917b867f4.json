@@ -926,6 +926,12 @@
     },
     {
       "archive": "libgcc.a",
+      "object": "_copy_data.o",
+      "output_section": ".text",
+      "bytes": 22
+    },
+    {
+      "archive": "libgcc.a",
       "object": "_muluhisi3.o",
       "output_section": ".text",
       "bytes": 22
@@ -933,12 +939,6 @@
     {
       "archive": "libgcc.a",
       "object": "_ctors.o",
-      "output_section": ".text",
-      "bytes": 22
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "_copy_data.o",
       "output_section": ".text",
       "bytes": 22
     },

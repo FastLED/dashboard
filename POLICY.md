@@ -139,3 +139,23 @@
   every measurement. Existing schema 1 snapshots are migrated explicitly as
   Blink without changing their measurements or report provenance. Collection
   keys include sketch/platform/version; focused runs retain other workloads.
+
+## Symbol reference investigation
+
+- Hover, focus or click any Flash/RAM symbol to inspect level-one incoming
+  symbol references and object-file referencers separately. Support keyboard
+  dismissal and touch activation; retain unresolved names visibly.
+- Collect with explicit cross-toolchain nm/c++filt paths. Verify objdump works
+  on the linked ELF and publish a strict, versioned reference-audit sidecar
+  with ELF digest, analyzer version, timestamp, availability and entry address.
+- Confirm ELF entry roots from binary metadata. Empty reference arrays do not
+  prove unused code. Show unavailable analysis and unexplained retention
+  separately; do not guess KEEP/vector/indirect roots from names.
+- Preserve all same-name report rows (code, aliases, map-derived fragments) in
+  reference resolution; display provenance and addresses for ambiguous matches.
+- Reference-only refreshes use saved ELFs with matching digests and the same
+  fbuild version, verifying symbol identities/sizes and memory totals unchanged.
+  They do not rebuild firmware or alter measurement timestamps.
+- Track producer and consumer fixes together in dashboard #18 and fbuild
+  #1659/#1660/#1661; re-audit the whole platform/sketch/version matrix after
+  upstream changes. `REFERENCE-AUDIT.md` records current candidates.

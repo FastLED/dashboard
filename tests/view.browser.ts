@@ -127,7 +127,7 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
       await flash.getByRole("button", { name: /^Load/ }).click();
       assert.ok((await flash.locator("tbody tr").count()) <= 60);
       assert.ok((await flash.locator("tbody tr").count()) > 10);
-      await page.keyboard.press("Escape");
+      await page.locator("#close-modal").click();
     }
     for (const metric of ["flash", "ram"])
       await page
@@ -473,6 +473,77 @@ test("metric reports stay isolated and paginate in batches of 50", async () => {
       await page.getByRole("button", { name: "Previous", exact: true }).count(),
       0,
     );
+  } finally {
+    await browser.close();
+    await server.close();
+  }
+});
+
+test("symbol references support hover, focus, direct links and unexplained retention", async () => {
+  const server = await preview();
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage({
+      viewport: { width: 1440, height: 900 },
+    });
+    const errors: string[] = [];
+    page.on("pageerror", (error) => errors.push(error.message));
+    await page.goto(server.url, { waitUntil: "networkidle" });
+    await page.locator("#blink-platforms input").first().uncheck();
+    await page.locator("#blink-flash-canvas").focus();
+    await page.keyboard.press("Enter");
+    await page.waitForSelector(".symbol-reference");
+    const symbol = page
+      .locator(
+        '.symbol-reference[data-reference-state="Incoming symbol references recorded"]',
+      )
+      .first();
+    await symbol.hover();
+    const popup = page.locator("#symbol-reference-popup");
+    await popup.waitFor({ state: "visible" });
+    assert.match((await popup.textContent()) ?? "", /Incoming symbols/);
+    assert.match((await popup.textContent()) ?? "", /Referencing object files/);
+    assert.match((await popup.textContent()) ?? "", /Level 1 only/);
+    assert.ok((await popup.locator("li").count()) > 0);
+    await popup
+      .getByRole("button", { name: "Close symbol references" })
+      .click();
+    assert.equal(await popup.isHidden(), true);
+    await page.locator("#close-modal").click();
+    await page.locator("#spi-platforms input").first().uncheck();
+    await page.locator("#spi-platforms input").nth(1).uncheck();
+    await page.locator("#spi-flash-canvas").focus();
+    for (let i = 0; i < 7; i++) await page.keyboard.press("ArrowRight");
+    await page.keyboard.press("Enter");
+    await page.waitForSelector(".symbol-reference");
+    const unexplained = page
+      .locator(
+        '.symbol-reference[data-reference-state*="retention unexplained"]',
+      )
+      .first();
+    await unexplained.focus();
+    await popup.waitFor({ state: "visible" });
+    assert.match((await popup.textContent()) ?? "", /retention unexplained/);
+    assert.match(
+      (await popup.textContent()) ?? "",
+      /empty list does not prove/,
+    );
+    await page.keyboard.press("Escape");
+    assert.equal(await popup.isHidden(), true);
+    assert.equal(
+      await page
+        .locator("#bloat-modal")
+        .evaluate((node) => (node as HTMLDialogElement).open),
+      true,
+    );
+    await page.keyboard.press("Escape");
+    assert.equal(
+      await page
+        .locator("#bloat-modal")
+        .evaluate((node) => (node as HTMLDialogElement).open),
+      false,
+    );
+    assert.deepEqual(errors, []);
   } finally {
     await browser.close();
     await server.close();

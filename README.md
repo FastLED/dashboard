@@ -10,6 +10,12 @@ the selected Flash or RAM symbol report for that platform/version. Reports show
 the top 10 symbols, then append 50 more per click while keeping earlier rows. [Site preview image](docs/assets/preview.png)
 is also generated from the actual dashboard for social link previews.
 
+Hover, focus, or click a symbol to inspect who references it (one level).
+Symbol-level and object-file references are listed separately. Unavailable
+analysis and unexplained retention are explicit; empty lists do not imply
+unused code. See the [reference audit](REFERENCE-AUDIT.md) and
+[coordinated follow-ups](https://github.com/FastLED/dashboard/issues/18).
+
 [Benchmark policy and decisions](POLICY.md)
 
 Three sections: **Blink**, **APA102 hardware SPI**, and **Rainbow animation**
@@ -75,6 +81,9 @@ npm run check             # strict TypeScript, ESLint, formatting and schema tes
 npm run build             # browser bundle and versioned JSON Schema artifacts
 uv sync --upgrade-package fbuild  # external firmware tool only
 npm run benchmark
+# Refresh references from matching saved ELFs, without firmware builds:
+node scripts/refresh-references.ts
+node scripts/audit-references.ts
 # A focused run, using an existing FastLED clone without modifying its checkout:
 npm run benchmark -- --source /path/to/FastLED --boards uno --versions 3.10.3 master
 npx playwright install chromium

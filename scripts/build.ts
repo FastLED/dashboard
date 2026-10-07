@@ -1,3 +1,4 @@
+import { referenceAuditSchema } from "../src/references.ts";
 import { build } from "esbuild";
 import { writeFile, mkdir } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -16,6 +17,7 @@ await mkdir("docs/schemas", { recursive: true });
 for (const [name, schema] of [
   ["dashboard", dashboardSchema],
   ["bloat-report", reportSchema],
+  ["reference-audit", referenceAuditSchema],
 ] as const)
   await writeFile(
     `docs/schemas/${name}.schema.json`,

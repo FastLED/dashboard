@@ -1,3 +1,4 @@
+import { writeReferenceAudit } from "./reference-analysis.ts";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import {
@@ -211,10 +212,30 @@ function measure(
     throw new Error("ELF required, not HEX/BIN");
   const [flash, ram] = parseSize(log);
   const reportDir = join(project, "symbols");
-  command([...fbuildCommand, "symbols", elf, "--output-dir", reportDir]);
+  const nm = info.aliases.nm;
+  const cppfilt = info.aliases["c++filt"];
+  if (!nm || !existsSync(nm) || !cppfilt || !existsSync(cppfilt))
+    throw new Error("Missing explicit cross-toolchain nm/c++filt");
+  command([
+    ...fbuildCommand,
+    "symbols",
+    elf,
+    "--nm",
+    nm,
+    "--cppfilt",
+    cppfilt,
+    "--output-dir",
+    reportDir,
+  ]);
   const report = reportSchema.parse(json(join(reportDir, "report.json")));
   const reportUrl = `data/reports/${board}/${sha}-${protocol.slice(0, 12)}.json`;
   saveJson(join(ROOT, "docs", reportUrl), report);
+  writeReferenceAudit(
+    ROOT,
+    report,
+    { bloat_report: reportUrl, elf_digest: hash(binary), fbuild },
+    info.aliases.objdump,
+  );
   const digest = createHash("sha256");
   const extracted = join(project, "archive/src");
   for (const file of files(extracted)) {

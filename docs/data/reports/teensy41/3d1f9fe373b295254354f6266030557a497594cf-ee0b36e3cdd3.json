@@ -9564,6 +9564,12 @@
       "bytes": 36
     },
     {
+      "archive": "libc.a",
+      "object": "libc_a-malloc.o",
+      "output_section": ".text.itcm",
+      "bytes": 32
+    },
+    {
       "archive": null,
       "object": "ccilo3VN.ltrans1.ltrans.o",
       "output_section": ".text.code",
@@ -9571,19 +9577,13 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-malloc.o",
-      "output_section": ".text.itcm",
-      "bytes": 32
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-aligned_alloc.o",
+      "object": "libc_a-mlock.o",
       "output_section": ".text.itcm",
       "bytes": 24
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-mlock.o",
+      "object": "libc_a-aligned_alloc.o",
       "output_section": ".text.itcm",
       "bytes": 24
     },
@@ -9606,14 +9606,14 @@
       "bytes": 12
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-cxa_atexit.o",
+      "archive": "libstdc++.a",
+      "object": "atexit_arm.o",
       "output_section": ".text.itcm",
       "bytes": 12
     },
     {
-      "archive": "libstdc++.a",
-      "object": "atexit_arm.o",
+      "archive": "libc.a",
+      "object": "libc_a-cxa_atexit.o",
       "output_section": ".text.itcm",
       "bytes": 12
     },
@@ -9636,14 +9636,14 @@
       "bytes": 4
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-__call_atexit.o",
-      "output_section": ".data",
+      "archive": null,
+      "object": "crti.o",
+      "output_section": ".text.code",
       "bytes": 4
     },
     {
       "archive": null,
-      "object": "crti.o",
+      "object": "crtbegin.o",
       "output_section": ".text.code",
       "bytes": 4
     },
@@ -9654,9 +9654,9 @@
       "bytes": 4
     },
     {
-      "archive": null,
-      "object": "crtbegin.o",
-      "output_section": ".text.code",
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".data",
       "bytes": 4
     },
     {

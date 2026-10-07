@@ -10642,15 +10642,15 @@
       "bytes": 292
     },
     {
-      "archive": null,
-      "object": "ccW01bUi.ltrans0.ltrans.o",
-      "output_section": ".text.progmem",
-      "bytes": 256
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-malignr.o",
       "output_section": ".text.itcm",
+      "bytes": 256
+    },
+    {
+      "archive": null,
+      "object": "ccW01bUi.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
       "bytes": 256
     },
     {
@@ -10733,6 +10733,12 @@
     },
     {
       "archive": "libc.a",
+      "object": "libc_a-realloc.o",
+      "output_section": ".text.itcm",
+      "bytes": 24
+    },
+    {
+      "archive": "libc.a",
       "object": "libc_a-mlock.o",
       "output_section": ".text.itcm",
       "bytes": 24
@@ -10740,12 +10746,6 @@
     {
       "archive": "libc.a",
       "object": "libc_a-aligned_alloc.o",
-      "output_section": ".text.itcm",
-      "bytes": 24
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-realloc.o",
       "output_section": ".text.itcm",
       "bytes": 24
     },
@@ -10762,12 +10762,6 @@
       "bytes": 16
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-errno.o",
-      "output_section": ".text.itcm",
-      "bytes": 12
-    },
-    {
       "archive": "libstdc++.a",
       "object": "atexit_arm.o",
       "output_section": ".text.itcm",
@@ -10780,10 +10774,10 @@
       "bytes": 12
     },
     {
-      "archive": null,
-      "object": "crtn.o",
-      "output_section": ".text.code",
-      "bytes": 8
+      "archive": "libc.a",
+      "object": "libc_a-errno.o",
+      "output_section": ".text.itcm",
+      "bytes": 12
     },
     {
       "archive": "libc.a",
@@ -10792,10 +10786,10 @@
       "bytes": 8
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-__call_atexit.o",
-      "output_section": ".data",
-      "bytes": 4
+      "archive": null,
+      "object": "crtn.o",
+      "output_section": ".text.code",
+      "bytes": 8
     },
     {
       "archive": null,
@@ -10805,14 +10799,8 @@
     },
     {
       "archive": null,
-      "object": "crtbegin.o",
-      "output_section": ".data",
-      "bytes": 4
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-__call_atexit.o",
-      "output_section": ".bss",
+      "object": "crti.o",
+      "output_section": ".text.code",
       "bytes": 4
     },
     {
@@ -10823,14 +10811,26 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-reent.o",
+      "object": "libc_a-__call_atexit.o",
       "output_section": ".bss",
       "bytes": 4
     },
     {
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".data",
+      "bytes": 4
+    },
+    {
       "archive": null,
-      "object": "crti.o",
-      "output_section": ".text.code",
+      "object": "crtbegin.o",
+      "output_section": ".data",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-reent.o",
+      "output_section": ".bss",
       "bytes": 4
     },
     {

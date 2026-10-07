@@ -13289,14 +13289,14 @@
       "bytes": 96
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-init.o",
+      "archive": null,
+      "object": "crtbegin.o",
       "output_section": ".text.itcm",
       "bytes": 72
     },
     {
-      "archive": null,
-      "object": "crtbegin.o",
+      "archive": "libc.a",
+      "object": "libc_a-init.o",
       "output_section": ".text.itcm",
       "bytes": 72
     },
@@ -13331,12 +13331,6 @@
       "bytes": 36
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-malloc.o",
-      "output_section": ".text.itcm",
-      "bytes": 32
-    },
-    {
       "archive": null,
       "object": "cc4rMiRl.ltrans1.ltrans.o",
       "output_section": ".text.code",
@@ -13344,14 +13338,20 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-realloc.o",
+      "object": "libc_a-malloc.o",
       "output_section": ".text.itcm",
-      "bytes": 24
+      "bytes": 32
     },
     {
       "archive": null,
       "object": "crtbegin.o",
       "output_section": ".bss",
+      "bytes": 24
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-mlock.o",
+      "output_section": ".text.itcm",
       "bytes": 24
     },
     {
@@ -13362,7 +13362,7 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-mlock.o",
+      "object": "libc_a-realloc.o",
       "output_section": ".text.itcm",
       "bytes": 24
     },
@@ -13391,15 +13391,15 @@
       "bytes": 12
     },
     {
-      "archive": null,
-      "object": "crtn.o",
-      "output_section": ".text.code",
-      "bytes": 8
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-lock.o",
       "output_section": ".text.itcm",
+      "bytes": 8
+    },
+    {
+      "archive": null,
+      "object": "crtn.o",
+      "output_section": ".text.code",
       "bytes": 8
     },
     {
@@ -13415,9 +13415,9 @@
       "bytes": 4
     },
     {
-      "archive": null,
-      "object": "crti.o",
-      "output_section": ".text.code",
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".bss",
       "bytes": 4
     },
     {
@@ -13427,15 +13427,15 @@
       "bytes": 4
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-__call_atexit.o",
-      "output_section": ".data",
+      "archive": null,
+      "object": "crti.o",
+      "output_section": ".text.code",
       "bytes": 4
     },
     {
       "archive": "libc.a",
       "object": "libc_a-__call_atexit.o",
-      "output_section": ".bss",
+      "output_section": ".data",
       "bytes": 4
     },
     {

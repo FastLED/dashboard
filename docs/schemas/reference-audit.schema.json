@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "number",
+      "const": 1
+    },
+    "report": {
+      "type": "string"
+    },
+    "elf_digest": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "fbuild": {
+      "type": "string"
+    },
+    "analyzed_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+    },
+    "entry_address": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "disassembly": {
+      "type": "string",
+      "enum": [
+        "analyzed",
+        "unavailable",
+        "error"
+      ]
+    },
+    "cross_reference_table": {
+      "type": "string",
+      "enum": [
+        "present",
+        "absent",
+        "unknown"
+      ]
+    },
+    "incoming_edges": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "outgoing_edges": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "object_references": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "unexplained_symbols": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "unresolved_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "report",
+    "elf_digest",
+    "fbuild",
+    "analyzed_at",
+    "entry_address",
+    "disassembly",
+    "cross_reference_table",
+    "incoming_edges",
+    "outgoing_edges",
+    "object_references",
+    "unexplained_symbols",
+    "unresolved_names",
+    "warnings"
+  ],
+  "additionalProperties": false
+}

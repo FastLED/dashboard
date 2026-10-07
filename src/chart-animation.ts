@@ -1,4 +1,5 @@
 import type { Plugin, PointElement, Scale } from "chart.js";
+import type { ActualScale } from "./scale-mode.ts";
 import {
   points,
   type MotionChart,
@@ -76,8 +77,9 @@ export const scaleTransition: Plugin<"line"> = {
 export function animateScale(
   chart: MotionChart,
   metric: "flash" | "ram",
-  log: boolean,
+  mode: ActualScale,
 ) {
+  const log = mode === "logarithmic";
   cancelAnimationFrame(chart.$scaleFrame ?? 0);
   const fromTicks = chart.$scaleTransition?.ticks || axisTicks(chart);
   const oldScale = chart.scales.y;
@@ -89,8 +91,9 @@ export function animateScale(
   );
   chart.$scaleTransition = { ticks: fromTicks };
   chart.options.animation = false;
-  chart.options.scales!.y!.type = log ? "logarithmic" : "linear";
-  (chart.options.scales!.y! as { beginAtZero?: boolean }).beginAtZero = !log;
+  chart.options.scales!.y!.type = mode;
+  (chart.options.scales!.y! as { beginAtZero?: boolean }).beginAtZero =
+    mode === "linear";
   for (const dataset of chart.data.datasets) {
     dataset.data = (dataset as RowDataset).rows.map((row) =>
       row && Number.isFinite(row[metric]) && (!log || row[metric] > 0)

@@ -15,6 +15,11 @@ import { element } from "./dom.ts";
 import { platforms } from "./platforms.ts";
 import { bytes, localDate, localTimestamp, versionLabel } from "./format.ts";
 import { openBloat } from "./bloat.ts";
+import {
+  autoScaleForPointer,
+  type ScaleMode,
+  type ActualScale,
+} from "./scale-mode.ts";
 ChartJS.register(
   LineController,
   LineElement,
@@ -31,6 +36,18 @@ const enabled = new Set(platforms.map((p) => p.id));
 let results: Measurement[] = [];
 let chartVersions = [...versions];
 export const charts: Partial<Record<"flash" | "ram", MotionChart>> = {};
+const activeScales: Record<"flash" | "ram", ActualScale> = {
+  flash: "linear",
+  ram: "linear",
+};
+function scaleMode(metric: "flash" | "ram"): ScaleMode {
+  const value = document.querySelector<HTMLInputElement>(
+    `input[name="${metric}-scale"]:checked`,
+  )?.value;
+  if (value === "linear" || value === "logarithmic" || value === "auto")
+    return value;
+  throw new Error("Missing scale selection for " + metric);
+}
 function chart(metric: "flash" | "ram") {
   charts[metric]?.destroy();
   const container = element(metric);
@@ -43,7 +60,10 @@ function chart(metric: "flash" | "ram") {
     `${metric === "flash" ? "Flash consumption" : "RAM usage"} line chart; point reports are also available in the measurement table`,
   );
   container.append(canvas);
-  const log = element<HTMLInputElement>("log").checked;
+  const requested = scaleMode(metric);
+  const mode = requested === "auto" ? activeScales[metric] : requested;
+  activeScales[metric] = mode;
+  const log = mode === "logarithmic";
   const datasets: RowDataset[] = platforms
     .filter((p) => enabled.has(p.id))
     .map((platform) => {
@@ -150,8 +170,8 @@ function chart(metric: "flash" | "ram") {
           afterFit: (scale) => {
             scale.width = 84;
           },
-          type: log ? "logarithmic" : "linear",
-          beginAtZero: !log,
+          type: mode,
+          beginAtZero: mode === "linear",
           grid: { color: "#263143" },
           ticks: {
             autoSkip: false,
@@ -162,6 +182,25 @@ function chart(metric: "flash" | "ram") {
         },
       },
     },
+  });
+  updateScaleControl(metric);
+  canvas.addEventListener("pointermove", (event) => {
+    if (scaleMode(metric) !== "auto") return;
+    const chart = charts[metric];
+    if (!chart) return;
+    const bounds = canvas.getBoundingClientRect();
+    const x = ((event.clientX - bounds.left) * chart.width) / bounds.width;
+    const y = ((event.clientY - bounds.top) * chart.height) / bounds.height;
+    const area = chart.chartArea;
+    if (x < area.left || x > area.right || y < area.top || y > area.bottom)
+      return;
+    setScale(
+      metric,
+      autoScaleForPointer(
+        activeScales[metric],
+        (y - area.top) / (area.bottom - area.top),
+      ),
+    );
   });
 }
 function render() {
@@ -240,13 +279,30 @@ platforms.forEach((platform) => {
   label.append(input, key, document.createTextNode(platform.name));
   element("platforms").append(label);
 });
-element("log").addEventListener("change", () => {
-  const log = element<HTMLInputElement>("log").checked;
-  for (const metric of ["flash", "ram"] as const) {
-    const chart = charts[metric];
-    if (chart) animateScale(chart, metric, log);
-  }
-});
+function updateScaleControl(metric: "flash" | "ram") {
+  const mode = scaleMode(metric);
+  element(`${metric}-scale`).style.setProperty(
+    "--selected-index",
+    String(["auto", "linear", "logarithmic"].indexOf(mode)),
+  );
+  element(`${metric}-scale-status`).textContent =
+    `${mode === "auto" ? "Auto · " : "Pinned · "}${activeScales[metric] === "linear" ? "Linear" : "Logarithmic"}`;
+  element(`${metric}-scale-status`).dataset.mode = mode;
+}
+function setScale(metric: "flash" | "ram", next: ActualScale) {
+  if (activeScales[metric] === next) return;
+  activeScales[metric] = next;
+  updateScaleControl(metric);
+  const chart = charts[metric];
+  if (chart) animateScale(chart, metric, next);
+}
+for (const metric of ["flash", "ram"] as const) {
+  element(`${metric}-scale`).addEventListener("change", () => {
+    const mode = scaleMode(metric);
+    if (mode !== "auto") setScale(metric, mode);
+    updateScaleControl(metric);
+  });
+}
 try {
   const response = await fetch("data/latest.json", { cache: "no-store" });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);

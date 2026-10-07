@@ -27,9 +27,17 @@ const hash = createHash("sha256")
   .digest("hex")
   .slice(0, 12);
 const index = await readFile("docs/index.html", "utf8");
+const styleHash = createHash("sha256")
+  .update(await readFile("docs/style.css"))
+  .digest("hex")
+  .slice(0, 12);
 await writeFile(
   "docs/index.html",
   index
     .replace(/<script src="vendor\/chart\.umd\.js"><\/script>\s*/, "")
-    .replace(/src="app\.js(?:\?[^"]*)?"/, `src="app.js?v=${hash}"`),
+    .replace(/src="app\.js(?:\?[^"]*)?"/, `src="app.js?v=${hash}"`)
+    .replace(
+      /href="style\.css(?:\?[^"]*)?"/,
+      `href="style.css?v=${styleHash}"`,
+    ),
 );

@@ -6,6 +6,16 @@
 - Use **Chart.js** for two overview line graphs: flash on the left, static RAM
   on the right. Plot one line per platform: Uno AVR, ESP32-S3, ESP32 Dev,
   Teensy4.1. The only sketch is Blink.
+- Give Flash and RAM independent Auto / Linear / Logarithmic selectors. Auto is
+  the default and initially displays a linear axis. Pointer movement inside the
+  bottom 7% of a chart's plotting area switches that whole axis to logarithmic;
+  movement inside the top 7% switches it back to linear. The middle 86% retains
+  the current scale for hysteresis. Layout updates alone never trigger switches.
+- Linear and Logarithmic pin that chart's scale, disabling pointer-based switching.
+  Returning to Auto retains the current scale until a trigger band is entered.
+  Keep selections across platform filters, show the active scale, and animate
+  changes without a destination-frame flash. Use accessible, polished segmented
+  selectors with a sliding highlight and independent accents for each chart.
 - Every plot point supports mouse hover with exact bytes/platform/version.
   Clicking a point opens an accessible popup with the full **fbuild bloat**
   symbol report for that exact platform, FastLED revision and measurement run.

@@ -10,6 +10,7 @@ import {
 } from "chart.js";
 import {
   dashboardSchema,
+  sketchSchema,
   type Measurement,
   type Success,
   type Dashboard,
@@ -322,7 +323,7 @@ try {
   element("updated").textContent =
     `Updated ${new Date(data.updated_at).toLocaleString()} · Recomputed daily`;
   for (const root of document.querySelectorAll<HTMLElement>("[data-sketch]")) {
-    const sketch = root.dataset.sketch as Sketch;
+    const sketch = sketchSchema.parse(root.dataset.sketch);
     mountSection(root, sketch, data);
   }
   charts = sectionCharts.get("blink") ?? {};

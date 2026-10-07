@@ -392,7 +392,7 @@ test("sketch sections isolate controls and keyboard reports", async () => {
     await page.waitForSelector(".bloat-section");
     assert.match(
       (await page.locator("#bloat-title").textContent()) ?? "",
-      /^blink · Uno AVR/,
+      /^Blink · Uno AVR/,
     );
   } finally {
     await browser.close();

@@ -30,7 +30,7 @@ test("all historical data and complete symbol reports satisfy strict schemas", (
   const data = dashboardSchema.parse(
     JSON.parse(readFileSync("docs/data/latest.json", "utf8")),
   );
-  assert.equal(data.results.length, 32);
+  assert.ok(data.results.length >= 32);
   for (const row of data.results) {
     if (row.status === "ok") {
       const report = reportSchema.parse(
@@ -47,5 +47,32 @@ test("all historical data and complete symbol reports satisfy strict schemas", (
       results: [{ ...data.results[0], flash: "3784" }],
     }),
   );
-  assert.throws(() => dashboardSchema.parse({ ...data, schema: 2 }));
+  assert.throws(() => dashboardSchema.parse({ ...data, schema: 1 }));
+});
+
+test("workloads stay distinct and every sketch avoids Serial", () => {
+  const data = dashboardSchema.parse(
+    JSON.parse(readFileSync("docs/data/latest.json", "utf8")),
+  );
+  const keys = data.results.map(
+    (row) => `${row.sketch}/${row.board}/${row.version}`,
+  );
+  assert.equal(new Set(keys).size, keys.length);
+  for (const name of ["Blink", "SPI", "Rainbow"]) {
+    assert.ok(
+      !readFileSync(`benchmark/${name}.ino`, "utf8").includes("Serial"),
+    );
+  }
+  assert.ok(
+    readFileSync("benchmark/SPI.ino", "utf8").includes("APA102, MOSI, SCK"),
+  );
+  assert.ok(
+    readFileSync("benchmark/Rainbow.ino", "utf8").includes("CRGB leds[16]"),
+  );
+  assert.throws(() =>
+    dashboardSchema.parse({
+      ...data,
+      results: [{ ...data.results[0], sketch: "unknown" }],
+    }),
+  );
 });

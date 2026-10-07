@@ -14,7 +14,7 @@ export async function openBloat(row: Success | undefined) {
   const request = ++reportRequest;
   const platform = platforms.find((p) => p.id === row.board);
   const title = element("bloat-title");
-  title.textContent = `${platform?.name} · ${row.version} · fbuild bloat`;
+  title.textContent = `${row.sketch} · ${platform?.name} · ${row.version} · fbuild bloat`;
   if (row.version === "master") {
     const date = document.createElement("span");
     date.className = "measurement-date";

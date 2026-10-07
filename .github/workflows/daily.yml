@@ -1,4 +1,4 @@
-name: Daily Blink memory benchmark
+name: Daily sketch memory benchmark
 on:
   schedule:
     - cron: '23 9 * * *'
@@ -93,7 +93,7 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add docs/data docs/assets
           if ! git diff --cached --quiet; then
-            git commit -m 'data: daily Blink memory measurements'
+            git commit -m 'data: daily sketch memory measurements'
             git pull --rebase origin main
             git push
           fi

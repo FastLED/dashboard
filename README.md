@@ -2,7 +2,7 @@
 
 ## [Open the interactive dashboard →](https://fastled.github.io/dashboard/)
 
-[![Chart.js overview: FastLED Blink flash and RAM by release](docs/assets/dashboard.png)](https://fastled.github.io/dashboard/)
+[![Chart.js overview: FastLED sketch flash and RAM by release](docs/assets/dashboard.png)](https://fastled.github.io/dashboard/)
 
 The image is a noninteractive screenshot of the actual Chart.js overview. Click
 it for the full interactive site: hover points for bytes and click them to open
@@ -10,7 +10,8 @@ the exact platform/version fbuild bloat report.
 
 [Benchmark policy and decisions](POLICY.md)
 
-Two line charts for **Blink only**: flash consumption on the left and static
+Three sections: **Blink**, **APA102 hardware SPI**, and **Rainbow animation**
+(16 LEDs, a 48-byte LED buffer on Uno). Each has flash consumption on the left and static
 RAM usage on the right. Four series: Uno AVR, ESP32-S3, ESP32 Dev, Teensy4.1.
 Each chart has its own **Auto / Linear / Logarithmic** selector. Auto starts linear;
 move into the bottom 7% of a plot to reveal small targets with logarithmic scaling,
@@ -20,7 +21,9 @@ Latest seven stable releases plus the latest master SHA; initially 3.10.0–3.10
 
 ## Benchmark protocol
 
-Every version builds the exact committed `benchmark/Blink.ino`: one NEOPIXEL
+Every version builds the exact committed sketches, without Serial calls.
+`benchmark/SPI.ino` uses APA102 on hardware SPI; `benchmark/Rainbow.ino`
+animates an HSV gradient. `benchmark/Blink.ino` uses one NEOPIXEL
 on GPIO 3, red/black with 1000 ms delays, **no Serial initialization or prints**.
 Released library source is extracted unmodified with `git archive`; the same
 Arduino entry-point stub uses `::delay(0)` across revisions. This is a matched
@@ -45,8 +48,8 @@ version is recorded and included in its footprint, rather than changing that
 release's source or logging flags to hide it. A failed build produces a gap
 and an error, never zero.
 
-The daily workflow runs at 09:23 UTC. It pins master once per run, measures all 32
-board/version combinations sequentially, regenerates the README screenshot, commits full point-specific bloat reports,
+The daily workflow runs at 09:23 UTC. It pins master once per run, measures all 96
+sketch/board/version combinations sequentially, regenerates the README screenshot, commits full point-specific bloat reports,
 `docs/data/latest.json` and
 UTC daily snapshots in `docs/data/history/`, and deploys `docs/` to GitHub Pages.
 Build logs, metadata and symbol reports are uploaded as workflow artifacts.
@@ -81,8 +84,7 @@ npm run dev
 No git worktrees are created. Git archives read revisions without switching
 the FastLED checkout. SDK downloads, build outputs and logs live in `.cache/`.
 Historical snapshots retain daily master history; the main charts show the
-release progression ending with the latest master datapoint. Each source SHA
-links directly to its upstream commit.
+release progression ending with the latest master datapoint. Source SHAs are recorded in each point’s report metadata.
 
 The application and collection scripts are TypeScript on Node.js 24+. fbuild
 remains an external tool installed through uv; no Python dashboard scripts remain.

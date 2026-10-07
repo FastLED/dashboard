@@ -4,7 +4,9 @@ const bytes = z.number().check(z.int(), z.nonnegative());
 const sha = z.string().check(z.regex(/^[a-f0-9]{40}$/));
 const digest = z.string().check(z.regex(/^[a-f0-9]{64}$/));
 export const boardSchema = z.enum(["uno", "esp32s3", "esp32dev", "teensy41"]);
+export const sketchSchema = z.enum(["blink", "spi", "rainbow"]);
 const measurementBase = {
+  sketch: sketchSchema,
   board: boardSchema,
   version: z.string().check(z.minLength(1)),
   sha,
@@ -46,7 +48,7 @@ export const measurementSchema = z.discriminatedUnion("status", [
   failureSchema,
 ]);
 export const dashboardSchema = z.strictObject({
-  schema: z.literal(1),
+  schema: z.literal(2),
   results: z.array(measurementSchema),
   updated_at: z.iso.datetime({ offset: true }),
   versions: z.array(z.string()),
@@ -92,3 +94,5 @@ export type Success = z.infer<typeof successSchema>;
 export type Measurement = z.infer<typeof measurementSchema>;
 export type Dashboard = z.infer<typeof dashboardSchema>;
 export type BloatReport = z.infer<typeof reportSchema>;
+
+export type Sketch = z.infer<typeof sketchSchema>;

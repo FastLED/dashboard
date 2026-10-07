@@ -5,7 +5,9 @@
 - Publish the dashboard with **GitHub Pages** at https://fastled.github.io/dashboard/.
 - Use **Chart.js** for two overview line graphs: flash on the left, static RAM
   on the right. Plot one line per platform: Uno AVR, ESP32-S3, ESP32 Dev,
-  Teensy4.1. The only sketch is Blink.
+  Teensy4.1. Give Blink, APA102 hardware SPI, and a 16-LED Rainbow animation
+  separate sections, each with its own Flash/RAM charts and platform filters.
+  Scale controls sit below each graph. Do not show a Measurements table.
 - Give Flash and RAM independent Auto / Linear / Logarithmic selectors. Auto is
   the default and initially displays a linear axis. Pointer movement inside the
   bottom 7% of a chart's plotting area switches that whole axis to logarithmic;
@@ -19,7 +21,8 @@
 - Every plot point supports mouse hover with exact bytes/platform/version.
   Clicking a point opens an accessible popup with the full **fbuild bloat**
   symbol report for that exact platform, FastLED revision and measurement run.
-  Equivalent report buttons in the data table support keyboard users.
+  Keyboard users can focus a chart, navigate its points with arrow keys and
+  open the selected report with Enter or Space.
 - Split each popup into Flash and RAM sections, independently sorted by symbol
   size. Show the top five in each section, with a separate More button to reveal
   all remaining symbols and an option to collapse back to the top five.
@@ -27,8 +30,8 @@
   screenshot as a noninteractive PNG, linked to the interactive Pages site.
   Regenerate that screenshot whenever the daily data is published.
 - Every master label must include a secondary measurement-date label converted
-  to the viewer's local time zone and locale, including chart axes, table version
-  cells and report headings. Store timestamps in UTC and convert on display.
+  to the viewer's local time zone and locale, including chart axes
+  and report headings. Store timestamps in UTC and convert on display.
   Use the point's measurement timestamp, not the page viewing date or commit
   date. Hover details retain the exact localized timestamp, time-zone label and
   source SHA. If platforms were measured on different local dates, the shared
@@ -109,6 +112,10 @@
 
 ## Workload and honest metrics
 
+- Maintain three canonical sketches: Blink (one NEOPIXEL), APA102 hardware SPI
+  (one LED on default hardware SPI pins), and Rainbow (16 NEOPIXEL LEDs,
+  animated HSV gradient with 20 ms frame delay). All fit Uno AVR and have no
+  Serial calls. Measure each across every platform/version independently.
 - Use one canonical Blink sketch on every version: one NEOPIXEL on pin 3,
   alternating red/black with 1000 ms delays. **No Serial.begin or prints in the
   sketch**. Keep release library source unmodified.
@@ -122,3 +129,10 @@
 - Run benchmarks sequentially without git worktrees. Initial validation is
   local; the dedicated daily dashboard workflow is authorized automation and
   does not invoke FastLED CI Full.
+
+## Transport migration
+
+- Dashboard schema 2 adds a required `sketch` identity (blink, spi, rainbow) to
+  every measurement. Existing schema 1 snapshots are migrated explicitly as
+  Blink without changing their measurements or report provenance. Collection
+  keys include sketch/platform/version; focused runs retain other workloads.

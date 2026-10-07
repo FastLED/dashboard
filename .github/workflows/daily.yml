@@ -38,7 +38,8 @@ jobs:
           restore-keys: blink-v1-${{ runner.os }}-
       - name: Measure all four boards sequentially
         id: benchmark
-        if: github.event_name != 'workflow_dispatch' || inputs.measure
+        # Site updates publish existing data; scheduled/manual runs measure.
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.measure)
         continue-on-error: true
         run: uv run --upgrade-package fbuild python benchmark/run.py
       - name: Archive benchmark evidence

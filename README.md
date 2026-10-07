@@ -56,6 +56,10 @@ toolchain setup and screenshot-browser installation. Daily measurement runs
 refresh the data and screenshot. When changing the chart overview, regenerate
 its screenshot locally with `uv run --with playwright python benchmark/screenshot.py`.
 
+Collection and publishing run in separate jobs and concurrency groups. The
+view reads committed JSON artifacts; a long collection run does not block
+publishing a new layout or interaction using the existing measurements.
+
 ```sh
 uv run --upgrade-package fbuild python benchmark/run.py
 # A focused run, using an existing FastLED clone without modifying its checkout:

@@ -44,6 +44,16 @@
 
 ## Recompute policy
 
+- Separate data collection from the view. The collector owns firmware builds,
+  bloat analysis and published JSON artifacts. The view consumes those artifacts
+  without invoking the collector, so layouts and interactions can be iterated
+  independently using the same measurements.
+- Run collection and Pages publishing as separate jobs with separate concurrency
+  groups. An ongoing collection run must not block a site-only deployment. The
+  publisher checks out the latest view and committed data, and never installs
+  collection dependencies or runs firmware builds. Only collection runs commit
+  refreshed data and daily screenshots; publishing is read-only.
+
 - Updates are incremental. HTML, CSS, JavaScript and other site-only changes
   deploy the committed site and measurement data directly. They must not
   trigger benchmark builds, toolchain cache restoration, Python dependency

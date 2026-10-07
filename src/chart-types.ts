@@ -1,6 +1,6 @@
 import type { Chart as ChartJS, ChartDataset, PointElement } from "chart.js";
 import type { Success } from "./models.ts";
-export type Tick = { value: number; y: number; opacity?: number };
+export type Tick = { value: number; y: number; opacity: number };
 export type RowDataset = ChartDataset<"line"> & {
   rows: (Success | undefined)[];
 };

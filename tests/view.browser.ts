@@ -143,3 +143,91 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
     await server.close();
   }
 });
+
+test("first painted scale frame preserves points and hides entering ticks", async () => {
+  const server = await preview();
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage();
+    await page.goto(server.url, { waitUntil: "networkidle" });
+    await page.waitForSelector("#results tbody button");
+    for (const log of [true, false]) {
+      const states = await page.evaluate(async (logarithmic) => {
+        const script = document.querySelector<HTMLScriptElement>(
+          "script[type=module]",
+        )!;
+        const module: { charts: Window["dashboardCharts"] } = await import(
+          script.src
+        );
+        const traces = Object.values(module.charts).map((chart) => {
+          if (!chart) throw new Error("Missing chart");
+          const positions = () =>
+            chart.data.datasets.map((_, index) =>
+              chart
+                .getDatasetMeta(index)
+                .data.map((point) => (point as { y: number }).y),
+            );
+          const before = positions();
+          const source = chart.scales.y.ticks.map((tick) => tick.value);
+          const frames: {
+            points: number[][];
+            ticks: { value: number; opacity: number }[];
+          }[] = [];
+          const draw = chart.draw;
+          chart.draw = () => {
+            frames.push({
+              points: positions(),
+              ticks: (chart.$scaleTransition?.ticks ?? []).map((tick) => ({
+                value: tick.value,
+                opacity: tick.opacity,
+              })),
+            });
+            draw.call(chart);
+          };
+          return { chart, before, source, frames, draw };
+        });
+        const toggle = document.getElementById("log") as HTMLInputElement;
+        toggle.checked = logarithmic;
+        toggle.dispatchEvent(new Event("change"));
+        return traces.map(({ chart, before, source, frames, draw }) => {
+          chart.draw = draw;
+          return {
+            before,
+            source,
+            target: chart.scales.y.ticks.map((tick) => tick.value),
+            frames,
+          };
+        });
+      }, log);
+      for (const state of states) {
+        assert.equal(
+          state.frames.length,
+          1,
+          "destination layout must not paint before initial frame",
+        );
+        const first = state.frames[0];
+        assert.deepEqual(
+          first.points,
+          state.before,
+          "first frame must retain the visible point positions",
+        );
+        assert.deepEqual(
+          new Set(first.ticks.map((tick) => tick.value)),
+          new Set([...state.source, ...state.target]),
+        );
+        const entering = first.ticks.filter(
+          (tick) => !state.source.includes(tick.value),
+        );
+        assert.ok(entering.length > 0);
+        assert.ok(
+          entering.every((tick) => tick.opacity === 0),
+          "newly active labels and lines must start transparent",
+        );
+      }
+      await page.waitForTimeout(1100);
+    }
+  } finally {
+    await browser.close();
+    await server.close();
+  }
+});

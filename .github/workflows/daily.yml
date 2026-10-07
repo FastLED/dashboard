@@ -1,0 +1,81 @@
+name: Daily Blink memory benchmark
+on:
+  schedule:
+    - cron: '23 9 * * *'
+  workflow_dispatch:
+    inputs:
+      measure:
+        description: 'Run benchmarks before publishing (scheduled runs always do)'
+        type: boolean
+        default: true
+  push:
+    branches: [main]
+    paths: ['benchmark/**', 'docs/**', '.github/workflows/daily.yml', 'pyproject.toml']
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: memory-dashboard
+  cancel-in-progress: false
+jobs:
+  benchmark:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: '3.12'
+          enable-cache: true
+      - name: Restore toolchains and framework caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.fbuild
+            .cache
+          key: blink-v1-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: blink-v1-${{ runner.os }}-
+      - name: Measure all four boards sequentially
+        id: benchmark
+        if: github.event_name != 'workflow_dispatch' || inputs.measure
+        continue-on-error: true
+        run: uv run --upgrade-package fbuild python benchmark/run.py
+      - name: Archive benchmark evidence
+        if: always() && steps.benchmark.outcome != 'skipped'
+        uses: actions/upload-artifact@v4
+        with:
+          name: blink-evidence-${{ github.run_id }}
+          path: |
+            .cache/build/**/build.log
+            .cache/build/**/build_info*.json
+            .cache/build/**/symbols/report.json
+          retention-days: 30
+      - name: Install screenshot browser
+        run: uv run --with playwright python -m playwright install --with-deps chromium
+      - name: Refresh README Chart.js overview screenshot
+        run: uv run --with playwright python benchmark/screenshot.py
+      - name: Commit measurements and daily history
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data docs/assets
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: daily Blink memory measurements'
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Deploy dashboard
+        id: deploy
+        uses: actions/deploy-pages@v4
+      - name: Report any failed measurements
+        if: steps.benchmark.outcome == 'failure'
+        run: |
+          echo 'One or more benchmarks failed. Successful results and explicit gaps were published.'
+          exit 1
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}

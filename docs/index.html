@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FastLED · Memory history</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header><div class="eyebrow">FASTLED / BLINK BENCHMARK</div><h1>Memory history</h1>
+      <p>One LED. No Serial. The same Blink workload across every version.</p>
+      <div class="status"><span class="dot"></span><span id="updated">Loading benchmark results…</span><a href="https://github.com/FastLED/dashboard">Repository ↗</a></div>
+    </header>
+    <section class="toolbar" aria-label="Chart controls"><div id="platforms"></div><label><input type="checkbox" id="log"> Logarithmic scale</label></section>
+    <div class="charts">
+      <section class="panel"><div class="panel-head"><h2>Flash consumption</h2><span>BYTES</span></div><div id="flash" class="chart"></div></section>
+      <section class="panel"><div class="panel-head"><h2>RAM usage</h2><span>BYTES</span></div><div id="ram" class="chart"></div></section>
+    </div>
+    <section class="panel measurements"><div class="panel-head"><h2>Measurements</h2><a href="data/latest.json">Download JSON ↗</a></div><p class="note">Hover a chart point for exact bytes. Click a point to open its fbuild bloat report. Select platforms to inspect smaller targets. Missing or failed measurements appear as gaps.</p><div class="table-scroll"><table id="results"><caption class="sr-only">Blink flash and static RAM by platform and version</caption><thead><tr><th>Version</th><th>Platform</th><th>Flash</th><th>RAM</th><th>Source</th><th>Status</th><th>Bloat</th></tr></thead><tbody></tbody></table></div></section>
+    <footer><p>Recomputed daily · Latest seven releases + master · <a href="https://github.com/FastLED/dashboard/blob/main/benchmark/Blink.ino">Benchmark sketch</a></p><p>Flash and RAM are fbuild’s board-aware ELF measurements (static RAM; runtime heap and stack excluded). Historical values may change with fbuild updates. Provenance and daily snapshots are saved with the results.</p></footer>
+  </main>
+  <dialog id="bloat-modal" aria-labelledby="bloat-title"><div class="modal-head"><h2 id="bloat-title">Bloat report</h2><button id="close-modal" aria-label="Close bloat report">×</button></div><p id="bloat-meta"></p><div id="bloat-report"></div></dialog>
+  <script src="vendor/chart.umd.js"></script>
+  <script type="module" src="app.js"></script>
+</body></html>

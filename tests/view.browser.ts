@@ -124,11 +124,9 @@ test("smooth, evenly spaced axes and lazy platform reports", async () => {
       const flash = page.locator(".bloat-section").first();
       assert.equal(await page.locator(".bloat-section").count(), 1);
       assert.equal(await page.locator("#bloat-ram-symbols").count(), 0);
-      await flash.getByRole("button", { name: /^Next/ }).click();
-      assert.ok((await flash.locator("tbody tr").count()) <= 50);
-      assert.ok((await flash.locator("tbody tr").count()) > 0);
-      await flash.getByRole("button", { name: "Previous" }).click();
-      assert.equal(await flash.locator("tbody tr").count(), 10);
+      await flash.getByRole("button", { name: /^Load/ }).click();
+      assert.ok((await flash.locator("tbody tr").count()) <= 60);
+      assert.ok((await flash.locator("tbody tr").count()) > 10);
       await page.keyboard.press("Escape");
     }
     for (const metric of ["flash", "ram"])
@@ -435,47 +433,46 @@ test("metric reports stay isolated and paginate in batches of 50", async () => {
     await page.keyboard.press("Enter");
     await page.waitForSelector("#bloat-flash-symbols");
     assert.equal(await page.locator("#bloat-ram-symbols").count(), 0);
-    const previous = page.getByRole("button", {
-      name: "Previous",
-      exact: true,
+    const more = page.getByRole("button", { name: /^Load/ });
+    const rows = page.locator("#bloat-flash-symbols tbody tr");
+    const first = await rows.allTextContents();
+    await page.evaluate(() => {
+      const row = document.querySelector("#bloat-flash-symbols tbody tr")!;
+      row.setAttribute("data-preserved", "true");
+      const modal = document.querySelector<HTMLDialogElement>("#bloat-modal")!;
+      modal.addEventListener(
+        "click",
+        () => {
+          modal.dataset.beforeScroll = String(modal.scrollTop);
+        },
+        { capture: true },
+      );
     });
-    const next = page.getByRole("button", { name: /^Next/ });
-    assert.equal(await previous.isDisabled(), true);
-    const first = await page
-      .locator("#bloat-flash-symbols tbody")
-      .textContent();
-    await next.click();
-    assert.equal(
-      await page.locator("#bloat-flash-symbols tbody tr").count(),
-      50,
+    await more.click();
+    assert.equal(await rows.count(), 60);
+    assert.ok(
+      await page.evaluate(() => {
+        const modal =
+          document.querySelector<HTMLDialogElement>("#bloat-modal")!;
+        return (
+          Math.abs(modal.scrollTop - Number(modal.dataset.beforeScroll)) < 1
+        );
+      }),
     );
+    assert.deepEqual((await rows.allTextContents()).slice(0, 10), first);
+    assert.equal(await page.locator('[data-preserved="true"]').count(), 1);
+    const second = await rows.allTextContents();
+    await more.click();
+    assert.equal(await rows.count(), 110);
+    assert.deepEqual((await rows.allTextContents()).slice(0, 60), second);
     assert.match(
       (await page.locator(".bloat-section .note").textContent()) ?? "",
-      /11–60/,
+      /Showing 110 of/,
     );
-    const second = await page
-      .locator("#bloat-flash-symbols tbody")
-      .textContent();
-    await next.click();
     assert.equal(
-      await page.locator("#bloat-flash-symbols tbody tr").count(),
-      50,
+      await page.getByRole("button", { name: "Previous", exact: true }).count(),
+      0,
     );
-    assert.match(
-      (await page.locator(".bloat-section .note").textContent()) ?? "",
-      /61–110/,
-    );
-    await previous.click();
-    assert.equal(
-      await page.locator("#bloat-flash-symbols tbody").textContent(),
-      second,
-    );
-    await previous.click();
-    assert.equal(
-      await page.locator("#bloat-flash-symbols tbody").textContent(),
-      first,
-    );
-    assert.equal(await previous.isDisabled(), true);
   } finally {
     await browser.close();
     await server.close();

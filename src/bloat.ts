@@ -92,15 +92,13 @@ export async function openBloat(
       head.append(tr);
       table.append(head);
       const body = document.createElement("tbody");
-      let page = 0;
-      const pageCount =
-        symbols.length <= 10 ? 1 : 1 + Math.ceil((symbols.length - 10) / 50);
-      const renderRows = () => {
+      let shown = 0;
+      const appendRows = (count: number) => {
         const fragment = document.createDocumentFragment();
-        const start = page === 0 ? 0 : 10 + (page - 1) * 50;
-        const end = Math.min(symbols.length, start + (page === 0 ? 10 : 50));
+        const start = shown;
+        const end = Math.min(symbols.length, start + count);
         note.textContent = symbols.length
-          ? `Largest symbols first · ${start + 1}–${end} of ${symbols.length.toLocaleString()} · Page ${page + 1} of ${pageCount}`
+          ? `Largest symbols first · Showing ${end.toLocaleString()} of ${symbols.length.toLocaleString()}`
           : "No attributed symbols in this region.";
         symbols.slice(start, end).forEach((symbol) => {
           const tr = document.createElement("tr");
@@ -116,41 +114,33 @@ export async function openBloat(
           });
           fragment.append(tr);
         });
-        body.replaceChildren(fragment);
+        body.append(fragment);
+        shown = end;
       };
-      renderRows();
+      appendRows(10);
       table.append(body);
       if (symbols.length) section.append(table);
-      if (pageCount > 1) {
-        const navigation = document.createElement("nav");
+      if (symbols.length > shown) {
+        const navigation = document.createElement("div");
         navigation.className = "bloat-pagination";
-        navigation.setAttribute("aria-label", `${title} symbol pages`);
-        const previous = document.createElement("button");
-        const next = document.createElement("button");
-        previous.textContent = "Previous";
-        next.textContent = "Next 50";
-        for (const button of [previous, next])
-          button.setAttribute("aria-controls", table.id);
+        const more = document.createElement("button");
+        more.setAttribute("aria-controls", table.id);
         const update = () => {
-          renderRows();
-          previous.disabled = page === 0;
-          next.disabled = page === pageCount - 1;
-          next.textContent =
-            page === pageCount - 1
-              ? "Next"
-              : `Next ${Math.min(50, symbols.length - (page === 0 ? 10 : 10 + page * 50))}`;
+          const remaining = symbols.length - shown;
+          more.textContent = remaining
+            ? `Load ${Math.min(50, remaining)} more`
+            : "All symbols loaded";
+          more.disabled = remaining === 0;
         };
-        previous.addEventListener("click", () => {
-          page--;
+        more.addEventListener("click", () => {
+          const scrollTop = modal.scrollTop;
+          appendRows(50);
           update();
-        });
-        next.addEventListener("click", () => {
-          page++;
-          update();
+          modal.scrollTop = scrollTop;
         });
         note.setAttribute("role", "status");
         note.setAttribute("aria-live", "polite");
-        navigation.append(previous, next);
+        navigation.append(more);
         section.append(navigation);
         update();
       }

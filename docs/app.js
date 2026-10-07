@@ -7,6 +7,18 @@ const platforms = [
 const versions = Array.from({ length: 7 }, (_, i) => `3.10.${i}`).concat('master');
 const enabled = new Set(platforms.map(p => p.id));
 const bytes = n => `${n.toLocaleString('en-US')} B`;
+const localDate = timestamp => {
+  const date = new Date(timestamp);
+  if (!timestamp || Number.isNaN(date.getTime())) return 'Date unavailable';
+  return date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+};
+const localTimestamp = timestamp => timestamp && !Number.isNaN(new Date(timestamp).getTime()) ? new Date(timestamp).toLocaleString(undefined, { timeZoneName: 'short' }) : 'Date unavailable';
+function versionLabel(element, row) {
+  element.textContent = row.version;
+  if (row.version === 'master') {
+    const date = document.createElement('span'); date.className = 'measurement-date'; date.textContent = localDate(row.measured_at); date.title = localTimestamp(row.measured_at); element.append(date);
+  }
+}
 let results = [];
 let chartVersions = [...versions];
 const charts = {};
@@ -18,8 +30,9 @@ async function openBloat(row) {
   if (!row?.bloat_report) return;
   const request = ++reportRequest;
   const platform = platforms.find(p => p.id === row.board);
-  document.getElementById('bloat-title').textContent = `${platform.name} · ${row.version} · fbuild bloat`;
-  document.getElementById('bloat-meta').textContent = `SHA ${row.sha.slice(0, 10)} · fbuild ${row.fbuild} · flash ${bytes(row.flash)} · static RAM ${bytes(row.ram)}`;
+  const title = document.getElementById('bloat-title'); title.textContent = `${platform.name} · ${row.version} · fbuild bloat`;
+  if (row.version === 'master') { const date = document.createElement('span'); date.className = 'measurement-date'; date.textContent = localDate(row.measured_at); title.append(date); }
+  document.getElementById('bloat-meta').textContent = `SHA ${row.sha.slice(0, 10)} · fbuild ${row.fbuild} · flash ${bytes(row.flash)} · static RAM ${bytes(row.ram)} · measured ${localTimestamp(row.measured_at)}`;
   const container = document.getElementById('bloat-report'); container.textContent = 'Loading symbol report…';
   if (!modal.open) modal.showModal();
   try {
@@ -72,12 +85,12 @@ function chart(metric) {
     return {label:platform.name, borderColor:platform.color, backgroundColor:platform.color, pointRadius:5, pointHoverRadius:8, pointHitRadius:12, borderWidth:2.5, spanGaps:false, rows, data:rows.map(row => row && Number.isFinite(row[metric]) && (!log || row[metric]>0) ? row[metric] : null)};
   });
   charts[metric] = new Chart(canvas, {
-    type:'line', data:{labels:chartVersions,datasets}, options:{
+    type:'line', data:{labels:chartVersions.map(version => version === 'master' ? ['master', ...new Set(results.filter(row => row.version === 'master' && enabled.has(row.board)).map(row => localDate(row.measured_at)))] : version),datasets}, options:{
       responsive:true, maintainAspectRatio:false, animation:false,
       interaction:{mode:'nearest',intersect:true},
       onHover:(event,elements) => { canvas.style.cursor = elements.length ? 'pointer' : 'default'; },
       onClick:(event,elements,chart) => { if(elements.length) { const p=elements[0]; openBloat(chart.data.datasets[p.datasetIndex].rows[p.index]); } },
-      plugins:{legend:{display:false},tooltip:{backgroundColor:'#0c111c',padding:12,callbacks:{label:context=>`${context.dataset.label}: ${bytes(context.parsed.y)}`,afterLabel:context=>`SHA ${context.dataset.rows[context.dataIndex].sha.slice(0,10)} · click for bloat`}}},
+      plugins:{legend:{display:false},tooltip:{backgroundColor:'#0c111c',padding:12,callbacks:{label:context=>`${context.dataset.label}: ${bytes(context.parsed.y)}`,afterLabel:context=> { const row = context.dataset.rows[context.dataIndex]; return [`Measured ${localTimestamp(row.measured_at)}`, `SHA ${row.sha.slice(0,10)} · click for bloat`]; }}}},
       scales:{x:{grid:{display:false},ticks:{color:'#8594aa'}},y:{type:log?'logarithmic':'linear',beginAtZero:!log,grid:{color:'#263143'},ticks:{color:'#8594aa',callback:value=>Number(value).toLocaleString('en-US')}}}
     }
   });
@@ -89,6 +102,7 @@ function render() {
     const row = results.find(r => r.board === platform.id && r.version === version);
     const tr = document.createElement('tr');
     [version, platform.name, row?.status === 'ok' ? bytes(row.flash) : '—', row?.status === 'ok' ? bytes(row.ram) : '—'].forEach(value => { const td = document.createElement('td'); td.textContent = value; tr.append(td); });
+    if (version === 'master') versionLabel(tr.firstElementChild, row || { version });
     const source = document.createElement('td');
     if (row?.sha) { const link = document.createElement('a'); link.href = `https://github.com/FastLED/FastLED/commit/${row.sha}`; link.textContent = row.sha.slice(0, 10); source.append(link); } else source.textContent = '—';
     tr.append(source);

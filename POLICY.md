@@ -16,10 +16,13 @@
 - Show a prominent live-site link in the README. Embed a real overview
   screenshot as a noninteractive PNG, linked to the interactive Pages site.
   Regenerate that screenshot whenever the daily data is published.
-- Every master label must include a secondary measurement-date label in UTC
-  (`YYYY-MM-DD`), including chart axes, table version cells and report headings.
+- Every master label must include a secondary measurement-date label converted
+  to the viewer's local time zone and locale, including chart axes, table version
+  cells and report headings. Store timestamps in UTC and convert on display.
   Use the point's measurement timestamp, not the page viewing date or commit
-  date. Hover details retain the exact timestamp and source SHA.
+  date. Hover details retain the exact localized timestamp, time-zone label and
+  source SHA. If platforms were measured on different local dates, the shared
+  master axis label shows each date; each point retains its own timestamp.
 
 ## JSON transport and typed benchmark data
 

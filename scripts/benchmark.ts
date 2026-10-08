@@ -220,6 +220,7 @@ function measure(
     ...fbuildCommand,
     "symbols",
     elf,
+    "--no-graph",
     "--nm",
     nm,
     "--cppfilt",

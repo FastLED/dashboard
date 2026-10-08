@@ -16,6 +16,9 @@
     "fbuild": {
       "type": "string"
     },
+    "elf_verified": {
+      "type": "boolean"
+    },
     "analyzed_at": {
       "type": "string",
       "format": "date-time",

@@ -3,7 +3,8 @@ import {
   auditUrl,
   auditMatches,
   referenceAuditSchema,
-  referenceState,
+  ReferenceIndex,
+  analysisAvailable,
   type ReferenceAudit,
 } from "./references.ts";
 import { reportSchema, type Success, type BloatReport } from "./models.ts";
@@ -68,6 +69,8 @@ export async function openBloat(
       const parsed = referenceAuditSchema.parse(await response.json());
       if (!auditMatches(parsed, row))
         throw new Error("Reference audit provenance mismatch");
+      if (report.reference_analysis && parsed.elf_verified !== true)
+        throw new Error("Reference audit ELF verification failed");
       audit = parsed;
     } catch (error) {
       auditError = (
@@ -75,7 +78,8 @@ export async function openBloat(
       ).slice(0, 200);
     }
     if (request !== reportRequest) return;
-    referenceView = referencePopover(modal, report, audit);
+    const references = new ReferenceIndex(report, audit);
+    referenceView = referencePopover(modal, report, audit, references);
     container.replaceChildren();
     const summary = document.createElement("p");
     summary.textContent =
@@ -93,9 +97,33 @@ export async function openBloat(
       (symbol) =>
         symbol.region === region &&
         symbol.size > 0 &&
-        referenceState(symbol, audit).includes("retention unexplained"),
+        references.state(symbol).includes("retention unexplained"),
     ).length;
-    referenceNote.textContent = `Hover, focus or click a symbol for direct incoming references.${audit?.disassembly === "analyzed" ? ` ${unexplained.toLocaleString()} ${region === "flash" ? "Flash" : "RAM"} rows have unexplained retention.` : ` Reference analysis unavailable: ${auditError || audit?.warnings.join("; ") || "no disassembly provenance"}`}`;
+    referenceNote.textContent = `Hover, focus or click a symbol for direct incoming references.${
+      (
+        report.reference_analysis
+          ? !!audit && analysisAvailable(report.reference_analysis)
+          : audit?.disassembly === "analyzed"
+      )
+        ? ` ${unexplained.toLocaleString()} ${region === "flash" ? "Flash" : "RAM"} rows have unexplained retention.`
+        : ` Reference analysis unavailable: ${
+            auditError ||
+            (report.reference_analysis
+              ? [
+                  report.reference_analysis.disassembly,
+                  report.reference_analysis.static_data,
+                ]
+                  .filter((pass) => pass.status !== "analyzed")
+                  .map(
+                    (pass) =>
+                      `${pass.status}: ${pass.reason ?? "no reason provided"}`,
+                  )
+                  .join("; ")
+              : auditError ||
+                audit?.warnings.join("; ") ||
+                "no disassembly provenance")
+          }`
+    }`;
     container.append(referenceNote);
     {
       const title = region === "flash" ? "Flash" : "RAM";

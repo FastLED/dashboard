@@ -2,6 +2,289 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "properties": {
+    "reference_analysis": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "number",
+          "const": 1
+        },
+        "disassembly": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "analyzed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "tool": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "tool",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "static_data": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "analyzed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "tool": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "tool",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "object_references": {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string",
+              "enum": [
+                "analyzed",
+                "unavailable",
+                "error"
+              ]
+            },
+            "tool": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "reason": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "status",
+            "tool",
+            "reason"
+          ],
+          "additionalProperties": false
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "source": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "address",
+                  "source"
+                ],
+                "additionalProperties": false
+              },
+              "target": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "source": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "address",
+                  "source"
+                ],
+                "additionalProperties": false
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "disassembly",
+                  "static_data",
+                  "fragment_owner"
+                ]
+              },
+              "offset": {
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "source",
+              "target",
+              "kind",
+              "offset"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "roots": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "symbol": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "source": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "address",
+                  "source"
+                ],
+                "additionalProperties": false
+              },
+              "kind": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "symbol",
+              "kind"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "unexplained": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "address": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "source": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "address",
+              "source"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "address": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "name",
+              "address"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "schema",
+        "disassembly",
+        "static_data",
+        "object_references",
+        "edges",
+        "roots",
+        "unexplained",
+        "unresolved",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
     "elf_path": {
       "type": "string"
     },

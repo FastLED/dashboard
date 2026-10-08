@@ -1,0 +1,7360 @@
+{
+  "reference_analysis": {
+    "schema": 1,
+    "disassembly": {
+      "status": "analyzed",
+      "tool": "/home/niteris/.fbuild/prod/cache/toolchains/toolchain-gccarmnoneeabi-teensy/f10975e5515d77b9/1.110301.0/bin/arm-none-eabi-objdump",
+      "reason": null
+    },
+    "static_data": {
+      "status": "analyzed",
+      "tool": null,
+      "reason": null
+    },
+    "object_references": {
+      "status": "unavailable",
+      "tool": null,
+      "reason": "Linker map has no Cross Reference Table."
+    },
+    "edges": [
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memory_copy",
+          "address": 1610617856,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memory_clear.constprop.0",
+          "address": 1610617874,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__set_arm_clock_veneer",
+          "address": 1610620408,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "flexspi2_psram_size",
+          "address": 1610620184,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "flexspi2_command",
+          "address": 1610620148,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__memset_veneer",
+          "address": 1610620432,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "____errno_veneer",
+          "address": 1610620400,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__flexpwm_init_veneer",
+          "address": 1610620424,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__quadtimer_init_veneer",
+          "address": 1610620416,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__delay.part.0_veneer",
+          "address": 1610620440,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "startup_debug_reset",
+          "address": 1610620144,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "____libc_init_array_veneer",
+          "address": 1610620392,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__main_veneer",
+          "address": 1610620448,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "ResetHandler",
+          "address": 1610620104,
+          "source": "nm"
+        },
+        "target": {
+          "name": "ResetHandler2",
+          "address": 1610617900,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "flexspi2_psram_size",
+          "address": 1610620184,
+          "source": "nm"
+        },
+        "target": {
+          "name": "flexspi2_command",
+          "address": 1610620148,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16usb_serial_class5flushEv",
+          "address": 1824,
+          "source": "nm"
+        },
+        "target": {
+          "name": "usb_prepare_transfer",
+          "address": 1604,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16usb_serial_class5flushEv",
+          "address": 1824,
+          "source": "nm"
+        },
+        "target": {
+          "name": "schedule_transfer",
+          "address": 1648,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "rx_queue_transfer",
+          "address": 2028,
+          "source": "nm"
+        },
+        "target": {
+          "name": "usb_prepare_transfer",
+          "address": 1604,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "rx_queue_transfer",
+          "address": 2028,
+          "source": "nm"
+        },
+        "target": {
+          "name": "schedule_transfer",
+          "address": 1648,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16usb_serial_class5clearEv",
+          "address": 2128,
+          "source": "nm"
+        },
+        "target": {
+          "name": "rx_queue_transfer",
+          "address": 2028,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_serial_flush_callback",
+          "address": 2204,
+          "source": "nm"
+        },
+        "target": {
+          "name": "usb_prepare_transfer",
+          "address": 1604,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_serial_flush_callback",
+          "address": 2204,
+          "source": "nm"
+        },
+        "target": {
+          "name": "schedule_transfer",
+          "address": 1648,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "delay.part.0",
+          "address": 2468,
+          "source": "nm"
+        },
+        "target": {
+          "name": "micros",
+          "address": 1188,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "delay.part.0",
+          "address": 2468,
+          "source": "nm"
+        },
+        "target": {
+          "name": "yield",
+          "address": 2340,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16usb_serial_class9availableEv",
+          "address": 2508,
+          "source": "nm"
+        },
+        "target": {
+          "name": "yield",
+          "address": 2340,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE9showColorERK4CRGBih",
+          "address": 2604,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN4CRGB17computeAdjustmentEhRKS_S1_",
+          "address": 2532,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE9showColorERK4CRGBih",
+          "address": 2604,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN15PixelControllerIL6EOrder10ELi1ELm4294967295EE21init_binary_ditheringEv",
+          "address": 176,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE4showEPK4CRGBih",
+          "address": 2814,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN4CRGB17computeAdjustmentEhRKS_S1_",
+          "address": 2532,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE4showEPK4CRGBih",
+          "address": 2814,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN15PixelControllerIL6EOrder10ELi1ELm4294967295EE21init_binary_ditheringEv",
+          "address": 176,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8SPIClass5beginEv.constprop.0",
+          "address": 3636,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN8SPIClass16beginTransactionE11SPISettings.constprop.0",
+          "address": 3284,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8SPIClass5beginEv.constprop.0",
+          "address": 3636,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN8SPIClass14endTransactionEv.constprop.0",
+          "address": 3552,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE4initEv",
+          "address": 3888,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN8SPIClass5beginEv.constprop.0",
+          "address": 3636,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE10showPixelsER15PixelControllerILS0_10ELi1ELm4294967295EE",
+          "address": 3912,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN8SPIClass16beginTransactionE11SPISettings.constprop.0",
+          "address": 3284,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE10showPixelsER15PixelControllerILS0_10ELi1ELm4294967295EE",
+          "address": 3912,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN8SPIClass8transferEh.constprop.0.isra.0",
+          "address": 3890,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE10showPixelsER15PixelControllerILS0_10ELi1ELm4294967295EE",
+          "address": 3912,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN8SPIClass14endTransactionEv.constprop.0",
+          "address": 3552,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_Z15_spi_dma_rxISR0v",
+          "address": 4730,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_Z23DMAChanneltransferCountP10DMAChannelj.isra.0",
+          "address": 4692,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN14CLEDController9clearLedsEi",
+          "address": 4848,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memset",
+          "address": 9564,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EED0Ev",
+          "address": 4896,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EED2Ev.isra.0",
+          "address": 4908,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl12EngineEventsD1Ev",
+          "address": 4938,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EED2Ev.isra.0",
+          "address": 4908,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16usb_serial_class4readEv",
+          "address": 4950,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memcpy",
+          "address": 9256,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16usb_serial_class4readEv",
+          "address": 4950,
+          "source": "nm"
+        },
+        "target": {
+          "name": "rx_queue_transfer",
+          "address": 2028,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "rx_event",
+          "address": 5140,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memcpy",
+          "address": 9256,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "rx_event",
+          "address": 5140,
+          "source": "nm"
+        },
+        "target": {
+          "name": "rx_queue_transfer",
+          "address": 2028,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_serial_write.part.0",
+          "address": 5304,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memcpy",
+          "address": 9256,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_serial_write.part.0",
+          "address": 5304,
+          "source": "nm"
+        },
+        "target": {
+          "name": "usb_prepare_transfer",
+          "address": 1604,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_serial_write.part.0",
+          "address": 5304,
+          "source": "nm"
+        },
+        "target": {
+          "name": "schedule_transfer",
+          "address": 1648,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_serial_write.part.0",
+          "address": 5304,
+          "source": "nm"
+        },
+        "target": {
+          "name": "yield",
+          "address": 2340,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16usb_serial_class5writeEPKhj",
+          "address": 5656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "usb_serial_write.part.0",
+          "address": 5304,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16usb_serial_class5writeEh",
+          "address": 5684,
+          "source": "nm"
+        },
+        "target": {
+          "name": "usb_serial_write.part.0",
+          "address": 5304,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEv",
+          "address": 5724,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memset",
+          "address": 9564,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEv",
+          "address": 5724,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__aeabi_atexit",
+          "address": 9632,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl10HeapVectorINS_12EngineEvents4PairENS_9allocatorIS2_EEE11ensure_sizeEj",
+          "address": 5800,
+          "source": "nm"
+        },
+        "target": {
+          "name": "malloc",
+          "address": 12004,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl10HeapVectorINS_12EngineEvents4PairENS_9allocatorIS2_EEE11ensure_sizeEj",
+          "address": 5800,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memset",
+          "address": 9564,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl10HeapVectorINS_12EngineEvents4PairENS_9allocatorIS2_EEE11ensure_sizeEj",
+          "address": 5800,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EEC2ERKS3_.isra.0",
+          "address": 5892,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memset",
+          "address": 9564,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EEC2ERKS3_.isra.0",
+          "address": 5892,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl10HeapVectorINS_12EngineEvents4PairENS_9allocatorIS2_EEE11ensure_sizeEj",
+          "address": 5800,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh.constprop.0",
+          "address": 6088,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEv",
+          "address": 5724,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh.constprop.0",
+          "address": 6088,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EEC2ERKS3_.isra.0",
+          "address": 5892,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh.constprop.0",
+          "address": 6088,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EE3endEv",
+          "address": 3042,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh.constprop.0",
+          "address": 6088,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EED2Ev.isra.0",
+          "address": 4908,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh.constprop.0",
+          "address": 6088,
+          "source": "nm"
+        },
+        "target": {
+          "name": "micros",
+          "address": 1188,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_isr",
+          "address": 6528,
+          "source": "nm"
+        },
+        "target": {
+          "name": "___reboot_Teensyduino__veneer",
+          "address": 12320,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_isr",
+          "address": 6528,
+          "source": "nm"
+        },
+        "target": {
+          "name": "run_callbacks",
+          "address": 1772,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_isr",
+          "address": 6528,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memcpy",
+          "address": 9256,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_isr",
+          "address": 6528,
+          "source": "nm"
+        },
+        "target": {
+          "name": "endpoint0_receive",
+          "address": 1424,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_isr",
+          "address": 6528,
+          "source": "nm"
+        },
+        "target": {
+          "name": "memset",
+          "address": 9564,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_isr",
+          "address": 6528,
+          "source": "nm"
+        },
+        "target": {
+          "name": "rx_queue_transfer",
+          "address": 2028,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "usb_isr",
+          "address": 6528,
+          "source": "nm"
+        },
+        "target": {
+          "name": "endpoint0_transmit.constprop.0",
+          "address": 3116,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "unused_interrupt_vector",
+          "address": 7956,
+          "source": "nm"
+        },
+        "target": {
+          "name": "set_arm_clock",
+          "address": 664,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "unused_interrupt_vector",
+          "address": 7956,
+          "source": "nm"
+        },
+        "target": {
+          "name": "usb_isr",
+          "address": 6528,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "Panic_Temp_isr",
+          "address": 8456,
+          "source": "nm"
+        },
+        "target": {
+          "name": "unused_interrupt_vector",
+          "address": 7956,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZdlPvj",
+          "address": 8460,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_Znwj",
+          "address": 8492,
+          "source": "nm"
+        },
+        "target": {
+          "name": "malloc",
+          "address": 12004,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_Znaj",
+          "address": 8496,
+          "source": "nm"
+        },
+        "target": {
+          "name": "malloc",
+          "address": 12004,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZdlPv",
+          "address": 8500,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZdaPv",
+          "address": 8504,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZdaPvj",
+          "address": 8508,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZnwjSt11align_val_t",
+          "address": 8512,
+          "source": "nm"
+        },
+        "target": {
+          "name": "aligned_alloc",
+          "address": 12036,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZnajSt11align_val_t",
+          "address": 8522,
+          "source": "nm"
+        },
+        "target": {
+          "name": "aligned_alloc",
+          "address": 12036,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZdlPvSt11align_val_t",
+          "address": 8532,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZdaPvSt11align_val_t",
+          "address": 8536,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZdlPvjSt11align_val_t",
+          "address": 8540,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZdaPvjSt11align_val_t",
+          "address": 8544,
+          "source": "nm"
+        },
+        "target": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_sbrk",
+          "address": 8548,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__errno",
+          "address": 9644,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 8816,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__aeabi_atexit",
+          "address": 9632,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 8816,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN8SPIClass5beginEv.constprop.0",
+          "address": 3636,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 8816,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEv",
+          "address": 5724,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 8816,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EEC2ERKS3_.isra.0",
+          "address": 5892,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 8816,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EE3endEv",
+          "address": 3042,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 8816,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EED2Ev.isra.0",
+          "address": 4908,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 8816,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN8CFastLED4showEh.constprop.0",
+          "address": 6088,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 8816,
+          "source": "nm"
+        },
+        "target": {
+          "name": "delay.part.0",
+          "address": 2468,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 8816,
+          "source": "nm"
+        },
+        "target": {
+          "name": "yield",
+          "address": 2340,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_sub_I_65535_0.0",
+          "address": 9100,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN10DMAChannelC2Ev.isra.0",
+          "address": 8636,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_sub_I_65535_0.0",
+          "address": 9100,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__aeabi_atexit",
+          "address": 9632,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__aeabi_atexit",
+          "address": 9632,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__cxa_atexit",
+          "address": 9656,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__cxa_atexit",
+          "address": 9656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__register_exitproc",
+          "address": 10468,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__libc_init_array",
+          "address": 9668,
+          "source": "nm"
+        },
+        "target": {
+          "name": "___init_veneer",
+          "address": 12328,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_malloc_trim_r",
+          "address": 9748,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__malloc_lock",
+          "address": 11980,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_malloc_trim_r",
+          "address": 9748,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_sbrk_r",
+          "address": 10432,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_malloc_trim_r",
+          "address": 9748,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__malloc_unlock",
+          "address": 11992,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_free_r",
+          "address": 9908,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__malloc_lock",
+          "address": 11980,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_free_r",
+          "address": 9908,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__malloc_unlock",
+          "address": 11992,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_free_r",
+          "address": 9908,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_malloc_trim_r",
+          "address": 9748,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_sbrk_r",
+          "address": 10432,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_sbrk",
+          "address": 8548,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__register_exitproc",
+          "address": 10468,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__retarget_lock_acquire_recursive",
+          "address": 9740,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__register_exitproc",
+          "address": 10468,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__retarget_lock_release_recursive",
+          "address": 9744,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_malloc_r",
+          "address": 10604,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__malloc_lock",
+          "address": 11980,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_malloc_r",
+          "address": 10604,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__malloc_unlock",
+          "address": 11992,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_malloc_r",
+          "address": 10604,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_sbrk_r",
+          "address": 10432,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_malloc_r",
+          "address": 10604,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_free_r",
+          "address": 9908,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__malloc_lock",
+          "address": 11980,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__retarget_lock_acquire_recursive",
+          "address": 9740,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__malloc_unlock",
+          "address": 11992,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__retarget_lock_release_recursive",
+          "address": 9744,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "malloc",
+          "address": 12004,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_malloc_r",
+          "address": 10604,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "free",
+          "address": 12020,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_free_r",
+          "address": 9908,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "aligned_alloc",
+          "address": 12036,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_memalign_r",
+          "address": 12060,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_memalign_r",
+          "address": 12060,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_malloc_r",
+          "address": 10604,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_memalign_r",
+          "address": 12060,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__malloc_lock",
+          "address": 11980,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_memalign_r",
+          "address": 12060,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__malloc_unlock",
+          "address": 11992,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_memalign_r",
+          "address": 12060,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_free_r",
+          "address": 9908,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE9showColorERK4CRGBih",
+          "address": 2604,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 8
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE4showEPK4CRGBih",
+          "address": 2814,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 12
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EED1Ev",
+          "address": 170,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 16
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EED2Ev",
+          "address": 170,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 16
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EED0Ev",
+          "address": 4896,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 20
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE4initEv",
+          "address": 3888,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 24
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN14CLEDController9clearLedsEi",
+          "address": 4848,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 28
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN14CLEDController8showLedsEh",
+          "address": 104,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 32
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN14CLEDController4sizeEv",
+          "address": 154,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 36
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN14CLEDController5lanesEv",
+          "address": 172,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 40
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE5lanesEv",
+          "address": 172,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 40
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN14CLEDController13beginShowLedsEi",
+          "address": 158,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 44
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN14CLEDController11endShowLedsEPv",
+          "address": 162,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 48
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZNK14CLEDController17getMaxRefreshRateEv",
+          "address": 166,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 52
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+          "address": 536872596,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE10showPixelsER15PixelControllerILS0_10ELi1ELm4294967295EE",
+          "address": 3912,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 56
+      },
+      {
+        "source": {
+          "name": "_ZTV16usb_serial_class",
+          "address": 536872656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16usb_serial_class5writeEh",
+          "address": 5684,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 8
+      },
+      {
+        "source": {
+          "name": "_ZTV16usb_serial_class",
+          "address": 536872656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16usb_serial_class5writeEPKhj",
+          "address": 5656,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 12
+      },
+      {
+        "source": {
+          "name": "_ZTV16usb_serial_class",
+          "address": 536872656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16usb_serial_class17availableForWriteEv",
+          "address": 1968,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 16
+      },
+      {
+        "source": {
+          "name": "_ZTV16usb_serial_class",
+          "address": 536872656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16usb_serial_class5flushEv",
+          "address": 1824,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 20
+      },
+      {
+        "source": {
+          "name": "_ZTV16usb_serial_class",
+          "address": 536872656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16usb_serial_class9availableEv",
+          "address": 2508,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 24
+      },
+      {
+        "source": {
+          "name": "_ZTV16usb_serial_class",
+          "address": 536872656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16usb_serial_class4readEv",
+          "address": 4950,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 28
+      },
+      {
+        "source": {
+          "name": "_ZTV16usb_serial_class",
+          "address": 536872656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16usb_serial_class4peekEv",
+          "address": 492,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 32
+      },
+      {
+        "source": {
+          "name": "_ZTV16usb_serial_class",
+          "address": 536872656,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16usb_serial_class5clearEv",
+          "address": 2128,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 36
+      }
+    ],
+    "roots": [],
+    "unexplained": [
+      {
+        "name": "txbuffer",
+        "address": 538973344,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl10ObjectFLED7bitdataE",
+        "address": 538968192,
+        "source": "nm"
+      },
+      {
+        "name": "rx_buffer",
+        "address": 538981536,
+        "source": "nm"
+      },
+      {
+        "name": "hab_csf",
+        "address": 1610638336,
+        "source": "nm"
+      },
+      {
+        "name": "__malloc_av_",
+        "address": 536873332,
+        "source": "nm"
+      },
+      {
+        "name": "digital_pin_to_info_PGM",
+        "address": 536871584,
+        "source": "nm"
+      },
+      {
+        "name": "_VectorsRam",
+        "address": 536875008,
+        "source": "nm"
+      },
+      {
+        "name": "endpoint_queue_head",
+        "address": 536870912,
+        "source": "nm"
+      },
+      {
+        "name": "FlexSPI_NOR_Config",
+        "address": 1610612736,
+        "source": "nm"
+      },
+      {
+        "name": "__atexit0",
+        "address": 536877256,
+        "source": "nm"
+      },
+      {
+        "name": "__sf",
+        "address": 536877716,
+        "source": "nm"
+      },
+      {
+        "name": "_impure_data",
+        "address": 536872808,
+        "source": "nm"
+      },
+      {
+        "name": "main",
+        "address": 8816,
+        "source": "nm"
+      },
+      {
+        "name": "rx_transfer",
+        "address": 536876128,
+        "source": "nm"
+      },
+      {
+        "name": "_ZL16gControllersData",
+        "address": 536876604,
+        "source": "nm"
+      },
+      {
+        "name": "rx_event",
+        "address": 5140,
+        "source": "nm"
+      },
+      {
+        "name": "_sub_I_65535_0.0",
+        "address": 9100,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEvE8instance",
+        "address": 536876428,
+        "source": "nm"
+      },
+      {
+        "name": "usb_serial_flush_callback",
+        "address": 2204,
+        "source": "nm"
+      },
+      {
+        "name": "usb_descriptor_list",
+        "address": 536872464,
+        "source": "nm"
+      },
+      {
+        "name": "tx_transfer",
+        "address": 536876000,
+        "source": "nm"
+      },
+      {
+        "name": "dmxBuffer",
+        "address": 536877113,
+        "source": "nm"
+      },
+      {
+        "name": "_Z15_spi_dma_rxISR0v",
+        "address": 4730,
+        "source": "nm"
+      },
+      {
+        "name": "flexpwm_init",
+        "address": 1252,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN8SPIClass24spiclass_lpspi4_hardwareE",
+        "address": 536872696,
+        "source": "nm"
+      },
+      {
+        "name": "_ZNK9IPAddress7printToER5Print",
+        "address": 348,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN13IntervalTimerD2Ev",
+        "address": 556,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN13IntervalTimerD1Ev",
+        "address": 556,
+        "source": "nm"
+      },
+      {
+        "name": "usb_descriptor_buffer",
+        "address": 538968064,
+        "source": "nm"
+      },
+      {
+        "name": "usb_config_descriptor_480",
+        "address": 1610620562,
+        "source": "nm"
+      },
+      {
+        "name": "usb_config_descriptor_12",
+        "address": 1610620464,
+        "source": "nm"
+      },
+      {
+        "name": "_ZL11funct_table",
+        "address": 536875744,
+        "source": "nm"
+      },
+      {
+        "name": "_reboot_Teensyduino_",
+        "address": 1610620292,
+        "source": "nm"
+      },
+      {
+        "name": "SPI",
+        "address": 536873108,
+        "source": "nm"
+      },
+      {
+        "name": "__libc_init_array",
+        "address": 9668,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl10ObjectFLED8dma2nextE",
+        "address": 536877024,
+        "source": "nm"
+      },
+      {
+        "name": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+        "address": 536872596,
+        "source": "nm"
+      },
+      {
+        "name": "quadtimer_init",
+        "address": 1366,
+        "source": "nm"
+      },
+      {
+        "name": "pendablesrvreq_isr",
+        "address": 276,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN10DMAChannelD2Ev",
+        "address": 3072,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN10DMAChannelD1Ev",
+        "address": 3072,
+        "source": "nm"
+      },
+      {
+        "name": "microsoft_os_compatible_id_desc",
+        "address": 536873248,
+        "source": "nm"
+      },
+      {
+        "name": "__malloc_current_mallinfo",
+        "address": 536877664,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN8CFastLED7addLedsIL12ESPIChipsets6ELh11ELh13EL6EOrder10EEER14CLEDControllerP4CRGBiiE1c",
+        "address": 536876944,
+        "source": "nm"
+      },
+      {
+        "name": "_ZTV16usb_serial_class",
+        "address": 536872656,
+        "source": "nm"
+      },
+      {
+        "name": "ResetHandler",
+        "address": 1610620104,
+        "source": "nm"
+      },
+      {
+        "name": "endpoint0_transfer_data",
+        "address": 536875904,
+        "source": "nm"
+      },
+      {
+        "name": "endpoint0_transfer_ack",
+        "address": 536875936,
+        "source": "nm"
+      },
+      {
+        "name": "ImageVectorTable",
+        "address": 1610616832,
+        "source": "nm"
+      },
+      {
+        "name": "_write",
+        "address": 8464,
+        "source": "nm"
+      },
+      {
+        "name": "__tcf_0",
+        "address": 464,
+        "source": "nm"
+      },
+      {
+        "name": "usb_string_manufacturer_name_default",
+        "address": 1610620682,
+        "source": "nm"
+      },
+      {
+        "name": "usb_string_manufacturer_name",
+        "address": 1610620682,
+        "source": "nm"
+      },
+      {
+        "name": "systick_isr",
+        "address": 324,
+        "source": "nm"
+      },
+      {
+        "name": "usb_string_serial_number_default",
+        "address": 536873204,
+        "source": "nm"
+      },
+      {
+        "name": "usb_string_serial_number",
+        "address": 536873204,
+        "source": "nm"
+      },
+      {
+        "name": "usb_string_product_name_default",
+        "address": 1610620660,
+        "source": "nm"
+      },
+      {
+        "name": "usb_string_product_name",
+        "address": 1610620660,
+        "source": "nm"
+      },
+      {
+        "name": "microsoft_os_string_desc",
+        "address": 536873288,
+        "source": "nm"
+      },
+      {
+        "name": "device_descriptor",
+        "address": 536873306,
+        "source": "nm"
+      },
+      {
+        "name": "rx_index",
+        "address": 536875852,
+        "source": "nm"
+      },
+      {
+        "name": "rx_count",
+        "address": 536876392,
+        "source": "nm"
+      },
+      {
+        "name": "extmem_smalloc_pool",
+        "address": 536876992,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN8SPIClass16beginTransactionE11SPISettingsE7clk_sel",
+        "address": 536871568,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN6teensy23inplace_function_detail12empty_vtableIvJEEE",
+        "address": 536871552,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl10ObjectFLED7bitmaskE",
+        "address": 538973312,
+        "source": "nm"
+      },
+      {
+        "name": "Serial",
+        "address": 536873188,
+        "source": "nm"
+      },
+      {
+        "name": "FastLED",
+        "address": 536876580,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl12EngineEventsD2Ev",
+        "address": 4938,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl12EngineEventsD1Ev",
+        "address": 4938,
+        "source": "nm"
+      },
+      {
+        "name": "BootData",
+        "address": 1610616864,
+        "source": "nm"
+      },
+      {
+        "name": "qualifier_descriptor",
+        "address": 1610620710,
+        "source": "nm"
+      },
+      {
+        "name": "_fstat",
+        "address": 8606,
+        "source": "nm"
+      },
+      {
+        "name": "_ZnwjSt11align_val_t",
+        "address": 8512,
+        "source": "nm"
+      },
+      {
+        "name": "_ZnajSt11align_val_t",
+        "address": 8522,
+        "source": "nm"
+      },
+      {
+        "name": "rx_list",
+        "address": 536875842,
+        "source": "nm"
+      },
+      {
+        "name": "usb_cdc_line_coding",
+        "address": 536876912,
+        "source": "nm"
+      },
+      {
+        "name": "reply_buffer",
+        "address": 536876880,
+        "source": "nm"
+      },
+      {
+        "name": "endpoint0_setupdata",
+        "address": 536876896,
+        "source": "nm"
+      },
+      {
+        "name": "endpoint0_buffer",
+        "address": 536876904,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl10ObjectFLED4dma3E",
+        "address": 536877104,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl10ObjectFLED4dma2E",
+        "address": 536877096,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl10ObjectFLED4dma1E",
+        "address": 536877088,
+        "source": "nm"
+      },
+      {
+        "name": "_ZL10tone_timer",
+        "address": 536873240,
+        "source": "nm"
+      },
+      {
+        "name": "DMXtimer",
+        "address": 536873232,
+        "source": "nm"
+      },
+      {
+        "name": "_lseek",
+        "address": 8620,
+        "source": "nm"
+      },
+      {
+        "name": "_close",
+        "address": 8600,
+        "source": "nm"
+      },
+      {
+        "name": "usb_timer0_callback",
+        "address": 536876876,
+        "source": "nm"
+      },
+      {
+        "name": "usb_cdc_line_rtsdtr_millis",
+        "address": 536876888,
+        "source": "nm"
+      },
+      {
+        "name": "systick_safe_read",
+        "address": 536875872,
+        "source": "nm"
+      },
+      {
+        "name": "systick_millis_count",
+        "address": 536875724,
+        "source": "nm"
+      },
+      {
+        "name": "systick_cycle_count",
+        "address": 536875720,
+        "source": "nm"
+      },
+      {
+        "name": "string0",
+        "address": 1610620706,
+        "source": "nm"
+      },
+      {
+        "name": "scale_cpu_cycles_to_microseconds",
+        "address": 536875868,
+        "source": "nm"
+      },
+      {
+        "name": "s_roomC_hotC",
+        "address": 536876936,
+        "source": "nm"
+      },
+      {
+        "name": "s_hot_ROOM",
+        "address": 536876932,
+        "source": "nm"
+      },
+      {
+        "name": "s_hotTemp",
+        "address": 536876924,
+        "source": "nm"
+      },
+      {
+        "name": "s_hotCount",
+        "address": 536876928,
+        "source": "nm"
+      },
+      {
+        "name": "rx_available",
+        "address": 536876388,
+        "source": "nm"
+      },
+      {
+        "name": "errno",
+        "address": 536878028,
+        "source": "nm"
+      },
+      {
+        "name": "endpointN_notify_mask",
+        "address": 536876872,
+        "source": "nm"
+      },
+      {
+        "name": "endpoint0_notify_mask",
+        "address": 536875968,
+        "source": "nm"
+      },
+      {
+        "name": "atexit",
+        "address": 8630,
+        "source": "nm"
+      },
+      {
+        "name": "_read",
+        "address": 8596,
+        "source": "nm"
+      },
+      {
+        "name": "_isatty",
+        "address": 8616,
+        "source": "nm"
+      },
+      {
+        "name": "_impure_ptr",
+        "address": 536874372,
+        "source": "nm"
+      },
+      {
+        "name": "_exit",
+        "address": 8626,
+        "source": "nm"
+      },
+      {
+        "name": "__malloc_trim_threshold",
+        "address": 536874368,
+        "source": "nm"
+      },
+      {
+        "name": "__malloc_top_pad",
+        "address": 536877712,
+        "source": "nm"
+      },
+      {
+        "name": "__malloc_sbrk_base",
+        "address": 536874364,
+        "source": "nm"
+      },
+      {
+        "name": "__malloc_max_total_mem",
+        "address": 536877708,
+        "source": "nm"
+      },
+      {
+        "name": "__malloc_max_sbrked_mem",
+        "address": 536877704,
+        "source": "nm"
+      },
+      {
+        "name": "__cxa_pure_virtual",
+        "address": 1420,
+        "source": "nm"
+      },
+      {
+        "name": "__brkval",
+        "address": 536873228,
+        "source": "nm"
+      },
+      {
+        "name": "__atexit_recursive_mutex",
+        "address": 536873324,
+        "source": "nm"
+      },
+      {
+        "name": "__atexit",
+        "address": 536877252,
+        "source": "nm"
+      },
+      {
+        "name": "_Znwj",
+        "address": 8492,
+        "source": "nm"
+      },
+      {
+        "name": "_Znaj",
+        "address": 8496,
+        "source": "nm"
+      },
+      {
+        "name": "_ZdlPvjSt11align_val_t",
+        "address": 8540,
+        "source": "nm"
+      },
+      {
+        "name": "_ZdlPvj",
+        "address": 8460,
+        "source": "nm"
+      },
+      {
+        "name": "_ZdlPvSt11align_val_t",
+        "address": 8532,
+        "source": "nm"
+      },
+      {
+        "name": "_ZdlPv",
+        "address": 8500,
+        "source": "nm"
+      },
+      {
+        "name": "_ZdaPvjSt11align_val_t",
+        "address": 8544,
+        "source": "nm"
+      },
+      {
+        "name": "_ZdaPvj",
+        "address": 8508,
+        "source": "nm"
+      },
+      {
+        "name": "_ZdaPvSt11align_val_t",
+        "address": 8536,
+        "source": "nm"
+      },
+      {
+        "name": "_ZdaPv",
+        "address": 8504,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN8CFastLED8countFPSEiE9lastframe",
+        "address": 536876864,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN8CFastLED8countFPSEiE2br",
+        "address": 536876860,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl17framebuffer_indexE",
+        "address": 536877244,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN14EventResponder14firstInterruptE",
+        "address": 536875716,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN14EventResponder10firstYieldE",
+        "address": 536876412,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN14CLEDController7m_pTailE",
+        "address": 536876984,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN14CLEDController7m_pHeadE",
+        "address": 536876600,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN13IntervalTimer14nvic_prioritesE",
+        "address": 536873096,
+        "source": "nm"
+      },
+      {
+        "name": "_ZL8lastshow",
+        "address": 536876596,
+        "source": "nm"
+      },
+      {
+        "name": "_ZGVZN8CFastLED7addLedsIL12ESPIChipsets6ELh11ELh13EL6EOrder10EEER14CLEDControllerP4CRGBiiE1c",
+        "address": 536876940,
+        "source": "nm"
+      },
+      {
+        "name": "_ZGVZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEvE8instance",
+        "address": 536876424,
+        "source": "nm"
+      },
+      {
+        "name": "Panic_Temp_isr",
+        "address": 8456,
+        "source": "nm"
+      },
+      {
+        "name": "F_CPU_ACTUAL",
+        "address": 536873100,
+        "source": "nm"
+      },
+      {
+        "name": "F_BUS_ACTUAL",
+        "address": 536873104,
+        "source": "nm"
+      },
+      {
+        "name": "leds",
+        "address": 536876988,
+        "source": "nm"
+      },
+      {
+        "name": "tx_packet_size",
+        "address": 536876870,
+        "source": "nm"
+      },
+      {
+        "name": "tx_available",
+        "address": 536875974,
+        "source": "nm"
+      },
+      {
+        "name": "rx_packet_size",
+        "address": 536876384,
+        "source": "nm"
+      },
+      {
+        "name": "dma_channel_allocated_mask",
+        "address": 536876418,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN6teensy23inplace_function_detail6vtableIvJEEC4EvENUlPvS3_E1_4_FUNES3_S3_",
+        "address": 460,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN6teensy23inplace_function_detail6vtableIvJEEC4EvENUlPvS3_E0_4_FUNES3_S3_",
+        "address": 458,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN6teensy23inplace_function_detail6vtableIvJEEC4EvENUlPvE_4_FUNES3_",
+        "address": 456,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN6teensy23inplace_function_detail6vtableIvJEEC4EvENUlPvE2_4_FUNES3_",
+        "address": 462,
+        "source": "nm"
+      },
+      {
+        "name": "yield_active_check_flags",
+        "address": 536876408,
+        "source": "nm"
+      },
+      {
+        "name": "usb_reboot_timer",
+        "address": 536876921,
+        "source": "nm"
+      },
+      {
+        "name": "usb_high_speed",
+        "address": 536876868,
+        "source": "nm"
+      },
+      {
+        "name": "usb_configuration",
+        "address": 536875972,
+        "source": "nm"
+      },
+      {
+        "name": "usb_cdc_transmit_flush_timer",
+        "address": 536877112,
+        "source": "nm"
+      },
+      {
+        "name": "usb_cdc_line_rtsdtr",
+        "address": 536876892,
+        "source": "nm"
+      },
+      {
+        "name": "tx_noautoflush",
+        "address": 536875976,
+        "source": "nm"
+      },
+      {
+        "name": "tx_head",
+        "address": 536875977,
+        "source": "nm"
+      },
+      {
+        "name": "transmit_previous_timeout",
+        "address": 536876420,
+        "source": "nm"
+      },
+      {
+        "name": "sof_usage",
+        "address": 536876920,
+        "source": "nm"
+      },
+      {
+        "name": "rx_tail",
+        "address": 536875840,
+        "source": "nm"
+      },
+      {
+        "name": "rx_head",
+        "address": 536875841,
+        "source": "nm"
+      },
+      {
+        "name": "external_psram_size",
+        "address": 536876991,
+        "source": "nm"
+      },
+      {
+        "name": "__lock___malloc_recursive_mutex",
+        "address": 536877660,
+        "source": "nm"
+      },
+      {
+        "name": "__lock___atexit_recursive_mutex",
+        "address": 536877656,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN15PixelControllerIL6EOrder10ELi1ELm4294967295EE21init_binary_ditheringEvE1R",
+        "address": 536875712,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZ5yieldE7running",
+        "address": 536876409,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl9dma_firstE",
+        "address": 536877248,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN14EventResponder16runningFromYieldE",
+        "address": 536876416,
+        "source": "nm"
+      },
+      {
+        "name": "register_tm_clones",
+        "address": 32,
+        "source": "map-derived"
+      },
+      {
+        "name": "frame_dummy",
+        "address": 68,
+        "source": "map-derived"
+      },
+      {
+        "name": "__dso_handle",
+        "address": 536873328,
+        "source": "map-derived"
+      },
+      {
+        "name": "object.0",
+        "address": 536878032,
+        "source": "map-derived"
+      }
+    ],
+    "unresolved": [
+      {
+        "name": "memset",
+        "address": 9564
+      }
+    ],
+    "limitations": [
+      "Runtime indirect calls are not reconstructed.",
+      "Static pointer extraction covers absolute Itanium vtables; relative vtables and function descriptors are unsupported.",
+      "KEEP and platform-specific linker roots require additional linker evidence.",
+      "Disassembly annotations are references, not necessarily function calls; interior-offset annotations are not reconstructed."
+    ]
+  },
+  "elf_path": "/home/niteris/dev/fastled-memory-dashboard/.cache/build/teensy41/dec101a1268e013ef42deee644ff58883179d61a-42556b1a01f5/.fbuild/build/teensy41/release/firmware.elf",
+  "map_path": "/home/niteris/dev/fastled-memory-dashboard/.cache/build/teensy41/dec101a1268e013ef42deee644ff58883179d61a-42556b1a01f5/.fbuild/build/teensy41/release/firmware.map",
+  "total_flash": 18350,
+  "total_ram": 24497,
+  "image_flash": 28672,
+  "symbols": [
+    {
+      "mangled": "txbuffer",
+      "demangled": "txbuffer",
+      "address": 538973344,
+      "size": 8192,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss.dma",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl10ObjectFLED7bitdataE",
+      "demangled": "fl::ObjectFLED::bitdata",
+      "address": 538968192,
+      "size": 5120,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss.dma",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "rx_buffer",
+      "demangled": "rx_buffer",
+      "address": 538981536,
+      "size": 4096,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss.dma",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "hab_csf",
+      "demangled": "hab_csf",
+      "address": 1610638336,
+      "size": 3072,
+      "sym_type": "R",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.csf",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "ResetHandler2",
+      "demangled": "ResetHandler2",
+      "address": 1610617900,
+      "size": 2204,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "____errno_veneer",
+        "____libc_init_array_veneer",
+        "__delay.part.0_veneer",
+        "__flexpwm_init_veneer",
+        "__main_veneer",
+        "__memset_veneer",
+        "__quadtimer_init_veneer",
+        "__set_arm_clock_veneer",
+        "flexspi2_command",
+        "flexspi2_psram_size",
+        "memory_clear.constprop.0",
+        "memory_copy",
+        "startup_debug_reset"
+      ],
+      "called_by": [
+        "ResetHandler"
+      ]
+    },
+    {
+      "mangled": "usb_isr",
+      "demangled": "usb_isr",
+      "address": 6528,
+      "size": 1428,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "___reboot_Teensyduino__veneer",
+        "endpoint0_receive",
+        "endpoint0_transmit.constprop.0",
+        "memcpy",
+        "memset",
+        "run_callbacks",
+        "rx_queue_transfer"
+      ],
+      "called_by": [
+        "unused_interrupt_vector"
+      ]
+    },
+    {
+      "mangled": "_malloc_r",
+      "demangled": "_malloc_r",
+      "address": 10604,
+      "size": 1376,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__malloc_lock",
+        "__malloc_unlock",
+        "_free_r",
+        "_sbrk_r"
+      ],
+      "called_by": [
+        "_memalign_r",
+        "malloc"
+      ]
+    },
+    {
+      "mangled": "__malloc_av_",
+      "demangled": "__malloc_av_",
+      "address": 536873332,
+      "size": 1032,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "digital_pin_to_info_PGM",
+      "demangled": "digital_pin_to_info_PGM",
+      "address": 536871584,
+      "size": 880,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE10showPixelsER15PixelControllerILS0_10ELi1ELm4294967295EE",
+      "demangled": "APA102Controller<(unsigned char)11, (unsigned char)13, (EOrder)10, 6000000ul, (fl::FiveBitGammaCorrectionMode)0, 0ul, 4278190080ul>::showPixels(PixelController<(EOrder)10, 1, 4294967295ul>&)",
+      "address": 3912,
+      "size": 780,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN8SPIClass14endTransactionEv.constprop.0",
+        "_ZN8SPIClass16beginTransactionE11SPISettings.constprop.0",
+        "_ZN8SPIClass8transferEh.constprop.0.isra.0"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_VectorsRam",
+      "demangled": "_VectorsRam",
+      "address": 536875008,
+      "size": 704,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "endpoint_queue_head",
+      "demangled": "endpoint_queue_head",
+      "address": 536870912,
+      "size": 640,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "set_arm_clock",
+      "demangled": "set_arm_clock",
+      "address": 664,
+      "size": 524,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-sbrkr.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "unused_interrupt_vector"
+      ]
+    },
+    {
+      "mangled": "_free_r",
+      "demangled": "_free_r",
+      "address": 9908,
+      "size": 524,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-freer.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__malloc_lock",
+        "__malloc_unlock",
+        "_malloc_trim_r"
+      ],
+      "called_by": [
+        "_malloc_r",
+        "_memalign_r",
+        "free"
+      ]
+    },
+    {
+      "mangled": "FlexSPI_NOR_Config",
+      "demangled": "FlexSPI_NOR_Config",
+      "address": 1610612736,
+      "size": 512,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.headers",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "unused_interrupt_vector",
+      "demangled": "unused_interrupt_vector",
+      "address": 7956,
+      "size": 500,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "set_arm_clock",
+        "usb_isr"
+      ],
+      "called_by": [
+        "Panic_Temp_isr"
+      ]
+    },
+    {
+      "mangled": "_ZN8CFastLED4showEh.constprop.0",
+      "demangled": "CFastLED::show(unsigned char) [clone .constprop.0]",
+      "address": 6088,
+      "size": 440,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EE3endEv",
+        "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EEC2ERKS3_.isra.0",
+        "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EED2Ev.isra.0",
+        "_ZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEv",
+        "micros"
+      ],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "__atexit0",
+      "demangled": "__atexit0",
+      "address": 536877256,
+      "size": 400,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-__atexit.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_serial_write.part.0",
+      "demangled": "usb_serial_write.part.0",
+      "address": 5304,
+      "size": 352,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "memcpy",
+        "schedule_transfer",
+        "usb_prepare_transfer",
+        "yield"
+      ],
+      "called_by": [
+        "_ZN16usb_serial_class5writeEPKhj",
+        "_ZN16usb_serial_class5writeEh"
+      ]
+    },
+    {
+      "mangled": "__sf",
+      "demangled": "__sf",
+      "address": 536877716,
+      "size": 312,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-findfp.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "memcpy",
+      "demangled": "memcpy",
+      "address": 9256,
+      "size": 308,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": "memcpy-armv7m_f6f7.S.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN16usb_serial_class4readEv",
+        "rx_event",
+        "usb_isr",
+        "usb_serial_write.part.0"
+      ]
+    },
+    {
+      "mangled": "_impure_data",
+      "demangled": "_impure_data",
+      "address": 536872808,
+      "size": 288,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-impure.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "main",
+      "demangled": "main",
+      "address": 8816,
+      "size": 284,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EE3endEv",
+        "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EEC2ERKS3_.isra.0",
+        "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EED2Ev.isra.0",
+        "_ZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEv",
+        "_ZN8CFastLED4showEh.constprop.0",
+        "_ZN8SPIClass5beginEv.constprop.0",
+        "__aeabi_atexit",
+        "delay.part.0",
+        "yield"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN8SPIClass16beginTransactionE11SPISettings.constprop.0",
+      "demangled": "SPIClass::beginTransaction(SPISettings) [clone .constprop.0]",
+      "address": 3284,
+      "size": 268,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE10showPixelsER15PixelControllerILS0_10ELi1ELm4294967295EE",
+        "_ZN8SPIClass5beginEv.constprop.0"
+      ]
+    },
+    {
+      "mangled": "rx_transfer",
+      "demangled": "rx_transfer",
+      "address": 536876128,
+      "size": 256,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZL16gControllersData",
+      "demangled": "gControllersData",
+      "address": 536876604,
+      "size": 256,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_memalign_r",
+      "demangled": "_memalign_r",
+      "address": 12060,
+      "size": 254,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-malignr.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__malloc_lock",
+        "__malloc_unlock",
+        "_free_r",
+        "_malloc_r"
+      ],
+      "called_by": [
+        "aligned_alloc"
+      ]
+    },
+    {
+      "mangled": "_ZN8SPIClass5beginEv.constprop.0",
+      "demangled": "SPIClass::begin() [clone .constprop.0]",
+      "address": 3636,
+      "size": 252,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN8SPIClass14endTransactionEv.constprop.0",
+        "_ZN8SPIClass16beginTransactionE11SPISettings.constprop.0"
+      ],
+      "called_by": [
+        "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE4initEv",
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE4showEPK4CRGBih",
+      "demangled": "CPixelLEDController<(EOrder)10, 1, 4294967295ul>::show(CRGB const*, int, unsigned char)",
+      "address": 2814,
+      "size": 228,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN15PixelControllerIL6EOrder10ELi1ELm4294967295EE21init_binary_ditheringEv",
+        "_ZN4CRGB17computeAdjustmentEhRKS_S1_"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE9showColorERK4CRGBih",
+      "demangled": "CPixelLEDController<(EOrder)10, 1, 4294967295ul>::showColor(CRGB const&, int, unsigned char)",
+      "address": 2604,
+      "size": 210,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN15PixelControllerIL6EOrder10ELi1ELm4294967295EE21init_binary_ditheringEv",
+        "_ZN4CRGB17computeAdjustmentEhRKS_S1_"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EEC2ERKS3_.isra.0",
+      "demangled": "fl::InlinedVector<fl::EngineEvents::Pair, 16u>::InlinedVector(fl::InlinedVector<fl::EngineEvents::Pair, 16u> const&) [clone .isra.0]",
+      "address": 5892,
+      "size": 196,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl10HeapVectorINS_12EngineEvents4PairENS_9allocatorIS2_EEE11ensure_sizeEj",
+        "memset"
+      ],
+      "called_by": [
+        "_ZN8CFastLED4showEh.constprop.0",
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZN16usb_serial_class4readEv",
+      "demangled": "usb_serial_class::read()",
+      "address": 4950,
+      "size": 190,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "memcpy",
+        "rx_queue_transfer"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "endpoint0_receive",
+      "demangled": "endpoint0_receive",
+      "address": 1424,
+      "size": 180,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "usb_isr"
+      ]
+    },
+    {
+      "mangled": "_ZN10DMAChannelC2Ev.isra.0",
+      "demangled": "DMAChannel::DMAChannel() [clone .isra.0]",
+      "address": 8636,
+      "size": 180,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_sub_I_65535_0.0"
+      ]
+    },
+    {
+      "mangled": "endpoint0_transmit.constprop.0",
+      "demangled": "endpoint0_transmit.constprop.0",
+      "address": 3116,
+      "size": 168,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "usb_isr"
+      ]
+    },
+    {
+      "mangled": "rx_event",
+      "demangled": "rx_event",
+      "address": 5140,
+      "size": 164,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "memcpy",
+        "rx_queue_transfer"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_malloc_trim_r",
+      "demangled": "_malloc_trim_r",
+      "address": 9748,
+      "size": 160,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-freer.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__malloc_lock",
+        "__malloc_unlock",
+        "_sbrk_r"
+      ],
+      "called_by": [
+        "_free_r"
+      ]
+    },
+    {
+      "mangled": "_sub_I_65535_0.0",
+      "demangled": "_sub_I_65535_0.0",
+      "address": 9100,
+      "size": 156,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN10DMAChannelC2Ev.isra.0",
+        "__aeabi_atexit"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEvE8instance",
+      "demangled": "fl::Singleton<fl::EngineEvents, 0>::instance()::instance",
+      "address": 536876428,
+      "size": 152,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16usb_serial_class5flushEv",
+      "demangled": "usb_serial_class::flush()",
+      "address": 1824,
+      "size": 144,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "schedule_transfer",
+        "usb_prepare_transfer"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_serial_flush_callback",
+      "demangled": "usb_serial_flush_callback",
+      "address": 2204,
+      "size": 136,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "schedule_transfer",
+        "usb_prepare_transfer"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "__register_exitproc",
+      "demangled": "__register_exitproc",
+      "address": 10468,
+      "size": 136,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-__atexit.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__retarget_lock_acquire_recursive",
+        "__retarget_lock_release_recursive"
+      ],
+      "called_by": [
+        "__cxa_atexit"
+      ]
+    },
+    {
+      "mangled": "usb_descriptor_list",
+      "demangled": "usb_descriptor_list",
+      "address": 536872464,
+      "size": 132,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "yield",
+      "demangled": "yield",
+      "address": 2340,
+      "size": 128,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN16usb_serial_class9availableEv",
+        "delay.part.0",
+        "main",
+        "usb_serial_write.part.0"
+      ]
+    },
+    {
+      "mangled": "tx_transfer",
+      "demangled": "tx_transfer",
+      "address": 536876000,
+      "size": 128,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "dmxBuffer",
+      "demangled": "dmxBuffer",
+      "address": 536877113,
+      "size": 128,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "schedule_transfer",
+      "demangled": "schedule_transfer",
+      "address": 1648,
+      "size": 124,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN16usb_serial_class5flushEv",
+        "rx_queue_transfer",
+        "usb_serial_flush_callback",
+        "usb_serial_write.part.0"
+      ]
+    },
+    {
+      "mangled": "_Z15_spi_dma_rxISR0v",
+      "demangled": "_spi_dma_rxISR0()",
+      "address": 4730,
+      "size": 118,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_Z23DMAChanneltransferCountP10DMAChannelj.isra.0"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "flexpwm_init",
+      "demangled": "flexpwm_init",
+      "address": 1252,
+      "size": 114,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN8SPIClass24spiclass_lpspi4_hardwareE",
+      "demangled": "SPIClass::spiclass_lpspi4_hardware",
+      "address": 536872696,
+      "size": 112,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "flexspi2_psram_size",
+      "demangled": "flexspi2_psram_size",
+      "address": 1610620184,
+      "size": 108,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "flexspi2_command"
+      ],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "_ZNK9IPAddress7printToER5Print",
+      "demangled": "IPAddress::printTo(Print&) const",
+      "address": 348,
+      "size": 108,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-cxa_atexit.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN13IntervalTimerD2Ev",
+      "demangled": "IntervalTimer::~IntervalTimer()",
+      "address": 556,
+      "size": 108,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-findfp.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN13IntervalTimerD1Ev",
+      "demangled": "IntervalTimer::~IntervalTimer()",
+      "address": 556,
+      "size": 108,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-findfp.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "rx_queue_transfer",
+      "demangled": "rx_queue_transfer",
+      "address": 2028,
+      "size": 100,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "schedule_transfer",
+        "usb_prepare_transfer"
+      ],
+      "called_by": [
+        "_ZN16usb_serial_class4readEv",
+        "_ZN16usb_serial_class5clearEv",
+        "rx_event",
+        "usb_isr"
+      ]
+    },
+    {
+      "mangled": "_ZN15PixelControllerIL6EOrder10ELi1ELm4294967295EE21init_binary_ditheringEv",
+      "demangled": "PixelController<(EOrder)10, 1, 4294967295ul>::init_binary_dithering()",
+      "address": 176,
+      "size": 100,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "memset_3e75.S.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE4showEPK4CRGBih",
+        "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE9showColorERK4CRGBih"
+      ]
+    },
+    {
+      "mangled": "usb_descriptor_buffer",
+      "demangled": "usb_descriptor_buffer",
+      "address": 538968064,
+      "size": 98,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss.dma",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_config_descriptor_480",
+      "demangled": "usb_config_descriptor_480",
+      "address": 1610620562,
+      "size": 98,
+      "sym_type": "r",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_config_descriptor_12",
+      "demangled": "usb_config_descriptor_12",
+      "address": 1610620464,
+      "size": 98,
+      "sym_type": "r",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZL11funct_table",
+      "demangled": "funct_table",
+      "address": 536875744,
+      "size": 96,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl10HeapVectorINS_12EngineEvents4PairENS_9allocatorIS2_EEE11ensure_sizeEj",
+      "demangled": "fl::HeapVector<fl::EngineEvents::Pair, fl::allocator<fl::EngineEvents::Pair> >::ensure_size(unsigned int)",
+      "address": 5800,
+      "size": 92,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free",
+        "malloc",
+        "memset"
+      ],
+      "called_by": [
+        "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EEC2ERKS3_.isra.0"
+      ]
+    },
+    {
+      "mangled": "_reboot_Teensyduino_",
+      "demangled": "_reboot_Teensyduino_",
+      "address": 1610620292,
+      "size": 84,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN8SPIClass14endTransactionEv.constprop.0",
+      "demangled": "SPIClass::endTransaction() [clone .constprop.0]",
+      "address": 3552,
+      "size": 84,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE10showPixelsER15PixelControllerILS0_10ELi1ELm4294967295EE",
+        "_ZN8SPIClass5beginEv.constprop.0"
+      ]
+    },
+    {
+      "mangled": "SPI",
+      "demangled": "SPI",
+      "address": 536873108,
+      "size": 80,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEv",
+      "demangled": "fl::Singleton<fl::EngineEvents, 0>::instance()",
+      "address": 5724,
+      "size": 76,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__aeabi_atexit",
+        "memset"
+      ],
+      "called_by": [
+        "_ZN8CFastLED4showEh.constprop.0",
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZN16usb_serial_class5clearEv",
+      "demangled": "usb_serial_class::clear()",
+      "address": 2128,
+      "size": 76,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "rx_queue_transfer"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "__libc_init_array",
+      "demangled": "__libc_init_array",
+      "address": 9668,
+      "size": 72,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-init.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "___init_veneer"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN4CRGB17computeAdjustmentEhRKS_S1_",
+      "demangled": "CRGB::computeAdjustment(unsigned char, CRGB const&, CRGB const&)",
+      "address": 2532,
+      "size": 72,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE4showEPK4CRGBih",
+        "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE9showColorERK4CRGBih"
+      ]
+    },
+    {
+      "mangled": "micros",
+      "demangled": "micros",
+      "address": 1188,
+      "size": 64,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN8CFastLED4showEh.constprop.0",
+        "delay.part.0"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl10ObjectFLED8dma2nextE",
+      "demangled": "fl::ObjectFLED::dma2next",
+      "address": 536877024,
+      "size": 64,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16usb_serial_class4peekEv",
+      "demangled": "usb_serial_class::peek()",
+      "address": 492,
+      "size": 64,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-impure.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE",
+      "demangled": "vtable for APA102Controller<(unsigned char)11, (unsigned char)13, (EOrder)10, 6000000ul, (fl::FiveBitGammaCorrectionMode)0, 0ul, 4278190080ul>",
+      "address": 536872596,
+      "size": 60,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16usb_serial_class17availableForWriteEv",
+      "demangled": "usb_serial_class::availableForWrite()",
+      "address": 1968,
+      "size": 60,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "quadtimer_init",
+      "demangled": "quadtimer_init",
+      "address": 1366,
+      "size": 54,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "run_callbacks",
+      "demangled": "run_callbacks",
+      "address": 1772,
+      "size": 52,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "usb_isr"
+      ]
+    },
+    {
+      "mangled": "_ZN14CLEDController8showLedsEh",
+      "demangled": "CLEDController::showLeds(unsigned char)",
+      "address": 104,
+      "size": 50,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "pendablesrvreq_isr",
+      "demangled": "pendablesrvreq_isr",
+      "address": 276,
+      "size": 48,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-errno.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_sbrk",
+      "demangled": "_sbrk",
+      "address": 8548,
+      "size": 48,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__errno"
+      ],
+      "called_by": [
+        "_sbrk_r"
+      ]
+    },
+    {
+      "mangled": "_ZN14CLEDController9clearLedsEi",
+      "demangled": "CLEDController::clearLeds(int)",
+      "address": 4848,
+      "size": 48,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "memset"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_prepare_transfer",
+      "demangled": "usb_prepare_transfer",
+      "address": 1604,
+      "size": 44,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN16usb_serial_class5flushEv",
+        "rx_queue_transfer",
+        "usb_serial_flush_callback",
+        "usb_serial_write.part.0"
+      ]
+    },
+    {
+      "mangled": "_ZN10DMAChannelD2Ev",
+      "demangled": "DMAChannel::~DMAChannel()",
+      "address": 3072,
+      "size": 44,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN10DMAChannelD1Ev",
+      "demangled": "DMAChannel::~DMAChannel()",
+      "address": 3072,
+      "size": 44,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "microsoft_os_compatible_id_desc",
+      "demangled": "microsoft_os_compatible_id_desc",
+      "address": 536873248,
+      "size": 40,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "delay.part.0",
+      "demangled": "delay.part.0",
+      "address": 2468,
+      "size": 40,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "micros",
+        "yield"
+      ],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "__malloc_current_mallinfo",
+      "demangled": "__malloc_current_mallinfo",
+      "address": 536877664,
+      "size": 40,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN8CFastLED7addLedsIL12ESPIChipsets6ELh11ELh13EL6EOrder10EEER14CLEDControllerP4CRGBiiE1c",
+      "demangled": "CFastLED::addLeds<(ESPIChipsets)6, (unsigned char)11, (unsigned char)13, (EOrder)10>(CRGB*, int, int)::c",
+      "address": 536876944,
+      "size": 40,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZTV16usb_serial_class",
+      "demangled": "vtable for usb_serial_class",
+      "address": 536872656,
+      "size": 40,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16usb_serial_class5writeEh",
+      "demangled": "usb_serial_class::write(unsigned char)",
+      "address": 5684,
+      "size": 40,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "usb_serial_write.part.0"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "ResetHandler",
+      "demangled": "ResetHandler",
+      "address": 1610620104,
+      "size": 40,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "ResetHandler2"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_Z23DMAChanneltransferCountP10DMAChannelj.isra.0",
+      "demangled": "DMAChanneltransferCount(DMAChannel*, unsigned int) [clone .isra.0]",
+      "address": 4692,
+      "size": 38,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_Z15_spi_dma_rxISR0v"
+      ]
+    },
+    {
+      "mangled": "flexspi2_command",
+      "demangled": "flexspi2_command",
+      "address": 1610620148,
+      "size": 36,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2",
+        "flexspi2_psram_size"
+      ]
+    },
+    {
+      "mangled": "_sbrk_r",
+      "demangled": "_sbrk_r",
+      "address": 10432,
+      "size": 36,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-sbrkr.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_sbrk"
+      ],
+      "called_by": [
+        "_malloc_r",
+        "_malloc_trim_r"
+      ]
+    },
+    {
+      "mangled": "endpoint0_transfer_data",
+      "demangled": "endpoint0_transfer_data",
+      "address": 536875904,
+      "size": 32,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "endpoint0_transfer_ack",
+      "demangled": "endpoint0_transfer_ack",
+      "address": 536875936,
+      "size": 32,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "ImageVectorTable",
+      "demangled": "ImageVectorTable",
+      "address": 1610616832,
+      "size": 32,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.headers",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EED2Ev.isra.0",
+      "demangled": "fl::InlinedVector<fl::EngineEvents::Pair, 16u>::~InlinedVector() [clone .isra.0]",
+      "address": 4908,
+      "size": 30,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": [
+        "_ZN2fl12EngineEventsD1Ev",
+        "_ZN8CFastLED4showEh.constprop.0",
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EE3endEv",
+      "demangled": "fl::InlinedVector<fl::EngineEvents::Pair, 16u>::end()",
+      "address": 3042,
+      "size": 30,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN8CFastLED4showEh.constprop.0",
+        "main"
+      ]
+    },
+    {
+      "mangled": "_write",
+      "demangled": "_write",
+      "address": 8464,
+      "size": 28,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__tcf_0",
+      "demangled": "__tcf_0",
+      "address": 464,
+      "size": 28,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16usb_serial_class5writeEPKhj",
+      "demangled": "usb_serial_class::write(unsigned char const*, unsigned int)",
+      "address": 5656,
+      "size": 28,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "usb_serial_write.part.0"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "memory_clear.constprop.0",
+      "demangled": "memory_clear.constprop.0",
+      "address": 1610617874,
+      "size": 26,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "usb_string_manufacturer_name_default",
+      "demangled": "usb_string_manufacturer_name_default",
+      "address": 1610620682,
+      "size": 24,
+      "sym_type": "r",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_string_manufacturer_name",
+      "demangled": "usb_string_manufacturer_name",
+      "address": 1610620682,
+      "size": 24,
+      "sym_type": "r",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "systick_isr",
+      "demangled": "systick_isr",
+      "address": 324,
+      "size": 24,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "aligned_alloc",
+      "demangled": "aligned_alloc",
+      "address": 12036,
+      "size": 24,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-aligned_alloc.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_memalign_r"
+      ],
+      "called_by": [
+        "_ZnajSt11align_val_t",
+        "_ZnwjSt11align_val_t"
+      ]
+    },
+    {
+      "mangled": "_ZN16usb_serial_class9availableEv",
+      "demangled": "usb_serial_class::available()",
+      "address": 2508,
+      "size": 24,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "yield"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_string_serial_number_default",
+      "demangled": "usb_string_serial_number_default",
+      "address": 536873204,
+      "size": 22,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_string_serial_number",
+      "demangled": "usb_string_serial_number",
+      "address": 536873204,
+      "size": 22,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_string_product_name_default",
+      "demangled": "usb_string_product_name_default",
+      "address": 1610620660,
+      "size": 22,
+      "sym_type": "r",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_string_product_name",
+      "demangled": "usb_string_product_name",
+      "address": 1610620660,
+      "size": 22,
+      "sym_type": "r",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN8SPIClass8transferEh.constprop.0.isra.0",
+      "demangled": "SPIClass::transfer(unsigned char) [clone .constprop.0] [clone .isra.0]",
+      "address": 3890,
+      "size": 22,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE10showPixelsER15PixelControllerILS0_10ELi1ELm4294967295EE"
+      ]
+    },
+    {
+      "mangled": "microsoft_os_string_desc",
+      "demangled": "microsoft_os_string_desc",
+      "address": 536873288,
+      "size": 18,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "memory_copy",
+      "demangled": "memory_copy",
+      "address": 1610617856,
+      "size": 18,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "device_descriptor",
+      "demangled": "device_descriptor",
+      "address": 536873306,
+      "size": 18,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "rx_index",
+      "demangled": "rx_index",
+      "address": 536875852,
+      "size": 16,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "rx_count",
+      "demangled": "rx_count",
+      "address": 536876392,
+      "size": 16,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "malloc",
+      "demangled": "malloc",
+      "address": 12004,
+      "size": 16,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-malloc.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_malloc_r"
+      ],
+      "called_by": [
+        "_ZN2fl10HeapVectorINS_12EngineEvents4PairENS_9allocatorIS2_EEE11ensure_sizeEj",
+        "_Znaj",
+        "_Znwj"
+      ]
+    },
+    {
+      "mangled": "free",
+      "demangled": "free",
+      "address": 12020,
+      "size": 16,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-malloc.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_free_r"
+      ],
+      "called_by": [
+        "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EED0Ev",
+        "_ZN2fl10HeapVectorINS_12EngineEvents4PairENS_9allocatorIS2_EEE11ensure_sizeEj",
+        "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EED2Ev.isra.0",
+        "_ZdaPv",
+        "_ZdaPvSt11align_val_t",
+        "_ZdaPvj",
+        "_ZdaPvjSt11align_val_t",
+        "_ZdlPv",
+        "_ZdlPvSt11align_val_t",
+        "_ZdlPvj",
+        "_ZdlPvjSt11align_val_t"
+      ]
+    },
+    {
+      "mangled": "extmem_smalloc_pool",
+      "demangled": "extmem_smalloc_pool",
+      "address": 536876992,
+      "size": 16,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN8SPIClass16beginTransactionE11SPISettingsE7clk_sel",
+      "demangled": "SPIClass::beginTransaction(SPISettings)::clk_sel",
+      "address": 536871568,
+      "size": 16,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN6teensy23inplace_function_detail12empty_vtableIvJEEE",
+      "demangled": "teensy::inplace_function_detail::empty_vtable<void>",
+      "address": 536871552,
+      "size": 16,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl10ObjectFLED7bitmaskE",
+      "demangled": "fl::ObjectFLED::bitmask",
+      "address": 538973312,
+      "size": 16,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss.dma",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "Serial",
+      "demangled": "Serial",
+      "address": 536873188,
+      "size": 16,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "FastLED",
+      "demangled": "FastLED",
+      "address": 536876580,
+      "size": 16,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__malloc_unlock",
+      "demangled": "__malloc_unlock",
+      "address": 11992,
+      "size": 12,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-mlock.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__retarget_lock_release_recursive"
+      ],
+      "called_by": [
+        "_free_r",
+        "_malloc_r",
+        "_malloc_trim_r",
+        "_memalign_r"
+      ]
+    },
+    {
+      "mangled": "__malloc_lock",
+      "demangled": "__malloc_lock",
+      "address": 11980,
+      "size": 12,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-mlock.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__retarget_lock_acquire_recursive"
+      ],
+      "called_by": [
+        "_free_r",
+        "_malloc_r",
+        "_malloc_trim_r",
+        "_memalign_r"
+      ]
+    },
+    {
+      "mangled": "__errno",
+      "demangled": "__errno",
+      "address": 9644,
+      "size": 12,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-errno.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_sbrk"
+      ]
+    },
+    {
+      "mangled": "__cxa_atexit",
+      "demangled": "__cxa_atexit",
+      "address": 9656,
+      "size": 12,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-cxa_atexit.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__register_exitproc"
+      ],
+      "called_by": [
+        "__aeabi_atexit"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl12EngineEventsD2Ev",
+      "demangled": "fl::EngineEvents::~EngineEvents()",
+      "address": 4938,
+      "size": 12,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl12EngineEventsD1Ev",
+      "demangled": "fl::EngineEvents::~EngineEvents()",
+      "address": 4938,
+      "size": 12,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl13InlinedVectorINS_12EngineEvents4PairELj16EED2Ev.isra.0"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EED0Ev",
+      "demangled": "APA102Controller<(unsigned char)11, (unsigned char)13, (EOrder)10, 6000000ul, (fl::FiveBitGammaCorrectionMode)0, 0ul, 4278190080ul>::~APA102Controller()",
+      "address": 4896,
+      "size": 12,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "BootData",
+      "demangled": "BootData",
+      "address": 1610616864,
+      "size": 12,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.headers",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "qualifier_descriptor",
+      "demangled": "qualifier_descriptor",
+      "address": 1610620710,
+      "size": 10,
+      "sym_type": "r",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_fstat",
+      "demangled": "_fstat",
+      "address": 8606,
+      "size": 10,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__aeabi_atexit",
+      "demangled": "__aeabi_atexit",
+      "address": 9632,
+      "size": 10,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libstdc++.a",
+      "object": "atexit_arm.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__cxa_atexit"
+      ],
+      "called_by": [
+        "_ZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEv",
+        "_sub_I_65535_0.0",
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZnwjSt11align_val_t",
+      "demangled": "operator new(unsigned int, std::align_val_t)",
+      "address": 8512,
+      "size": 10,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "aligned_alloc"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZnajSt11align_val_t",
+      "demangled": "operator new[](unsigned int, std::align_val_t)",
+      "address": 8522,
+      "size": 10,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "aligned_alloc"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "rx_list",
+      "demangled": "rx_list",
+      "address": 536875842,
+      "size": 9,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_cdc_line_coding",
+      "demangled": "usb_cdc_line_coding",
+      "address": 536876912,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "reply_buffer",
+      "demangled": "reply_buffer",
+      "address": 536876880,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "endpoint0_setupdata",
+      "demangled": "endpoint0_setupdata",
+      "address": 536876896,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "endpoint0_buffer",
+      "demangled": "endpoint0_buffer",
+      "address": 536876904,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__set_arm_clock_veneer",
+      "demangled": "__set_arm_clock_veneer",
+      "address": 1610620408,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "__quadtimer_init_veneer",
+      "demangled": "__quadtimer_init_veneer",
+      "address": 1610620416,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "__memset_veneer",
+      "demangled": "__memset_veneer",
+      "address": 1610620432,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "__main_veneer",
+      "demangled": "__main_veneer",
+      "address": 1610620448,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "__flexpwm_init_veneer",
+      "demangled": "__flexpwm_init_veneer",
+      "address": 1610620424,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "__delay.part.0_veneer",
+      "demangled": "__delay.part.0_veneer",
+      "address": 1610620440,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "___reboot_Teensyduino__veneer",
+      "demangled": "___reboot_Teensyduino__veneer",
+      "address": 12320,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "usb_isr"
+      ]
+    },
+    {
+      "mangled": "___init_veneer",
+      "demangled": "___init_veneer",
+      "address": 12328,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "__libc_init_array"
+      ]
+    },
+    {
+      "mangled": "____libc_init_array_veneer",
+      "demangled": "____libc_init_array_veneer",
+      "address": 1610620392,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "____errno_veneer",
+      "demangled": "____errno_veneer",
+      "address": 1610620400,
+      "size": 8,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl10ObjectFLED4dma3E",
+      "demangled": "fl::ObjectFLED::dma3",
+      "address": 536877104,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl10ObjectFLED4dma2E",
+      "demangled": "fl::ObjectFLED::dma2",
+      "address": 536877096,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl10ObjectFLED4dma1E",
+      "demangled": "fl::ObjectFLED::dma1",
+      "address": 536877088,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZL10tone_timer",
+      "demangled": "tone_timer",
+      "address": 536873240,
+      "size": 8,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "DMXtimer",
+      "demangled": "DMXtimer",
+      "address": 536873232,
+      "size": 8,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_lseek",
+      "demangled": "_lseek",
+      "address": 8620,
+      "size": 6,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_close",
+      "demangled": "_close",
+      "address": 8600,
+      "size": 6,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_timer0_callback",
+      "demangled": "usb_timer0_callback",
+      "address": 536876876,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_cdc_line_rtsdtr_millis",
+      "demangled": "usb_cdc_line_rtsdtr_millis",
+      "address": 536876888,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "systick_safe_read",
+      "demangled": "systick_safe_read",
+      "address": 536875872,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "systick_millis_count",
+      "demangled": "systick_millis_count",
+      "address": 536875724,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "systick_cycle_count",
+      "demangled": "systick_cycle_count",
+      "address": 536875720,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "string0",
+      "demangled": "string0",
+      "address": 1610620706,
+      "size": 4,
+      "sym_type": "r",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "startup_debug_reset",
+      "demangled": "startup_debug_reset",
+      "address": 1610620144,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.code",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "ResetHandler2"
+      ]
+    },
+    {
+      "mangled": "scale_cpu_cycles_to_microseconds",
+      "demangled": "scale_cpu_cycles_to_microseconds",
+      "address": 536875868,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "s_roomC_hotC",
+      "demangled": "s_roomC_hotC",
+      "address": 536876936,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "s_hot_ROOM",
+      "demangled": "s_hot_ROOM",
+      "address": 536876932,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "s_hotTemp",
+      "demangled": "s_hotTemp",
+      "address": 536876924,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "s_hotCount",
+      "demangled": "s_hotCount",
+      "address": 536876928,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "rx_available",
+      "demangled": "rx_available",
+      "address": 536876388,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "errno",
+      "demangled": "errno",
+      "address": 536878028,
+      "size": 4,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-reent.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "endpointN_notify_mask",
+      "demangled": "endpointN_notify_mask",
+      "address": 536876872,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "endpoint0_notify_mask",
+      "demangled": "endpoint0_notify_mask",
+      "address": 536875968,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "atexit",
+      "demangled": "atexit",
+      "address": 8630,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_read",
+      "demangled": "_read",
+      "address": 8596,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_isatty",
+      "demangled": "_isatty",
+      "address": 8616,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_impure_ptr",
+      "demangled": "_impure_ptr",
+      "address": 536874372,
+      "size": 4,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-impure.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_exit",
+      "demangled": "_exit",
+      "address": 8626,
+      "size": 4,
+      "sym_type": "W",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__malloc_trim_threshold",
+      "demangled": "__malloc_trim_threshold",
+      "address": 536874368,
+      "size": 4,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__malloc_top_pad",
+      "demangled": "__malloc_top_pad",
+      "address": 536877712,
+      "size": 4,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__malloc_sbrk_base",
+      "demangled": "__malloc_sbrk_base",
+      "address": 536874364,
+      "size": 4,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__malloc_max_total_mem",
+      "demangled": "__malloc_max_total_mem",
+      "address": 536877708,
+      "size": 4,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__malloc_max_sbrked_mem",
+      "demangled": "__malloc_max_sbrked_mem",
+      "address": 536877704,
+      "size": 4,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__cxa_pure_virtual",
+      "demangled": "__cxa_pure_virtual",
+      "address": 1420,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__brkval",
+      "demangled": "__brkval",
+      "address": 536873228,
+      "size": 4,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__atexit_recursive_mutex",
+      "demangled": "__atexit_recursive_mutex",
+      "address": 536873324,
+      "size": 4,
+      "sym_type": "D",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__atexit",
+      "demangled": "__atexit",
+      "address": 536877252,
+      "size": 4,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_Znwj",
+      "demangled": "operator new(unsigned int)",
+      "address": 8492,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "malloc"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_Znaj",
+      "demangled": "operator new[](unsigned int)",
+      "address": 8496,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "malloc"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZdlPvjSt11align_val_t",
+      "demangled": "operator delete(void*, unsigned int, std::align_val_t)",
+      "address": 8540,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZdlPvj",
+      "demangled": "operator delete(void*, unsigned int)",
+      "address": 8460,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZdlPvSt11align_val_t",
+      "demangled": "operator delete(void*, std::align_val_t)",
+      "address": 8532,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZdlPv",
+      "demangled": "operator delete(void*)",
+      "address": 8500,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZdaPvjSt11align_val_t",
+      "demangled": "operator delete[](void*, unsigned int, std::align_val_t)",
+      "address": 8544,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZdaPvj",
+      "demangled": "operator delete[](void*, unsigned int)",
+      "address": 8508,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZdaPvSt11align_val_t",
+      "demangled": "operator delete[](void*, std::align_val_t)",
+      "address": 8536,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZdaPv",
+      "demangled": "operator delete[](void*)",
+      "address": 8504,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "free"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN8CFastLED8countFPSEiE9lastframe",
+      "demangled": "CFastLED::countFPS(int)::lastframe",
+      "address": 536876864,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN8CFastLED8countFPSEiE2br",
+      "demangled": "CFastLED::countFPS(int)::br",
+      "address": 536876860,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZNK14CLEDController17getMaxRefreshRateEv",
+      "demangled": "CLEDController::getMaxRefreshRate() const",
+      "address": 166,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "memset_3e75.S.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl17framebuffer_indexE",
+      "demangled": "fl::framebuffer_index",
+      "address": 536877244,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN19CPixelLEDControllerIL6EOrder10ELi1ELm4294967295EE5lanesEv",
+      "demangled": "CPixelLEDController<(EOrder)10, 1, 4294967295ul>::lanes()",
+      "address": 172,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "memset_3e75.S.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN14EventResponder14firstInterruptE",
+      "demangled": "EventResponder::firstInterrupt",
+      "address": 536875716,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN14EventResponder10firstYieldE",
+      "demangled": "EventResponder::firstYield",
+      "address": 536876412,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN14CLEDController7m_pTailE",
+      "demangled": "CLEDController::m_pTail",
+      "address": 536876984,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN14CLEDController7m_pHeadE",
+      "demangled": "CLEDController::m_pHead",
+      "address": 536876600,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN14CLEDController5lanesEv",
+      "demangled": "CLEDController::lanes()",
+      "address": 172,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "memset_3e75.S.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN14CLEDController4sizeEv",
+      "demangled": "CLEDController::size()",
+      "address": 154,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "memcpy-armv7m_f6f7.S.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN14CLEDController13beginShowLedsEi",
+      "demangled": "CLEDController::beginShowLeds(int)",
+      "address": 158,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "memset_3e75.S.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN14CLEDController11endShowLedsEPv",
+      "demangled": "CLEDController::endShowLeds(void*)",
+      "address": 162,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "memset_3e75.S.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN13IntervalTimer14nvic_prioritesE",
+      "demangled": "IntervalTimer::nvic_priorites",
+      "address": 536873096,
+      "size": 4,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZL8lastshow",
+      "demangled": "lastshow",
+      "address": 536876596,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZGVZN8CFastLED7addLedsIL12ESPIChipsets6ELh11ELh13EL6EOrder10EEER14CLEDControllerP4CRGBiiE1c",
+      "demangled": "guard variable for CFastLED::addLeds<(ESPIChipsets)6, (unsigned char)11, (unsigned char)13, (EOrder)10>(CRGB*, int, int)::c",
+      "address": 536876940,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZGVZN2fl9SingletonINS_12EngineEventsELi0EE8instanceEvE8instance",
+      "demangled": "guard variable for fl::Singleton<fl::EngineEvents, 0>::instance()::instance",
+      "address": 536876424,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "Panic_Temp_isr",
+      "demangled": "Panic_Temp_isr",
+      "address": 8456,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "unused_interrupt_vector"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "F_CPU_ACTUAL",
+      "demangled": "F_CPU_ACTUAL",
+      "address": 536873100,
+      "size": 4,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "F_BUS_ACTUAL",
+      "demangled": "F_BUS_ACTUAL",
+      "address": 536873104,
+      "size": 4,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "leds",
+      "demangled": "leds",
+      "address": 536876988,
+      "size": 3,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "tx_packet_size",
+      "demangled": "tx_packet_size",
+      "address": 536876870,
+      "size": 2,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "tx_available",
+      "demangled": "tx_available",
+      "address": 536875974,
+      "size": 2,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "rx_packet_size",
+      "demangled": "rx_packet_size",
+      "address": 536876384,
+      "size": 2,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "dma_channel_allocated_mask",
+      "demangled": "dma_channel_allocated_mask",
+      "address": 536876418,
+      "size": 2,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__retarget_lock_release_recursive",
+      "demangled": "__retarget_lock_release_recursive",
+      "address": 9744,
+      "size": 2,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "__malloc_unlock",
+        "__register_exitproc"
+      ]
+    },
+    {
+      "mangled": "__retarget_lock_acquire_recursive",
+      "demangled": "__retarget_lock_acquire_recursive",
+      "address": 9740,
+      "size": 2,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".text.itcm",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "__malloc_lock",
+        "__register_exitproc"
+      ]
+    },
+    {
+      "mangled": "_ZZN6teensy23inplace_function_detail6vtableIvJEEC4EvENUlPvS3_E1_4_FUNES3_S3_",
+      "demangled": "teensy::inplace_function_detail::vtable<void>::vtable()::{lambda(void*, void*)#3}::_FUN(void*, void*)",
+      "address": 460,
+      "size": 2,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN6teensy23inplace_function_detail6vtableIvJEEC4EvENUlPvS3_E0_4_FUNES3_S3_",
+      "demangled": "teensy::inplace_function_detail::vtable<void>::vtable()::{lambda(void*, void*)#2}::_FUN(void*, void*)",
+      "address": 458,
+      "size": 2,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN6teensy23inplace_function_detail6vtableIvJEEC4EvENUlPvE_4_FUNES3_",
+      "demangled": "teensy::inplace_function_detail::vtable<void>::vtable()::{lambda(void*)#1}::_FUN(void*)",
+      "address": 456,
+      "size": 2,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN6teensy23inplace_function_detail6vtableIvJEEC4EvENUlPvE2_4_FUNES3_",
+      "demangled": "teensy::inplace_function_detail::vtable<void>::vtable()::{lambda(void*)#4}::_FUN(void*)",
+      "address": 462,
+      "size": 2,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EED2Ev",
+      "demangled": "APA102Controller<(unsigned char)11, (unsigned char)13, (EOrder)10, 6000000ul, (fl::FiveBitGammaCorrectionMode)0, 0ul, 4278190080ul>::~APA102Controller()",
+      "address": 170,
+      "size": 2,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "memset_3e75.S.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EED1Ev",
+      "demangled": "APA102Controller<(unsigned char)11, (unsigned char)13, (EOrder)10, 6000000ul, (fl::FiveBitGammaCorrectionMode)0, 0ul, 4278190080ul>::~APA102Controller()",
+      "address": 170,
+      "size": 2,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "memset_3e75.S.o",
+      "output_section": ".rel.dyn",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16APA102ControllerILh11ELh13EL6EOrder10ELm6000000ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE4initEv",
+      "demangled": "APA102Controller<(unsigned char)11, (unsigned char)13, (EOrder)10, 6000000ul, (fl::FiveBitGammaCorrectionMode)0, 0ul, 4278190080ul>::init()",
+      "address": 3888,
+      "size": 2,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN8SPIClass5beginEv.constprop.0"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "yield_active_check_flags",
+      "demangled": "yield_active_check_flags",
+      "address": 536876408,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_reboot_timer",
+      "demangled": "usb_reboot_timer",
+      "address": 536876921,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_high_speed",
+      "demangled": "usb_high_speed",
+      "address": 536876868,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_configuration",
+      "demangled": "usb_configuration",
+      "address": 536875972,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_cdc_transmit_flush_timer",
+      "demangled": "usb_cdc_transmit_flush_timer",
+      "address": 536877112,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "usb_cdc_line_rtsdtr",
+      "demangled": "usb_cdc_line_rtsdtr",
+      "address": 536876892,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "tx_noautoflush",
+      "demangled": "tx_noautoflush",
+      "address": 536875976,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "tx_head",
+      "demangled": "tx_head",
+      "address": 536875977,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "transmit_previous_timeout",
+      "demangled": "transmit_previous_timeout",
+      "address": 536876420,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "sof_usage",
+      "demangled": "sof_usage",
+      "address": 536876920,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "rx_tail",
+      "demangled": "rx_tail",
+      "address": 536875840,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "rx_head",
+      "demangled": "rx_head",
+      "address": 536875841,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "external_psram_size",
+      "demangled": "external_psram_size",
+      "address": 536876991,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__lock___malloc_recursive_mutex",
+      "demangled": "__lock___malloc_recursive_mutex",
+      "address": 536877660,
+      "size": 1,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__lock___atexit_recursive_mutex",
+      "demangled": "__lock___atexit_recursive_mutex",
+      "address": 536877656,
+      "size": 1,
+      "sym_type": "B",
+      "region": "ram",
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN15PixelControllerIL6EOrder10ELi1ELm4294967295EE21init_binary_ditheringEvE1R",
+      "demangled": "PixelController<(EOrder)10, 1, 4294967295ul>::init_binary_dithering()::R",
+      "address": 536875712,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZ5yieldE7running",
+      "demangled": "yield::running",
+      "address": 536876409,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl9dma_firstE",
+      "demangled": "fl::dma_first",
+      "address": 536877248,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN14EventResponder16runningFromYieldE",
+      "demangled": "EventResponder::runningFromYield",
+      "address": 536876416,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "register_tm_clones",
+      "demangled": "register_tm_clones",
+      "address": 32,
+      "size": 36,
+      "sym_type": "W",
+      "region": "flash",
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".text.itcm",
+      "source": "map-derived",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "frame_dummy",
+      "demangled": "frame_dummy",
+      "address": 68,
+      "size": 36,
+      "sym_type": "W",
+      "region": "flash",
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".text.itcm",
+      "source": "map-derived",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__dso_handle",
+      "demangled": "__dso_handle",
+      "address": 536873328,
+      "size": 4,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".data",
+      "source": "map-derived",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "object.0",
+      "demangled": "object.0",
+      "address": 536878032,
+      "size": 24,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".bss",
+      "source": "map-derived",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    }
+  ],
+  "sections": [
+    {
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss.dma",
+      "bytes": 17568
+    },
+    {
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.itcm",
+      "bytes": 9152
+    },
+    {
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.csf",
+      "bytes": 3072
+    },
+    {
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "bytes": 2828
+    },
+    {
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.code",
+      "bytes": 2524
+    },
+    {
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "bytes": 1537
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".text.itcm",
+      "bytes": 1376
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".data",
+      "bytes": 1040
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-freer.o",
+      "output_section": ".text.itcm",
+      "bytes": 684
+    },
+    {
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.headers",
+      "bytes": 556
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-__atexit.o",
+      "output_section": ".bss",
+      "bytes": 400
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-findfp.o",
+      "output_section": ".bss",
+      "bytes": 312
+    },
+    {
+      "archive": null,
+      "object": "memcpy-armv7m_f6f7.S.o",
+      "output_section": ".text.itcm",
+      "bytes": 308
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-impure.o",
+      "output_section": ".data",
+      "bytes": 292
+    },
+    {
+      "archive": null,
+      "object": "cct6NhaA.ltrans0.ltrans.o",
+      "output_section": ".text.progmem",
+      "bytes": 256
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-malignr.o",
+      "output_section": ".text.itcm",
+      "bytes": 256
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-__atexit.o",
+      "output_section": ".text.itcm",
+      "bytes": 136
+    },
+    {
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".text.itcm",
+      "bytes": 72
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-init.o",
+      "output_section": ".text.itcm",
+      "bytes": 72
+    },
+    {
+      "archive": null,
+      "object": "memset_3e75.S.o",
+      "output_section": ".text.itcm",
+      "bytes": 68
+    },
+    {
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.code",
+      "bytes": 64
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-mallocr.o",
+      "output_section": ".bss",
+      "bytes": 52
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-sbrkr.o",
+      "output_section": ".text.itcm",
+      "bytes": 36
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-malloc.o",
+      "output_section": ".text.itcm",
+      "bytes": 32
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-mlock.o",
+      "output_section": ".text.itcm",
+      "bytes": 24
+    },
+    {
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".bss",
+      "bytes": 24
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-aligned_alloc.o",
+      "output_section": ".text.itcm",
+      "bytes": 24
+    },
+    {
+      "archive": null,
+      "object": "linker stubs",
+      "output_section": ".text.itcm",
+      "bytes": 16
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-cxa_atexit.o",
+      "output_section": ".text.itcm",
+      "bytes": 12
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-errno.o",
+      "output_section": ".text.itcm",
+      "bytes": 12
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "atexit_arm.o",
+      "output_section": ".text.itcm",
+      "bytes": 12
+    },
+    {
+      "archive": null,
+      "object": "crtn.o",
+      "output_section": ".text.code",
+      "bytes": 8
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".text.itcm",
+      "bytes": 8
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".data",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".bss",
+      "bytes": 4
+    },
+    {
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".data",
+      "bytes": 4
+    },
+    {
+      "archive": null,
+      "object": "crtbegin.o",
+      "output_section": ".text.code",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-reent.o",
+      "output_section": ".bss",
+      "bytes": 4
+    },
+    {
+      "archive": null,
+      "object": "crti.o",
+      "output_section": ".text.code",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-lock.o",
+      "output_section": ".bss",
+      "bytes": 2
+    }
+  ]
+}

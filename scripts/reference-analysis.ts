@@ -20,13 +20,23 @@ export function writeReferenceAudit(
 ): void {
   let status: "analyzed" | "unavailable" | "error" = "unavailable";
   let entry: number | null = null;
+  let elfVerified = false;
   const warnings: string[] = [];
   try {
     const binary = readFileSync(report.elf_path);
     if (createHash("sha256").update(binary).digest("hex") !== row.elf_digest)
       throw new Error("ELF provenance mismatch");
     entry = elfEntry(binary);
-    if (!objdump || !existsSync(objdump))
+    elfVerified = true;
+    if (report.reference_analysis) {
+      status = report.reference_analysis.disassembly.status;
+      for (const pass of [
+        report.reference_analysis.disassembly,
+        report.reference_analysis.static_data,
+        report.reference_analysis.object_references,
+      ])
+        if (pass.reason) warnings.push(pass.reason);
+    } else if (!objdump || !existsSync(objdump))
       warnings.push("Cross-toolchain objdump is unavailable.");
     else {
       const text = execFileSync(
@@ -58,7 +68,15 @@ export function writeReferenceAudit(
         ? "present"
         : "absent"
       : "unknown";
-  const audit = makeReferenceAudit(report, row, entry, status, cref, warnings);
+  const audit = makeReferenceAudit(
+    report,
+    row,
+    entry,
+    status,
+    cref,
+    warnings,
+    elfVerified,
+  );
   const target = join(root, "docs", auditUrl(row.bloat_report));
   mkdirSync(dirname(target), { recursive: true });
   writeFileSync(target, JSON.stringify(audit, null, 2) + "\n");

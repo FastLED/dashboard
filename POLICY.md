@@ -153,6 +153,18 @@
   separately; do not guess KEEP/vector/indirect roots from names.
 - Preserve all same-name report rows (code, aliases, map-derived fragments) in
   reference resolution; display provenance and addresses for ambiguous matches.
+- Consume the producer's strict, versioned reference analysis using the full
+  name/address/source identity. Show instruction references, static pointer
+  owners with offsets, and fragment owners separately from object references.
+  Do not describe static pointers as runtime callers.
+- Trust reference edges and roots only when the audit matches the measurement's
+  ELF digest, report URL and analyzer version, and explicitly confirms successful
+  ELF digest verification. Matching metadata alone cannot establish provenance.
+  Show unverified analysis explicitly.
+  Index each report once so symbol summaries and popups avoid repeated graph scans.
+- Include allocated weak data objects such as vtables. Missing incoming evidence
+  remains unexplained when indirect calls or linker retention are outside the
+  analyzer's supported passes; display the producer's limitations and pass status.
 - Reference-only refreshes use saved ELFs with matching digests and the same
   fbuild version, verifying symbol identities/sizes and memory totals unchanged.
   They do not rebuild firmware or alter measurement timestamps.

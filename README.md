@@ -11,7 +11,8 @@ the top 10 symbols, then append 50 more per click while keeping earlier rows. [S
 is also generated from the actual dashboard for social link previews.
 
 Hover, focus, or click a symbol to inspect who references it (one level).
-Symbol-level and object-file references are listed separately. Unavailable
+Instruction references, static pointer owners (including vtable offsets),
+fragment owners and object-file references are listed separately. Unavailable
 analysis and unexplained retention are explicit; empty lists do not imply
 unused code. See the [reference audit](REFERENCE-AUDIT.md) and
 [coordinated follow-ups](https://github.com/FastLED/dashboard/issues/18).
@@ -37,7 +38,7 @@ Released library source is extracted unmodified with `git archive`; the same
 Arduino entry-point stub uses `::delay(0)` across revisions. This is a matched
 Blink workload, not each release's potentially different example sketch.
 
-Daily runs install the latest stable fbuild (currently 2.5.37) and recompute all
+Daily runs install the latest stable fbuild (currently 2.5.38) and recompute all
 seven release profiles plus master; historical values can change with tooling. Committed per-board configurations are shared across
 all releases. ESP32 boards use Arduino-ESP32 3.3.11/IDF 5.5.5. Uno uses Arduino
 AVR core 5.4.0/AVR GCC 7.3.0. Teensy uses framework 1.160.0/ARM GCC 11.3.1 with

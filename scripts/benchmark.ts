@@ -107,6 +107,41 @@ function files(directory: string): string[] {
     })
     .sort();
 }
+const SKETCH_FILES: Record<Sketch, string> = {
+  blink: "Blink",
+  spi: "SPI",
+  features: "Features",
+};
+/** Hash of everything besides FastLED source that determines a result. */
+export function protocolFor(
+  workload: Sketch,
+  board: Board,
+  fbuild: string,
+): string {
+  return hash(
+    readFileSync(join(ROOT, `benchmark/${SKETCH_FILES[workload]}.ino`)),
+    readFileSync(join(ROOT, `benchmark/config/${board}.ini`)),
+    fbuild,
+    "stub-v1-delay0",
+  );
+}
+/**
+ * A stored row is reusable when it measured the same FastLED commit under the
+ * same protocol (sketch, board config and fbuild version) and succeeded.
+ */
+export function reusable(
+  row: Measurement | undefined,
+  sha: string,
+  protocol: string,
+): row is Success {
+  return (
+    row !== undefined &&
+    row.status === "ok" &&
+    row.sha === sha &&
+    row.protocol === protocol &&
+    existsSync(join(ROOT, "docs", row.bloat_report))
+  );
+}
 function measure(
   source: string,
   workload: Sketch,
@@ -116,13 +151,10 @@ function measure(
   fbuild: string,
 ): Success {
   const sketch = readFileSync(
-      join(
-        ROOT,
-        `benchmark/${{ blink: "Blink", spi: "SPI", rainbow: "Rainbow" }[workload]}.ino`,
-      ),
+      join(ROOT, `benchmark/${SKETCH_FILES[workload]}.ino`),
     ),
     config = readFileSync(join(ROOT, `benchmark/config/${board}.ini`));
-  const protocol = hash(sketch, config, fbuild, "stub-v1-delay0");
+  const protocol = protocolFor(workload, board, fbuild);
   const project = join(
       ROOT,
       ".cache/build",
@@ -283,10 +315,12 @@ export function main(args = process.argv.slice(2)): void {
     boards: Board[] = [...BOARDS],
     sketches: Sketch[] = [...sketchSchema.options],
     versions: string[] | undefined,
-    noFetch = false;
+    noFetch = false,
+    full = false;
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
     if (arg === "--no-fetch") noFetch = true;
+    else if (arg === "--full") full = true;
     else if (arg === "--source") source = resolve(args[++i]);
     else if (
       arg === "--boards" ||
@@ -354,16 +388,30 @@ export function main(args = process.argv.slice(2)): void {
         fbuild,
         updated_at: new Date().toISOString(),
       };
+  if (data.fbuild !== fbuild) {
+    console.log(`fbuild ${data.fbuild} -> ${fbuild}: full recompute`);
+    full = true;
+  } else if (!full)
+    console.log(`fbuild ${fbuild} unchanged: incremental run`);
   const results = new Map(
     data.results
       .filter((r) => horizon.includes(r.version))
       .map((r) => [`${r.sketch}/${r.board}/${r.version}`, r]),
   );
-  let failures = 0;
+  let failures = 0,
+    reused = 0;
   for (const workload of sketches)
     for (const board of boards)
       for (const version of versions) {
         const sha = shas.get(version)!;
+        const previous = results.get(`${workload}/${board}/${version}`);
+        if (
+          !full &&
+          reusable(previous, sha, protocolFor(workload, board, fbuild))
+        ) {
+          reused++;
+          continue;
+        }
         console.log(
           `Benchmark ${workload} ${board} ${version} ${sha.slice(0, 10)}`,
         );
@@ -404,6 +452,7 @@ export function main(args = process.argv.slice(2)): void {
         );
         console.log(`  ${row.status}: flash=${row.flash} RAM=${row.ram}`);
       }
+  console.log(`Reused ${reused} unchanged results`);
   if (failures)
     throw new Error(
       `${failures} benchmark rows failed; explicit gaps published`,

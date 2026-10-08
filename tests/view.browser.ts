@@ -381,8 +381,8 @@ test("sketch sections isolate controls and keyboard reports", async () => {
       "blink-flash",
       "blink-ram",
       "spi-ram",
-      "rainbow-flash",
-      "rainbow-ram",
+      "features-flash",
+      "features-ram",
     ])
       assert.equal(
         await page.locator(`#${id}-scale-status`).textContent(),
@@ -391,7 +391,7 @@ test("sketch sections isolate controls and keyboard reports", async () => {
     for (const [sketch, title] of [
       ["blink", "Blink"],
       ["spi", "APA102"],
-      ["rainbow", "Rainbow"],
+      ["features", "Features"],
     ]) {
       const canvas = page.locator(`#${sketch}-flash-canvas`);
       await canvas.focus();

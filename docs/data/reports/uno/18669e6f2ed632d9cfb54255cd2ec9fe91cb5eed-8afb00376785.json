@@ -3,7 +3,7 @@
     "schema": 1,
     "disassembly": {
       "status": "analyzed",
-      "tool": "/home/runner/.fbuild/prod/cache/toolchains/arduino-tools/08e1a7271edb2765/7.3.0-atmel3.6.1-arduino7/avr/bin/avr-objdump",
+      "tool": "/home/niteris/.fbuild/prod/cache/toolchains/arduino-tools/08e1a7271edb2765/7.3.0-atmel3.6.1-arduino7/avr/bin/avr-objdump",
       "reason": null
     },
     "static_data": {
@@ -975,11 +975,6 @@
         "source": "nm"
       },
       {
-        "name": "__do_clear_bss",
-        "address": 166,
-        "source": "nm"
-      },
-      {
         "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
         "address": 8388878,
         "source": "nm"
@@ -992,6 +987,11 @@
       {
         "name": "_ZL16gControllersData",
         "address": 8388947,
+        "source": "nm"
+      },
+      {
+        "name": "__do_clear_bss",
+        "address": 166,
         "source": "nm"
       },
       {
@@ -1063,8 +1063,8 @@
       "Disassembly annotations are references, not necessarily function calls; interior-offset annotations are not reconstructed."
     ]
   },
-  "elf_path": "/home/runner/work/dashboard/dashboard/.cache/build/uno/18669e6f2ed632d9cfb54255cd2ec9fe91cb5eed-8afb00376785/.fbuild/build/uno/release/firmware.elf",
-  "map_path": "/home/runner/work/dashboard/dashboard/.cache/build/uno/18669e6f2ed632d9cfb54255cd2ec9fe91cb5eed-8afb00376785/.fbuild/build/uno/release/firmware.map",
+  "elf_path": "/home/niteris/dev/fastled-memory-dashboard/.cache/build/uno/18669e6f2ed632d9cfb54255cd2ec9fe91cb5eed-8afb00376785/.fbuild/build/uno/release/firmware.elf",
+  "map_path": "/home/niteris/dev/fastled-memory-dashboard/.cache/build/uno/18669e6f2ed632d9cfb54255cd2ec9fe91cb5eed-8afb00376785/.fbuild/build/uno/release/firmware.map",
   "total_flash": 3434,
   "total_ram": 134,
   "image_flash": 3592,
@@ -1204,7 +1204,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".text",
       "source": "nm",
       "referenced_by": [],
@@ -1316,6 +1316,21 @@
       ]
     },
     {
+      "mangled": "_GLOBAL__I_65535_0_main_34d2.cpp.o.51143",
+      "demangled": "global constructors keyed to 65535_0_main_34d2.cpp.o.51143",
+      "address": 2868,
+      "size": 40,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
       "mangled": "__divmodhi4",
       "demangled": "__divmodhi4",
       "address": 3442,
@@ -1336,21 +1351,6 @@
       "called_by": [
         "_ZN15PixelControllerILN2fl6EOrderE66ELi1ELm4294967295EE16enable_ditheringEh"
       ]
-    },
-    {
-      "mangled": "_GLOBAL__I_65535_0_main_34d2.cpp.o.51143",
-      "demangled": "global constructors keyed to 65535_0_main_34d2.cpp.o.51143",
-      "address": 2868,
-      "size": 40,
-      "sym_type": "t",
-      "region": "flash",
-      "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
-      "output_section": ".text",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [],
-      "called_by": []
     },
     {
       "mangled": "__umulhisi3",
@@ -1378,7 +1378,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1395,7 +1395,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".text",
       "source": "nm",
       "referenced_by": [],
@@ -1454,6 +1454,51 @@
       "called_by": []
     },
     {
+      "mangled": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+      "demangled": "vtable for fl::ClocklessController<(unsigned char)3, fl::TIMING_WS2812_800KHZ, (fl::EOrder)66, 0, false, 280>",
+      "address": 8388878,
+      "size": 16,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZTV8NEOPIXELILh3EE",
+      "demangled": "vtable for NEOPIXEL<(unsigned char)3>",
+      "address": 8388878,
+      "size": 16,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZL16gControllersData",
+      "demangled": "gControllersData",
+      "address": 8388947,
+      "size": 16,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
       "mangled": "__do_clear_bss",
       "demangled": "__do_clear_bss",
       "address": 166,
@@ -1471,51 +1516,6 @@
       "called_by": []
     },
     {
-      "mangled": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
-      "demangled": "vtable for fl::ClocklessController<(unsigned char)3, fl::TIMING_WS2812_800KHZ, (fl::EOrder)66, 0, false, 280>",
-      "address": 8388878,
-      "size": 16,
-      "sym_type": "d",
-      "region": "ram",
-      "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
-      "output_section": ".data",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [],
-      "called_by": []
-    },
-    {
-      "mangled": "_ZTV8NEOPIXELILh3EE",
-      "demangled": "vtable for NEOPIXEL<(unsigned char)3>",
-      "address": 8388878,
-      "size": 16,
-      "sym_type": "d",
-      "region": "ram",
-      "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
-      "output_section": ".data",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [],
-      "called_by": []
-    },
-    {
-      "mangled": "_ZL16gControllersData",
-      "demangled": "gControllersData",
-      "address": 8388947,
-      "size": 16,
-      "sym_type": "b",
-      "region": "ram",
-      "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
-      "output_section": ".bss",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [],
-      "called_by": []
-    },
-    {
       "mangled": "_ZTVN2fl14CLEDControllerE",
       "demangled": "vtable for fl::CLEDController",
       "address": 8388864,
@@ -1523,7 +1523,7 @@
       "sym_type": "d",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".data",
       "source": "nm",
       "referenced_by": [],
@@ -1538,7 +1538,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1565,6 +1565,21 @@
       ]
     },
     {
+      "mangled": "__usmulhisi3_tail",
+      "demangled": "__usmulhisi3_tail",
+      "address": 3486,
+      "size": 10,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_usmulhisi3.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
       "mangled": "abort",
       "demangled": "abort",
       "address": 3548,
@@ -1584,21 +1599,6 @@
       ]
     },
     {
-      "mangled": "__usmulhisi3_tail",
-      "demangled": "__usmulhisi3_tail",
-      "address": 3486,
-      "size": 10,
-      "sym_type": "T",
-      "region": "flash",
-      "archive": "libgcc.a",
-      "object": "_usmulhisi3.o",
-      "output_section": ".text",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [],
-      "called_by": []
-    },
-    {
       "mangled": "_ZGVZN8CFastLED7addLedsI8NEOPIXELLh3ELN2fl3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
       "demangled": "guard variable for fl::CLEDController& CFastLED::addLeds<NEOPIXEL, (unsigned char)3, (fl::Bus)0>(fl::CRGB*, int, int)::c",
       "address": 8388922,
@@ -1606,7 +1606,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1676,78 +1676,6 @@
       "called_by": []
     },
     {
-      "mangled": "timer0_overflow_count",
-      "demangled": "timer0_overflow_count",
-      "address": 8388934,
-      "size": 4,
-      "sym_type": "b",
-      "region": "ram",
-      "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
-      "output_section": ".bss",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [],
-      "called_by": [
-        "__vector_16",
-        "micros"
-      ]
-    },
-    {
-      "mangled": "timer0_millis",
-      "demangled": "timer0_millis",
-      "address": 8388939,
-      "size": 4,
-      "sym_type": "b",
-      "region": "ram",
-      "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
-      "output_section": ".bss",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [],
-      "called_by": [
-        "_ZN8CFastLED4showEh",
-        "__vector_16"
-      ]
-    },
-    {
-      "mangled": "__usmulhisi3",
-      "demangled": "__usmulhisi3",
-      "address": 3482,
-      "size": 4,
-      "sym_type": "T",
-      "region": "flash",
-      "archive": "libgcc.a",
-      "object": "_usmulhisi3.o",
-      "output_section": ".text",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [
-        "__umulhisi3"
-      ],
-      "called_by": [
-        "_ZN8CFastLED4showEh"
-      ]
-    },
-    {
-      "mangled": "__cxa_pure_virtual",
-      "demangled": "__cxa_pure_virtual",
-      "address": 2186,
-      "size": 4,
-      "sym_type": "t",
-      "region": "flash",
-      "archive": "libgcc.a",
-      "object": "_udivmodsi4.o",
-      "output_section": ".debug_info",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [
-        "abort"
-      ],
-      "called_by": []
-    },
-    {
       "mangled": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE4initEv",
       "demangled": "fl::ClocklessController<(unsigned char)3, fl::TIMING_WS2812_800KHZ, (fl::EOrder)66, 0, false, 280>::init()",
       "address": 1864,
@@ -1770,7 +1698,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1780,6 +1708,78 @@
       ]
     },
     {
+      "mangled": "__usmulhisi3",
+      "demangled": "__usmulhisi3",
+      "address": 3482,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_usmulhisi3.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__umulhisi3"
+      ],
+      "called_by": [
+        "_ZN8CFastLED4showEh"
+      ]
+    },
+    {
+      "mangled": "timer0_overflow_count",
+      "demangled": "timer0_overflow_count",
+      "address": 8388934,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "__vector_16",
+        "micros"
+      ]
+    },
+    {
+      "mangled": "timer0_millis",
+      "demangled": "timer0_millis",
+      "address": 8388939,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN8CFastLED4showEh",
+        "__vector_16"
+      ]
+    },
+    {
+      "mangled": "__cxa_pure_virtual",
+      "demangled": "__cxa_pure_virtual",
+      "address": 2186,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_udivmodsi4.o",
+      "output_section": ".debug_info",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "abort"
+      ],
+      "called_by": []
+    },
+    {
       "mangled": "leds",
       "demangled": "leds",
       "address": 8388930,
@@ -1787,7 +1787,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1804,7 +1804,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1821,7 +1821,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1838,7 +1838,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1849,23 +1849,6 @@
       ]
     },
     {
-      "mangled": "timer0_fract",
-      "demangled": "timer0_fract",
-      "address": 8388933,
-      "size": 1,
-      "sym_type": "b",
-      "region": "ram",
-      "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
-      "output_section": ".bss",
-      "source": "nm",
-      "referenced_by": [],
-      "references_to": [],
-      "called_by": [
-        "__vector_16"
-      ]
-    },
-    {
       "mangled": "_ZZN2fl20avr_time_accumulatorEvE21gTimeErrorAccum256ths",
       "demangled": "fl::avr_time_accumulator()::gTimeErrorAccum256ths",
       "address": 8388894,
@@ -1873,7 +1856,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1888,7 +1871,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "source": "nm",
       "referenced_by": [],
@@ -1897,18 +1880,35 @@
         "_ZN15PixelControllerILN2fl6EOrderE66ELi1ELm4294967295EE16enable_ditheringEh",
         "_ZN8CFastLED4showEh"
       ]
+    },
+    {
+      "mangled": "timer0_fract",
+      "demangled": "timer0_fract",
+      "address": 8388933,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "__vector_16"
+      ]
     }
   ],
   "sections": [
     {
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".text",
       "bytes": 3156
     },
     {
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".bss",
       "bytes": 88
     },
@@ -1932,7 +1932,7 @@
     },
     {
       "archive": null,
-      "object": "ccJQnJd5.ltrans0.ltrans.o",
+      "object": "ccjY8pGN.ltrans0.ltrans.o",
       "output_section": ".data",
       "bytes": 30
     },
@@ -1950,13 +1950,13 @@
     },
     {
       "archive": "libgcc.a",
-      "object": "_ctors.o",
+      "object": "_copy_data.o",
       "output_section": ".text",
       "bytes": 22
     },
     {
       "archive": "libgcc.a",
-      "object": "_copy_data.o",
+      "object": "_ctors.o",
       "output_section": ".text",
       "bytes": 22
     },

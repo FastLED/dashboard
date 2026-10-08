@@ -29,7 +29,7 @@ export async function openBloat(
   referenceView = null;
   const platform = platforms.find((p) => p.id === row.board);
   const title = element("bloat-title");
-  const sketchName = { blink: "Blink", spi: "APA102", rainbow: "Rainbow" }[
+  const sketchName = { blink: "Blink", spi: "APA102", features: "Features" }[
     row.sketch
   ];
   title.textContent = `${sketchName} · ${platform?.name} · ${row.version} · ${region === "flash" ? "Flash" : "RAM"} bloat`;

@@ -18,7 +18,7 @@
                 "enum": [
                   "blink",
                   "spi",
-                  "rainbow"
+                  "features"
                 ]
               },
               "board": {
@@ -160,7 +160,7 @@
                 "enum": [
                   "blink",
                   "spi",
-                  "rainbow"
+                  "features"
                 ]
               },
               "board": {

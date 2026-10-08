@@ -391,8 +391,7 @@ export function main(args = process.argv.slice(2)): void {
   if (data.fbuild !== fbuild) {
     console.log(`fbuild ${data.fbuild} -> ${fbuild}: full recompute`);
     full = true;
-  } else if (!full)
-    console.log(`fbuild ${fbuild} unchanged: incremental run`);
+  } else if (!full) console.log(`fbuild ${fbuild} unchanged: incremental run`);
   const results = new Map(
     data.results
       .filter((r) => horizon.includes(r.version))

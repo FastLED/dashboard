@@ -21,12 +21,13 @@ test("only an unchanged successful row is reused", () => {
     (r) => r.status === "ok" && r.sketch === "blink" && r.board === "uno",
   );
   assert.ok(row && row.status === "ok");
+  const { sha } = row;
   const protocol = protocolFor(row.sketch, row.board, row.fbuild);
   assert.equal(protocol, row.protocol);
-  assert.ok(reusable(row, row.sha, protocol));
-  assert.ok(!reusable(row, "0".repeat(40), protocol));
-  assert.ok(!reusable(row, row.sha, protocolFor("blink", "uno", "9.9.9")));
-  assert.ok(!reusable(undefined, row.sha, protocol));
+  assert.equal(reusable(row, sha, protocol), true);
+  assert.equal(reusable(row, "0".repeat(40), protocol), false);
+  assert.equal(reusable(row, sha, protocolFor("blink", "uno", "9.9.9")), false);
+  assert.equal(reusable(undefined, sha, protocol), false);
 });
 test("latest seven stable tags sorted numerically, excluding prereleases", () => {
   assert.deepEqual(

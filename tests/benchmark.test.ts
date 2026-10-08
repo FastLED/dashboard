@@ -1,13 +1,34 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { latestReleases, parseSize } from "../scripts/benchmark.ts";
+import {
+  latestReleases,
+  parseSize,
+  protocolFor,
+  reusable,
+} from "../scripts/benchmark.ts";
 import {
   dashboardSchema,
   reportSchema,
   boardSchema,
   sketchSchema,
 } from "../src/models.ts";
+test("only an unchanged successful row is reused", () => {
+  const data = dashboardSchema.parse(
+    JSON.parse(readFileSync("docs/data/latest.json", "utf8")),
+  );
+  const row = data.results.find(
+    (r) => r.status === "ok" && r.sketch === "blink" && r.board === "uno",
+  );
+  assert.ok(row && row.status === "ok");
+  const { sha } = row;
+  const protocol = protocolFor(row.sketch, row.board, row.fbuild);
+  assert.equal(protocol, row.protocol);
+  assert.equal(reusable(row, sha, protocol), true);
+  assert.equal(reusable(row, "0".repeat(40), protocol), false);
+  assert.equal(reusable(row, sha, protocolFor("blink", "uno", "9.9.9")), false);
+  assert.equal(reusable(undefined, sha, protocol), false);
+});
 test("latest seven stable tags sorted numerically, excluding prereleases", () => {
   assert.deepEqual(
     latestReleases([
@@ -70,7 +91,7 @@ test("workloads stay distinct and every sketch avoids Serial", () => {
           keys.includes(`${sketch}/${board}/${version}`),
           `Missing ${sketch}/${board}/${version}`,
         );
-  for (const name of ["Blink", "SPI", "Rainbow"]) {
+  for (const name of ["Blink", "SPI", "Features"]) {
     assert.ok(
       !readFileSync(`benchmark/${name}.ino`, "utf8").includes("Serial"),
     );
@@ -79,7 +100,9 @@ test("workloads stay distinct and every sketch avoids Serial", () => {
     readFileSync("benchmark/SPI.ino", "utf8").includes("APA102, MOSI, SCK"),
   );
   assert.ok(
-    readFileSync("benchmark/Rainbow.ino", "utf8").includes("CRGB leds[16]"),
+    readFileSync("benchmark/Features.ino", "utf8").includes(
+      "setMaxPowerInVoltsAndMilliamps",
+    ),
   );
   assert.throws(() =>
     dashboardSchema.parse({

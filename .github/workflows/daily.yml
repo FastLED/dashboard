@@ -8,6 +8,10 @@ on:
         description: 'Run benchmarks before publishing (scheduled runs always do)'
         type: boolean
         default: true
+      full_recompute:
+        description: 'Rebuild every row instead of reusing unchanged results'
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ['src/**', 'scripts/**', 'tests/**', 'benchmark/**', 'docs/**', '.github/workflows/daily.yml', 'pyproject.toml', 'package*.json', 'tsconfig.json', 'eslint.config.js']
@@ -59,20 +63,28 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Install latest fbuild build tool
-        run: uv sync --upgrade-package fbuild
+        id: fbuild
+        run: |
+          uv sync --upgrade-package fbuild
+          echo "version=$(uv run fbuild --version | sed 's/^fbuild //')" >> "$GITHUB_OUTPUT"
       - name: Restore toolchains and framework caches
         uses: actions/cache@v4
         with:
           path: |
             ~/.fbuild
             .cache
-          key: blink-v1-${{ runner.os }}-${{ github.run_id }}
-          restore-keys: blink-v1-${{ runner.os }}-
-      - name: Measure all four boards sequentially
+          # One cache per fbuild version: unchanged runs skip the slow save.
+          key: blink-v2-${{ runner.os }}-fbuild-${{ steps.fbuild.outputs.version }}
+          restore-keys: blink-v2-${{ runner.os }}-
+      - name: Measure changed rows on all four boards
         id: benchmark
         # Site updates publish existing data; scheduled/manual runs measure.
+        # Incremental unless full_recompute is set; an fbuild version change
+        # forces a full recompute inside the script.
         continue-on-error: true
-        run: npm run benchmark
+        env:
+          FULL: ${{ inputs.full_recompute && '--full' || '' }}
+        run: npm run benchmark -- $FULL
       - name: Archive benchmark evidence
         if: always() && steps.benchmark.outcome != 'skipped'
         uses: actions/upload-artifact@v4

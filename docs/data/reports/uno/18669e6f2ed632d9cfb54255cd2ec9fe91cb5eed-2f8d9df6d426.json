@@ -1,0 +1,3298 @@
+{
+  "reference_analysis": {
+    "schema": 1,
+    "disassembly": {
+      "status": "analyzed",
+      "tool": "/home/niteris/.fbuild/prod/cache/toolchains/arduino-tools/08e1a7271edb2765/7.3.0-atmel3.6.1-arduino7/avr/bin/avr-objdump",
+      "reason": null
+    },
+    "static_data": {
+      "status": "analyzed",
+      "tool": null,
+      "reason": null
+    },
+    "object_references": {
+      "status": "unavailable",
+      "tool": null,
+      "reason": "Linker map has no Cross Reference Table."
+    },
+    "edges": [
+      {
+        "source": {
+          "name": "_ZN2fl9platforms22fastled_watchdog_init3Ev",
+          "address": 560,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__DATA_REGION_ORIGIN__",
+          "address": 8388704,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__do_clear_bss",
+          "address": 608,
+          "source": "nm"
+        },
+        "target": {
+          "name": ".do_clear_bss_start",
+          "address": 618,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__do_global_ctors",
+          "address": 624,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__tablejump2__",
+          "address": 8334,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__do_global_ctors",
+          "address": 624,
+          "source": "nm"
+        },
+        "target": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__do_global_ctors",
+          "address": 624,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_exit",
+          "address": 8356,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl14CLEDController17getAdjustmentDataEh",
+          "address": 744,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__umulhisi3",
+          "address": 8178,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl14CLEDControllerC2Ev",
+          "address": 876,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController6mPHeadE",
+          "address": 8389156,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl3gfx6blur1dENS_4spanINS_4CRGBELj65535EEEh.constprop.95",
+          "address": 1082,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2flL9nscale8x3ERhS0_S0_h",
+          "address": 1036,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl3gfx6blur1dENS_4spanINS_4CRGBELj65535EEEh.constprop.95",
+          "address": 1082,
+          "source": "nm"
+        },
+        "target": {
+          "name": "L_268",
+          "address": 1232,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "micros",
+          "address": 1526,
+          "source": "nm"
+        },
+        "target": {
+          "name": "timer0_overflow_count",
+          "address": 8389127,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "millis",
+          "address": 1600,
+          "source": "nm"
+        },
+        "target": {
+          "name": "timer0_millis",
+          "address": 8389123,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+          "address": 1662,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl6detail12gDitherFrameE",
+          "address": 8389131,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+          "address": 1662,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__divmodhi4",
+          "address": 8240,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE10showPixelsER15PixelControllerILS2_66ELi1ELm4294967295EE",
+          "address": 1780,
+          "source": "nm"
+        },
+        "target": {
+          "name": "micros",
+          "address": 1526,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE10showPixelsER15PixelControllerILS2_66ELi1ELm4294967295EE",
+          "address": 1780,
+          "source": "nm"
+        },
+        "target": {
+          "name": "L_952",
+          "address": 2770,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE10showPixelsER15PixelControllerILS2_66ELi1ELm4294967295EE",
+          "address": 1780,
+          "source": "nm"
+        },
+        "target": {
+          "name": "L_648",
+          "address": 1934,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+          "address": 2988,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController17getAdjustmentDataEh",
+          "address": 744,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+          "address": 2988,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+          "address": 1662,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+          "address": 3162,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController17getAdjustmentDataEh",
+          "address": 744,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+          "address": 3162,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+          "address": 1662,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE10showPixelsER15PixelControllerILS1_136ELi1ELm4294967295EE",
+          "address": 3300,
+          "source": "nm"
+        },
+        "target": {
+          "name": "L_1187",
+          "address": 3374,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE4initEv",
+          "address": 4052,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__data_end",
+          "address": 8388918,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE4initEv",
+          "address": 4052,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl20AVRHardwareSPIOutputILh11ELh13ELm2EE7releaseEv.isra.9",
+          "address": 1636,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+          "address": 4126,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController17getAdjustmentDataEh",
+          "address": 744,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+          "address": 4126,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+          "address": 1662,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+          "address": 4300,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController17getAdjustmentDataEh",
+          "address": 744,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+          "address": 4300,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+          "address": 1662,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_Z37calculate_max_brightness_for_power_mWhm",
+          "address": 4502,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController6mPHeadE",
+          "address": 8389156,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_Z37calculate_max_brightness_for_power_mWhm",
+          "address": 4502,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__muluhisi3",
+          "address": 8088,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_Z37calculate_max_brightness_for_power_mWhm",
+          "address": 4502,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__usmulhisi3",
+          "address": 8280,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_Z37calculate_max_brightness_for_power_mWhm",
+          "address": 4502,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__mulsi3",
+          "address": 8208,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl3Pin7releaseEv",
+          "address": 5676,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl9platforms12digitalWriteEiNS_8PinValueE",
+          "address": 4438,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN2fl3Pin6selectEv",
+          "address": 5710,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl9platforms12digitalWriteEiNS_8PinValueE",
+          "address": 4438,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__cxa_pure_virtual",
+          "address": 5742,
+          "source": "nm"
+        },
+        "target": {
+          "name": "abort",
+          "address": 8346,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh",
+          "address": 5746,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl6detail12gDitherFrameE",
+          "address": 8389131,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh",
+          "address": 5746,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__udivmodsi4",
+          "address": 8110,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh",
+          "address": 5746,
+          "source": "nm"
+        },
+        "target": {
+          "name": "micros",
+          "address": 1526,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh",
+          "address": 5746,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZL8lastshow",
+          "address": 8389152,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh",
+          "address": 5746,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController6mPHeadE",
+          "address": 8389156,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh",
+          "address": 5746,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZZN8CFastLED8countFPSEiE2br",
+          "address": 8389134,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh",
+          "address": 5746,
+          "source": "nm"
+        },
+        "target": {
+          "name": "millis",
+          "address": 1600,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh",
+          "address": 5746,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZZN8CFastLED8countFPSEiE9lastframe",
+          "address": 8389132,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZN8CFastLED4showEh",
+          "address": 5746,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__usmulhisi3",
+          "address": 8280,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__vector_16",
+          "address": 6252,
+          "source": "nm"
+        },
+        "target": {
+          "name": "timer0_millis",
+          "address": 8389123,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__vector_16",
+          "address": 6252,
+          "source": "nm"
+        },
+        "target": {
+          "name": "timer0_fract",
+          "address": 8389122,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__vector_16",
+          "address": 6252,
+          "source": "nm"
+        },
+        "target": {
+          "name": "timer0_overflow_count",
+          "address": 8389127,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_GLOBAL__I_65535_0_main_34d2.cpp.o.51423",
+          "address": 6400,
+          "source": "nm"
+        },
+        "target": {
+          "name": "FastLED",
+          "address": 8389158,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZGVZN8CFastLED7addLedsI7WS2812BLh3ELN2fl6EOrderE66ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+          "address": 8388947,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDControllerC2Ev",
+          "address": 876,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZZN8CFastLED7addLedsI7WS2812BLh3ELN2fl6EOrderE66ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+          "address": 8388920,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE4initEv",
+          "address": 2984,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZGVZN8CFastLED7addLedsIL12ESPIChipsets7ELh11ELh13ELN2fl6EOrderE136ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+          "address": 8388983,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZZN8CFastLED7addLedsIL12ESPIChipsets7ELh11ELh13ELN2fl6EOrderE136ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+          "address": 8388955,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE4initEv",
+          "address": 4052,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "FastLED",
+          "address": 8389158,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZGVZ4loopE4PER0",
+          "address": 8389114,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "millis",
+          "address": 1600,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZZ4loopE4PER0",
+          "address": 8389106,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "hue",
+          "address": 8389105,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2flL9nscale8x3ERhS0_S0_h",
+          "address": 1036,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__mulsi3",
+          "address": 8208,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "main",
+          "address": 6506,
+          "source": "nm"
+        },
+        "target": {
+          "name": "L_2760",
+          "address": 7334,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__muluhisi3",
+          "address": 8088,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__umulhisi3",
+          "address": 8178,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__udivmodsi4",
+          "address": 8110,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__udivmodsi4_ep",
+          "address": 8148,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__mulsi3",
+          "address": 8208,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__muluhisi3",
+          "address": 8088,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__divmodhi4",
+          "address": 8240,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__divmodhi4_neg1",
+          "address": 8264,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__divmodhi4",
+          "address": 8240,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__divmodhi4_neg2",
+          "address": 8272,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__divmodhi4",
+          "address": 8240,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__udivmodhi4",
+          "address": 8294,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__divmodhi4",
+          "address": 8240,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__divmodhi4_exit",
+          "address": 8278,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__usmulhisi3",
+          "address": 8280,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__umulhisi3",
+          "address": 8178,
+          "source": "nm"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "__udivmodhi4",
+          "address": 8294,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__udivmodhi4_ep",
+          "address": 8316,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "abort",
+          "address": 8346,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_exit",
+          "address": 8356,
+          "source": "external"
+        },
+        "kind": "disassembly",
+        "offset": null
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+          "address": 8388880,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+          "address": 4300,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 4
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+          "address": 8388880,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+          "address": 4126,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 6
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+          "address": 8388880,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE4initEv",
+          "address": 4052,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 8
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+          "address": 8388880,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+          "address": 8388880,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+          "address": 8388880,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+          "address": 8388880,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZNK2fl14CLEDController17getMaxRefreshRateEv",
+          "address": 1624,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 12
+      },
+      {
+        "source": {
+          "name": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+          "address": 8388880,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE10showPixelsER15PixelControllerILS1_136ELi1ELm4294967295EE",
+          "address": 3300,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 14
+      },
+      {
+        "source": {
+          "name": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+          "address": 3162,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 4
+      },
+      {
+        "source": {
+          "name": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+          "address": 2988,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 6
+      },
+      {
+        "source": {
+          "name": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE4initEv",
+          "address": 2984,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 8
+      },
+      {
+        "source": {
+          "name": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZNK2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE17getMaxRefreshRateEv",
+          "address": 1630,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 12
+      },
+      {
+        "source": {
+          "name": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE10showPixelsER15PixelControllerILS2_66ELi1ELm4294967295EE",
+          "address": 1780,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 14
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl14CLEDControllerE",
+          "address": 8388904,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__cxa_pure_virtual",
+          "address": 5742,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 4
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl14CLEDControllerE",
+          "address": 8388904,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__cxa_pure_virtual",
+          "address": 5742,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 6
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl14CLEDControllerE",
+          "address": 8388904,
+          "source": "nm"
+        },
+        "target": {
+          "name": "__cxa_pure_virtual",
+          "address": 5742,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 8
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl14CLEDControllerE",
+          "address": 8388904,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl14CLEDControllerE",
+          "address": 8388904,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl14CLEDControllerE",
+          "address": 8388904,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl14CLEDControllerE",
+          "address": 8388904,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZNK2fl14CLEDController17getMaxRefreshRateEv",
+          "address": 1624,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 12
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+          "address": 3162,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 4
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+          "address": 2988,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 6
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE4initEv",
+          "address": 2984,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 8
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl14CLEDController5lanesEv",
+          "address": 1000,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 10
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZNK2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE17getMaxRefreshRateEv",
+          "address": 1630,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 12
+      },
+      {
+        "source": {
+          "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+          "address": 8388864,
+          "source": "nm"
+        },
+        "target": {
+          "name": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE10showPixelsER15PixelControllerILS2_66ELi1ELm4294967295EE",
+          "address": 1780,
+          "source": "nm"
+        },
+        "kind": "static_data",
+        "offset": 14
+      }
+    ],
+    "roots": [],
+    "unexplained": [
+      {
+        "name": "_Z37calculate_max_brightness_for_power_mWhm",
+        "address": 4502,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN8CFastLED4showEh",
+        "address": 5746,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl3gfx6blur1dENS_4spanINS_4CRGBELj65535EEEh.constprop.95",
+        "address": 1082,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN12noise_detailL1pE",
+        "address": 104,
+        "source": "nm"
+      },
+      {
+        "name": "__vector_16",
+        "address": 6252,
+        "source": "nm"
+      },
+      {
+        "name": "_GLOBAL__I_65535_0_main_34d2.cpp.o.51423",
+        "address": 6400,
+        "source": "nm"
+      },
+      {
+        "name": "strip",
+        "address": 8389015,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl3Pin5_initEv.constprop.48",
+        "address": 658,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl3Pin10isSelectedEv",
+        "address": 1444,
+        "source": "nm"
+      },
+      {
+        "name": "PartyColors_p",
+        "address": 481,
+        "source": "nm"
+      },
+      {
+        "name": "palette",
+        "address": 8389171,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl3Pin7releaseEv",
+        "address": 5676,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl3Pin6selectEv",
+        "address": 5710,
+        "source": "nm"
+      },
+      {
+        "name": "_ZL14ease8InOutQuadh",
+        "address": 1006,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl9platforms22fastled_watchdog_init3Ev",
+        "address": 560,
+        "source": "nm"
+      },
+      {
+        "name": "spi",
+        "address": 8388991,
+        "source": "nm"
+      },
+      {
+        "name": "__do_global_ctors",
+        "address": 624,
+        "source": "nm"
+      },
+      {
+        "name": "__do_copy_data",
+        "address": 586,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl9platformsL27digital_pin_to_bit_mask_PGME",
+        "address": 381,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl9platformsL23digital_pin_to_port_PGME",
+        "address": 401,
+        "source": "nm"
+      },
+      {
+        "name": "__vector_11",
+        "address": 6232,
+        "source": "nm"
+      },
+      {
+        "name": "digital_pin_to_port_PGM",
+        "address": 441,
+        "source": "nm"
+      },
+      {
+        "name": "digital_pin_to_bit_mask_PGM",
+        "address": 461,
+        "source": "nm"
+      },
+      {
+        "name": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+        "address": 8388864,
+        "source": "nm"
+      },
+      {
+        "name": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+        "address": 8388864,
+        "source": "nm"
+      },
+      {
+        "name": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+        "address": 8388880,
+        "source": "nm"
+      },
+      {
+        "name": "_ZL16gControllersData",
+        "address": 8389136,
+        "source": "nm"
+      },
+      {
+        "name": "__do_clear_bss",
+        "address": 608,
+        "source": "nm"
+      },
+      {
+        "name": "_ZTVN2fl14CLEDControllerE",
+        "address": 8388904,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl9platformsL18port_to_output_PGME",
+        "address": 361,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2fl9platformsL17port_to_input_PGME",
+        "address": 371,
+        "source": "nm"
+      },
+      {
+        "name": "__usmulhisi3_tail",
+        "address": 8284,
+        "source": "nm"
+      },
+      {
+        "name": "port_to_output_PGM",
+        "address": 431,
+        "source": "nm"
+      },
+      {
+        "name": "port_to_input_PGM",
+        "address": 421,
+        "source": "nm"
+      },
+      {
+        "name": "_ZN2flL16b_m16_interleaveE",
+        "address": 8388896,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN2fl20avr_time_accumulatorEvE21gTimeErrorAccum256ths",
+        "address": 8388919,
+        "source": "nm"
+      },
+      {
+        "name": "_ZZN2fl20AVRHardwareSPIOutputILh11ELh13ELm2EE10shouldWaitEbE5sWait",
+        "address": 8388918,
+        "source": "nm"
+      }
+    ],
+    "unresolved": [
+      {
+        "name": ".do_clear_bss_start",
+        "address": 618
+      },
+      {
+        "name": "L_1187",
+        "address": 3374
+      },
+      {
+        "name": "L_268",
+        "address": 1232
+      },
+      {
+        "name": "L_2760",
+        "address": 7334
+      },
+      {
+        "name": "L_648",
+        "address": 1934
+      },
+      {
+        "name": "L_952",
+        "address": 2770
+      },
+      {
+        "name": "__DATA_REGION_ORIGIN__",
+        "address": 8388704
+      },
+      {
+        "name": "__data_end",
+        "address": 8388918
+      },
+      {
+        "name": "__divmodhi4_exit",
+        "address": 8278
+      },
+      {
+        "name": "__divmodhi4_neg1",
+        "address": 8264
+      },
+      {
+        "name": "__divmodhi4_neg2",
+        "address": 8272
+      },
+      {
+        "name": "__udivmodhi4_ep",
+        "address": 8316
+      },
+      {
+        "name": "__udivmodsi4_ep",
+        "address": 8148
+      },
+      {
+        "name": "_exit",
+        "address": 8356
+      }
+    ],
+    "limitations": [
+      "Runtime indirect calls are not reconstructed.",
+      "Static pointer extraction covers absolute Itanium vtables; relative vtables and function descriptors are unsupported.",
+      "KEEP and platform-specific linker roots require additional linker evidence.",
+      "Disassembly annotations are references, not necessarily function calls; interior-offset annotations are not reconstructed."
+    ]
+  },
+  "elf_path": "/home/niteris/dev/fastled-memory-dashboard/.cache/build/uno/18669e6f2ed632d9cfb54255cd2ec9fe91cb5eed-2f8d9df6d426/.fbuild/build/uno/release/firmware.elf",
+  "map_path": "/home/niteris/dev/fastled-memory-dashboard/.cache/build/uno/18669e6f2ed632d9cfb54255cd2ec9fe91cb5eed-2f8d9df6d426/.fbuild/build/uno/release/firmware.map",
+  "total_flash": 8237,
+  "total_ram": 371,
+  "image_flash": 8414,
+  "symbols": [
+    {
+      "mangled": "main",
+      "demangled": "main",
+      "address": 6506,
+      "size": 1582,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "FastLED",
+        "L_2760",
+        "_ZGVZ4loopE4PER0",
+        "_ZGVZN8CFastLED7addLedsI7WS2812BLh3ELN2fl6EOrderE66ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+        "_ZGVZN8CFastLED7addLedsIL12ESPIChipsets7ELh11ELh13ELN2fl6EOrderE136ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+        "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE4initEv",
+        "_ZN2fl14CLEDControllerC2Ev",
+        "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE4initEv",
+        "_ZN2flL9nscale8x3ERhS0_S0_h",
+        "_ZZ4loopE4PER0",
+        "_ZZN8CFastLED7addLedsI7WS2812BLh3ELN2fl6EOrderE66ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+        "_ZZN8CFastLED7addLedsIL12ESPIChipsets7ELh11ELh13ELN2fl6EOrderE136ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+        "__mulsi3",
+        "hue",
+        "millis"
+      ],
+      "called_by": [
+        "__do_global_ctors"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE10showPixelsER15PixelControllerILS2_66ELi1ELm4294967295EE",
+      "demangled": "fl::ClocklessController<(unsigned char)3, fl::TIMING_WS2812_800KHZ, (fl::EOrder)66, 0, false, 280>::showPixels(PixelController<(fl::EOrder)66, 1, 4294967295ul>&)",
+      "address": 1780,
+      "size": 1204,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_copy_data.o",
+      "output_section": ".debug_info",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "L_648",
+        "L_952",
+        "micros"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_Z37calculate_max_brightness_for_power_mWhm",
+      "demangled": "calculate_max_brightness_for_power_mW(unsigned char, unsigned long)",
+      "address": 4502,
+      "size": 1174,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl14CLEDController6mPHeadE",
+        "__mulsi3",
+        "__muluhisi3",
+        "__usmulhisi3"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE10showPixelsER15PixelControllerILS1_136ELi1ELm4294967295EE",
+      "demangled": "APA102Controller<(unsigned char)11, (unsigned char)13, (fl::EOrder)136, 2ul, (fl::FiveBitGammaCorrectionMode)0, 0ul, 4294967295ul>::showPixels(PixelController<(fl::EOrder)136, 1, 4294967295ul>&)",
+      "address": 3300,
+      "size": 752,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_udivmodhi4.o",
+      "output_section": ".debug_info",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "L_1187"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN8CFastLED4showEh",
+      "demangled": "CFastLED::show(unsigned char)",
+      "address": 5746,
+      "size": 486,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZL8lastshow",
+        "_ZN2fl14CLEDController6mPHeadE",
+        "_ZN2fl6detail12gDitherFrameE",
+        "_ZZN8CFastLED8countFPSEiE2br",
+        "_ZZN8CFastLED8countFPSEiE9lastframe",
+        "__udivmodsi4",
+        "__usmulhisi3",
+        "micros",
+        "millis"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl3gfx6blur1dENS_4spanINS_4CRGBELj65535EEEh.constprop.95",
+      "demangled": "fl::gfx::blur1d(fl::span<fl::CRGB, 65535u>, unsigned char) [clone .constprop.95]",
+      "address": 1082,
+      "size": 362,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_mulsi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "L_268",
+        "_ZN2flL9nscale8x3ERhS0_S0_h"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN12noise_detailL1pE",
+      "demangled": "noise_detail::p",
+      "address": 104,
+      "size": 257,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+      "demangled": "CPixelLEDController<(fl::EOrder)66, 1, 4294967295ul>::show(fl::CRGB const*, int, unsigned char)",
+      "address": 2988,
+      "size": 174,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_ctors.o",
+      "output_section": ".debug_info",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+        "_ZN2fl14CLEDController17getAdjustmentDataEh"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+      "demangled": "CPixelLEDController<(fl::EOrder)136, 1, 4294967295ul>::show(fl::CRGB const*, int, unsigned char)",
+      "address": 4126,
+      "size": 174,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+        "_ZN2fl14CLEDController17getAdjustmentDataEh"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "__vector_16",
+      "demangled": "__vector_16",
+      "address": 6252,
+      "size": 148,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "timer0_fract",
+        "timer0_millis",
+        "timer0_overflow_count"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+      "demangled": "CPixelLEDController<(fl::EOrder)66, 1, 4294967295ul>::showColor(fl::CRGB const&, int, unsigned char)",
+      "address": 3162,
+      "size": 138,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_usmulhisi3.o",
+      "output_section": ".debug_info",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+        "_ZN2fl14CLEDController17getAdjustmentDataEh"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+      "demangled": "CPixelLEDController<(fl::EOrder)136, 1, 4294967295ul>::showColor(fl::CRGB const&, int, unsigned char)",
+      "address": 4300,
+      "size": 138,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+        "_ZN2fl14CLEDController17getAdjustmentDataEh"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl14CLEDController17getAdjustmentDataEh",
+      "demangled": "fl::CLEDController::getAdjustmentData(unsigned char)",
+      "address": 744,
+      "size": 132,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__umulhisi3"
+      ],
+      "called_by": [
+        "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+        "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+        "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+        "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl14CLEDControllerC2Ev",
+      "demangled": "fl::CLEDController::CLEDController()",
+      "address": 876,
+      "size": 124,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_umulhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl14CLEDController6mPHeadE"
+      ],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+      "demangled": "PixelController<(fl::EOrder)136, 1, 4294967295ul>::enable_dithering(unsigned char)",
+      "address": 1662,
+      "size": 118,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_tablejump2.o",
+      "output_section": ".debug_abbrev",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl6detail12gDitherFrameE",
+        "__divmodhi4"
+      ],
+      "called_by": [
+        "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+        "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih",
+        "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE4showEPKNS0_4CRGBEih",
+        "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE9showColorERKNS0_4CRGBEih"
+      ]
+    },
+    {
+      "mangled": "_GLOBAL__I_65535_0_main_34d2.cpp.o.51423",
+      "demangled": "global constructors keyed to 65535_0_main_34d2.cpp.o.51423",
+      "address": 6400,
+      "size": 106,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "FastLED"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "strip",
+      "demangled": "strip",
+      "address": 8389015,
+      "size": 90,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl3Pin5_initEv.constprop.48",
+      "demangled": "fl::Pin::_init() [clone .constprop.48]",
+      "address": 658,
+      "size": 86,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl3Pin10isSelectedEv",
+      "demangled": "fl::Pin::isSelected()",
+      "address": 1444,
+      "size": 82,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_exit.o",
+      "output_section": ".debug_abbrev",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE4initEv",
+      "demangled": "APA102Controller<(unsigned char)11, (unsigned char)13, (fl::EOrder)136, 2ul, (fl::FiveBitGammaCorrectionMode)0, 0ul, 4294967295ul>::init()",
+      "address": 4052,
+      "size": 74,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl20AVRHardwareSPIOutputILh11ELh13ELm2EE7releaseEv.isra.9",
+        "__data_end"
+      ],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "micros",
+      "demangled": "micros",
+      "address": 1526,
+      "size": 74,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_exit.o",
+      "output_section": ".debug_info",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "timer0_overflow_count"
+      ],
+      "called_by": [
+        "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE10showPixelsER15PixelControllerILS2_66ELi1ELm4294967295EE",
+        "_ZN8CFastLED4showEh"
+      ]
+    },
+    {
+      "mangled": "__udivmodsi4",
+      "demangled": "__udivmodsi4",
+      "address": 8110,
+      "size": 68,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_udivmodsi4.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__udivmodsi4_ep"
+      ],
+      "called_by": [
+        "_ZN8CFastLED4showEh"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl9platforms12digitalWriteEiNS_8PinValueE",
+      "demangled": "fl::platforms::digitalWrite(int, fl::PinValue)",
+      "address": 4438,
+      "size": 64,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN2fl3Pin6selectEv",
+        "_ZN2fl3Pin7releaseEv"
+      ]
+    },
+    {
+      "mangled": "PartyColors_p",
+      "demangled": "PartyColors_p",
+      "address": 481,
+      "size": 64,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_muluhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "palette",
+      "demangled": "palette",
+      "address": 8389171,
+      "size": 48,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2flL9nscale8x3ERhS0_S0_h",
+      "demangled": "fl::nscale8x3(unsigned char&, unsigned char&, unsigned char&, unsigned char)",
+      "address": 1036,
+      "size": 46,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_mulsi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN2fl3gfx6blur1dENS_4spanINS_4CRGBELj65535EEEh.constprop.95",
+        "main"
+      ]
+    },
+    {
+      "mangled": "__udivmodhi4",
+      "demangled": "__udivmodhi4",
+      "address": 8294,
+      "size": 40,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_udivmodhi4.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__udivmodhi4_ep"
+      ],
+      "called_by": [
+        "__divmodhi4"
+      ]
+    },
+    {
+      "mangled": "__divmodhi4",
+      "demangled": "__divmodhi4",
+      "address": 8240,
+      "size": 40,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_divmodhi4.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__divmodhi4_exit",
+        "__divmodhi4_neg1",
+        "__divmodhi4_neg2",
+        "__udivmodhi4"
+      ],
+      "called_by": [
+        "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl3Pin7releaseEv",
+      "demangled": "fl::Pin::release()",
+      "address": 5676,
+      "size": 34,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl9platforms12digitalWriteEiNS_8PinValueE"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl3Pin6selectEv",
+      "demangled": "fl::Pin::select()",
+      "address": 5710,
+      "size": 32,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_ZN2fl9platforms12digitalWriteEiNS_8PinValueE"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "__mulsi3",
+      "demangled": "__mulsi3",
+      "address": 8208,
+      "size": 32,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_mulsi3.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__muluhisi3"
+      ],
+      "called_by": [
+        "_Z37calculate_max_brightness_for_power_mWhm",
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZL14ease8InOutQuadh",
+      "demangled": "ease8InOutQuad(unsigned char)",
+      "address": 1006,
+      "size": 30,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_umulhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__umulhisi3",
+      "demangled": "__umulhisi3",
+      "address": 8178,
+      "size": 30,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_umulhisi3.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN2fl14CLEDController17getAdjustmentDataEh",
+        "__muluhisi3",
+        "__usmulhisi3"
+      ]
+    },
+    {
+      "mangled": "_ZZN8CFastLED7addLedsIL12ESPIChipsets7ELh11ELh13ELN2fl6EOrderE136ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+      "demangled": "fl::CLEDController& CFastLED::addLeds<(ESPIChipsets)7, (unsigned char)11, (unsigned char)13, (fl::EOrder)136, (fl::Bus)0>(fl::CRGB*, int, int)::c",
+      "address": 8388955,
+      "size": 28,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZZN8CFastLED7addLedsI7WS2812BLh3ELN2fl6EOrderE66ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+      "demangled": "fl::CLEDController& CFastLED::addLeds<WS2812B, (unsigned char)3, (fl::EOrder)66, (fl::Bus)0>(fl::CRGB*, int, int)::c",
+      "address": 8388920,
+      "size": 27,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl9platforms22fastled_watchdog_init3Ev",
+      "demangled": "fl::platforms::fastled_watchdog_init3()",
+      "address": 560,
+      "size": 26,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__DATA_REGION_ORIGIN__"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl20AVRHardwareSPIOutputILh11ELh13ELm2EE7releaseEv.isra.9",
+      "demangled": "fl::AVRHardwareSPIOutput<(unsigned char)11, (unsigned char)13, 2ul>::release() [clone .isra.9]",
+      "address": 1636,
+      "size": 26,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_usmulhisi3.o",
+      "output_section": ".debug_abbrev",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE4initEv"
+      ]
+    },
+    {
+      "mangled": "spi",
+      "demangled": "spi",
+      "address": 8388991,
+      "size": 24,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "millis",
+      "demangled": "millis",
+      "address": 1600,
+      "size": 24,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_divmodhi4.o",
+      "output_section": ".debug_abbrev",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "timer0_millis"
+      ],
+      "called_by": [
+        "_ZN8CFastLED4showEh",
+        "main"
+      ]
+    },
+    {
+      "mangled": "__muluhisi3",
+      "demangled": "__muluhisi3",
+      "address": 8088,
+      "size": 22,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_muluhisi3.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__umulhisi3"
+      ],
+      "called_by": [
+        "_Z37calculate_max_brightness_for_power_mWhm",
+        "__mulsi3"
+      ]
+    },
+    {
+      "mangled": "__do_global_ctors",
+      "demangled": "__do_global_ctors",
+      "address": 624,
+      "size": 22,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_ctors.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__tablejump2__",
+        "_exit",
+        "main"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "__do_copy_data",
+      "demangled": "__do_copy_data",
+      "address": 586,
+      "size": 22,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_copy_data.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl9platformsL27digital_pin_to_bit_mask_PGME",
+      "demangled": "fl::platforms::digital_pin_to_bit_mask_PGM",
+      "address": 381,
+      "size": 20,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_tablejump2.o",
+      "output_section": ".debug_aranges",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl9platformsL23digital_pin_to_port_PGME",
+      "demangled": "fl::platforms::digital_pin_to_port_PGM",
+      "address": 401,
+      "size": 20,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__vector_11",
+      "demangled": "__vector_11",
+      "address": 6232,
+      "size": 20,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "digital_pin_to_port_PGM",
+      "demangled": "digital_pin_to_port_PGM",
+      "address": 441,
+      "size": 20,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_muluhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "digital_pin_to_bit_mask_PGM",
+      "demangled": "digital_pin_to_bit_mask_PGM",
+      "address": 461,
+      "size": 20,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_muluhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE",
+      "demangled": "vtable for fl::ClocklessController<(unsigned char)3, fl::TIMING_WS2812_800KHZ, (fl::EOrder)66, 0, false, 280>",
+      "address": 8388864,
+      "size": 16,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZTV7WS2812BILh3ELN2fl6EOrderE66EE",
+      "demangled": "vtable for WS2812B<(unsigned char)3, (fl::EOrder)66>",
+      "address": 8388864,
+      "size": 16,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE136ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE",
+      "demangled": "vtable for APA102Controller<(unsigned char)11, (unsigned char)13, (fl::EOrder)136, 2ul, (fl::FiveBitGammaCorrectionMode)0, 0ul, 4294967295ul>",
+      "address": 8388880,
+      "size": 16,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZL16gControllersData",
+      "demangled": "gControllersData",
+      "address": 8389136,
+      "size": 16,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__do_clear_bss",
+      "demangled": "__do_clear_bss",
+      "address": 608,
+      "size": 16,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_clear_bss.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        ".do_clear_bss_start"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZTVN2fl14CLEDControllerE",
+      "demangled": "vtable for fl::CLEDController",
+      "address": 8388904,
+      "size": 14,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "FastLED",
+      "demangled": "FastLED",
+      "address": 8389158,
+      "size": 13,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_GLOBAL__I_65535_0_main_34d2.cpp.o.51423",
+        "main"
+      ]
+    },
+    {
+      "mangled": "__tablejump2__",
+      "demangled": "__tablejump2__",
+      "address": 8334,
+      "size": 12,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_tablejump2.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "__do_global_ctors"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl9platformsL18port_to_output_PGME",
+      "demangled": "fl::platforms::port_to_output_PGM",
+      "address": 361,
+      "size": 10,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_tablejump2.o",
+      "output_section": ".debug_aranges",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl9platformsL17port_to_input_PGME",
+      "demangled": "fl::platforms::port_to_input_PGM",
+      "address": 371,
+      "size": 10,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_tablejump2.o",
+      "output_section": ".debug_aranges",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "__usmulhisi3_tail",
+      "demangled": "__usmulhisi3_tail",
+      "address": 8284,
+      "size": 10,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_usmulhisi3.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "port_to_output_PGM",
+      "demangled": "port_to_output_PGM",
+      "address": 431,
+      "size": 10,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_muluhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "port_to_input_PGM",
+      "demangled": "port_to_input_PGM",
+      "address": 421,
+      "size": 10,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_muluhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "abort",
+      "demangled": "abort",
+      "address": 8346,
+      "size": 10,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libc.a",
+      "object": "abort.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "_exit"
+      ],
+      "called_by": [
+        "__cxa_pure_virtual"
+      ]
+    },
+    {
+      "mangled": "_ZZ4loopE4PER0",
+      "demangled": "loop::PER0",
+      "address": 8389106,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZN2flL16b_m16_interleaveE",
+      "demangled": "fl::b_m16_interleave",
+      "address": 8388896,
+      "size": 8,
+      "sym_type": "d",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZGVZN8CFastLED7addLedsIL12ESPIChipsets7ELh11ELh13ELN2fl6EOrderE136ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+      "demangled": "guard variable for fl::CLEDController& CFastLED::addLeds<(ESPIChipsets)7, (unsigned char)11, (unsigned char)13, (fl::EOrder)136, (fl::Bus)0>(fl::CRGB*, int, int)::c",
+      "address": 8388983,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZGVZN8CFastLED7addLedsI7WS2812BLh3ELN2fl6EOrderE66ELNS2_3BusE0EEERNS2_14CLEDControllerEPNS2_4CRGBEiiE1c",
+      "demangled": "guard variable for fl::CLEDController& CFastLED::addLeds<WS2812B, (unsigned char)3, (fl::EOrder)66, (fl::Bus)0>(fl::CRGB*, int, int)::c",
+      "address": 8388947,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZGVZ4loopE4PER0",
+      "demangled": "guard variable for loop::PER0",
+      "address": 8389114,
+      "size": 8,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZNK2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE17getMaxRefreshRateEv",
+      "demangled": "fl::ClocklessController<(unsigned char)3, fl::TIMING_WS2812_800KHZ, (fl::EOrder)66, 0, false, 280>::getMaxRefreshRate() const",
+      "address": 1630,
+      "size": 6,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_usmulhisi3.o",
+      "output_section": ".debug_abbrev",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZNK2fl14CLEDController17getMaxRefreshRateEv",
+      "demangled": "fl::CLEDController::getMaxRefreshRate() const",
+      "address": 1624,
+      "size": 6,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_usmulhisi3.o",
+      "output_section": ".debug_abbrev",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl14CLEDController5lanesEv",
+      "demangled": "fl::CLEDController::lanes()",
+      "address": 1000,
+      "size": 6,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_umulhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN19CPixelLEDControllerILN2fl6EOrderE66ELi1ELm4294967295EE5lanesEv",
+      "demangled": "CPixelLEDController<(fl::EOrder)66, 1, 4294967295ul>::lanes()",
+      "address": 1000,
+      "size": 6,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_umulhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN19CPixelLEDControllerILN2fl6EOrderE136ELi1ELm4294967295EE5lanesEv",
+      "demangled": "CPixelLEDController<(fl::EOrder)136, 1, 4294967295ul>::lanes()",
+      "address": 1000,
+      "size": 6,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_umulhisi3.o",
+      "output_section": ".debug_line",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EE4initEv",
+      "demangled": "fl::ClocklessController<(unsigned char)3, fl::TIMING_WS2812_800KHZ, (fl::EOrder)66, 0, false, 280>::init()",
+      "address": 2984,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_ctors.o",
+      "output_section": ".debug_info",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "main"
+      ]
+    },
+    {
+      "mangled": "_ZL8lastshow",
+      "demangled": "lastshow",
+      "address": 8389152,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN8CFastLED4showEh"
+      ]
+    },
+    {
+      "mangled": "__usmulhisi3",
+      "demangled": "__usmulhisi3",
+      "address": 8280,
+      "size": 4,
+      "sym_type": "T",
+      "region": "flash",
+      "archive": "libgcc.a",
+      "object": "_usmulhisi3.o",
+      "output_section": ".text",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "__umulhisi3"
+      ],
+      "called_by": [
+        "_Z37calculate_max_brightness_for_power_mWhm",
+        "_ZN8CFastLED4showEh"
+      ]
+    },
+    {
+      "mangled": "timer0_overflow_count",
+      "demangled": "timer0_overflow_count",
+      "address": 8389127,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "__vector_16",
+        "micros"
+      ]
+    },
+    {
+      "mangled": "timer0_millis",
+      "demangled": "timer0_millis",
+      "address": 8389123,
+      "size": 4,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "__vector_16",
+        "millis"
+      ]
+    },
+    {
+      "mangled": "__cxa_pure_virtual",
+      "demangled": "__cxa_pure_virtual",
+      "address": 5742,
+      "size": 4,
+      "sym_type": "t",
+      "region": "flash",
+      "archive": null,
+      "object": null,
+      "output_section": null,
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [
+        "abort"
+      ],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN8CFastLED8countFPSEiE9lastframe",
+      "demangled": "CFastLED::countFPS(int)::lastframe",
+      "address": 8389132,
+      "size": 2,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN8CFastLED4showEh"
+      ]
+    },
+    {
+      "mangled": "_ZZN8CFastLED8countFPSEiE2br",
+      "demangled": "CFastLED::countFPS(int)::br",
+      "address": 8389134,
+      "size": 2,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN8CFastLED4showEh"
+      ]
+    },
+    {
+      "mangled": "_ZN2fl14CLEDController6mPHeadE",
+      "demangled": "fl::CLEDController::mPHead",
+      "address": 8389156,
+      "size": 2,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_Z37calculate_max_brightness_for_power_mWhm",
+        "_ZN2fl14CLEDControllerC2Ev",
+        "_ZN8CFastLED4showEh"
+      ]
+    },
+    {
+      "mangled": "_ZZN2fl20avr_time_accumulatorEvE21gTimeErrorAccum256ths",
+      "demangled": "fl::avr_time_accumulator()::gTimeErrorAccum256ths",
+      "address": 8388919,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZZN2fl20AVRHardwareSPIOutputILh11ELh13ELm2EE10shouldWaitEbE5sWait",
+      "demangled": "fl::AVRHardwareSPIOutput<(unsigned char)11, (unsigned char)13, 2ul>::shouldWait(bool)::sWait",
+      "address": 8388918,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": []
+    },
+    {
+      "mangled": "_ZN2fl6detail12gDitherFrameE",
+      "demangled": "fl::detail::gDitherFrame",
+      "address": 8389131,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "_ZN15PixelControllerILN2fl6EOrderE136ELi1ELm4294967295EE16enable_ditheringEh",
+        "_ZN8CFastLED4showEh"
+      ]
+    },
+    {
+      "mangled": "timer0_fract",
+      "demangled": "timer0_fract",
+      "address": 8389122,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "__vector_16"
+      ]
+    },
+    {
+      "mangled": "hue",
+      "demangled": "hue",
+      "address": 8389105,
+      "size": 1,
+      "sym_type": "b",
+      "region": "ram",
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "source": "nm",
+      "referenced_by": [],
+      "references_to": [],
+      "called_by": [
+        "main"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".text",
+      "bytes": 7899
+    },
+    {
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".bss",
+      "bytes": 301
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_udivmodsi4.o",
+      "output_section": ".text",
+      "bytes": 68
+    },
+    {
+      "archive": null,
+      "object": "ccrfUgLp.ltrans0.ltrans.o",
+      "output_section": ".data",
+      "bytes": 54
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_divmodhi4.o",
+      "output_section": ".text",
+      "bytes": 40
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_udivmodhi4.o",
+      "output_section": ".text",
+      "bytes": 40
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_mulsi3.o",
+      "output_section": ".text",
+      "bytes": 32
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_umulhisi3.o",
+      "output_section": ".text",
+      "bytes": 30
+    },
+    {
+      "archive": null,
+      "object": "crtatmega328p.o",
+      "output_section": ".text",
+      "bytes": 24
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_copy_data.o",
+      "output_section": ".text",
+      "bytes": 22
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_ctors.o",
+      "output_section": ".text",
+      "bytes": 22
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_muluhisi3.o",
+      "output_section": ".text",
+      "bytes": 22
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_clear_bss.o",
+      "output_section": ".text",
+      "bytes": 16
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_usmulhisi3.o",
+      "output_section": ".text",
+      "bytes": 14
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_tablejump2.o",
+      "output_section": ".text",
+      "bytes": 12
+    },
+    {
+      "archive": "libc.a",
+      "object": "abort.o",
+      "output_section": ".text",
+      "bytes": 10
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "_exit.o",
+      "output_section": ".text",
+      "bytes": 4
+    }
+  ]
+}

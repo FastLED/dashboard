@@ -19,8 +19,8 @@ unused code. See the [reference audit](REFERENCE-AUDIT.md) and
 
 [Benchmark policy and decisions](POLICY.md)
 
-Three sections: **Blink**, **APA102 hardware SPI**, and **Rainbow animation**
-(16 LEDs, a 48-byte LED buffer on Uno). Each has flash consumption on the left and static
+Three sections: **Blink**, **APA102 hardware SPI**, and a **Feature mix**
+(two controllers, color correction, power limiting, palettes, noise and effects). Each has flash consumption on the left and static
 RAM usage on the right. Four series: Uno AVR, ESP32-S3, ESP32 Dev, Teensy4.1.
 Each chart has its own **Auto / Linear / Logarithmic** selector. Auto starts linear;
 move into the bottom 7% of a plot to reveal small targets with logarithmic scaling,
@@ -31,8 +31,16 @@ Latest seven stable releases plus the latest master SHA; initially 3.10.0–3.10
 ## Benchmark protocol
 
 Every version builds the exact committed sketches, without Serial calls.
-`benchmark/SPI.ino` uses APA102 on hardware SPI; `benchmark/Rainbow.ino`
-animates an HSV gradient. `benchmark/Blink.ino` uses one NEOPIXEL
+`benchmark/SPI.ino` uses APA102 on hardware SPI; `benchmark/Features.ino`
+drives a 30-LED WS2812B strip and an 8-LED APA102 with `setCorrection`,
+`setMaxPowerInVoltsAndMilliamps`, a palette, `inoise8`, `beatsin8`,
+`fadeToBlackBy`, `blur1d` and `EVERY_N_MILLISECONDS`, and still fits an Uno.
+
+Runs are incremental: a stored row is reused when it measured the same FastLED
+SHA under the same protocol (sketch, board config and fbuild version), so only
+new releases, a moved master and failed rows rebuild. A new fbuild version
+forces a full recompute, and the workflow's `full_recompute` input forces one
+manually (`npm run benchmark -- --full` locally). `benchmark/Blink.ino` uses one NEOPIXEL
 on GPIO 3, red/black with 1000 ms delays, **no Serial initialization or prints**.
 Released library source is extracted unmodified with `git archive`; the same
 Arduino entry-point stub uses `::delay(0)` across revisions. This is a matched

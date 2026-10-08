@@ -5,7 +5,7 @@
 - Publish the dashboard with **GitHub Pages** at https://fastled.github.io/dashboard/.
 - Use **Chart.js** for two overview line graphs: flash on the left, static RAM
   on the right. Plot one line per platform: Uno AVR, ESP32-S3, ESP32 Dev,
-  Teensy4.1. Give Blink, APA102 hardware SPI, and a 16-LED Rainbow animation
+  Teensy4.1. Give Blink, APA102 hardware SPI, and a Feature-mix sketch
   separate sections, each with its own Flash/RAM charts and platform filters.
   Scale controls sit below each graph. Do not show a Measurements table.
 - Give Flash and RAM independent Auto / Linear / Logarithmic selectors. Auto is
@@ -116,9 +116,11 @@
 ## Workload and honest metrics
 
 - Maintain three canonical sketches: Blink (one NEOPIXEL), APA102 hardware SPI
-  (one LED on default hardware SPI pins), and Rainbow (16 NEOPIXEL LEDs,
-  animated HSV gradient with 20 ms frame delay). All fit Uno AVR and have no
-  Serial calls. Measure each across every platform/version independently.
+  (one LED on default hardware SPI pins), and Features (a WS2812B strip plus
+  an APA102 on hardware SPI using color correction, power limiting, palettes,
+  noise, beat waves, fade, blur and EVERY_N_MILLISECONDS). Features replaced
+  Rainbow, which measured nearly the same code as Blink. All fit Uno AVR and
+  have no Serial calls. Measure each across every platform/version independently.
 - Use one canonical Blink sketch on every version: one NEOPIXEL on pin 3,
   alternating red/black with 1000 ms delays. **No Serial.begin or prints in the
   sketch**. Keep release library source unmodified.
@@ -129,13 +131,16 @@
   Preserve allocated image and attributed symbol metrics separately.
 - Failed measurements are explicit gaps with errors, never zero-valued points.
   Validate revision/config/sketch provenance before publishing.
+- Reuse a stored successful row when its FastLED SHA and protocol (sketch,
+  board config, fbuild version) match; rebuild everything only when fbuild
+  changes or `full_recompute` is requested.
 - Run benchmarks sequentially without git worktrees. Initial validation is
   local; the dedicated daily dashboard workflow is authorized automation and
   does not invoke FastLED CI Full.
 
 ## Transport migration
 
-- Dashboard schema 2 adds a required `sketch` identity (blink, spi, rainbow) to
+- Dashboard schema 2 adds a required `sketch` identity (blink, spi, features; rainbow until replaced) to
   every measurement. Existing schema 1 snapshots are migrated explicitly as
   Blink without changing their measurements or report provenance. Collection
   keys include sketch/platform/version; focused runs retain other workloads.

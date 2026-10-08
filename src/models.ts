@@ -4,7 +4,7 @@ const bytes = z.number().check(z.int(), z.nonnegative());
 const sha = z.string().check(z.regex(/^[a-f0-9]{40}$/));
 const digest = z.string().check(z.regex(/^[a-f0-9]{64}$/));
 export const boardSchema = z.enum(["uno", "esp32s3", "esp32dev", "teensy41"]);
-export const sketchSchema = z.enum(["blink", "spi", "rainbow"]);
+export const sketchSchema = z.enum(["blink", "spi", "features"]);
 const measurementBase = {
   sketch: sketchSchema,
   board: boardSchema,

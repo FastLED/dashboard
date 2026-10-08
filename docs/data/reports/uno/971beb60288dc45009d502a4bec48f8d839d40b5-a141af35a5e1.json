@@ -1940,13 +1940,13 @@
     },
     {
       "archive": "libgcc.a",
-      "object": "_udivmodhi4.o",
+      "object": "_divmodhi4.o",
       "output_section": ".text",
       "bytes": 40
     },
     {
       "archive": "libgcc.a",
-      "object": "_divmodhi4.o",
+      "object": "_udivmodhi4.o",
       "output_section": ".text",
       "bytes": 40
     },
@@ -1964,6 +1964,12 @@
     },
     {
       "archive": "libgcc.a",
+      "object": "_muluhisi3.o",
+      "output_section": ".text",
+      "bytes": 22
+    },
+    {
+      "archive": "libgcc.a",
       "object": "_copy_data.o",
       "output_section": ".text",
       "bytes": 22
@@ -1971,12 +1977,6 @@
     {
       "archive": "libgcc.a",
       "object": "_ctors.o",
-      "output_section": ".text",
-      "bytes": 22
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "_muluhisi3.o",
       "output_section": ".text",
       "bytes": 22
     },

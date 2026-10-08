@@ -143432,15 +143432,15 @@
       "bytes": 876
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-qsort.o",
-      "output_section": ".flash.text",
-      "bytes": 866
-    },
-    {
       "archive": "libfreertos.a",
       "object": "timers.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 866
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-qsort.o",
+      "output_section": ".flash.text",
       "bytes": 866
     },
     {
@@ -143631,13 +143631,13 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-vfprintf.o",
+      "object": "libc_a-svfprintf.o",
       "output_section": ".flash.rodata",
       "bytes": 624
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-svfprintf.o",
+      "object": "libc_a-vfprintf.o",
       "output_section": ".flash.rodata",
       "bytes": 624
     },
@@ -143834,15 +143834,15 @@
       "bytes": 458
     },
     {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_partition_manager.cpp.obj",
-      "output_section": ".flash.text",
-      "bytes": 455
-    },
-    {
       "archive": "libspi_flash.a",
       "object": "spi_flash_chip_generic.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 455
+    },
+    {
+      "archive": "libnvs_flash.a",
+      "object": "nvs_partition_manager.cpp.obj",
+      "output_section": ".flash.text",
       "bytes": 455
     },
     {
@@ -143870,15 +143870,15 @@
       "bytes": 434
     },
     {
-      "archive": "libapp_update.a",
-      "object": "esp_ota_ops.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 429
-    },
-    {
       "archive": "libesp_timer.a",
       "object": "esp_timer_impl_lac.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 429
+    },
+    {
+      "archive": "libapp_update.a",
+      "object": "esp_ota_ops.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 429
     },
     {
@@ -143894,6 +143894,12 @@
       "bytes": 427
     },
     {
+      "archive": "libheap.a",
+      "object": "heap_caps.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 416
+    },
+    {
       "archive": "libnvs_flash.a",
       "object": "nvs_item_hash_list.cpp.obj",
       "output_section": ".flash.text",
@@ -143903,12 +143909,6 @@
       "archive": "libspi_flash.a",
       "object": "esp_flash_api.c.obj",
       "output_section": ".flash.rodata",
-      "bytes": 416
-    },
-    {
-      "archive": "libheap.a",
-      "object": "heap_caps.c.obj",
-      "output_section": ".iram0.text",
       "bytes": 416
     },
     {
@@ -143936,6 +143936,12 @@
       "bytes": 396
     },
     {
+      "archive": "libhal.a",
+      "object": "spi_flash_hal.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 394
+    },
+    {
       "archive": "libxtensa.a",
       "object": "xtensa_context.S.obj",
       "output_section": ".iram0.text",
@@ -143944,12 +143950,6 @@
     {
       "archive": "libespcoredump.a",
       "object": "core_dump_common.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 394
-    },
-    {
-      "archive": "libhal.a",
-      "object": "spi_flash_hal.c.obj",
       "output_section": ".flash.text",
       "bytes": 394
     },
@@ -143972,15 +143972,15 @@
       "bytes": 383
     },
     {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer_impl_lac.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 382
-    },
-    {
       "archive": "libesp_driver_rmt.a",
       "object": "rmt_encoder_bytes.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 382
+    },
+    {
+      "archive": "libesp_timer.a",
+      "object": "esp_timer_impl_lac.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 382
     },
     {
@@ -144050,15 +144050,15 @@
       "bytes": 339
     },
     {
-      "archive": "libnewlib.a",
-      "object": "locks.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 337
-    },
-    {
       "archive": "libbt.a",
       "object": "hli_vectors.S.obj",
       "output_section": ".iram0.text",
+      "bytes": 337
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "locks.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 337
     },
     {
@@ -144236,15 +144236,15 @@
       "bytes": 271
     },
     {
-      "archive": "libesp_partition.a",
-      "object": "partition.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 271
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-svfiprintf.o",
       "output_section": ".flash.text",
+      "bytes": 271
+    },
+    {
+      "archive": "libesp_partition.a",
+      "object": "partition.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 271
     },
     {
@@ -144338,22 +144338,16 @@
       "bytes": 245
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-impure.o",
-      "output_section": ".dram0.data",
-      "bytes": 244
-    },
-    {
       "archive": "libnewlib.a",
       "object": "newlib_init.c.obj",
       "output_section": ".flash.text",
       "bytes": 244
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "esp_flash_spi_init.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 243
+      "archive": "libc.a",
+      "object": "libc_a-impure.o",
+      "output_section": ".dram0.data",
+      "bytes": 244
     },
     {
       "archive": "libheap.a",
@@ -144362,10 +144356,10 @@
       "bytes": 243
     },
     {
-      "archive": null,
-      "object": "main_34d2.cpp.o",
-      "output_section": ".flash.rodata",
-      "bytes": 240
+      "archive": "libspi_flash.a",
+      "object": "esp_flash_spi_init.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 243
     },
     {
       "archive": "libesp_hw_support.a",
@@ -144380,15 +144374,21 @@
       "bytes": 240
     },
     {
-      "archive": "libesp_system.a",
-      "object": "crosscore_int.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 238
+      "archive": null,
+      "object": "main_34d2.cpp.o",
+      "output_section": ".flash.rodata",
+      "bytes": 240
     },
     {
       "archive": "libspi_flash.a",
       "object": "esp_flash_api.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 238
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "crosscore_int.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 238
     },
     {
@@ -144428,14 +144428,14 @@
       "bytes": 227
     },
     {
-      "archive": "libesp_system.a",
-      "object": "freertos_hooks.c.obj",
+      "archive": "libesp_coex.a",
+      "object": "esp_coex_adapter.c.obj",
       "output_section": ".flash.text",
       "bytes": 225
     },
     {
-      "archive": "libesp_coex.a",
-      "object": "esp_coex_adapter.c.obj",
+      "archive": "libesp_system.a",
+      "object": "freertos_hooks.c.obj",
       "output_section": ".flash.text",
       "bytes": 225
     },
@@ -144464,6 +144464,12 @@
       "bytes": 215
     },
     {
+      "archive": "libesp_hw_support.a",
+      "object": "esp_clk_tree.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 213
+    },
+    {
       "archive": "libbootloader_support.a",
       "object": "bootloader_common_loader.c.obj",
       "output_section": ".flash.rodata",
@@ -144476,12 +144482,6 @@
       "bytes": 213
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_clk_tree.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 213
-    },
-    {
       "archive": "libnvs_flash.a",
       "object": "nvs_partition.cpp.obj",
       "output_section": ".flash.text",
@@ -144489,13 +144489,13 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-fclose.o",
+      "object": "libc_a-stdio.o",
       "output_section": ".iram0.text",
       "bytes": 206
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-stdio.o",
+      "object": "libc_a-fclose.o",
       "output_section": ".iram0.text",
       "bytes": 206
     },
@@ -144560,26 +144560,26 @@
       "bytes": 193
     },
     {
-      "archive": "libvfs.a",
-      "object": "vfs.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 192
-    },
-    {
       "archive": "libfreertos.a",
       "object": "idf_additions.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 192
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "rtc_module.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 190
+      "archive": "libvfs.a",
+      "object": "vfs.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 192
     },
     {
       "archive": "libcoexist.a",
       "object": "coexist_core.o",
+      "output_section": ".flash.text",
+      "bytes": 190
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "rtc_module.c.obj",
       "output_section": ".flash.text",
       "bytes": 190
     },
@@ -144591,25 +144591,25 @@
     },
     {
       "archive": "libstdc++.a",
-      "object": "eh_globals.o",
-      "output_section": ".flash.text",
-      "bytes": 186
-    },
-    {
-      "archive": "libstdc++.a",
       "object": "eh_throw.o",
       "output_section": ".flash.text",
       "bytes": 186
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-__atexit.o",
+      "archive": "libstdc++.a",
+      "object": "eh_globals.o",
       "output_section": ".flash.text",
-      "bytes": 185
+      "bytes": 186
     },
     {
       "archive": "libesp_hw_support.a",
       "object": "sleep_gpio.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 185
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-__atexit.o",
       "output_section": ".flash.text",
       "bytes": 185
     },
@@ -144632,14 +144632,14 @@
       "bytes": 181
     },
     {
-      "archive": "libfreertos.a",
-      "object": "timers.c.obj",
+      "archive": "libespcoredump.a",
+      "object": "core_dump_crc.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 181
     },
     {
-      "archive": "libespcoredump.a",
-      "object": "core_dump_crc.c.obj",
+      "archive": "libfreertos.a",
+      "object": "timers.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 181
     },
@@ -144674,27 +144674,27 @@
       "bytes": 175
     },
     {
-      "archive": "libheap.a",
-      "object": "multi_heap_poisoning.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 174
-    },
-    {
       "archive": "libfreertos.a",
       "object": "app_startup.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 174
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-wsetup.o",
-      "output_section": ".iram0.text",
-      "bytes": 174
-    },
-    {
       "archive": "libespcoredump.a",
       "object": "core_dump_crc.c.obj",
       "output_section": ".flash.text",
+      "bytes": 174
+    },
+    {
+      "archive": "libheap.a",
+      "object": "multi_heap_poisoning.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 174
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-wsetup.o",
+      "output_section": ".iram0.text",
       "bytes": 174
     },
     {
@@ -144740,26 +144740,26 @@
       "bytes": 161
     },
     {
-      "archive": "libFastLED.a",
-      "object": "engine_events_ab4d.o",
-      "output_section": ".dram0.bss",
-      "bytes": 160
-    },
-    {
       "archive": "libsoc.a",
       "object": "gpio_periph.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 160
     },
     {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_encoder_copy.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 158
+      "archive": "libFastLED.a",
+      "object": "engine_events_ab4d.o",
+      "output_section": ".dram0.bss",
+      "bytes": 160
     },
     {
       "archive": "libesp_system.a",
       "object": "startup_funcs.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 158
+    },
+    {
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_encoder_copy.c.obj",
       "output_section": ".flash.text",
       "bytes": 158
     },
@@ -144788,15 +144788,15 @@
       "bytes": 148
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-vsnprintf.o",
-      "output_section": ".flash.text",
-      "bytes": 148
-    },
-    {
       "archive": "libesp_hw_support.a",
       "object": "esp_memory_utils.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 148
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-vsnprintf.o",
+      "output_section": ".flash.text",
       "bytes": 148
     },
     {
@@ -144825,14 +144825,14 @@
     },
     {
       "archive": "libnewlib.a",
-      "object": "abort.c.obj",
-      "output_section": ".iram0.text",
+      "object": "newlib_init.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 144
     },
     {
       "archive": "libnewlib.a",
-      "object": "newlib_init.c.obj",
-      "output_section": ".dram0.data",
+      "object": "abort.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 144
     },
     {
@@ -144854,12 +144854,6 @@
       "bytes": 141
     },
     {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 140
-    },
-    {
       "archive": "libesp_coex.a",
       "object": "esp_coex_adapter.c.obj",
       "output_section": ".iram0.text",
@@ -144874,6 +144868,12 @@
     {
       "archive": "libvfs.a",
       "object": "nullfs.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 140
+    },
+    {
+      "archive": "libesp_timer.a",
+      "object": "esp_timer.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 140
     },
@@ -144902,22 +144902,16 @@
       "bytes": 137
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_4daa.c.o",
-      "output_section": ".dram0.data",
-      "bytes": 132
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-flags.o",
       "output_section": ".flash.text",
       "bytes": 132
     },
     {
-      "archive": "libesp_rom.a",
-      "object": "esp_rom_gpio.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 131
+      "archive": "libFrameworkArduino.a",
+      "object": "esp32-hal-uart_4daa.c.o",
+      "output_section": ".dram0.data",
+      "bytes": 132
     },
     {
       "archive": "liblog.a",
@@ -144932,15 +144926,21 @@
       "bytes": 131
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "spi_flash_chip_issi.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 129
+      "archive": "libesp_rom.a",
+      "object": "esp_rom_gpio.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 131
     },
     {
       "archive": "libbootloader_support.a",
       "object": "bootloader_sha.c.obj",
       "output_section": ".flash.rodata",
+      "bytes": 129
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "spi_flash_chip_issi.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 129
     },
     {
@@ -144956,9 +144956,9 @@
       "bytes": 128
     },
     {
-      "archive": "libesp_driver_uart.a",
-      "object": "uart_vfs.c.obj",
-      "output_section": ".dram0.data",
+      "archive": "libnvs_flash.a",
+      "object": "nvs_api.cpp.obj",
+      "output_section": ".flash.text",
       "bytes": 128
     },
     {
@@ -144974,9 +144974,9 @@
       "bytes": 128
     },
     {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_api.cpp.obj",
-      "output_section": ".flash.text",
+      "archive": "libesp_driver_uart.a",
+      "object": "uart_vfs.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 128
     },
     {
@@ -145046,9 +145046,9 @@
       "bytes": 120
     },
     {
-      "archive": "libesp_system.a",
-      "object": "crosscore_int.c.obj",
-      "output_section": ".flash.text",
+      "archive": "liblog.a",
+      "object": "log_lock.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 119
     },
     {
@@ -145058,9 +145058,9 @@
       "bytes": 119
     },
     {
-      "archive": "liblog.a",
-      "object": "log_lock.c.obj",
-      "output_section": ".iram0.text",
+      "archive": "libesp_system.a",
+      "object": "crosscore_int.c.obj",
+      "output_section": ".flash.text",
       "bytes": 119
     },
     {
@@ -145130,14 +145130,14 @@
       "bytes": 109
     },
     {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_encoder_copy.c.obj",
+      "archive": "libvfs.a",
+      "object": "vfs.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 108
     },
     {
-      "archive": "libvfs.a",
-      "object": "vfs.c.obj",
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_encoder_copy.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 108
     },
@@ -145148,15 +145148,15 @@
       "bytes": 108
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "flash_mmap.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 107
-    },
-    {
       "archive": "libpthread.a",
       "object": "pthread_local_storage.c.obj",
       "output_section": ".flash.rodata",
+      "bytes": 107
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "flash_mmap.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 107
     },
     {
@@ -145166,15 +145166,15 @@
       "bytes": 105
     },
     {
-      "archive": "libgcc.a",
-      "object": "lib2funcs.o",
-      "output_section": ".iram0.text",
-      "bytes": 104
-    },
-    {
       "archive": "libesp_system.a",
       "object": "esp_err.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 104
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "lib2funcs.o",
+      "output_section": ".iram0.text",
       "bytes": 104
     },
     {
@@ -145190,6 +145190,12 @@
       "bytes": 103
     },
     {
+      "archive": "libxtensa.a",
+      "object": "xtensa_intr.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 102
+    },
+    {
       "archive": "libc.a",
       "object": "libm_a-s_frexp.o",
       "output_section": ".flash.text",
@@ -145202,20 +145208,14 @@
       "bytes": 102
     },
     {
-      "archive": "libxtensa.a",
-      "object": "xtensa_intr.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 102
-    },
-    {
-      "archive": "liblog.a",
-      "object": "log_timestamp.c.obj",
+      "archive": "libc.a",
+      "object": "libc_a-strlen.o",
       "output_section": ".iram0.text",
       "bytes": 99
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-strlen.o",
+      "archive": "liblog.a",
+      "object": "log_timestamp.c.obj",
       "output_section": ".iram0.text",
       "bytes": 99
     },
@@ -145232,26 +145232,26 @@
       "bytes": 96
     },
     {
-      "archive": "libesp_system.a",
-      "object": "esp_ipc_isr_handler.S.obj",
-      "output_section": ".iram0.text",
-      "bytes": 95
-    },
-    {
       "archive": "libstdc++.a",
       "object": "cow-stdexcept.o",
       "output_section": ".flash.text",
       "bytes": 95
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "periph_ctrl.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 94
+      "archive": "libesp_system.a",
+      "object": "esp_ipc_isr_handler.S.obj",
+      "output_section": ".iram0.text",
+      "bytes": 95
     },
     {
       "archive": "libheap.a",
       "object": "multi_heap.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 94
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "periph_ctrl.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 94
     },
@@ -145262,9 +145262,9 @@
       "bytes": 91
     },
     {
-      "archive": "libgcc.a",
-      "object": "_divsf3.o",
-      "output_section": ".flash.text",
+      "archive": "libc.a",
+      "object": "libc_a-itoa.o",
+      "output_section": ".iram0.text",
       "bytes": 89
     },
     {
@@ -145274,15 +145274,15 @@
       "bytes": 89
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-itoa.o",
-      "output_section": ".iram0.text",
+      "archive": "libgcc.a",
+      "object": "_divsf3.o",
+      "output_section": ".flash.text",
       "bytes": 89
     },
     {
-      "archive": "libesp_system.a",
-      "object": "esp_system.c.obj",
-      "output_section": ".flash.text",
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_tx.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 88
     },
     {
@@ -145292,9 +145292,9 @@
       "bytes": 88
     },
     {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_tx.c.obj",
-      "output_section": ".dram0.data",
+      "archive": "libesp_system.a",
+      "object": "esp_system.c.obj",
+      "output_section": ".flash.text",
       "bytes": 88
     },
     {
@@ -145334,15 +145334,15 @@
       "bytes": 84
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "Stream_5cfa.cpp.o",
-      "output_section": ".flash.text",
-      "bytes": 83
-    },
-    {
       "archive": "libstdc++.a",
       "object": "eh_aux_runtime.o",
       "output_section": ".flash.rodata",
+      "bytes": 83
+    },
+    {
+      "archive": "libFrameworkArduino.a",
+      "object": "Stream_5cfa.cpp.o",
+      "output_section": ".flash.text",
       "bytes": 83
     },
     {
@@ -145382,22 +145382,16 @@
       "bytes": 79
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "brownout.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 79
-    },
-    {
       "archive": "libesp_system.a",
       "object": "esp_ipc_isr.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 79
     },
     {
-      "archive": "libstdc++.a",
-      "object": "new_op.o",
+      "archive": "libesp_hw_support.a",
+      "object": "brownout.c.obj",
       "output_section": ".flash.text",
-      "bytes": 78
+      "bytes": 79
     },
     {
       "archive": "liblog.a",
@@ -145406,14 +145400,20 @@
       "bytes": 78
     },
     {
-      "archive": "libesp_system.a",
-      "object": "startup.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 76
+      "archive": "libstdc++.a",
+      "object": "new_op.o",
+      "output_section": ".flash.text",
+      "bytes": 78
     },
     {
       "archive": "libesp_driver_rmt.a",
       "object": "rmt_encoder.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 76
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "startup.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 76
     },
@@ -145424,15 +145424,15 @@
       "bytes": 75
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_cpu_intr.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 73
-    },
-    {
       "archive": "libspi_flash.a",
       "object": "flash_brownout_hook.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 73
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "esp_cpu_intr.c.obj",
+      "output_section": ".flash.text",
       "bytes": 73
     },
     {
@@ -145454,12 +145454,6 @@
       "bytes": 69
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "hw_random.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 69
-    },
-    {
       "archive": "libhal.a",
       "object": "spi_flash_hal.c.obj",
       "output_section": ".flash.rodata",
@@ -145472,15 +145466,21 @@
       "bytes": 69
     },
     {
-      "archive": "libsoc.a",
-      "object": "rmt_periph.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 68
+      "archive": "libesp_hw_support.a",
+      "object": "hw_random.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 69
     },
     {
       "archive": "libesp_system.a",
       "object": "reset_reason.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 68
+    },
+    {
+      "archive": "libbootloader_support.a",
+      "object": "bootloader_flash_config_esp32.c.obj",
+      "output_section": ".flash.text",
       "bytes": 68
     },
     {
@@ -145490,9 +145490,9 @@
       "bytes": 68
     },
     {
-      "archive": "libbootloader_support.a",
-      "object": "bootloader_flash_config_esp32.c.obj",
-      "output_section": ".flash.text",
+      "archive": "libsoc.a",
+      "object": "rmt_periph.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 68
     },
     {
@@ -145526,15 +145526,15 @@
       "bytes": 64
     },
     {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_encoder.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 64
-    },
-    {
       "archive": "libbt.a",
       "object": "hli_api.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 64
+    },
+    {
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_encoder.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 64
     },
     {
@@ -145562,26 +145562,8 @@
       "bytes": 62
     },
     {
-      "archive": "libstdc++.a",
-      "object": "stdexcept.o",
-      "output_section": ".flash.rodata",
-      "bytes": 60
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-strlcpy.o",
-      "output_section": ".iram0.text",
-      "bytes": 60
-    },
-    {
-      "archive": "libsoc.a",
-      "object": "uart_periph.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 60
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "unwind-dw2-fde.o",
+      "archive": "libFrameworkArduino.a",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.rodata",
       "bytes": 60
     },
@@ -145592,9 +145574,27 @@
       "bytes": 60
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_99f6.cpp.o",
+      "archive": "libgcc.a",
+      "object": "unwind-dw2-fde.o",
       "output_section": ".flash.rodata",
+      "bytes": 60
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "stdexcept.o",
+      "output_section": ".flash.rodata",
+      "bytes": 60
+    },
+    {
+      "archive": "libsoc.a",
+      "object": "uart_periph.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 60
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-strlcpy.o",
+      "output_section": ".iram0.text",
       "bytes": 60
     },
     {
@@ -145605,19 +145605,13 @@
     },
     {
       "archive": "libstdc++.a",
-      "object": "bad_alloc.o",
-      "output_section": ".flash.text",
-      "bytes": 57
-    },
-    {
-      "archive": "libstdc++.a",
       "object": "bad_array_new.o",
       "output_section": ".flash.text",
       "bytes": 57
     },
     {
-      "archive": "libesp_wifi.a",
-      "object": "wifi_init.c.obj",
+      "archive": "libstdc++.a",
+      "object": "bad_alloc.o",
       "output_section": ".flash.text",
       "bytes": 57
     },
@@ -145628,9 +145622,15 @@
       "bytes": 57
     },
     {
-      "archive": "libFastLED.a",
-      "object": "cled_controller_8ac7.o",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_wifi.a",
+      "object": "wifi_init.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 57
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "highint_hdl.S.obj",
+      "output_section": ".dram0.data",
       "bytes": 56
     },
     {
@@ -145640,16 +145640,10 @@
       "bytes": 56
     },
     {
-      "archive": "libesp_system.a",
-      "object": "highint_hdl.S.obj",
-      "output_section": ".dram0.data",
+      "archive": "libFastLED.a",
+      "object": "cled_controller_8ac7.o",
+      "output_section": ".flash.rodata",
       "bytes": 56
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-fprintf.o",
-      "output_section": ".flash.text",
-      "bytes": 55
     },
     {
       "archive": "libesp_mm.a",
@@ -145659,15 +145653,15 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-fwalk.o",
-      "output_section": ".iram0.text",
+      "object": "libc_a-fprintf.o",
+      "output_section": ".flash.text",
       "bytes": 55
     },
     {
-      "archive": "libbt.a",
-      "object": "hli_api.c.obj",
+      "archive": "libc.a",
+      "object": "libc_a-fwalk.o",
       "output_section": ".iram0.text",
-      "bytes": 54
+      "bytes": 55
     },
     {
       "archive": "libstdc++.a",
@@ -145682,21 +145676,21 @@
       "bytes": 54
     },
     {
+      "archive": "libbt.a",
+      "object": "hli_api.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 54
+    },
+    {
       "archive": "libc.a",
       "object": "libc_a-printf.o",
       "output_section": ".flash.text",
       "bytes": 53
     },
     {
-      "archive": "libFastLED.a",
-      "object": "strip_rmt_6c4b.o",
-      "output_section": ".flash.rodata",
-      "bytes": 52
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "unwind-dw2-xtensa.o",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_psram.a",
+      "object": "esp_psram.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 52
     },
     {
@@ -145712,20 +145706,26 @@
       "bytes": 52
     },
     {
-      "archive": "libesp_psram.a",
-      "object": "esp_psram.c.obj",
-      "output_section": ".dram0.bss",
+      "archive": "libgcc.a",
+      "object": "unwind-dw2-xtensa.o",
+      "output_section": ".flash.rodata",
       "bytes": 52
     },
     {
-      "archive": "libcoexist.a",
-      "object": "coexist_hw.o",
-      "output_section": ".flash.text",
-      "bytes": 51
+      "archive": "libFastLED.a",
+      "object": "strip_rmt_6c4b.o",
+      "output_section": ".flash.rodata",
+      "bytes": 52
     },
     {
       "archive": "libhal.a",
       "object": "mpu_hal.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 51
+    },
+    {
+      "archive": "libcoexist.a",
+      "object": "coexist_hw.o",
       "output_section": ".flash.text",
       "bytes": 51
     },
@@ -145754,15 +145754,15 @@
       "bytes": 48
     },
     {
-      "archive": "libfreertos.a",
-      "object": "port.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 48
-    },
-    {
       "archive": "libnewlib.a",
       "object": "reent_init.c.obj",
       "output_section": ".flash.text",
+      "bytes": 48
+    },
+    {
+      "archive": "libfreertos.a",
+      "object": "port.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 48
     },
     {
@@ -145772,15 +145772,15 @@
       "bytes": 47
     },
     {
-      "archive": "libesp_common.a",
-      "object": "esp_err_to_name.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 46
-    },
-    {
       "archive": "libstdc++.a",
       "object": "bad_array_new.o",
       "output_section": ".flash.rodata",
+      "bytes": 46
+    },
+    {
+      "archive": "libesp_common.a",
+      "object": "esp_err_to_name.c.obj",
+      "output_section": ".flash.text",
       "bytes": 46
     },
     {
@@ -145796,15 +145796,15 @@
       "bytes": 46
     },
     {
-      "archive": "libnewlib.a",
-      "object": "assert.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 45
-    },
-    {
       "archive": "libfreertos.a",
       "object": "port_systick.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 45
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "assert.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 45
     },
     {
@@ -145826,18 +145826,6 @@
       "bytes": 41
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-wctomb_r.o",
-      "output_section": ".iram0.text",
-      "bytes": 41
-    },
-    {
-      "archive": "libsoc.a",
-      "object": "dport_access_common.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 41
-    },
-    {
       "archive": "libesp_system.a",
       "object": "startup.c.obj",
       "output_section": ".iram0.text",
@@ -145851,9 +145839,15 @@
     },
     {
       "archive": "libsoc.a",
-      "object": "gpio_periph.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 40
+      "object": "dport_access_common.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 41
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-wctomb_r.o",
+      "output_section": ".iram0.text",
+      "bytes": 41
     },
     {
       "archive": "libspi_flash.a",
@@ -145862,9 +145856,9 @@
       "bytes": 40
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-strcat.o",
-      "output_section": ".iram0.text",
+      "archive": "libsoc.a",
+      "object": "gpio_periph.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 40
     },
     {
@@ -145875,20 +145869,26 @@
     },
     {
       "archive": "libc.a",
+      "object": "libc_a-strcat.o",
+      "output_section": ".iram0.text",
+      "bytes": 40
+    },
+    {
+      "archive": "libc.a",
       "object": "libc_a-vprintf.o",
       "output_section": ".flash.text",
       "bytes": 39
     },
     {
-      "archive": "libesp_system.a",
-      "object": "esp_ipc_isr.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 38
-    },
-    {
       "archive": "libnewlib.a",
       "object": "abort.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 38
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "esp_ipc_isr.c.obj",
+      "output_section": ".flash.text",
       "bytes": 38
     },
     {
@@ -145904,27 +145904,27 @@
       "bytes": 37
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-vfiprintf.o",
-      "output_section": ".flash.text",
-      "bytes": 37
-    },
-    {
       "archive": "libefuse.a",
       "object": "esp_efuse_startup.c.obj",
       "output_section": ".flash.text",
       "bytes": 37
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "flash_ops.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 36
+      "archive": "libc.a",
+      "object": "libc_a-vfiprintf.o",
+      "output_section": ".flash.text",
+      "bytes": 37
     },
     {
       "archive": "libesp_driver_gpio.a",
       "object": "gpio.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 36
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "flash_ops.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 36
     },
     {
@@ -145934,9 +145934,9 @@
       "bytes": 36
     },
     {
-      "archive": "liblog.a",
-      "object": "log_level.c.obj",
-      "output_section": ".flash.text",
+      "archive": "libfreertos.a",
+      "object": "xtensa_init.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 35
     },
     {
@@ -145946,9 +145946,9 @@
       "bytes": 35
     },
     {
-      "archive": "libfreertos.a",
-      "object": "xtensa_init.c.obj",
-      "output_section": ".iram0.text",
+      "archive": "libstdc++.a",
+      "object": "bad_alloc.o",
+      "output_section": ".flash.rodata",
       "bytes": 35
     },
     {
@@ -145958,9 +145958,9 @@
       "bytes": 35
     },
     {
-      "archive": "libstdc++.a",
-      "object": "bad_alloc.o",
-      "output_section": ".flash.rodata",
+      "archive": "liblog.a",
+      "object": "log_level.c.obj",
+      "output_section": ".flash.text",
       "bytes": 35
     },
     {
@@ -145970,21 +145970,9 @@
       "bytes": 35
     },
     {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_platform.cpp.obj",
-      "output_section": ".flash.text",
-      "bytes": 33
-    },
-    {
       "archive": "libesp_system.a",
       "object": "panic.c.obj",
       "output_section": ".iram0.text",
-      "bytes": 33
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "task_wdt.c.obj",
-      "output_section": ".dram0.data",
       "bytes": 33
     },
     {
@@ -146000,27 +145988,27 @@
       "bytes": 33
     },
     {
+      "archive": "libesp_system.a",
+      "object": "task_wdt.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 33
+    },
+    {
       "archive": "libesp_wifi.a",
       "object": "wifi_init.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 33
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "rtc_module.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 32
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "sleep_modes.c.obj",
-      "output_section": ".rtc_noinit",
-      "bytes": 32
+      "archive": "libnvs_flash.a",
+      "object": "nvs_platform.cpp.obj",
+      "output_section": ".flash.text",
+      "bytes": 33
     },
     {
       "archive": "libesp_system.a",
-      "object": "esp_ipc_isr.c.obj",
-      "output_section": ".dram0.bss",
+      "object": "stack_check.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 32
     },
     {
@@ -146030,9 +146018,15 @@
       "bytes": 32
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "spi_share_hw_ctrl.c.obj",
-      "output_section": ".flash.text",
+      "archive": "libxt_hal.a",
+      "object": "interrupts--intlevel.o",
+      "output_section": ".flash.rodata",
+      "bytes": 32
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "esp_ipc_isr.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 32
     },
     {
@@ -146048,28 +146042,28 @@
       "bytes": 32
     },
     {
+      "archive": "libesp_hw_support.a",
+      "object": "sleep_modes.c.obj",
+      "output_section": ".rtc_noinit",
+      "bytes": 32
+    },
+    {
       "archive": "libnewlib.a",
       "object": "init.c.obj",
       "output_section": ".flash.text",
       "bytes": 32
     },
     {
-      "archive": "libxt_hal.a",
-      "object": "interrupts--intlevel.o",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_hw_support.a",
+      "object": "spi_share_hw_ctrl.c.obj",
+      "output_section": ".flash.text",
       "bytes": 32
     },
     {
-      "archive": "libesp_system.a",
-      "object": "stack_check.c.obj",
+      "archive": "libesp_hw_support.a",
+      "object": "rtc_module.c.obj",
       "output_section": ".dram0.data",
       "bytes": 32
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "esp_ipc_isr_port.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 31
     },
     {
       "archive": "libesp_timer.a",
@@ -146078,15 +146072,21 @@
       "bytes": 31
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "cpu.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 30
+      "archive": "libesp_system.a",
+      "object": "esp_ipc_isr_port.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 31
     },
     {
       "archive": "libbootloader_support.a",
       "object": "bootloader_efuse.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 30
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "cpu.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 30
     },
     {
@@ -146102,9 +146102,9 @@
       "bytes": 30
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-strchr.o",
-      "output_section": ".iram0.text",
+      "archive": "libnewlib.a",
+      "object": "init.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 29
     },
     {
@@ -146114,9 +146114,9 @@
       "bytes": 29
     },
     {
-      "archive": "libnewlib.a",
-      "object": "init.c.obj",
-      "output_section": ".flash.rodata",
+      "archive": "libc.a",
+      "object": "libc_a-strchr.o",
+      "output_section": ".iram0.text",
       "bytes": 29
     },
     {
@@ -146150,15 +146150,15 @@
       "bytes": 26
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "spi_flash_os_func_app.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 25
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-sysfcntl.o",
       "output_section": ".flash.text",
+      "bytes": 25
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "spi_flash_os_func_app.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 25
     },
     {
@@ -146168,26 +146168,14 @@
       "bytes": 25
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_clk.c.obj",
-      "output_section": ".rtc_noinit",
-      "bytes": 24
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-sysgettod.o",
-      "output_section": ".flash.text",
-      "bytes": 24
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-getenv.o",
       "output_section": ".flash.text",
       "bytes": 24
     },
     {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer_impl_common.c.obj",
+      "archive": "libfreertos.a",
+      "object": "tasks.c.obj",
       "output_section": ".dram0.data",
       "bytes": 24
     },
@@ -146198,9 +146186,21 @@
       "bytes": 24
     },
     {
-      "archive": "libfreertos.a",
-      "object": "tasks.c.obj",
+      "archive": "libesp_timer.a",
+      "object": "esp_timer_impl_common.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 24
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-sysgettod.o",
+      "output_section": ".flash.text",
+      "bytes": 24
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "esp_clk.c.obj",
+      "output_section": ".rtc_noinit",
       "bytes": 24
     },
     {
@@ -146223,12 +146223,6 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-cxa_atexit.o",
-      "output_section": ".flash.text",
-      "bytes": 21
-    },
-    {
-      "archive": "libc.a",
       "object": "libc_a-fseek.o",
       "output_section": ".flash.text",
       "bytes": 21
@@ -146240,10 +146234,10 @@
       "bytes": 21
     },
     {
-      "archive": "libesp_driver_uart.a",
-      "object": "uart_vfs.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 20
+      "archive": "libc.a",
+      "object": "libc_a-cxa_atexit.o",
+      "output_section": ".flash.text",
+      "bytes": 21
     },
     {
       "archive": "libnewlib.a",
@@ -146258,20 +146252,26 @@
       "bytes": 20
     },
     {
-      "archive": "libxtensa.a",
-      "object": "xtensa_vectors.S.obj",
-      "output_section": ".dram0.data",
-      "bytes": 20
-    },
-    {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer_init.c.obj",
-      "output_section": ".flash.text",
+      "archive": "libesp_system.a",
+      "object": "esp_system.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 20
     },
     {
       "archive": "libesp_system.a",
       "object": "panic.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 20
+    },
+    {
+      "archive": "libcxx.a",
+      "object": "cxx_guards.cpp.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 20
+    },
+    {
+      "archive": "libxtensa.a",
+      "object": "xtensa_vectors.S.obj",
       "output_section": ".dram0.data",
       "bytes": 20
     },
@@ -146282,15 +146282,15 @@
       "bytes": 20
     },
     {
-      "archive": "libcxx.a",
-      "object": "cxx_guards.cpp.obj",
+      "archive": "libesp_driver_uart.a",
+      "object": "uart_vfs.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 20
     },
     {
-      "archive": "libesp_system.a",
-      "object": "esp_system.c.obj",
-      "output_section": ".dram0.bss",
+      "archive": "libesp_timer.a",
+      "object": "esp_timer_init.c.obj",
+      "output_section": ".flash.text",
       "bytes": 20
     },
     {
@@ -146307,32 +146307,26 @@
     },
     {
       "archive": "liblog.a",
-      "object": "tag_log_level.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 17
-    },
-    {
-      "archive": "liblog.a",
       "object": "util.c.obj",
       "output_section": ".iram0.text",
       "bytes": 17
     },
     {
-      "archive": "libesp_system.a",
-      "object": "stack_check.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 16
+      "archive": "liblog.a",
+      "object": "tag_log_level.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 17
     },
     {
-      "archive": "libstdc++.a",
-      "object": "eh_terminate.o",
-      "output_section": ".flash.rodata",
-      "bytes": 16
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "esp_ipc_isr_handler.S.obj",
+      "archive": "libspi_flash.a",
+      "object": "flash_ops.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 16
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "system_internal.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 16
     },
     {
@@ -146342,8 +146336,26 @@
       "bytes": 16
     },
     {
-      "archive": "libespcoredump.a",
-      "object": "core_dump_flash.c.obj",
+      "archive": "libstdc++.a",
+      "object": "new_opvnt.o",
+      "output_section": ".flash.rodata",
+      "bytes": 16
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "stack_check.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 16
+    },
+    {
+      "archive": "libespressif__esp_diagnostics.a",
+      "object": "esp_diagnostics_log_hook.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 16
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "eh_alloc.o",
       "output_section": ".dram0.bss",
       "bytes": 16
     },
@@ -146354,56 +146366,26 @@
       "bytes": 16
     },
     {
-      "archive": "libmbedcrypto.a",
-      "object": "sha.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 16
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "eh_alloc.o",
-      "output_section": ".dram0.bss",
-      "bytes": 16
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "new_opvnt.o",
-      "output_section": ".flash.rodata",
-      "bytes": 16
-    },
-    {
-      "archive": "libespressif__esp_diagnostics.a",
-      "object": "esp_diagnostics_log_hook.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 16
-    },
-    {
-      "archive": "libesp_vfs_console.a",
-      "object": "vfs_console.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 16
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "new_opv.o",
-      "output_section": ".flash.text",
-      "bytes": 16
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "system_internal.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 16
-    },
-    {
       "archive": "libFrameworkArduino.a",
       "object": "WString_de5f.cpp.o",
       "output_section": ".dram0.bss",
       "bytes": 16
     },
     {
-      "archive": "libstdc++.a",
-      "object": "cow-string-inst.o",
+      "archive": "libespcoredump.a",
+      "object": "core_dump_flash.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 16
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "esp_ipc_isr_handler.S.obj",
+      "output_section": ".dram0.data",
+      "bytes": 16
+    },
+    {
+      "archive": "libesp_vfs_console.a",
+      "object": "vfs_console.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 16
     },
@@ -146414,9 +146396,27 @@
       "bytes": 16
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "flash_ops.c.obj",
+      "archive": "libstdc++.a",
+      "object": "eh_terminate.o",
+      "output_section": ".flash.rodata",
+      "bytes": 16
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "new_opv.o",
+      "output_section": ".flash.text",
+      "bytes": 16
+    },
+    {
+      "archive": "libmbedcrypto.a",
+      "object": "sha.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 16
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "cow-string-inst.o",
+      "output_section": ".dram0.bss",
       "bytes": 16
     },
     {
@@ -146432,14 +146432,8 @@
       "bytes": 15
     },
     {
-      "archive": "libespressif__esp_diagnostics.a",
-      "object": "esp_diagnostics_log_hook.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 14
-    },
-    {
       "archive": "libstdc++.a",
-      "object": "del_op.o",
+      "object": "del_opv.o",
       "output_section": ".flash.text",
       "bytes": 14
     },
@@ -146451,8 +146445,14 @@
     },
     {
       "archive": "libstdc++.a",
-      "object": "del_opv.o",
+      "object": "del_op.o",
       "output_section": ".flash.text",
+      "bytes": 14
+    },
+    {
+      "archive": "libespressif__esp_diagnostics.a",
+      "object": "esp_diagnostics_log_hook.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 14
     },
     {
@@ -146462,8 +146462,8 @@
       "bytes": 13
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-div.o",
+      "archive": "libesp_system.a",
+      "object": "stack_check.c.obj",
       "output_section": ".iram0.text",
       "bytes": 13
     },
@@ -146474,8 +146474,14 @@
       "bytes": 13
     },
     {
-      "archive": "libesp_system.a",
-      "object": "stack_check.c.obj",
+      "archive": "libc.a",
+      "object": "libc_a-errno.o",
+      "output_section": ".flash.text",
+      "bytes": 13
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-div.o",
       "output_section": ".iram0.text",
       "bytes": 13
     },
@@ -146486,51 +146492,9 @@
       "bytes": 13
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-errno.o",
-      "output_section": ".flash.text",
-      "bytes": 13
-    },
-    {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_common.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 12
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-findfp.o",
-      "output_section": ".dram0.data",
-      "bytes": 12
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "esp_system_chip.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 12
-    },
-    {
       "archive": "libesp_system.a",
       "object": "task_wdt_impl_timergroup.c.obj",
       "output_section": ".dram0.bss",
-      "bytes": 12
-    },
-    {
-      "archive": "libcxx.a",
-      "object": "cxx_init.cpp.obj",
-      "output_section": ".flash.text",
-      "bytes": 12
-    },
-    {
-      "archive": "libesp_security.a",
-      "object": "init.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 12
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "eh_globals.o",
-      "output_section": ".flash.rodata",
       "bytes": 12
     },
     {
@@ -146540,14 +146504,14 @@
       "bytes": 12
     },
     {
-      "archive": "libnewlib.a",
-      "object": "esp_time_impl.c.obj",
-      "output_section": ".dram0.bss",
+      "archive": "libc.a",
+      "object": "libc_a-findfp.o",
+      "output_section": ".dram0.data",
       "bytes": 12
     },
     {
-      "archive": "libstdc++.a",
-      "object": "tinfo.o",
+      "archive": "libcxx.a",
+      "object": "cxx_init.cpp.obj",
       "output_section": ".flash.text",
       "bytes": 12
     },
@@ -146558,9 +146522,45 @@
       "bytes": 12
     },
     {
+      "archive": "libesp_security.a",
+      "object": "init.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 12
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "esp_time_impl.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 12
+    },
+    {
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_common.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 12
+    },
+    {
       "archive": "libesp_driver_uart.a",
       "object": "uart.c.obj",
       "output_section": ".dram0.bss",
+      "bytes": 12
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "eh_globals.o",
+      "output_section": ".flash.rodata",
+      "bytes": 12
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "esp_system_chip.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 12
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "tinfo.o",
+      "output_section": ".flash.text",
       "bytes": 12
     },
     {
@@ -146570,21 +146570,21 @@
       "bytes": 11
     },
     {
+      "archive": "libesp_system.a",
+      "object": "esp_ipc_isr_routines.S.obj",
+      "output_section": ".iram0.text",
+      "bytes": 10
+    },
+    {
       "archive": "libesp_app_format.a",
       "object": "esp_app_desc.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 10
     },
     {
-      "archive": "libbootloader_support.a",
-      "object": "flash_encrypt.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 10
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "esp_ipc_isr_routines.S.obj",
-      "output_section": ".iram0.text",
+      "archive": "libcoexist.a",
+      "object": "coexist_scheme.o",
+      "output_section": ".flash.rodata",
       "bytes": 10
     },
     {
@@ -146594,16 +146594,28 @@
       "bytes": 10
     },
     {
+      "archive": "libbootloader_support.a",
+      "object": "flash_encrypt.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 10
+    },
+    {
       "archive": "libesp_hw_support.a",
       "object": "esp_clk_tree.c.obj",
       "output_section": ".iram0.text",
       "bytes": 10
     },
     {
-      "archive": "libcoexist.a",
-      "object": "coexist_scheme.o",
-      "output_section": ".flash.rodata",
-      "bytes": 10
+      "archive": "libFrameworkArduino.a",
+      "object": "esp32-hal-cpu_12c4.c.o",
+      "output_section": ".dram0.bss",
+      "bytes": 9
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "int_wdt.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 9
     },
     {
       "archive": "libFrameworkArduino.a",
@@ -146618,141 +146630,21 @@
       "bytes": 9
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_clk.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 9
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "int_wdt.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 9
-    },
-    {
       "archive": "libheap.a",
       "object": "heap_caps_init.c.obj",
       "output_section": ".dram0.data",
       "bytes": 9
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_12c4.c.o",
-      "output_section": ".dram0.bss",
+      "archive": "libesp_hw_support.a",
+      "object": "esp_clk.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 9
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "periph_ctrl.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_mm.a",
-      "object": "cache_esp32.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_clk_tree_common.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_pm.a",
-      "object": "pm_locks.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libxt_hal.a",
-      "object": "int_asm--set_intclear.o",
-      "output_section": ".iram0.text",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_gpio_reserve.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
     },
     {
       "archive": "libesp_partition.a",
       "object": "partition.c.obj",
       "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "unwind-dw2-fde.o",
-      "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libfreertos.a",
-      "object": "timers.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_app_format.a",
-      "object": "esp_app_desc.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_security.a",
-      "object": "init.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "crosscore_int.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "freertos_hooks.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libhal.a",
-      "object": "cache_hal_esp32.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer_impl_lac.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libpthread.a",
-      "object": "pthread_local_storage.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libnewlib.a",
-      "object": "locks.c.obj",
-      "output_section": ".dram0.data",
       "bytes": 8
     },
     {
@@ -146762,8 +146654,8 @@
       "bytes": 8
     },
     {
-      "archive": "libnewlib.a",
-      "object": "stdatomic.c.obj",
+      "archive": "libpthread.a",
+      "object": "pthread.c.obj",
       "output_section": ".dram0.data",
       "bytes": 8
     },
@@ -146780,50 +146672,8 @@
       "bytes": 8
     },
     {
-      "archive": "libesp_system.a",
-      "object": "panic_handler.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libcxx.a",
-      "object": "cxx_guards.cpp.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "intr_alloc.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libbootloader_support.a",
-      "object": "bootloader_mem.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 8
-    },
-    {
-      "archive": "libespcoredump.a",
-      "object": "core_dump_init.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 8
-    },
-    {
-      "archive": "libpthread.a",
-      "object": "pthread.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
       "archive": "libpthread.a",
       "object": "pthread_semaphore.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 8
-    },
-    {
-      "archive": "libpthread.a",
-      "object": "pthread_rwlock.c.obj",
       "output_section": ".flash.text",
       "bytes": 8
     },
@@ -146834,21 +146684,171 @@
       "bytes": 8
     },
     {
+      "archive": "libesp_pm.a",
+      "object": "pm_locks.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "panic_handler.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 8
+    },
+    {
+      "archive": "libfreertos.a",
+      "object": "timers.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "stdatomic.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libespcoredump.a",
+      "object": "core_dump_init.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_mm.a",
+      "object": "cache_esp32.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_security.a",
+      "object": "init.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "periph_ctrl.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "crosscore_int.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "esp_gpio_reserve.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libbootloader_support.a",
+      "object": "bootloader_mem.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 8
+    },
+    {
+      "archive": "libcxx.a",
+      "object": "cxx_guards.cpp.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_timer.a",
+      "object": "esp_timer.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "freertos_hooks.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "esp_clk_tree_common.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 8
+    },
+    {
       "archive": "libcoexist.a",
       "object": "coexist_api.o",
       "output_section": ".dram0.data",
       "bytes": 8
     },
     {
-      "archive": "libesp_system.a",
-      "object": "esp_system_chip.c.obj",
+      "archive": "libesp_timer.a",
+      "object": "esp_timer.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_timer.a",
+      "object": "esp_timer_impl_lac.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 8
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "locks.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libpthread.a",
+      "object": "pthread_rwlock.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 8
+    },
+    {
+      "archive": "libhal.a",
+      "object": "cache_hal_esp32.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 8
+    },
+    {
+      "archive": "libpthread.a",
+      "object": "pthread_local_storage.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "intr_alloc.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libxt_hal.a",
+      "object": "int_asm--set_intclear.o",
+      "output_section": ".iram0.text",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_app_format.a",
+      "object": "esp_app_desc.c.obj",
       "output_section": ".flash.rodata",
-      "bytes": 7
+      "bytes": 8
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "unwind-dw2-fde.o",
+      "output_section": ".dram0.bss",
+      "bytes": 8
     },
     {
       "archive": "libFrameworkArduino.a",
       "object": "esp32-hal-psram_95a8.c.o",
       "output_section": ".flash.text",
+      "bytes": 7
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "esp_system_chip.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 7
     },
     {
@@ -146864,39 +146864,27 @@
       "bytes": 7
     },
     {
-      "archive": "libesp_system.a",
-      "object": "panic.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 6
-    },
-    {
       "archive": "libspi_flash.a",
       "object": "cache_utils.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 6
     },
     {
-      "archive": "libnewlib.a",
-      "object": "pthread.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "clk_utils.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "eh_exception.o",
-      "output_section": ".flash.text",
-      "bytes": 5
+      "archive": "libesp_system.a",
+      "object": "panic.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 6
     },
     {
       "archive": "libesp_hw_support.a",
       "object": "mspi_timing_tuning.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "brownout.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 5
     },
     {
@@ -146906,26 +146894,8 @@
       "bytes": 5
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "spi_flash_chip_drivers.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libnewlib.a",
-      "object": "getentropy.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libnvs_sec_provider.a",
-      "object": "nvs_sec_provider.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libesp_phy.a",
-      "object": "phy_override.c.obj",
+      "archive": "libbootloader_support.a",
+      "object": "bootloader_utility.c.obj",
       "output_section": ".flash.text",
       "bytes": 5
     },
@@ -146936,8 +146906,26 @@
       "bytes": 5
     },
     {
-      "archive": "libbootloader_support.a",
-      "object": "bootloader_utility.c.obj",
+      "archive": "libesp_system.a",
+      "object": "task_wdt.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 5
+    },
+    {
+      "archive": "libesp_phy.a",
+      "object": "phy_override.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "spi_flash_chip_drivers.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "eh_exception.o",
       "output_section": ".flash.text",
       "bytes": 5
     },
@@ -146948,33 +146936,69 @@
       "bytes": 5
     },
     {
-      "archive": "libpthread.a",
-      "object": "pthread_cond_var.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "brownout.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 5
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "task_wdt.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 5
-    },
-    {
       "archive": "libFrameworkArduino.a",
       "object": "WString_de5f.cpp.o",
       "output_section": ".flash.rodata",
       "bytes": 5
     },
     {
-      "archive": "libesp_mm.a",
-      "object": "esp_mmu_map.c.obj",
+      "archive": "libesp_hw_support.a",
+      "object": "clk_utils.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libnvs_sec_provider.a",
+      "object": "nvs_sec_provider.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "getentropy.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libpthread.a",
+      "object": "pthread_cond_var.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "pthread.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
       "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-on_exit_args.o",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libvfs.a",
+      "object": "nullfs.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libnvs_flash.a",
+      "object": "nvs_platform.cpp.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "spi_bus_lock.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 4
     },
     {
@@ -146984,51 +147008,27 @@
       "bytes": 4
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "brownout.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libbootloader_support.a",
-      "object": "esp_image_format.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
       "archive": "libesp_system.a",
-      "object": "stack_check.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "libFastLED.a",
-      "object": "FastLED_1df9.o",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_platform.cpp.obj",
+      "object": "reset_reason.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
       "archive": "liblog.a",
-      "object": "log_write.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libheap.a",
-      "object": "heap_caps_init.c.obj",
+      "object": "log_linked_list.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_platform.cpp.obj",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_hw_support.a",
+      "object": "hw_random.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libheap.a",
+      "object": "heap_caps.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
@@ -147038,26 +147038,8 @@
       "bytes": 4
     },
     {
-      "archive": "libfreertos.a",
-      "object": "xtensa_init.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_309b.c.o",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libspi_flash.a",
-      "object": "flash_ops.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
       "archive": "libesp_hw_support.a",
-      "object": "rtc_clk.c.obj",
+      "object": "rtc_module.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
@@ -147069,127 +147051,7 @@
     },
     {
       "archive": "libnvs_flash.a",
-      "object": "nvs_partition_manager.cpp.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "liblog.a",
-      "object": "log_timestamp.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-__call_atexit.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libheap.a",
-      "object": "heap_caps.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libFastLED.a",
-      "object": "rgbw_d656.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "eh_unex_handler.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "spi_bus_lock.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "unwind-dw2-fde.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libbootloader_support.a",
-      "object": "bootloader_flash.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libvfs.a",
-      "object": "nullfs.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "reset_reason.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libapp_update.a",
-      "object": "esp_ota_ops.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "rtc_module.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libcoexist.a",
-      "object": "coexist_dbg.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "liblog.a",
-      "object": "log_level.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_page.cpp.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "liblog.a",
-      "object": "log_linked_list.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-on_exit_args.o",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "libFrameworkArduino.a",
-      "object": "Esp_768a.cpp.o",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "liblog.a",
-      "object": "util.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libpthread.a",
-      "object": "pthread_local_storage.c.obj",
+      "object": "nvs_platform.cpp.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
@@ -147200,20 +147062,68 @@
       "bytes": 4
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "esp_flash_spi_init.c.obj",
+      "archive": "libespcoredump.a",
+      "object": "core_dump_common.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
-      "archive": "libnewlib.a",
-      "object": "newlib_init.c.obj",
+      "archive": "libnvs_flash.a",
+      "object": "nvs_page.cpp.obj",
       "output_section": ".flash.rodata",
       "bytes": 4
     },
     {
+      "archive": "libbootloader_support.a",
+      "object": "esp_image_format.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libpthread.a",
+      "object": "pthread_local_storage.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libFrameworkArduino.a",
+      "object": "Esp_768a.cpp.o",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libapp_update.a",
+      "object": "esp_ota_ops.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "rtc_clk.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_mm.a",
+      "object": "esp_mmu_map.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libFrameworkArduino.a",
+      "object": "esp32-hal-bt_309b.c.o",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
       "archive": "libheap.a",
-      "object": "heap_caps.c.obj",
+      "object": "heap_caps_init.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
@@ -147225,14 +147135,56 @@
     },
     {
       "archive": "libesp_hw_support.a",
-      "object": "hw_random.c.obj",
+      "object": "brownout.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
-      "archive": "libespcoredump.a",
-      "object": "core_dump_common.c.obj",
+      "archive": "libFastLED.a",
+      "object": "FastLED_1df9.o",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "esp_flash_spi_init.c.obj",
       "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "liblog.a",
+      "object": "log_level.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "liblog.a",
+      "object": "log_write.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "unwind-dw2-fde.o",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "stack_check.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libFastLED.a",
+      "object": "rgbw_d656.o",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libcoexist.a",
+      "object": "coexist_dbg.o",
+      "output_section": ".dram0.data",
       "bytes": 4
     },
     {
@@ -147242,16 +147194,58 @@
       "bytes": 4
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-__call_atexit.o",
+      "archive": "liblog.a",
+      "object": "util.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "spi_share_hw_ctrl.c.obj",
+      "archive": "libheap.a",
+      "object": "heap_caps.c.obj",
       "output_section": ".dram0.data",
-      "bytes": 3
+      "bytes": 4
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "eh_unex_handler.o",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "flash_ops.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libfreertos.a",
+      "object": "xtensa_init.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "liblog.a",
+      "object": "log_timestamp.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libnvs_flash.a",
+      "object": "nvs_partition_manager.cpp.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libbootloader_support.a",
+      "object": "bootloader_flash.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "newlib_init.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 4
     },
     {
       "archive": "libFrameworkArduino.a",
@@ -147260,9 +147254,15 @@
       "bytes": 3
     },
     {
-      "archive": "liblog.a",
-      "object": "tag_log_level.c.obj",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_hw_support.a",
+      "object": "spi_share_hw_ctrl.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 3
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "flash_brownout_hook.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 2
     },
     {
@@ -147272,15 +147272,15 @@
       "bytes": 2
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "flash_brownout_hook.c.obj",
-      "output_section": ".dram0.bss",
+      "archive": "liblog.a",
+      "object": "tag_log_level.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 2
     },
     {
-      "archive": "libstdc++.a",
-      "object": "new_handler.o",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_psram.a",
+      "object": "esp_psram_impl_quad.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 1
     },
     {
@@ -147290,15 +147290,15 @@
       "bytes": 1
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "Esp_768a.cpp.o",
-      "output_section": ".dram0.bss",
+      "archive": "libstdc++.a",
+      "object": "new_handler.o",
+      "output_section": ".flash.rodata",
       "bytes": 1
     },
     {
-      "archive": "libesp_psram.a",
-      "object": "esp_psram_impl_quad.c.obj",
-      "output_section": ".dram0.data",
+      "archive": "libFrameworkArduino.a",
+      "object": "Esp_768a.cpp.o",
+      "output_section": ".dram0.bss",
       "bytes": 1
     }
   ]

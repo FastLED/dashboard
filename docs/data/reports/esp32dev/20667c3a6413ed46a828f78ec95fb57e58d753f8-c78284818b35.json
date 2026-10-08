@@ -3,7 +3,7 @@
     "schema": 1,
     "disassembly": {
       "status": "analyzed",
-      "tool": "/home/niteris/.fbuild/prod/cache/toolchains/toolchain-xtensa-esp-elf/164cda8d219cc6bd/xtensa-esp-elf-14.2.0_20260121-x86_64-linux-gnu/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump",
+      "tool": "/home/runner/.fbuild/prod/cache/toolchains/toolchain-xtensa-esp-elf/164cda8d219cc6bd/xtensa-esp-elf-14.2.0_20260121-x86_64-linux-gnu/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump",
       "reason": null
     },
     "static_data": {
@@ -64805,8 +64805,8 @@
       "Disassembly annotations are references, not necessarily function calls; interior-offset annotations are not reconstructed."
     ]
   },
-  "elf_path": "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/20667c3a6413ed46a828f78ec95fb57e58d753f8-c78284818b35/.fbuild/build/esp32dev/release/firmware.elf",
-  "map_path": "/home/niteris/dev/fastled-memory-dashboard/.cache/build/esp32dev/20667c3a6413ed46a828f78ec95fb57e58d753f8-c78284818b35/.fbuild/build/esp32dev/release/firmware.map",
+  "elf_path": "/home/runner/work/dashboard/dashboard/.cache/build/esp32dev/20667c3a6413ed46a828f78ec95fb57e58d753f8-c78284818b35/.fbuild/build/esp32dev/release/firmware.elf",
+  "map_path": "/home/runner/work/dashboard/dashboard/.cache/build/esp32dev/20667c3a6413ed46a828f78ec95fb57e58d753f8-c78284818b35/.fbuild/build/esp32dev/release/firmware.map",
   "total_flash": 234560,
   "total_ram": 33139,
   "image_flash": 274029,
@@ -65009,13 +65009,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -65222,13 +65222,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "chip-debug-report_2236.cpp.o",
+      "object": "chip-debug-report_7cfd.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [
@@ -65988,7 +65988,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -66081,13 +66081,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -66125,7 +66125,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -66282,7 +66282,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [
@@ -66302,7 +66302,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -66963,7 +66963,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [
@@ -67341,7 +67341,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -67566,7 +67566,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -67757,7 +67757,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -68156,7 +68156,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         }
       ],
       "references_to": [],
@@ -68252,7 +68252,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": null,
@@ -68339,7 +68339,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [
@@ -68359,7 +68359,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -68382,7 +68382,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -68413,7 +68413,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -69608,19 +69608,19 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "MD5Builder_dd66.cpp.o"
+          "object": "MD5Builder_bb46.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "stdlib_noniso_f88e.c.o"
+          "object": "stdlib_noniso_a26a.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-bt_bd53.c.o"
+          "object": "esp32-hal-bt_309b.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         },
         {
           "archive": null,
@@ -70218,15 +70218,15 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -70359,15 +70359,15 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -70793,7 +70793,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -70970,7 +70970,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -71057,13 +71057,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [
@@ -71725,7 +71725,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         }
       ],
       "references_to": [
@@ -71951,7 +71951,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -71997,7 +71997,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -72087,7 +72087,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         }
       ],
       "references_to": [
@@ -72617,7 +72617,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "chip-debug-report_2236.cpp.o",
+      "object": "chip-debug-report_7cfd.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -73125,7 +73125,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -73185,7 +73185,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -73599,13 +73599,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "chip-debug-report_2236.cpp.o",
+      "object": "chip-debug-report_7cfd.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [
@@ -73679,13 +73679,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [
@@ -73892,7 +73892,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [
@@ -74394,7 +74394,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -74675,7 +74675,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
@@ -75224,7 +75224,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -75738,7 +75738,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -75768,7 +75768,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -76122,7 +76122,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -76467,13 +76467,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -76525,11 +76525,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [
@@ -76636,11 +76636,11 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -76718,13 +76718,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -77550,7 +77550,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -77865,7 +77865,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -77933,7 +77933,7 @@
       "sym_type": "d",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".dram0.data",
       "source": "nm",
       "referenced_by": [],
@@ -78209,7 +78209,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -78239,7 +78239,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -78278,13 +78278,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -78481,7 +78481,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -78566,7 +78566,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -78724,7 +78724,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-bt_bd53.c.o"
+          "object": "esp32-hal-bt_309b.c.o"
         }
       ],
       "references_to": [
@@ -78849,11 +78849,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [
@@ -78951,7 +78951,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [
@@ -79286,7 +79286,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -79343,7 +79343,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -79378,7 +79378,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [
@@ -79422,13 +79422,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -79502,7 +79502,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -79534,7 +79534,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -79617,7 +79617,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": null,
@@ -79857,7 +79857,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -80099,11 +80099,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -80437,7 +80437,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [
@@ -80483,13 +80483,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -80662,7 +80662,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -80946,7 +80946,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -80998,7 +80998,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [
@@ -81062,13 +81062,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -81448,15 +81448,15 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Print_6eb8.cpp.o"
+          "object": "Print_0681.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Stream_704f.cpp.o"
+          "object": "Stream_5cfa.cpp.o"
         }
       ],
       "references_to": [],
@@ -81531,7 +81531,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -81704,7 +81704,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -81729,7 +81729,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -82239,7 +82239,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         }
       ],
       "references_to": [
@@ -82272,7 +82272,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -83748,27 +83748,27 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "MD5Builder_dd66.cpp.o"
+          "object": "MD5Builder_bb46.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Stream_704f.cpp.o"
+          "object": "Stream_5cfa.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -83998,7 +83998,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -84512,7 +84512,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -84679,7 +84679,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -85379,7 +85379,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -85510,7 +85510,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -85581,7 +85581,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [
@@ -86746,11 +86746,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -87085,7 +87085,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -87100,7 +87100,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -87277,7 +87277,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -87343,7 +87343,7 @@
       "sym_type": "B",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -87358,7 +87358,7 @@
       "sym_type": "B",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -87373,13 +87373,13 @@
       "sym_type": "B",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [],
@@ -87530,7 +87530,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         }
       ],
       "references_to": [],
@@ -88075,7 +88075,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -88314,7 +88314,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -88500,7 +88500,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -88520,7 +88520,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -88540,13 +88540,13 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [
@@ -88677,7 +88677,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -88732,7 +88732,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -89127,7 +89127,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [
@@ -89339,13 +89339,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -89515,13 +89515,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -90084,7 +90084,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -90775,7 +90775,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -90929,7 +90929,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -91106,7 +91106,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -91241,11 +91241,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-bt_bd53.c.o"
+          "object": "esp32-hal-bt_309b.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -91688,7 +91688,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [
@@ -91796,7 +91796,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -91972,7 +91972,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -92613,7 +92613,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -93180,7 +93180,7 @@
       "sym_type": "V",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.rodata",
       "source": "nm",
       "referenced_by": [],
@@ -93265,7 +93265,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -93525,7 +93525,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         }
       ],
       "references_to": [],
@@ -94788,13 +94788,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -94962,7 +94962,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -94982,7 +94982,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -95087,15 +95087,15 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -95186,7 +95186,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         }
       ],
       "references_to": [
@@ -95639,7 +95639,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -95734,7 +95734,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -95902,11 +95902,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Print_6eb8.cpp.o"
+          "object": "Print_0681.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [
@@ -96037,7 +96037,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
@@ -96479,7 +96479,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -96663,7 +96663,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -96716,17 +96716,17 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -96745,13 +96745,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -97101,17 +97101,17 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -97132,13 +97132,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -97303,7 +97303,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Stream_704f.cpp.o",
+      "object": "Stream_5cfa.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -97328,11 +97328,11 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [
@@ -97858,17 +97858,17 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [
@@ -99041,7 +99041,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -99056,7 +99056,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -99649,11 +99649,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -99996,7 +99996,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -100013,7 +100013,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -100087,13 +100087,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Stream_704f.cpp.o",
+      "object": "Stream_5cfa.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -100244,7 +100244,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -100603,7 +100603,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         }
       ],
       "references_to": [
@@ -100679,7 +100679,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -101214,7 +101214,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -101338,7 +101338,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -101688,13 +101688,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -102044,13 +102044,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -102754,7 +102754,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -102828,7 +102828,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -102999,13 +102999,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -103021,13 +103021,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -103122,7 +103122,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [
@@ -103511,7 +103511,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -103609,7 +103609,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -103655,7 +103655,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -103730,7 +103730,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         }
       ],
       "references_to": [],
@@ -103811,13 +103811,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -104297,7 +104297,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         }
       ],
       "references_to": [],
@@ -104607,13 +104607,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -104630,7 +104630,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -104645,25 +104645,25 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HEXBuilder_acc4.cpp.o"
+          "object": "HEXBuilder_28c2.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "MD5Builder_dd66.cpp.o"
+          "object": "MD5Builder_bb46.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Stream_704f.cpp.o"
+          "object": "Stream_5cfa.cpp.o"
         }
       ],
       "references_to": [
@@ -105737,7 +105737,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -106049,7 +106049,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [
@@ -106718,13 +106718,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [
@@ -107020,7 +107020,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
@@ -107030,11 +107030,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Stream_704f.cpp.o"
+          "object": "Stream_5cfa.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -107053,7 +107053,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -107789,13 +107789,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Stream_704f.cpp.o"
+          "object": "Stream_5cfa.cpp.o"
         }
       ],
       "references_to": [
@@ -107811,7 +107811,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -108393,13 +108393,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -109970,15 +109970,15 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         },
         {
           "archive": null,
@@ -110287,7 +110287,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -110418,7 +110418,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -110966,7 +110966,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         }
       ],
       "references_to": [
@@ -111728,7 +111728,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -111746,7 +111746,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -111909,7 +111909,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [
@@ -113465,7 +113465,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -113480,7 +113480,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -113602,7 +113602,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -113619,7 +113619,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -113852,7 +113852,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         }
       ],
       "references_to": [
@@ -113980,7 +113980,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -114631,7 +114631,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -114872,7 +114872,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -114972,7 +114972,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [
@@ -115116,7 +115116,7 @@
       "sym_type": "B",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -116196,7 +116196,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -116316,13 +116316,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -116427,7 +116427,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -117089,13 +117089,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [
@@ -117964,11 +117964,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "MD5Builder_dd66.cpp.o"
+          "object": "MD5Builder_bb46.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         },
         {
           "archive": null,
@@ -118373,7 +118373,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [
@@ -119432,31 +119432,31 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HEXBuilder_acc4.cpp.o"
+          "object": "HEXBuilder_28c2.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Print_6eb8.cpp.o"
+          "object": "Print_0681.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "MD5Builder_dd66.cpp.o"
+          "object": "MD5Builder_bb46.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         }
       ],
       "references_to": [
@@ -120038,7 +120038,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -120057,7 +120057,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -120098,7 +120098,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -120275,13 +120275,13 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -120297,13 +120297,13 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -120734,7 +120734,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
@@ -121132,31 +121132,31 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HEXBuilder_acc4.cpp.o"
+          "object": "HEXBuilder_28c2.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Print_6eb8.cpp.o"
+          "object": "Print_0681.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "MD5Builder_dd66.cpp.o"
+          "object": "MD5Builder_bb46.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         }
       ],
       "references_to": [],
@@ -121395,7 +121395,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
@@ -121405,15 +121405,15 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         },
         {
           "archive": null,
@@ -121839,7 +121839,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -121854,17 +121854,17 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HEXBuilder_acc4.cpp.o"
+          "object": "HEXBuilder_28c2.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [
@@ -122137,7 +122137,7 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -122154,7 +122154,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -122750,27 +122750,27 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HEXBuilder_acc4.cpp.o"
+          "object": "HEXBuilder_28c2.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Print_6eb8.cpp.o"
+          "object": "Print_0681.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "MD5Builder_dd66.cpp.o"
+          "object": "MD5Builder_bb46.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [
@@ -122890,7 +122890,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -124952,11 +124952,11 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -125484,7 +125484,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -125501,7 +125501,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -125630,17 +125630,17 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-psram_3fec.c.o",
+      "object": "esp32-hal-psram_95a8.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -125767,7 +125767,7 @@
       "sym_type": "t",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -125819,13 +125819,13 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -125839,13 +125839,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -126026,13 +126026,13 @@
       "sym_type": "T",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -126150,7 +126150,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -126628,7 +126628,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -126645,7 +126645,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [
@@ -127231,7 +127231,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -127246,7 +127246,7 @@
       "sym_type": "W",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".flash.text",
       "source": "nm",
       "referenced_by": [],
@@ -127747,7 +127747,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -128536,13 +128536,13 @@
       "sym_type": "B",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -129000,7 +129000,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [],
@@ -129094,7 +129094,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -129109,7 +129109,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -129149,7 +129149,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         }
       ],
       "references_to": [],
@@ -129719,27 +129719,27 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HEXBuilder_acc4.cpp.o"
+          "object": "HEXBuilder_28c2.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Print_6eb8.cpp.o"
+          "object": "Print_0681.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "MD5Builder_dd66.cpp.o"
+          "object": "MD5Builder_bb46.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -129835,15 +129835,15 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         },
         {
           "archive": null,
@@ -130486,13 +130486,13 @@
       "sym_type": "B",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -130526,7 +130526,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -130649,7 +130649,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -130664,7 +130664,7 @@
       "sym_type": "B",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -130679,7 +130679,7 @@
       "sym_type": "b",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -130694,7 +130694,7 @@
       "sym_type": "B",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [],
@@ -130763,13 +130763,13 @@
       "sym_type": "B",
       "region": "ram",
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".dram0.bss",
       "source": "nm",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -131294,7 +131294,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -131564,11 +131564,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -132645,27 +132645,27 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HEXBuilder_acc4.cpp.o"
+          "object": "HEXBuilder_28c2.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Print_6eb8.cpp.o"
+          "object": "Print_0681.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "MD5Builder_dd66.cpp.o"
+          "object": "MD5Builder_bb46.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "WString_3a7c.cpp.o"
+          "object": "WString_de5f.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -132744,7 +132744,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -133020,15 +133020,15 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -133200,7 +133200,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -133280,15 +133280,15 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -133452,7 +133452,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -134437,7 +134437,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -134485,11 +134485,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-bt_bd53.c.o"
+          "object": "esp32-hal-bt_309b.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -134701,7 +134701,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -134769,7 +134769,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -136476,7 +136476,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-cpu_bfee.c.o"
+          "object": "esp32-hal-cpu_12c4.c.o"
         }
       ],
       "references_to": [],
@@ -136562,7 +136562,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [],
@@ -136614,7 +136614,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [],
@@ -136999,13 +136999,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.rodata",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [],
@@ -137312,7 +137312,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -137594,7 +137594,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [],
@@ -137614,7 +137614,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [],
@@ -137643,7 +137643,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
@@ -137653,11 +137653,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Stream_704f.cpp.o"
+          "object": "Stream_5cfa.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -137671,13 +137671,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [],
@@ -137691,7 +137691,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137706,7 +137706,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
@@ -137726,13 +137726,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [],
@@ -137746,7 +137746,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137761,7 +137761,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137776,7 +137776,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137791,13 +137791,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Stream_704f.cpp.o",
+      "object": "Stream_5cfa.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -137811,7 +137811,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137826,7 +137826,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137841,7 +137841,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "chip-debug-report_2236.cpp.o",
+      "object": "chip-debug-report_7cfd.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137856,13 +137856,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "chip-debug-report_2236.cpp.o",
+      "object": "chip-debug-report_7cfd.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [],
@@ -137876,13 +137876,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "chip-debug-report_2236.cpp.o",
+      "object": "chip-debug-report_7cfd.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [],
@@ -137896,7 +137896,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137911,13 +137911,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -137931,13 +137931,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -137951,7 +137951,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137966,7 +137966,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -137981,13 +137981,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         }
       ],
       "references_to": [],
@@ -138001,13 +138001,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -138021,13 +138021,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138041,17 +138041,17 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -138065,13 +138065,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138085,7 +138085,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -138100,7 +138100,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -138115,7 +138115,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -138130,7 +138130,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -138145,7 +138145,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -138160,7 +138160,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -138175,13 +138175,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "HardwareSerial_6b49.cpp.o"
+          "object": "HardwareSerial_99f6.cpp.o"
         }
       ],
       "references_to": [],
@@ -138195,7 +138195,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -138210,7 +138210,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
@@ -138230,13 +138230,13 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -138250,7 +138250,7 @@
       "sym_type": "r",
       "region": "flash",
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".flash.text",
       "source": "map-derived",
       "referenced_by": [],
@@ -138582,7 +138582,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138602,7 +138602,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138622,7 +138622,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138642,7 +138642,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138670,7 +138670,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138714,7 +138714,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138734,7 +138734,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138762,7 +138762,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138790,7 +138790,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138822,7 +138822,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -138980,11 +138980,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -139057,7 +139057,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -139085,7 +139085,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -139129,7 +139129,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [],
@@ -139217,11 +139217,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -139289,7 +139289,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         }
       ],
       "references_to": [],
@@ -139852,7 +139852,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -139907,11 +139907,11 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "main_2172.cpp.o"
+          "object": "main_8ae5.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -140555,11 +140555,11 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -141106,11 +141106,11 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -141495,7 +141495,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": null,
@@ -141535,7 +141535,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": null,
@@ -141733,7 +141733,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -141777,7 +141777,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -141821,7 +141821,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -141865,7 +141865,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -141889,7 +141889,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -141963,7 +141963,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -141987,7 +141987,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -142011,7 +142011,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -142031,7 +142031,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -142055,7 +142055,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -142075,7 +142075,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -142345,7 +142345,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -142694,7 +142694,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-bt_bd53.c.o"
+          "object": "esp32-hal-bt_309b.c.o"
         }
       ],
       "references_to": [],
@@ -143319,7 +143319,7 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -145027,7 +145027,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-uart_314c.c.o"
+          "object": "esp32-hal-uart_4daa.c.o"
         }
       ],
       "references_to": [],
@@ -145129,11 +145129,11 @@
       "referenced_by": [
         {
           "archive": "libFrameworkArduino.a",
-          "object": "Esp_9755.cpp.o"
+          "object": "Esp_768a.cpp.o"
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "chip-debug-report_2236.cpp.o"
+          "object": "chip-debug-report_7cfd.cpp.o"
         }
       ],
       "references_to": [],
@@ -145585,7 +145585,7 @@
         },
         {
           "archive": "libFrameworkArduino.a",
-          "object": "esp32-hal-misc_5d1a.c.o"
+          "object": "esp32-hal-misc_56d3.c.o"
         }
       ],
       "references_to": [],
@@ -145712,7 +145712,7 @@
   "sections": [
     {
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.rodata",
       "bytes": 35478
     },
@@ -145742,7 +145742,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.text",
       "bytes": 5342
     },
@@ -145874,7 +145874,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "chip-debug-report_2236.cpp.o",
+      "object": "chip-debug-report_7cfd.cpp.o",
       "output_section": ".flash.text",
       "bytes": 2046
     },
@@ -145886,7 +145886,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "chip-debug-report_2236.cpp.o",
+      "object": "chip-debug-report_7cfd.cpp.o",
       "output_section": ".flash.rodata",
       "bytes": 1975
     },
@@ -146000,7 +146000,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.text",
       "bytes": 1260
     },
@@ -146150,7 +146150,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".dram0.bss",
       "bytes": 876
     },
@@ -146258,7 +146258,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-periman_92e5.c.o",
+      "object": "esp32-hal-periman_0bb3.c.o",
       "output_section": ".flash.rodata",
       "bytes": 713
     },
@@ -146269,15 +146269,15 @@
       "bytes": 709
     },
     {
-      "archive": "libbootloader_support.a",
-      "object": "esp_image_format.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 708
-    },
-    {
       "archive": "libfreertos.a",
       "object": "tasks.c.obj",
       "output_section": ".dram0.bss",
+      "bytes": 708
+    },
+    {
+      "archive": "libbootloader_support.a",
+      "object": "esp_image_format.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 708
     },
     {
@@ -146300,7 +146300,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".flash.text",
       "bytes": 681
     },
@@ -146330,7 +146330,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.text",
       "bytes": 652
     },
@@ -146497,15 +146497,15 @@
       "bytes": 488
     },
     {
-      "archive": "libcxx.a",
-      "object": "cxx_guards.cpp.obj",
-      "output_section": ".flash.text",
-      "bytes": 486
-    },
-    {
       "archive": "libesp_hw_support.a",
       "object": "sleep_modes.c.obj",
       "output_section": ".flash.rodata",
+      "bytes": 486
+    },
+    {
+      "archive": "libcxx.a",
+      "object": "cxx_guards.cpp.obj",
+      "output_section": ".flash.text",
       "bytes": 486
     },
     {
@@ -146582,7 +146582,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".flash.text",
       "bytes": 436
     },
@@ -146593,15 +146593,15 @@
       "bytes": 434
     },
     {
-      "archive": "libapp_update.a",
-      "object": "esp_ota_ops.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 429
-    },
-    {
       "archive": "libesp_timer.a",
       "object": "esp_timer_impl_lac.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 429
+    },
+    {
+      "archive": "libapp_update.a",
+      "object": "esp_ota_ops.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 429
     },
     {
@@ -146623,15 +146623,15 @@
       "bytes": 416
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "esp_flash_api.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 416
-    },
-    {
       "archive": "libheap.a",
       "object": "heap_caps.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 416
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "esp_flash_api.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 416
     },
     {
@@ -146659,12 +146659,6 @@
       "bytes": 396
     },
     {
-      "archive": "libespcoredump.a",
-      "object": "core_dump_common.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 394
-    },
-    {
       "archive": "libhal.a",
       "object": "spi_flash_hal.c.obj",
       "output_section": ".flash.text",
@@ -146674,6 +146668,12 @@
       "archive": "libxtensa.a",
       "object": "xtensa_context.S.obj",
       "output_section": ".iram0.text",
+      "bytes": 394
+    },
+    {
+      "archive": "libespcoredump.a",
+      "object": "core_dump_common.c.obj",
+      "output_section": ".flash.text",
       "bytes": 394
     },
     {
@@ -146834,7 +146834,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-misc_5d1a.c.o",
+      "object": "esp32-hal-misc_56d3.c.o",
       "output_section": ".flash.text",
       "bytes": 310
     },
@@ -146869,9 +146869,9 @@
       "bytes": 293
     },
     {
-      "archive": "libfreertos.a",
-      "object": "list.c.obj",
-      "output_section": ".iram0.text",
+      "archive": "libFastLED.a",
+      "object": "FastLED_1df9.o",
+      "output_section": ".dram0.bss",
       "bytes": 292
     },
     {
@@ -146881,9 +146881,9 @@
       "bytes": 292
     },
     {
-      "archive": "libFastLED.a",
-      "object": "FastLED_1df9.o",
-      "output_section": ".dram0.bss",
+      "archive": "libfreertos.a",
+      "object": "list.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 292
     },
     {
@@ -146918,14 +146918,14 @@
     },
     {
       "archive": "libesp_system.a",
-      "object": "panic.c.obj",
-      "output_section": ".flash.rodata",
+      "object": "task_wdt_impl_timergroup.c.obj",
+      "output_section": ".flash.text",
       "bytes": 281
     },
     {
       "archive": "libesp_system.a",
-      "object": "task_wdt_impl_timergroup.c.obj",
-      "output_section": ".flash.text",
+      "object": "panic.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 281
     },
     {
@@ -146947,15 +146947,15 @@
       "bytes": 272
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-svfiprintf.o",
-      "output_section": ".flash.text",
-      "bytes": 271
-    },
-    {
       "archive": "libesp_hw_support.a",
       "object": "rtc_time.c.obj",
       "output_section": ".flash.rodata",
+      "bytes": 271
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-svfiprintf.o",
+      "output_section": ".flash.text",
       "bytes": 271
     },
     {
@@ -147055,12 +147055,6 @@
       "bytes": 245
     },
     {
-      "archive": "libnewlib.a",
-      "object": "newlib_init.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 244
-    },
-    {
       "archive": null,
       "object": "main_34d2.cpp.o",
       "output_section": ".flash.rodata",
@@ -147073,10 +147067,10 @@
       "bytes": 244
     },
     {
-      "archive": "libheap.a",
-      "object": "multi_heap.c.obj",
+      "archive": "libnewlib.a",
+      "object": "newlib_init.c.obj",
       "output_section": ".flash.text",
-      "bytes": 243
+      "bytes": 244
     },
     {
       "archive": "libspi_flash.a",
@@ -147085,15 +147079,21 @@
       "bytes": 243
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_clk.c.obj",
+      "archive": "libheap.a",
+      "object": "multi_heap.c.obj",
       "output_section": ".flash.text",
-      "bytes": 240
+      "bytes": 243
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".dram0.bss",
+      "bytes": 240
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "esp_clk.c.obj",
+      "output_section": ".flash.text",
       "bytes": 240
     },
     {
@@ -147145,14 +147145,14 @@
       "bytes": 227
     },
     {
-      "archive": "libesp_coex.a",
-      "object": "esp_coex_adapter.c.obj",
+      "archive": "libesp_system.a",
+      "object": "freertos_hooks.c.obj",
       "output_section": ".flash.text",
       "bytes": 225
     },
     {
-      "archive": "libesp_system.a",
-      "object": "freertos_hooks.c.obj",
+      "archive": "libesp_coex.a",
+      "object": "esp_coex_adapter.c.obj",
       "output_section": ".flash.text",
       "bytes": 225
     },
@@ -147182,14 +147182,14 @@
     },
     {
       "archive": "libbootloader_support.a",
-      "object": "bootloader_flash.c.obj",
-      "output_section": ".flash.text",
+      "object": "bootloader_common_loader.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 213
     },
     {
       "archive": "libbootloader_support.a",
-      "object": "bootloader_common_loader.c.obj",
-      "output_section": ".flash.rodata",
+      "object": "bootloader_flash.c.obj",
+      "output_section": ".flash.text",
       "bytes": 213
     },
     {
@@ -147206,13 +147206,13 @@
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-fclose.o",
+      "object": "libc_a-stdio.o",
       "output_section": ".iram0.text",
       "bytes": 206
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-stdio.o",
+      "object": "libc_a-fclose.o",
       "output_section": ".iram0.text",
       "bytes": 206
     },
@@ -147295,14 +147295,14 @@
       "bytes": 192
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "rtc_module.c.obj",
+      "archive": "libcoexist.a",
+      "object": "coexist_core.o",
       "output_section": ".flash.text",
       "bytes": 190
     },
     {
-      "archive": "libcoexist.a",
-      "object": "coexist_core.o",
+      "archive": "libesp_hw_support.a",
+      "object": "rtc_module.c.obj",
       "output_section": ".flash.text",
       "bytes": 190
     },
@@ -147314,15 +147314,21 @@
     },
     {
       "archive": "libstdc++.a",
+      "object": "eh_globals.o",
+      "output_section": ".flash.text",
+      "bytes": 186
+    },
+    {
+      "archive": "libstdc++.a",
       "object": "eh_throw.o",
       "output_section": ".flash.text",
       "bytes": 186
     },
     {
       "archive": "libstdc++.a",
-      "object": "eh_globals.o",
+      "object": "eh_catch.o",
       "output_section": ".flash.text",
-      "bytes": 186
+      "bytes": 185
     },
     {
       "archive": "libesp_hw_support.a",
@@ -147337,16 +147343,16 @@
       "bytes": 185
     },
     {
-      "archive": "libstdc++.a",
-      "object": "eh_catch.o",
-      "output_section": ".flash.text",
-      "bytes": 185
-    },
-    {
       "archive": "libnewlib.a",
       "object": "locks.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 184
+    },
+    {
+      "archive": "libfreertos.a",
+      "object": "timers.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 181
     },
     {
       "archive": "libespcoredump.a",
@@ -147357,12 +147363,6 @@
     {
       "archive": "libnvs_flash.a",
       "object": "nvs_api.cpp.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 181
-    },
-    {
-      "archive": "libfreertos.a",
-      "object": "timers.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 181
     },
@@ -147397,15 +147397,9 @@
       "bytes": 175
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-wsetup.o",
-      "output_section": ".iram0.text",
-      "bytes": 174
-    },
-    {
-      "archive": "libfreertos.a",
-      "object": "app_startup.c.obj",
-      "output_section": ".flash.rodata",
+      "archive": "libespcoredump.a",
+      "object": "core_dump_crc.c.obj",
+      "output_section": ".flash.text",
       "bytes": 174
     },
     {
@@ -147415,9 +147409,15 @@
       "bytes": 174
     },
     {
-      "archive": "libespcoredump.a",
-      "object": "core_dump_crc.c.obj",
-      "output_section": ".flash.text",
+      "archive": "libfreertos.a",
+      "object": "app_startup.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 174
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-wsetup.o",
+      "output_section": ".iram0.text",
       "bytes": 174
     },
     {
@@ -147434,7 +147434,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".flash.text",
       "bytes": 168
     },
@@ -147463,26 +147463,26 @@
       "bytes": 161
     },
     {
-      "archive": "libsoc.a",
-      "object": "gpio_periph.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 160
-    },
-    {
       "archive": "libFastLED.a",
       "object": "engine_events_ab4d.o",
       "output_section": ".dram0.bss",
       "bytes": 160
     },
     {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_encoder_copy.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 158
+      "archive": "libsoc.a",
+      "object": "gpio_periph.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 160
     },
     {
       "archive": "libesp_system.a",
       "object": "startup_funcs.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 158
+    },
+    {
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_encoder_copy.c.obj",
       "output_section": ".flash.text",
       "bytes": 158
     },
@@ -147505,12 +147505,6 @@
       "bytes": 150
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-vsnprintf.o",
-      "output_section": ".flash.text",
-      "bytes": 148
-    },
-    {
       "archive": "libesp_hw_support.a",
       "object": "esp_memory_utils.c.obj",
       "output_section": ".iram0.text",
@@ -147520,6 +147514,12 @@
       "archive": "libfreertos.a",
       "object": "port_common.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 148
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-vsnprintf.o",
+      "output_section": ".flash.text",
       "bytes": 148
     },
     {
@@ -147542,6 +147542,12 @@
     },
     {
       "archive": "libnewlib.a",
+      "object": "newlib_init.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 144
+    },
+    {
+      "archive": "libnewlib.a",
       "object": "abort.c.obj",
       "output_section": ".iram0.text",
       "bytes": 144
@@ -147550,12 +147556,6 @@
       "archive": "libesp_system.a",
       "object": "startup_funcs.c.obj",
       "output_section": ".flash.rodata",
-      "bytes": 144
-    },
-    {
-      "archive": "libnewlib.a",
-      "object": "newlib_init.c.obj",
-      "output_section": ".dram0.data",
       "bytes": 144
     },
     {
@@ -147577,6 +147577,12 @@
       "bytes": 141
     },
     {
+      "archive": "libesp_coex.a",
+      "object": "esp_coex_adapter.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 140
+    },
+    {
       "archive": "libesp_timer.a",
       "object": "esp_timer.c.obj",
       "output_section": ".flash.rodata",
@@ -147595,27 +147601,21 @@
       "bytes": 140
     },
     {
-      "archive": "libesp_coex.a",
-      "object": "esp_coex_adapter.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 140
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-dtoa.o",
       "output_section": ".flash.rodata",
       "bytes": 139
     },
     {
-      "archive": "libnewlib.a",
-      "object": "heap.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 138
-    },
-    {
       "archive": "libesp_app_format.a",
       "object": "esp_app_desc.c.obj",
       "output_section": ".flash.text",
+      "bytes": 138
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "heap.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 138
     },
     {
@@ -147631,20 +147631,20 @@
       "bytes": 137
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
-      "output_section": ".dram0.data",
-      "bytes": 132
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-flags.o",
       "output_section": ".flash.text",
       "bytes": 132
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-getenv_r.o",
+      "archive": "libFrameworkArduino.a",
+      "object": "esp32-hal-uart_4daa.c.o",
+      "output_section": ".dram0.data",
+      "bytes": 132
+    },
+    {
+      "archive": "libesp_rom.a",
+      "object": "esp_rom_gpio.c.obj",
       "output_section": ".iram0.text",
       "bytes": 131
     },
@@ -147655,14 +147655,14 @@
       "bytes": 131
     },
     {
-      "archive": "libesp_rom.a",
-      "object": "esp_rom_gpio.c.obj",
+      "archive": "libc.a",
+      "object": "libc_a-getenv_r.o",
       "output_section": ".iram0.text",
       "bytes": 131
     },
     {
       "archive": "libspi_flash.a",
-      "object": "spi_flash_chip_issi.c.obj",
+      "object": "spi_flash_chip_mxic.c.obj",
       "output_section": ".dram0.data",
       "bytes": 129
     },
@@ -147674,32 +147674,14 @@
     },
     {
       "archive": "libspi_flash.a",
-      "object": "spi_flash_chip_mxic.c.obj",
+      "object": "spi_flash_chip_issi.c.obj",
       "output_section": ".dram0.data",
       "bytes": 129
-    },
-    {
-      "archive": "libesp_driver_uart.a",
-      "object": "uart_vfs.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 128
-    },
-    {
-      "archive": "libesp_mm.a",
-      "object": "esp_mmu_map.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 128
     },
     {
       "archive": "libcoexist.a",
       "object": "coexist_api.o",
       "output_section": ".flash.text",
-      "bytes": 128
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "freertos_hooks.c.obj",
-      "output_section": ".dram0.bss",
       "bytes": 128
     },
     {
@@ -147709,15 +147691,33 @@
       "bytes": 128
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "spi_flash_chip_gd.c.obj",
+      "archive": "libesp_driver_uart.a",
+      "object": "uart_vfs.c.obj",
       "output_section": ".dram0.data",
-      "bytes": 127
+      "bytes": 128
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "freertos_hooks.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 128
+    },
+    {
+      "archive": "libesp_mm.a",
+      "object": "esp_mmu_map.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 128
     },
     {
       "archive": "libheap.a",
       "object": "heap_caps.c.obj",
       "output_section": ".flash.rodata",
+      "bytes": 127
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "spi_flash_chip_gd.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 127
     },
     {
@@ -147745,12 +147745,6 @@
       "bytes": 125
     },
     {
-      "archive": "libesp_system.a",
-      "object": "cache_err_int.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 124
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-utoa.o",
       "output_section": ".iram0.text",
@@ -147760,6 +147754,12 @@
       "archive": "libesp_timer.a",
       "object": "ets_timer_legacy.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 124
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "cache_err_int.c.obj",
+      "output_section": ".flash.text",
       "bytes": 124
     },
     {
@@ -147781,6 +147781,12 @@
       "bytes": 120
     },
     {
+      "archive": "libesp_system.a",
+      "object": "crosscore_int.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 119
+    },
+    {
       "archive": "libesp_mm.a",
       "object": "heap_align_hw.c.obj",
       "output_section": ".iram0.text",
@@ -147793,21 +147799,15 @@
       "bytes": 119
     },
     {
-      "archive": "libesp_system.a",
-      "object": "crosscore_int.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 119
+      "archive": "libfreertos.a",
+      "object": "heap_idf.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 118
     },
     {
       "archive": "libFastLED.a",
       "object": "led_strip_api_1847.o",
       "output_section": ".flash.text",
-      "bytes": 118
-    },
-    {
-      "archive": "libfreertos.a",
-      "object": "heap_idf.c.obj",
-      "output_section": ".iram0.text",
       "bytes": 118
     },
     {
@@ -147824,7 +147824,7 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
       "output_section": ".flash.rodata",
       "bytes": 115
     },
@@ -147859,21 +147859,21 @@
       "bytes": 109
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
-      "output_section": ".flash.text",
-      "bytes": 109
-    },
-    {
       "archive": "libesp_system.a",
       "object": "esp_ipc.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 109
     },
     {
-      "archive": "libvfs.a",
-      "object": "vfs.c.obj",
-      "output_section": ".flash.rodata",
+      "archive": "libFrameworkArduino.a",
+      "object": "esp32-hal-bt_309b.c.o",
+      "output_section": ".flash.text",
+      "bytes": 109
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "eh_terminate.o",
+      "output_section": ".flash.text",
       "bytes": 108
     },
     {
@@ -147883,9 +147883,9 @@
       "bytes": 108
     },
     {
-      "archive": "libstdc++.a",
-      "object": "eh_terminate.o",
-      "output_section": ".flash.text",
+      "archive": "libvfs.a",
+      "object": "vfs.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 108
     },
     {
@@ -147913,14 +147913,14 @@
       "bytes": 104
     },
     {
-      "archive": "libgcc.a",
-      "object": "lib2funcs.o",
+      "archive": "libspi_flash.a",
+      "object": "spi_flash_chip_issi.c.obj",
       "output_section": ".iram0.text",
       "bytes": 104
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "spi_flash_chip_issi.c.obj",
+      "archive": "libgcc.a",
+      "object": "lib2funcs.o",
       "output_section": ".iram0.text",
       "bytes": 104
     },
@@ -147931,8 +147931,8 @@
       "bytes": 103
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-fputc.o",
+      "archive": "libxtensa.a",
+      "object": "xtensa_intr.c.obj",
       "output_section": ".flash.text",
       "bytes": 102
     },
@@ -147943,14 +147943,14 @@
       "bytes": 102
     },
     {
-      "archive": "libxtensa.a",
-      "object": "xtensa_intr.c.obj",
+      "archive": "libc.a",
+      "object": "libm_a-s_frexp.o",
       "output_section": ".flash.text",
       "bytes": 102
     },
     {
       "archive": "libc.a",
-      "object": "libm_a-s_frexp.o",
+      "object": "libc_a-fputc.o",
       "output_section": ".flash.text",
       "bytes": 102
     },
@@ -147967,15 +147967,15 @@
       "bytes": 99
     },
     {
-      "archive": "libesp_coex.a",
-      "object": "esp_coex_adapter.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 96
-    },
-    {
       "archive": "libesp_system.a",
       "object": "esp_system_chip.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 96
+    },
+    {
+      "archive": "libesp_coex.a",
+      "object": "esp_coex_adapter.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 96
     },
     {
@@ -147997,14 +147997,14 @@
       "bytes": 94
     },
     {
-      "archive": "libheap.a",
-      "object": "multi_heap.c.obj",
+      "archive": "libesp_hw_support.a",
+      "object": "periph_ctrl.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 94
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "periph_ctrl.c.obj",
+      "archive": "libheap.a",
+      "object": "multi_heap.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 94
     },
@@ -148013,12 +148013,6 @@
       "object": "reset_reason.c.obj",
       "output_section": ".dram0.data",
       "bytes": 91
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "_divsf3.o",
-      "output_section": ".flash.text",
-      "bytes": 89
     },
     {
       "archive": "libFastLED.a",
@@ -148039,6 +148033,18 @@
       "bytes": 89
     },
     {
+      "archive": "libgcc.a",
+      "object": "_divsf3.o",
+      "output_section": ".flash.text",
+      "bytes": 89
+    },
+    {
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_tx.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 88
+    },
+    {
       "archive": "libbt.a",
       "object": "bt.c.obj",
       "output_section": ".dram0.data",
@@ -148051,21 +148057,15 @@
       "bytes": 88
     },
     {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_tx.c.obj",
+      "archive": "libesp_hw_support.a",
+      "object": "cpu.c.obj",
       "output_section": ".dram0.data",
-      "bytes": 88
+      "bytes": 86
     },
     {
       "archive": "libesp_driver_rmt.a",
       "object": "rmt_encoder.c.obj",
       "output_section": ".flash.text",
-      "bytes": 86
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "cpu.c.obj",
-      "output_section": ".dram0.data",
       "bytes": 86
     },
     {
@@ -148087,27 +148087,27 @@
       "bytes": 84
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "Stream_704f.cpp.o",
-      "output_section": ".flash.text",
-      "bytes": 83
-    },
-    {
       "archive": "libstdc++.a",
       "object": "eh_aux_runtime.o",
       "output_section": ".flash.rodata",
       "bytes": 83
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "flash_ops.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 82
+      "archive": "libFrameworkArduino.a",
+      "object": "Stream_5cfa.cpp.o",
+      "output_section": ".flash.text",
+      "bytes": 83
     },
     {
       "archive": "libheap.a",
       "object": "multi_heap_poisoning.c.obj",
       "output_section": ".flash.text",
+      "bytes": 82
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "flash_ops.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 82
     },
     {
@@ -148117,15 +148117,15 @@
       "bytes": 81
     },
     {
-      "archive": "libstdc++.a",
-      "object": "eh_personality.o",
-      "output_section": ".flash.rodata",
+      "archive": "libFrameworkArduino.a",
+      "object": "Esp_768a.cpp.o",
+      "output_section": ".flash.text",
       "bytes": 80
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
-      "output_section": ".flash.text",
+      "archive": "libstdc++.a",
+      "object": "eh_personality.o",
+      "output_section": ".flash.rodata",
       "bytes": 80
     },
     {
@@ -148147,26 +148147,26 @@
       "bytes": 79
     },
     {
-      "archive": "liblog.a",
-      "object": "log.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 78
-    },
-    {
       "archive": "libstdc++.a",
       "object": "new_op.o",
       "output_section": ".flash.text",
       "bytes": 78
     },
     {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_encoder.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 76
+      "archive": "liblog.a",
+      "object": "log.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 78
     },
     {
       "archive": "libesp_system.a",
       "object": "startup.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 76
+    },
+    {
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_encoder.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 76
     },
@@ -148189,28 +148189,16 @@
       "bytes": 73
     },
     {
-      "archive": null,
-      "object": "main_34d2.cpp.o",
-      "output_section": ".dram0.bss",
-      "bytes": 72
-    },
-    {
       "archive": "libesp_mm.a",
       "object": "ext_mem_layout.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 72
     },
     {
-      "archive": "libesp_psram.a",
-      "object": "esp_psram.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 69
-    },
-    {
-      "archive": "libesp_timer.a",
-      "object": "system_time.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 69
+      "archive": null,
+      "object": "main_34d2.cpp.o",
+      "output_section": ".dram0.bss",
+      "bytes": 72
     },
     {
       "archive": "libhal.a",
@@ -148225,15 +148213,27 @@
       "bytes": 69
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
-      "output_section": ".dram0.bss",
-      "bytes": 68
+      "archive": "libesp_timer.a",
+      "object": "system_time.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 69
+    },
+    {
+      "archive": "libesp_psram.a",
+      "object": "esp_psram.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 69
     },
     {
       "archive": "libesp_system.a",
       "object": "reset_reason.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 68
+    },
+    {
+      "archive": "libFrameworkArduino.a",
+      "object": "esp32-hal-uart_4daa.c.o",
+      "output_section": ".dram0.bss",
       "bytes": 68
     },
     {
@@ -148255,15 +148255,15 @@
       "bytes": 67
     },
     {
-      "archive": "libesp_system.a",
-      "object": "esp_ipc.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 66
-    },
-    {
       "archive": "libstdc++.a",
       "object": "cow-string-inst.o",
       "output_section": ".flash.rodata",
+      "bytes": 66
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "esp_ipc.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 66
     },
     {
@@ -148279,14 +148279,14 @@
       "bytes": 64
     },
     {
-      "archive": "libesp_system.a",
-      "object": "panic_handler_asm.S.obj",
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_encoder.c.obj",
       "output_section": ".iram0.text",
       "bytes": 64
     },
     {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_encoder.c.obj",
+      "archive": "libesp_system.a",
+      "object": "panic_handler_asm.S.obj",
       "output_section": ".iram0.text",
       "bytes": 64
     },
@@ -148295,12 +148295,6 @@
       "object": "multi_heap.c.obj",
       "output_section": ".dram0.data",
       "bytes": 63
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "panic_handler.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 62
     },
     {
       "archive": "libxt_hal.a",
@@ -148315,20 +148309,14 @@
       "bytes": 62
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "HardwareSerial_6b49.cpp.o",
-      "output_section": ".flash.rodata",
-      "bytes": 60
+      "archive": "libesp_system.a",
+      "object": "panic_handler.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 62
     },
     {
-      "archive": "libFastLED.a",
-      "object": "led_strip_rmt_encoder_7ffd.o",
-      "output_section": ".flash.rodata",
-      "bytes": 60
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "unwind-dw2-fde.o",
+      "archive": "libstdc++.a",
+      "object": "stdexcept.o",
       "output_section": ".flash.rodata",
       "bytes": 60
     },
@@ -148339,14 +148327,26 @@
       "bytes": 60
     },
     {
+      "archive": "libgcc.a",
+      "object": "unwind-dw2-fde.o",
+      "output_section": ".flash.rodata",
+      "bytes": 60
+    },
+    {
+      "archive": "libFastLED.a",
+      "object": "led_strip_rmt_encoder_7ffd.o",
+      "output_section": ".flash.rodata",
+      "bytes": 60
+    },
+    {
       "archive": "libc.a",
       "object": "libc_a-strlcpy.o",
       "output_section": ".iram0.text",
       "bytes": 60
     },
     {
-      "archive": "libstdc++.a",
-      "object": "stdexcept.o",
+      "archive": "libFrameworkArduino.a",
+      "object": "HardwareSerial_99f6.cpp.o",
       "output_section": ".flash.rodata",
       "bytes": 60
     },
@@ -148363,14 +148363,14 @@
       "bytes": 57
     },
     {
-      "archive": "libstdc++.a",
-      "object": "bad_alloc.o",
+      "archive": "libnvs_flash.a",
+      "object": "nvs_partition_lookup.cpp.obj",
       "output_section": ".flash.text",
       "bytes": 57
     },
     {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_partition_lookup.cpp.obj",
+      "archive": "libstdc++.a",
+      "object": "bad_alloc.o",
       "output_section": ".flash.text",
       "bytes": 57
     },
@@ -148381,9 +148381,9 @@
       "bytes": 57
     },
     {
-      "archive": "libFastLED.a",
-      "object": "cled_controller_8ac7.o",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_psram.a",
+      "object": "esp_psram.c.obj",
+      "output_section": ".flash.text",
       "bytes": 56
     },
     {
@@ -148393,9 +148393,9 @@
       "bytes": 56
     },
     {
-      "archive": "libesp_psram.a",
-      "object": "esp_psram.c.obj",
-      "output_section": ".flash.text",
+      "archive": "libFastLED.a",
+      "object": "cled_controller_8ac7.o",
+      "output_section": ".flash.rodata",
       "bytes": 56
     },
     {
@@ -148417,12 +148417,6 @@
       "bytes": 55
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-strncmp.o",
-      "output_section": ".iram0.text",
-      "bytes": 54
-    },
-    {
       "archive": "libbt.a",
       "object": "hli_api.c.obj",
       "output_section": ".iram0.text",
@@ -148436,25 +148430,19 @@
     },
     {
       "archive": "libc.a",
+      "object": "libc_a-strncmp.o",
+      "output_section": ".iram0.text",
+      "bytes": 54
+    },
+    {
+      "archive": "libc.a",
       "object": "libc_a-printf.o",
       "output_section": ".flash.text",
       "bytes": 53
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_clk.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 52
-    },
-    {
       "archive": "libFastLED.a",
       "object": "strip_rmt_6c4b.o",
-      "output_section": ".flash.rodata",
-      "bytes": 52
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "unwind-dw2-xtensa.o",
       "output_section": ".flash.rodata",
       "bytes": 52
     },
@@ -148465,14 +148453,26 @@
       "bytes": 52
     },
     {
+      "archive": "libesp_hw_support.a",
+      "object": "esp_clk.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 52
+    },
+    {
       "archive": "libesp_psram.a",
       "object": "esp_psram.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 52
     },
     {
-      "archive": "libhal.a",
-      "object": "mpu_hal.c.obj",
+      "archive": "libgcc.a",
+      "object": "unwind-dw2-xtensa.o",
+      "output_section": ".flash.rodata",
+      "bytes": 52
+    },
+    {
+      "archive": "libcoexist.a",
+      "object": "coexist_hw.o",
       "output_section": ".flash.text",
       "bytes": 51
     },
@@ -148483,8 +148483,8 @@
       "bytes": 51
     },
     {
-      "archive": "libcoexist.a",
-      "object": "coexist_hw.o",
+      "archive": "libhal.a",
+      "object": "mpu_hal.c.obj",
       "output_section": ".flash.text",
       "bytes": 51
     },
@@ -148501,15 +148501,15 @@
       "bytes": 50
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "spi_flash_os_func_app.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 48
-    },
-    {
       "archive": "libfreertos.a",
       "object": "port.c.obj",
       "output_section": ".dram0.bss",
+      "bytes": 48
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "spi_flash_os_func_app.c.obj",
+      "output_section": ".flash.text",
       "bytes": 48
     },
     {
@@ -148525,15 +148525,15 @@
       "bytes": 47
     },
     {
-      "archive": "libstdc++.a",
-      "object": "bad_array_new.o",
-      "output_section": ".flash.rodata",
-      "bytes": 46
-    },
-    {
       "archive": "libesp_hw_support.a",
       "object": "cpu_region_protect.c.obj",
       "output_section": ".flash.text",
+      "bytes": 46
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "bad_array_new.o",
+      "output_section": ".flash.rodata",
       "bytes": 46
     },
     {
@@ -148562,15 +148562,33 @@
     },
     {
       "archive": "libstdc++.a",
-      "object": "si_class_type_info.o",
+      "object": "class_type_info.o",
       "output_section": ".flash.rodata",
       "bytes": 44
     },
     {
       "archive": "libstdc++.a",
-      "object": "class_type_info.o",
+      "object": "si_class_type_info.o",
       "output_section": ".flash.rodata",
       "bytes": 44
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-wctomb_r.o",
+      "output_section": ".iram0.text",
+      "bytes": 41
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "eh_aux_runtime.o",
+      "output_section": ".flash.text",
+      "bytes": 41
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "startup.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 41
     },
     {
       "archive": "libesp_system.a",
@@ -148583,30 +148601,6 @@
       "object": "dport_access_common.c.obj",
       "output_section": ".flash.text",
       "bytes": 41
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "startup.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 41
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "eh_aux_runtime.o",
-      "output_section": ".flash.text",
-      "bytes": 41
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-wctomb_r.o",
-      "output_section": ".iram0.text",
-      "bytes": 41
-    },
-    {
-      "archive": "libspi_flash.a",
-      "object": "spi_flash_os_func_noos.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 40
     },
     {
       "archive": "libvfs.a",
@@ -148627,16 +148621,16 @@
       "bytes": 40
     },
     {
+      "archive": "libspi_flash.a",
+      "object": "spi_flash_os_func_noos.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 40
+    },
+    {
       "archive": "libc.a",
       "object": "libc_a-vprintf.o",
       "output_section": ".flash.text",
       "bytes": 39
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-mbtowc_r.o",
-      "output_section": ".flash.text",
-      "bytes": 38
     },
     {
       "archive": "libnewlib.a",
@@ -148651,9 +148645,15 @@
       "bytes": 38
     },
     {
-      "archive": "libefuse.a",
-      "object": "esp_efuse_startup.c.obj",
+      "archive": "libc.a",
+      "object": "libc_a-mbtowc_r.o",
       "output_section": ".flash.text",
+      "bytes": 38
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-utoa.o",
+      "output_section": ".dram0.data",
       "bytes": 37
     },
     {
@@ -148663,21 +148663,21 @@
       "bytes": 37
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-utoa.o",
-      "output_section": ".dram0.data",
+      "archive": "libefuse.a",
+      "object": "esp_efuse_startup.c.obj",
+      "output_section": ".flash.text",
       "bytes": 37
-    },
-    {
-      "archive": "libxtensa.a",
-      "object": "xtensa_vectors.S.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 36
     },
     {
       "archive": "libesp_driver_gpio.a",
       "object": "gpio.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 36
+    },
+    {
+      "archive": "libxtensa.a",
+      "object": "xtensa_vectors.S.obj",
+      "output_section": ".flash.rodata",
       "bytes": 36
     },
     {
@@ -148687,8 +148687,14 @@
       "bytes": 36
     },
     {
-      "archive": "libstdc++.a",
-      "object": "new_opvnt.o",
+      "archive": "libfreertos.a",
+      "object": "xtensa_init.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 35
+    },
+    {
+      "archive": "liblog.a",
+      "object": "log_level.c.obj",
       "output_section": ".flash.text",
       "bytes": 35
     },
@@ -148699,15 +148705,9 @@
       "bytes": 35
     },
     {
-      "archive": "liblog.a",
-      "object": "log_level.c.obj",
+      "archive": "libstdc++.a",
+      "object": "new_opvnt.o",
       "output_section": ".flash.text",
-      "bytes": 35
-    },
-    {
-      "archive": "libfreertos.a",
-      "object": "xtensa_init.c.obj",
-      "output_section": ".iram0.text",
       "bytes": 35
     },
     {
@@ -148723,14 +148723,8 @@
       "bytes": 35
     },
     {
-      "archive": "libesp_system.a",
-      "object": "task_wdt.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 33
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "panic.c.obj",
+      "archive": "libsoc.a",
+      "object": "dport_access.c.obj",
       "output_section": ".iram0.text",
       "bytes": 33
     },
@@ -148741,58 +148735,28 @@
       "bytes": 33
     },
     {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_platform.cpp.obj",
-      "output_section": ".flash.text",
-      "bytes": 33
-    },
-    {
       "archive": "libesp_hw_support.a",
       "object": "sar_periph_ctrl.c.obj",
       "output_section": ".flash.text",
       "bytes": 33
     },
     {
-      "archive": "libsoc.a",
-      "object": "dport_access.c.obj",
+      "archive": "libnvs_flash.a",
+      "object": "nvs_platform.cpp.obj",
+      "output_section": ".flash.text",
+      "bytes": 33
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "panic.c.obj",
       "output_section": ".iram0.text",
       "bytes": 33
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-envlock.o",
-      "output_section": ".iram0.text",
-      "bytes": 32
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "sleep_modes.c.obj",
-      "output_section": ".rtc_noinit",
-      "bytes": 32
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "rtc_module.c.obj",
+      "archive": "libesp_system.a",
+      "object": "task_wdt.c.obj",
       "output_section": ".dram0.data",
-      "bytes": 32
-    },
-    {
-      "archive": "libespcoredump.a",
-      "object": "core_dump_elf.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 32
-    },
-    {
-      "archive": "libxt_hal.a",
-      "object": "interrupts--intlevel.o",
-      "output_section": ".flash.rodata",
-      "bytes": 32
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "spi_share_hw_ctrl.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 32
+      "bytes": 33
     },
     {
       "archive": "libesp_system.a",
@@ -148807,6 +148771,36 @@
       "bytes": 32
     },
     {
+      "archive": "libesp_hw_support.a",
+      "object": "spi_share_hw_ctrl.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 32
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "sleep_modes.c.obj",
+      "output_section": ".rtc_noinit",
+      "bytes": 32
+    },
+    {
+      "archive": "libxt_hal.a",
+      "object": "interrupts--intlevel.o",
+      "output_section": ".flash.rodata",
+      "bytes": 32
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "rtc_module.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 32
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-envlock.o",
+      "output_section": ".iram0.text",
+      "bytes": 32
+    },
+    {
       "archive": "libnewlib.a",
       "object": "init.c.obj",
       "output_section": ".flash.text",
@@ -148816,6 +148810,12 @@
       "archive": "libesp_system.a",
       "object": "esp_ipc_isr_port.c.obj",
       "output_section": ".iram0.text",
+      "bytes": 32
+    },
+    {
+      "archive": "libespcoredump.a",
+      "object": "core_dump_elf.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 32
     },
     {
@@ -148831,6 +148831,18 @@
       "bytes": 31
     },
     {
+      "archive": "libesp_hw_support.a",
+      "object": "cpu.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 30
+    },
+    {
+      "archive": "libesp_mm.a",
+      "object": "esp_cache_utils.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 30
+    },
+    {
       "archive": "libFastLED.a",
       "object": "io_e462.o",
       "output_section": ".flash.text",
@@ -148843,33 +148855,21 @@
       "bytes": 30
     },
     {
-      "archive": "libesp_mm.a",
-      "object": "esp_cache_utils.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 30
-    },
-    {
       "archive": "libesp_system.a",
       "object": "reset_reason.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 30
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "cpu.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 30
+      "archive": "libc.a",
+      "object": "libc_a-strchr.o",
+      "output_section": ".iram0.text",
+      "bytes": 29
     },
     {
       "archive": "libnewlib.a",
       "object": "init.c.obj",
       "output_section": ".flash.rodata",
-      "bytes": 29
-    },
-    {
-      "archive": "libnewlib.a",
-      "object": "stdatomic_s32c1i.c.obj",
-      "output_section": ".iram0.text",
       "bytes": 29
     },
     {
@@ -148879,8 +148879,8 @@
       "bytes": 29
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-strchr.o",
+      "archive": "libnewlib.a",
+      "object": "stdatomic_s32c1i.c.obj",
       "output_section": ".iram0.text",
       "bytes": 29
     },
@@ -148909,9 +148909,9 @@
       "bytes": 26
     },
     {
-      "archive": "libnewlib.a",
-      "object": "syscalls.c.obj",
-      "output_section": ".flash.text",
+      "archive": "libspi_flash.a",
+      "object": "spi_flash_os_func_app.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 25
     },
     {
@@ -148921,14 +148921,26 @@
       "bytes": 25
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "spi_flash_os_func_app.c.obj",
-      "output_section": ".flash.rodata",
+      "archive": "libnewlib.a",
+      "object": "syscalls.c.obj",
+      "output_section": ".flash.text",
       "bytes": 25
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-sysgettod.o",
+      "output_section": ".flash.text",
+      "bytes": 24
     },
     {
       "archive": "libefuse.a",
       "object": "esp_efuse_startup.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 24
+    },
+    {
+      "archive": "libFastLED.a",
+      "object": "crgb_06be.o",
       "output_section": ".flash.rodata",
       "bytes": 24
     },
@@ -148939,27 +148951,15 @@
       "bytes": 24
     },
     {
-      "archive": "libFastLED.a",
-      "object": "crgb_06be.o",
-      "output_section": ".flash.rodata",
-      "bytes": 24
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-sysgettod.o",
-      "output_section": ".flash.text",
+      "archive": "libesp_timer.a",
+      "object": "esp_timer_impl_common.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 24
     },
     {
       "archive": "libc.a",
       "object": "libc_a-getenv.o",
       "output_section": ".flash.text",
-      "bytes": 24
-    },
-    {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer_impl_common.c.obj",
-      "output_section": ".dram0.data",
       "bytes": 24
     },
     {
@@ -148975,26 +148975,20 @@
       "bytes": 23
     },
     {
-      "archive": "libesp_rom.a",
-      "object": "esp_rom_sys.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 22
-    },
-    {
       "archive": "libesp_hw_support.a",
       "object": "intr_alloc.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 22
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-cxa_atexit.o",
-      "output_section": ".flash.text",
-      "bytes": 21
+      "archive": "libesp_rom.a",
+      "object": "esp_rom_sys.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 22
     },
     {
       "archive": "libc.a",
-      "object": "libc_a-fseek.o",
+      "object": "libc_a-cxa_atexit.o",
       "output_section": ".flash.text",
       "bytes": 21
     },
@@ -149005,15 +148999,39 @@
       "bytes": 21
     },
     {
-      "archive": "libxtensa.a",
-      "object": "xtensa_vectors.S.obj",
-      "output_section": ".dram0.data",
+      "archive": "libc.a",
+      "object": "libc_a-fseek.o",
+      "output_section": ".flash.text",
+      "bytes": 21
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "new_handler.o",
+      "output_section": ".flash.text",
+      "bytes": 20
+    },
+    {
+      "archive": "libcxx.a",
+      "object": "cxx_guards.cpp.obj",
+      "output_section": ".dram0.bss",
       "bytes": 20
     },
     {
       "archive": "libesp_driver_uart.a",
       "object": "uart_vfs.c.obj",
       "output_section": ".dram0.bss",
+      "bytes": 20
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "panic.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 20
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "cpu_region_protect.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 20
     },
     {
@@ -149029,26 +149047,8 @@
       "bytes": 20
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "cpu_region_protect.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 20
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "new_handler.o",
-      "output_section": ".flash.text",
-      "bytes": 20
-    },
-    {
-      "archive": "libcxx.a",
-      "object": "cxx_guards.cpp.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 20
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "panic.c.obj",
+      "archive": "libxtensa.a",
+      "object": "xtensa_vectors.S.obj",
       "output_section": ".dram0.data",
       "bytes": 20
     },
@@ -149071,15 +149071,15 @@
       "bytes": 18
     },
     {
-      "archive": "liblog.a",
-      "object": "util.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 17
-    },
-    {
       "archive": "libFastLED.a",
       "object": "downscale_fb72.o",
       "output_section": ".flash.text",
+      "bytes": 17
+    },
+    {
+      "archive": "liblog.a",
+      "object": "util.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 17
     },
     {
@@ -149089,20 +149089,14 @@
       "bytes": 17
     },
     {
-      "archive": "libstdc++.a",
-      "object": "cow-string-inst.o",
-      "output_section": ".dram0.bss",
+      "archive": "libesp_pm.a",
+      "object": "pm_locks.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 16
     },
     {
-      "archive": "libesp_system.a",
-      "object": "esp_ipc_isr_handler.S.obj",
-      "output_section": ".dram0.data",
-      "bytes": 16
-    },
-    {
-      "archive": "libesp_vfs_console.a",
-      "object": "vfs_console.c.obj",
+      "archive": "libespressif__esp_diagnostics.a",
+      "object": "esp_diagnostics_log_hook.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 16
     },
@@ -149113,20 +149107,14 @@
       "bytes": 16
     },
     {
-      "archive": "libmbedcrypto.a",
-      "object": "sha.c.obj",
-      "output_section": ".dram0.data",
+      "archive": "libstdc++.a",
+      "object": "eh_terminate.o",
+      "output_section": ".flash.rodata",
       "bytes": 16
     },
     {
-      "archive": "libesp_pm.a",
-      "object": "pm_locks.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 16
-    },
-    {
-      "archive": "libespcoredump.a",
-      "object": "core_dump_flash.c.obj",
+      "archive": "libFrameworkArduino.a",
+      "object": "WString_de5f.cpp.o",
       "output_section": ".dram0.bss",
       "bytes": 16
     },
@@ -149137,15 +149125,15 @@
       "bytes": 16
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
-      "output_section": ".dram0.bss",
+      "archive": "libesp_system.a",
+      "object": "esp_ipc_isr_handler.S.obj",
+      "output_section": ".dram0.data",
       "bytes": 16
     },
     {
-      "archive": "libespressif__esp_diagnostics.a",
-      "object": "esp_diagnostics_log_hook.c.obj",
-      "output_section": ".dram0.bss",
+      "archive": "libstdc++.a",
+      "object": "new_opvnt.o",
+      "output_section": ".flash.rodata",
       "bytes": 16
     },
     {
@@ -149155,9 +149143,9 @@
       "bytes": 16
     },
     {
-      "archive": "libbootloader_support.a",
-      "object": "bootloader_common_loader.c.obj",
-      "output_section": ".rtc_noinit",
+      "archive": "libnvs_flash.a",
+      "object": "nvs_partition_manager.cpp.obj",
+      "output_section": ".flash.rodata",
       "bytes": 16
     },
     {
@@ -149168,26 +149156,38 @@
     },
     {
       "archive": "libstdc++.a",
-      "object": "eh_terminate.o",
-      "output_section": ".flash.rodata",
+      "object": "cow-string-inst.o",
+      "output_section": ".dram0.bss",
       "bytes": 16
     },
     {
-      "archive": "libstdc++.a",
-      "object": "new_opvnt.o",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_vfs_console.a",
+      "object": "vfs_console.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 16
+    },
+    {
+      "archive": "libmbedcrypto.a",
+      "object": "sha.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 16
+    },
+    {
+      "archive": "libespcoredump.a",
+      "object": "core_dump_flash.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 16
+    },
+    {
+      "archive": "libbootloader_support.a",
+      "object": "bootloader_common_loader.c.obj",
+      "output_section": ".rtc_noinit",
       "bytes": 16
     },
     {
       "archive": "libstdc++.a",
       "object": "eh_alloc.o",
       "output_section": ".dram0.bss",
-      "bytes": 16
-    },
-    {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_partition_manager.cpp.obj",
-      "output_section": ".flash.rodata",
       "bytes": 16
     },
     {
@@ -149204,7 +149204,7 @@
     },
     {
       "archive": "libstdc++.a",
-      "object": "del_opv.o",
+      "object": "del_op.o",
       "output_section": ".flash.text",
       "bytes": 14
     },
@@ -149222,7 +149222,7 @@
     },
     {
       "archive": "libstdc++.a",
-      "object": "del_op.o",
+      "object": "del_opv.o",
       "output_section": ".flash.text",
       "bytes": 14
     },
@@ -149233,21 +149233,9 @@
       "bytes": 13
     },
     {
-      "archive": "libefuse.a",
-      "object": "esp_efuse_api.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 13
-    },
-    {
       "archive": "libc.a",
       "object": "libc_a-div.o",
       "output_section": ".iram0.text",
-      "bytes": 13
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "eh_globals.o",
-      "output_section": ".dram0.bss",
       "bytes": 13
     },
     {
@@ -149257,8 +149245,20 @@
       "bytes": 13
     },
     {
+      "archive": "libefuse.a",
+      "object": "esp_efuse_api.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 13
+    },
+    {
       "archive": "libmbedcrypto.a",
       "object": "sha.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 13
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "eh_globals.o",
       "output_section": ".dram0.bss",
       "bytes": 13
     },
@@ -149269,21 +149269,21 @@
       "bytes": 12
     },
     {
-      "archive": "libcxx.a",
-      "object": "cxx_init.cpp.obj",
-      "output_section": ".flash.text",
-      "bytes": 12
-    },
-    {
       "archive": "libnewlib.a",
       "object": "esp_time_impl.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 12
     },
     {
-      "archive": "libstdc++.a",
-      "object": "eh_globals.o",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_system.a",
+      "object": "esp_ipc_isr.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 12
+    },
+    {
+      "archive": "libesp_driver_uart.a",
+      "object": "uart.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 12
     },
     {
@@ -149296,18 +149296,6 @@
       "archive": "libstdc++.a",
       "object": "tinfo.o",
       "output_section": ".flash.text",
-      "bytes": 12
-    },
-    {
-      "archive": "libesp_driver_rmt.a",
-      "object": "rmt_common.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 12
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "esp_ipc_isr.c.obj",
-      "output_section": ".dram0.data",
       "bytes": 12
     },
     {
@@ -149324,14 +149312,26 @@
     },
     {
       "archive": "libstdc++.a",
-      "object": "cow-stdexcept.o",
+      "object": "eh_globals.o",
       "output_section": ".flash.rodata",
       "bytes": 12
     },
     {
-      "archive": "libesp_driver_uart.a",
-      "object": "uart.c.obj",
+      "archive": "libesp_driver_rmt.a",
+      "object": "rmt_common.c.obj",
       "output_section": ".dram0.bss",
+      "bytes": 12
+    },
+    {
+      "archive": "libcxx.a",
+      "object": "cxx_init.cpp.obj",
+      "output_section": ".flash.text",
+      "bytes": 12
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "cow-stdexcept.o",
+      "output_section": ".flash.rodata",
       "bytes": 12
     },
     {
@@ -149339,6 +149339,24 @@
       "object": "panic_handler.c.obj",
       "output_section": ".flash.rodata",
       "bytes": 11
+    },
+    {
+      "archive": "libesp_psram.a",
+      "object": "esp_psram.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 10
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "esp_clk_tree.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 10
+    },
+    {
+      "archive": "libesp_app_format.a",
+      "object": "esp_app_desc.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 10
     },
     {
       "archive": "libcoexist.a",
@@ -149353,24 +149371,6 @@
       "bytes": 10
     },
     {
-      "archive": "libesp_psram.a",
-      "object": "esp_psram.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 10
-    },
-    {
-      "archive": "libesp_app_format.a",
-      "object": "esp_app_desc.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 10
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_clk_tree.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 10
-    },
-    {
       "archive": "libbootloader_support.a",
       "object": "flash_encrypt.c.obj",
       "output_section": ".iram0.text",
@@ -149378,7 +149378,13 @@
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "esp32-hal-cpu_12c4.c.o",
+      "output_section": ".dram0.bss",
+      "bytes": 9
+    },
+    {
+      "archive": "libFrameworkArduino.a",
+      "object": "main_8ae5.cpp.o",
       "output_section": ".flash.rodata",
       "bytes": 9
     },
@@ -149395,39 +149401,21 @@
       "bytes": 9
     },
     {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer_impl_common.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 9
-    },
-    {
       "archive": "libesp_hw_support.a",
       "object": "esp_clk.c.obj",
       "output_section": ".dram0.data",
       "bytes": 9
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-cpu_bfee.c.o",
-      "output_section": ".dram0.bss",
+      "archive": "libesp_timer.a",
+      "object": "esp_timer_impl_common.c.obj",
+      "output_section": ".iram0.text",
       "bytes": 9
     },
     {
-      "archive": "libfreertos.a",
-      "object": "timers.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "panic_handler.c.obj",
+      "archive": "libesp_timer.a",
+      "object": "system_time.c.obj",
       "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libcoexist.a",
-      "object": "coexist_api.o",
-      "output_section": ".dram0.data",
       "bytes": 8
     },
     {
@@ -149437,39 +149425,15 @@
       "bytes": 8
     },
     {
-      "archive": "libbootloader_support.a",
-      "object": "bootloader_mem.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 8
-    },
-    {
-      "archive": "libpthread.a",
-      "object": "pthread_semaphore.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "esp_gpio_reserve.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_pm.a",
-      "object": "pm_locks.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_timer.a",
-      "object": "system_time.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
       "archive": "libesp_mm.a",
       "object": "cache_esp32.c.obj",
       "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_security.a",
+      "object": "init.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 8
     },
     {
@@ -149485,38 +149449,20 @@
       "bytes": 8
     },
     {
-      "archive": "libnewlib.a",
-      "object": "stdatomic.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "regi2c_ctrl.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
-      "archive": "libpthread.a",
-      "object": "pthread_rwlock.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 8
-    },
-    {
       "archive": "libesp_timer.a",
       "object": "esp_timer.c.obj",
       "output_section": ".dram0.data",
       "bytes": 8
     },
     {
-      "archive": "libesp_app_format.a",
-      "object": "esp_app_desc.c.obj",
-      "output_section": ".flash.rodata",
+      "archive": "libesp_pm.a",
+      "object": "pm_locks.c.obj",
+      "output_section": ".flash.text",
       "bytes": 8
     },
     {
-      "archive": "libnewlib.a",
-      "object": "locks.c.obj",
+      "archive": "libesp_hw_support.a",
+      "object": "esp_gpio_reserve.c.obj",
       "output_section": ".dram0.data",
       "bytes": 8
     },
@@ -149527,14 +149473,50 @@
       "bytes": 8
     },
     {
-      "archive": "libxt_hal.a",
-      "object": "int_asm--set_intclear.o",
-      "output_section": ".iram0.text",
+      "archive": "libnewlib.a",
+      "object": "locks.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_app_format.a",
+      "object": "esp_app_desc.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "panic_handler.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "freertos_hooks.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libFastLED.a",
+      "object": "allocator_62a1.o",
+      "output_section": ".dram0.data",
       "bytes": 8
     },
     {
       "archive": "libesp_hw_support.a",
-      "object": "intr_alloc.c.obj",
+      "object": "regi2c_ctrl.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libbootloader_support.a",
+      "object": "bootloader_mem.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 8
+    },
+    {
+      "archive": "libfreertos.a",
+      "object": "timers.c.obj",
       "output_section": ".dram0.data",
       "bytes": 8
     },
@@ -149551,27 +149533,21 @@
       "bytes": 8
     },
     {
-      "archive": "libesp_timer.a",
-      "object": "esp_timer_impl_lac.c.obj",
-      "output_section": ".dram0.bss",
+      "archive": "libpthread.a",
+      "object": "pthread_rwlock.c.obj",
+      "output_section": ".flash.text",
       "bytes": 8
     },
     {
-      "archive": "libesp_system.a",
-      "object": "crosscore_int.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libFastLED.a",
-      "object": "allocator_62a1.o",
+      "archive": "libcoexist.a",
+      "object": "coexist_api.o",
       "output_section": ".dram0.data",
       "bytes": 8
     },
     {
-      "archive": "libesp_security.a",
-      "object": "init.c.obj",
-      "output_section": ".flash.rodata",
+      "archive": "libpthread.a",
+      "object": "pthread_semaphore.c.obj",
+      "output_section": ".flash.text",
       "bytes": 8
     },
     {
@@ -149581,15 +149557,9 @@
       "bytes": 8
     },
     {
-      "archive": "libgcc.a",
-      "object": "unwind-dw2-fde.o",
-      "output_section": ".dram0.bss",
-      "bytes": 8
-    },
-    {
-      "archive": "libhal.a",
-      "object": "cache_hal_esp32.c.obj",
-      "output_section": ".dram0.bss",
+      "archive": "libesp_hw_support.a",
+      "object": "intr_alloc.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 8
     },
     {
@@ -149599,15 +149569,9 @@
       "bytes": 8
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "periph_ctrl.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 8
-    },
-    {
       "archive": "libesp_system.a",
-      "object": "freertos_hooks.c.obj",
-      "output_section": ".dram0.data",
+      "object": "crosscore_int.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 8
     },
     {
@@ -149617,21 +149581,51 @@
       "bytes": 8
     },
     {
-      "archive": "libesp_psram.a",
-      "object": "esp_psram_mspi.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 7
+      "archive": "libnewlib.a",
+      "object": "stdatomic.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-psram_3fec.c.o",
-      "output_section": ".flash.text",
-      "bytes": 7
+      "archive": "libhal.a",
+      "object": "cache_hal_esp32.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 8
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "unwind-dw2-fde.o",
+      "output_section": ".dram0.bss",
+      "bytes": 8
+    },
+    {
+      "archive": "libxt_hal.a",
+      "object": "int_asm--set_intclear.o",
+      "output_section": ".iram0.text",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "periph_ctrl.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 8
+    },
+    {
+      "archive": "libesp_timer.a",
+      "object": "esp_timer_impl_lac.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 8
     },
     {
       "archive": "libesp_system.a",
       "object": "esp_system_chip.c.obj",
       "output_section": ".flash.rodata",
+      "bytes": 7
+    },
+    {
+      "archive": "libesp_psram.a",
+      "object": "esp_psram_mspi.c.obj",
+      "output_section": ".flash.text",
       "bytes": 7
     },
     {
@@ -149641,10 +149635,10 @@
       "bytes": 7
     },
     {
-      "archive": "libspi_flash.a",
-      "object": "cache_utils.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 6
+      "archive": "libFrameworkArduino.a",
+      "object": "esp32-hal-psram_95a8.c.o",
+      "output_section": ".flash.text",
+      "bytes": 7
     },
     {
       "archive": "libesp_system.a",
@@ -149653,14 +149647,62 @@
       "bytes": 6
     },
     {
+      "archive": "libspi_flash.a",
+      "object": "cache_utils.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 6
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "clk_utils.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libesp_phy.a",
+      "object": "phy_override.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 5
+    },
+    {
       "archive": "libFrameworkArduino.a",
-      "object": "main_2172.cpp.o",
+      "object": "WString_de5f.cpp.o",
+      "output_section": ".flash.rodata",
+      "bytes": 5
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "cpu_start.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 5
     },
     {
-      "archive": "libbootloader_support.a",
-      "object": "bootloader_utility.c.obj",
+      "archive": "libesp_hw_support.a",
+      "object": "mspi_timing_tuning.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "ubsan.c.obj",
+      "output_section": ".iram0.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "brownout.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 5
+    },
+    {
+      "archive": "libFrameworkArduino.a",
+      "object": "main_8ae5.cpp.o",
+      "output_section": ".dram0.bss",
+      "bytes": 5
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "getentropy.c.obj",
       "output_section": ".flash.text",
       "bytes": 5
     },
@@ -149671,21 +149713,27 @@
       "bytes": 5
     },
     {
-      "archive": "libnewlib.a",
-      "object": "getentropy.c.obj",
+      "archive": "libnvs_sec_provider.a",
+      "object": "nvs_sec_provider.c.obj",
       "output_section": ".flash.text",
       "bytes": 5
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "clk_utils.c.obj",
-      "output_section": ".iram0.text",
+      "archive": "libspi_flash.a",
+      "object": "spi_flash_chip_drivers.c.obj",
+      "output_section": ".flash.text",
       "bytes": 5
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "brownout.c.obj",
-      "output_section": ".flash.rodata",
+      "archive": "libnewlib.a",
+      "object": "pthread.c.obj",
+      "output_section": ".flash.text",
+      "bytes": 5
+    },
+    {
+      "archive": "libbootloader_support.a",
+      "object": "bootloader_utility.c.obj",
+      "output_section": ".flash.text",
       "bytes": 5
     },
     {
@@ -149696,56 +149744,8 @@
     },
     {
       "archive": "libesp_system.a",
-      "object": "cpu_start.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 5
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "ubsan.c.obj",
-      "output_section": ".iram0.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libnvs_sec_provider.a",
-      "object": "nvs_sec_provider.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libFrameworkArduino.a",
-      "object": "WString_3a7c.cpp.o",
-      "output_section": ".flash.rodata",
-      "bytes": 5
-    },
-    {
-      "archive": "libnewlib.a",
-      "object": "pthread.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libesp_system.a",
       "object": "task_wdt.c.obj",
       "output_section": ".dram0.bss",
-      "bytes": 5
-    },
-    {
-      "archive": "libspi_flash.a",
-      "object": "spi_flash_chip_drivers.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libesp_phy.a",
-      "object": "phy_override.c.obj",
-      "output_section": ".flash.text",
-      "bytes": 5
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "mspi_timing_tuning.c.obj",
-      "output_section": ".iram0.text",
       "bytes": 5
     },
     {
@@ -149755,45 +149755,81 @@
       "bytes": 4
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "brownout.c.obj",
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
-      "archive": "libheap.a",
-      "object": "heap_caps.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "new_handler.o",
-      "output_section": ".dram0.bss",
+      "archive": "libesp_system.a",
+      "object": "stack_check.c.obj",
+      "output_section": ".flash.rodata",
       "bytes": 4
     },
     {
       "archive": "liblog.a",
-      "object": "log_level.c.obj",
+      "object": "util.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libbootloader_support.a",
+      "object": "esp_image_format.c.obj",
       "output_section": ".dram0.data",
       "bytes": 4
     },
     {
-      "archive": "libesp_hw_support.a",
-      "object": "rtc_clk.c.obj",
+      "archive": "libnvs_flash.a",
+      "object": "nvs_page.cpp.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-locale.o",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "liblog.a",
+      "object": "log_timestamp.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
-      "archive": "libvfs.a",
-      "object": "nullfs.c.obj",
+      "archive": "libFrameworkArduino.a",
+      "object": "Esp_768a.cpp.o",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libfreertos.a",
+      "object": "xtensa_init.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
-      "archive": "libapp_update.a",
-      "object": "esp_ota_ops.c.obj",
+      "archive": "libnvs_flash.a",
+      "object": "nvs_platform.cpp.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "stack_check.c.obj",
       "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "esp_flash_spi_init.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_mm.a",
+      "object": "esp_mmu_map.c.obj",
+      "output_section": ".dram0.data",
       "bytes": 4
     },
     {
@@ -149805,192 +149841,6 @@
     {
       "archive": "libnvs_flash.a",
       "object": "nvs_platform.cpp.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_platform.cpp.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libgcc.a",
-      "object": "unwind-dw2-fde.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "eh_unex_handler.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libespcoredump.a",
-      "object": "core_dump_common.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-bt_bd53.c.o",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libFastLED.a",
-      "object": "FastLED_1df9.o",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "liblog.a",
-      "object": "util.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "spi_bus_lock.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "libnewlib.a",
-      "object": "newlib_init.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "hw_random.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libfreertos.a",
-      "object": "xtensa_init.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libspi_flash.a",
-      "object": "esp_flash_spi_init.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "liblog.a",
-      "object": "log_lock.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libcoexist.a",
-      "object": "coexist_dbg.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "liblog.a",
-      "object": "log_linked_list.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-__call_atexit.o",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_mm.a",
-      "object": "esp_mmu_map.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "stack_check.c.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "liblog.a",
-      "object": "log_timestamp.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libFastLED.a",
-      "object": "rgbw_8651.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libheap.a",
-      "object": "heap_caps_init.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libnvs_flash.a",
-      "object": "nvs_page.cpp.obj",
-      "output_section": ".flash.rodata",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_hw_support.a",
-      "object": "rtc_module.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libspi_flash.a",
-      "object": "flash_ops.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "stack_check.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "liblog.a",
-      "object": "log_write.c.obj",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libc.a",
-      "object": "libc_a-__call_atexit.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libstdc++.a",
-      "object": "eh_term_handler.o",
-      "output_section": ".dram0.data",
-      "bytes": 4
-    },
-    {
-      "archive": "libesp_system.a",
-      "object": "reset_reason.c.obj",
-      "output_section": ".dram0.bss",
-      "bytes": 4
-    },
-    {
-      "archive": "libbootloader_support.a",
-      "object": "bootloader_flash.c.obj",
       "output_section": ".dram0.bss",
       "bytes": 4
     },
@@ -150001,15 +149851,63 @@
       "bytes": 4
     },
     {
-      "archive": "libbootloader_support.a",
-      "object": "esp_image_format.c.obj",
+      "archive": "libheap.a",
+      "object": "heap_caps.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "eh_term_handler.o",
       "output_section": ".dram0.data",
       "bytes": 4
     },
     {
-      "archive": "libheap.a",
-      "object": "heap_caps.c.obj",
+      "archive": "libesp_hw_support.a",
+      "object": "brownout.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "rtc_clk.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "rtc_module.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "eh_unex_handler.o",
       "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libFastLED.a",
+      "object": "rgbw_8651.o",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libstdc++.a",
+      "object": "new_handler.o",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libgcc.a",
+      "object": "unwind-dw2-fde.o",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "hw_random.c.obj",
+      "output_section": ".dram0.bss",
       "bytes": 4
     },
     {
@@ -150019,14 +149917,116 @@
       "bytes": 4
     },
     {
-      "archive": "libc.a",
-      "object": "libc_a-locale.o",
+      "archive": "libcoexist.a",
+      "object": "coexist_dbg.o",
       "output_section": ".dram0.data",
       "bytes": 4
     },
     {
+      "archive": "liblog.a",
+      "object": "log_level.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libspi_flash.a",
+      "object": "flash_ops.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libnewlib.a",
+      "object": "newlib_init.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "liblog.a",
+      "object": "log_write.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libbootloader_support.a",
+      "object": "bootloader_flash.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libheap.a",
+      "object": "heap_caps.c.obj",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libc.a",
+      "object": "libc_a-__call_atexit.o",
+      "output_section": ".dram0.data",
+      "bytes": 4
+    },
+    {
+      "archive": "libapp_update.a",
+      "object": "esp_ota_ops.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libespcoredump.a",
+      "object": "core_dump_common.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
       "archive": "libFrameworkArduino.a",
-      "object": "esp32-hal-uart_314c.c.o",
+      "object": "esp32-hal-bt_309b.c.o",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "liblog.a",
+      "object": "log_linked_list.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libvfs.a",
+      "object": "nullfs.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libheap.a",
+      "object": "heap_caps_init.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "liblog.a",
+      "object": "log_lock.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_hw_support.a",
+      "object": "spi_bus_lock.c.obj",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libFastLED.a",
+      "object": "FastLED_1df9.o",
+      "output_section": ".flash.rodata",
+      "bytes": 4
+    },
+    {
+      "archive": "libesp_system.a",
+      "object": "reset_reason.c.obj",
+      "output_section": ".dram0.bss",
+      "bytes": 4
+    },
+    {
+      "archive": "libFrameworkArduino.a",
+      "object": "esp32-hal-uart_4daa.c.o",
       "output_section": ".flash.rodata",
       "bytes": 3
     },
@@ -150055,14 +150055,14 @@
       "bytes": 2
     },
     {
-      "archive": "libFrameworkArduino.a",
-      "object": "Stream_704f.cpp.o",
+      "archive": "libstdc++.a",
+      "object": "new_handler.o",
       "output_section": ".flash.rodata",
       "bytes": 1
     },
     {
       "archive": "libFrameworkArduino.a",
-      "object": "Esp_9755.cpp.o",
+      "object": "Esp_768a.cpp.o",
       "output_section": ".dram0.bss",
       "bytes": 1
     },
@@ -150073,8 +150073,8 @@
       "bytes": 1
     },
     {
-      "archive": "libstdc++.a",
-      "object": "new_handler.o",
+      "archive": "libFrameworkArduino.a",
+      "object": "Stream_5cfa.cpp.o",
       "output_section": ".flash.rodata",
       "bytes": 1
     }

@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "report": "data/reports/esp32s3/20667c3a6413ed46a828f78ec95fb57e58d753f8-376ffa6f7440.json",
-  "elf_digest": "6cb1fddb3b4cc28df876c8ef26d9a77b0dc5a31ae6e0b70f0026fe0f0d8650ea",
+  "elf_digest": "60133a64501dd5ef83a609853efa942f70b3a294ed99b5a09729a394ac021c2b",
   "fbuild": "2.5.38",
   "elf_verified": true,
-  "analyzed_at": "2026-10-08T00:43:16.762Z",
+  "analyzed_at": "2026-10-08T10:02:59.269Z",
   "entry_address": 1077369792,
   "disassembly": "analyzed",
   "cross_reference_table": "present",

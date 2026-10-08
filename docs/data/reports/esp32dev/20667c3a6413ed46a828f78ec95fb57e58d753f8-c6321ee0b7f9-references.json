@@ -1,10 +1,10 @@
 {
   "schema": 1,
   "report": "data/reports/esp32dev/20667c3a6413ed46a828f78ec95fb57e58d753f8-c6321ee0b7f9.json",
-  "elf_digest": "630773ec47a411f64e6e18eb15b9c928cc26a80dd5e9c988faa6beb51b8ff848",
+  "elf_digest": "997ffa47334bb3e87593f6650f1ace56c94ee04dcac3428a19326efdec2c3f4d",
   "fbuild": "2.5.38",
   "elf_verified": true,
-  "analyzed_at": "2026-10-08T01:02:24.259Z",
+  "analyzed_at": "2026-10-08T10:25:36.745Z",
   "entry_address": 1074272788,
   "disassembly": "analyzed",
   "cross_reference_table": "present",

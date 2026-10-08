@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "report": "data/reports/uno/619b7763a9eae5ff3d899fded553835c8e61cdf7-5e3148e319e1.json",
+  "elf_digest": "7929804e84b0571b15f222600fbc44c86ad1fed6c80618ff997a8689dfccff08",
+  "fbuild": "2.5.38",
+  "elf_verified": true,
+  "analyzed_at": "2026-10-08T10:01:09.714Z",
+  "entry_address": 0,
+  "disassembly": "analyzed",
+  "cross_reference_table": "absent",
+  "incoming_edges": 71,
+  "outgoing_edges": 71,
+  "object_references": 0,
+  "unexplained_symbols": [
+    "__vector_16 @ 0x9de (nm)",
+    "_GLOBAL__I_65535_0_main_34d2.cpp.o.51116 @ 0xa72 (nm)",
+    "_ZL16gControllersData @ 0x800170 (nm)",
+    "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE10ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE @ 0x800118 (nm)",
+    "_ZN2fl9platforms22fastled_watchdog_init3Ev @ 0x76 (nm)",
+    "_ZTVN2fl14CLEDControllerE @ 0x800100 (nm)",
+    "__do_global_ctors @ 0xb6 (nm)",
+    "__do_copy_data @ 0x90 (nm)",
+    "__vector_11 @ 0x9ca (nm)",
+    "__do_clear_bss @ 0xa6 (nm)",
+    "timer_millis @ 0x800132 (nm)"
+  ],
+  "unresolved_names": [
+    ".do_clear_bss_start @ 0xb0",
+    "L_377 @ 0x35c",
+    "__DATA_REGION_ORIGIN__ @ 0x800060",
+    "__divmodhi4_exit @ 0xccc",
+    "__divmodhi4_neg1 @ 0xcbe",
+    "__divmodhi4_neg2 @ 0xcc6",
+    "__udivmodhi4_ep @ 0xce4",
+    "__udivmodsi4_ep @ 0xc6a",
+    "__vectors @ 0x0",
+    "_exit @ 0xd0c"
+  ],
+  "warnings": [
+    "Linker map has no Cross Reference Table."
+  ]
+}

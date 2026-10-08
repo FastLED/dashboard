@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "report": "data/reports/uno/971beb60288dc45009d502a4bec48f8d839d40b5-5e3148e319e1.json",
+  "elf_digest": "9b8a1839fbae131b819b7b96b70920264b8ec8b26ab53cc333a0d99a1a082612",
+  "fbuild": "2.5.38",
+  "elf_verified": true,
+  "analyzed_at": "2026-10-08T00:40:34.006Z",
+  "entry_address": 0,
+  "disassembly": "analyzed",
+  "cross_reference_table": "absent",
+  "incoming_edges": 66,
+  "outgoing_edges": 66,
+  "object_references": 0,
+  "unexplained_symbols": [
+    "__vector_16 @ 0x9c2 (nm)",
+    "_GLOBAL__sub_I__Z19cled_contoller_sizev @ 0xa56 (nm)",
+    "__do_global_ctors @ 0x9c (nm)",
+    "__do_copy_data @ 0x76 (nm)",
+    "_ZTV16APA102ControllerILh11ELh13EL6EOrder10ELm2ELN2fl26FiveBitGammaCorrectionModeE0ELm0ELm4278190080EE @ 0x800114 (nm)",
+    "_ZTV14CLEDController @ 0x800100 (nm)",
+    "__do_clear_bss @ 0x8c (nm)",
+    "_ZL16gControllersData @ 0x80016e (nm)",
+    "__tcf_0 @ 0x9a6 (nm)",
+    "_ZZN20AVRHardwareSPIOutputILh11ELh13ELm2EE10shouldWaitEbE5sWait @ 0x80012a (nm)"
+  ],
+  "unresolved_names": [
+    ".do_clear_bss_start @ 0x96",
+    "L_570 @ 0x58c",
+    "__data_end @ 0x80012a",
+    "__divmodhi4_exit @ 0xc46",
+    "__divmodhi4_neg1 @ 0xc38",
+    "__divmodhi4_neg2 @ 0xc40",
+    "__udivmodhi4_ep @ 0xcd6",
+    "__udivmodsi4_ep @ 0xc6e",
+    "__vectors @ 0x0",
+    "_exit @ 0xcfe"
+  ],
+  "warnings": [
+    "Linker map has no Cross Reference Table."
+  ]
+}

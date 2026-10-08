@@ -73,7 +73,40 @@ export const symbolSchema = z.strictObject({
   references_to: z.array(z.string()),
   called_by: z.array(z.string()),
 });
+export const referenceIdentitySchema = z.strictObject({
+  name: z.string(),
+  address: bytes,
+  source: z.string(),
+});
+const referencePassSchema = z.strictObject({
+  status: z.enum(["analyzed", "unavailable", "error"]),
+  tool: z.nullable(z.string()),
+  reason: z.nullable(z.string()),
+});
+export const referenceAnalysisSchema = z.strictObject({
+  schema: z.literal(1),
+  disassembly: referencePassSchema,
+  static_data: referencePassSchema,
+  object_references: referencePassSchema,
+  edges: z.array(
+    z.strictObject({
+      source: referenceIdentitySchema,
+      target: referenceIdentitySchema,
+      kind: z.enum(["disassembly", "static_data", "fragment_owner"]),
+      offset: z.nullable(bytes),
+    }),
+  ),
+  roots: z.array(
+    z.strictObject({ symbol: referenceIdentitySchema, kind: z.string() }),
+  ),
+  unexplained: z.array(referenceIdentitySchema),
+  unresolved: z.array(z.strictObject({ name: z.string(), address: bytes })),
+  limitations: z.array(z.string()),
+});
+export type ReferenceAnalysis = z.infer<typeof referenceAnalysisSchema>;
+export type ReferenceIdentity = z.infer<typeof referenceIdentitySchema>;
 export const reportSchema = z.strictObject({
+  reference_analysis: z.optional(referenceAnalysisSchema),
   elf_path: z.string(),
   map_path: z.nullable(z.string()),
   total_flash: bytes,

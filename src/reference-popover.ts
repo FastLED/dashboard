@@ -1,6 +1,7 @@
 import type { BloatReport } from "./models.ts";
 import {
-  referenceState,
+  ReferenceIndex,
+  identityKey,
   symbolIndex,
   type ReferenceAudit,
   type ReportSymbol,
@@ -9,6 +10,7 @@ export function referencePopover(
   modal: HTMLDialogElement,
   report: BloatReport,
   audit: ReferenceAudit | null,
+  references = new ReferenceIndex(report, audit),
 ) {
   const index = symbolIndex(report);
   const popup = document.createElement("div");
@@ -79,7 +81,7 @@ export function referencePopover(
     heading.textContent = symbol.demangled;
     const state = document.createElement("p");
     state.className = "reference-state";
-    state.textContent = referenceState(symbol, audit);
+    state.textContent = references.state(symbol);
     popup.append(close, heading, state);
     const group = (title: string, names: string[], empty: string) => {
       const heading = document.createElement("h5");
@@ -110,44 +112,108 @@ export function referencePopover(
       append();
       popup.append(more);
     };
-    group(
-      "Incoming symbols",
-      [...new Set(symbol.called_by)].map((name) => {
-        const matches = index.get(name);
-        if (!matches?.length) return `${name} (not resolved in this report)`;
-        return matches
-          .map(
-            (s) =>
-              `${s.demangled} · ${s.size.toLocaleString()} B · ${s.region} · ${s.source} @ 0x${s.address.toString(16)}`,
-          )
-          .join(" / ");
-      }),
-      "No symbol-level incoming references recorded.",
-    );
-    group(
-      "Referencing object files",
-      [
-        ...new Set(
-          symbol.referenced_by.map(
-            (ref) =>
-              `${ref.archive ? ref.archive + " / " : ""}${ref.object ?? "Unknown object"}`,
+    const analysis = references.audit ? report.reference_analysis : undefined;
+    if (analysis) {
+      const edges =
+        references.incoming.get(
+          identityKey({
+            name: symbol.mangled,
+            address: symbol.address,
+            source: symbol.source,
+          }),
+        ) ?? [];
+      for (const [kind, title, empty] of [
+        [
+          "disassembly",
+          "Disassembly references",
+          "No disassembly references recorded.",
+        ],
+        [
+          "static_data",
+          "Static pointer owners",
+          "No static pointer owners recorded.",
+        ],
+        ["fragment_owner", "Fragment owners", "No fragment owners recorded."],
+      ] as const) {
+        group(
+          title,
+          edges
+            .filter((edge) => edge.kind === kind)
+            .map((edge) => {
+              const match = references.symbols.get(
+                identityKey(edge.source),
+              )?.[0];
+              const label = match?.demangled ?? edge.source.name;
+              return `${label}${edge.offset === null ? "" : ` + 0x${edge.offset.toString(16)}`} · ${edge.source.source} @ 0x${edge.source.address.toString(16)}${match ? ` · ${match.size.toLocaleString()} B · ${match.region}` : " (not resolved in this report)"}`;
+            }),
+          empty,
+        );
+      }
+      const status = document.createElement("p");
+      status.className = "reference-caveat";
+      status.textContent = [
+        `Disassembly: ${analysis.disassembly.status}; static data: ${analysis.static_data.status}; object references: ${analysis.object_references.status}.`,
+        ...[
+          analysis.disassembly,
+          analysis.static_data,
+          analysis.object_references,
+        ].flatMap((pass) => (pass.reason ? [pass.reason] : [])),
+      ].join(" ");
+      popup.append(status);
+    } else if (!report.reference_analysis) {
+      group(
+        "Incoming symbols",
+        [...new Set(symbol.called_by)].map((name) => {
+          const matches = index.get(name);
+          if (!matches?.length) return `${name} (not resolved in this report)`;
+          return matches
+            .map(
+              (s) =>
+                `${s.demangled} · ${s.size.toLocaleString()} B · ${s.region} · ${s.source} @ 0x${s.address.toString(16)}`,
+            )
+            .join(" / ");
+        }),
+        "No symbol-level incoming references recorded.",
+      );
+    }
+    if (analysis || !report.reference_analysis)
+      group(
+        "Referencing object files",
+        [
+          ...new Set(
+            symbol.referenced_by.map(
+              (ref) =>
+                `${ref.archive ? ref.archive + " / " : ""}${ref.object ?? "Unknown object"}`,
+            ),
           ),
-        ),
-      ],
-      "No object-file references recorded.",
-    );
+        ],
+        "No object-file references recorded.",
+      );
     const caveat = document.createElement("p");
     caveat.className = "reference-caveat";
-    caveat.textContent =
-      "Level 1 only. Indirect calls, KEEP sections and other linker roots may be missing. An empty list does not prove the symbol is unused.";
+    caveat.textContent = analysis
+      ? [
+          "Level 1 only. Static pointer owners are stored pointers, not proven runtime callers. An empty list does not prove the symbol is unused.",
+          ...analysis.limitations,
+        ].join(" ")
+      : report.reference_analysis
+        ? "Reference analysis unverified: audit missing or provenance mismatch. Reference relationships and roots are withheld."
+        : "Level 1 only. Indirect calls, KEEP sections and other linker roots may be missing. An empty list does not prove the symbol is unused.";
     popup.append(caveat);
     popup.hidden = false;
     const box = button.getBoundingClientRect();
     const width = Math.min(520, window.innerWidth - 32);
     popup.style.width = `${width}px`;
     popup.style.left = `${Math.max(16, Math.min(box.left, window.innerWidth - width - 16))}px`;
+    popup.style.maxHeight = "";
     const height = popup.getBoundingClientRect().height;
-    popup.style.top = `${Math.max(16, Math.min(box.bottom + 6, window.innerHeight - height - 16))}px`;
+    const below = Math.max(0, window.innerHeight - box.bottom - 22);
+    const above = Math.max(0, box.top - 22);
+    const placeBelow = height <= below || below >= above;
+    const available = placeBelow ? below : above;
+    popup.style.maxHeight = `${Math.min(height, available)}px`;
+    const visibleHeight = popup.getBoundingClientRect().height;
+    popup.style.top = `${placeBelow ? box.bottom + 6 : box.top - visibleHeight - 6}px`;
   };
   return {
     dispose: () => {
@@ -161,7 +227,7 @@ export function referencePopover(
       const button = document.createElement("button");
       button.className = "symbol-reference";
       button.textContent = symbol.demangled;
-      button.dataset.referenceState = referenceState(symbol, audit);
+      button.dataset.referenceState = references.state(symbol);
       button.setAttribute("aria-label", `Who references ${symbol.demangled}?`);
       button.setAttribute("aria-haspopup", "dialog");
       button.setAttribute("aria-controls", popup.id);

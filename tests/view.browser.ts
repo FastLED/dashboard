@@ -1,3 +1,5 @@
+import { referenceAuditSchema } from "../src/references.ts";
+import { reportSchema } from "../src/models.ts";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { chromium } from "playwright";
@@ -490,6 +492,7 @@ test("symbol references support hover, focus, direct links and unexplained reten
     page.on("pageerror", (error) => errors.push(error.message));
     await page.goto(server.url, { waitUntil: "networkidle" });
     await page.locator("#blink-platforms input").first().uncheck();
+    await page.mouse.move(0, 0);
     await page.locator("#blink-flash-canvas").focus();
     await page.keyboard.press("Enter");
     await page.waitForSelector(".symbol-reference");
@@ -501,7 +504,10 @@ test("symbol references support hover, focus, direct links and unexplained reten
     await symbol.hover();
     const popup = page.locator("#symbol-reference-popup");
     await popup.waitFor({ state: "visible" });
-    assert.match((await popup.textContent()) ?? "", /Incoming symbols/);
+    assert.match(
+      (await popup.textContent()) ?? "",
+      /Incoming symbols|Disassembly references/,
+    );
     assert.match((await popup.textContent()) ?? "", /Referencing object files/);
     assert.match((await popup.textContent()) ?? "", /Level 1 only/);
     assert.ok((await popup.locator("li").count()) > 0);
@@ -521,6 +527,12 @@ test("symbol references support hover, focus, direct links and unexplained reten
         '.symbol-reference[data-reference-state*="retention unexplained"]',
       )
       .first();
+    if (!(await unexplained.count()))
+      await page.getByRole("button", { name: /^Load/ }).click();
+    assert.ok(
+      await unexplained.count(),
+      "Expanded rows include unexplained retention",
+    );
     await unexplained.focus();
     await popup.waitFor({ state: "visible" });
     assert.match((await popup.textContent()) ?? "", /retention unexplained/);
@@ -544,6 +556,156 @@ test("symbol references support hover, focus, direct links and unexplained reten
       false,
     );
     assert.deepEqual(errors, []);
+  } finally {
+    await browser.close();
+    await server.close();
+  }
+});
+
+test("typed reference popup separates vtable pointers from callers and same-name fragments", async () => {
+  const server = await preview();
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage({
+      viewport: { width: 1440, height: 900 },
+    });
+    await page.route("**/data/reports/**/*.json", async (route) => {
+      if (route.request().url().endsWith("-references.json")) {
+        const response = await route.fetch();
+        const audit = referenceAuditSchema.parse(await response.json());
+        await route.fulfill({ json: { ...audit, elf_verified: true } });
+        return;
+      }
+      const response = await route.fetch();
+      const report = reportSchema.parse(await response.json());
+      const first = report.symbols
+        .filter((s) => s.size > 0 && s.region === "flash")
+        .sort((a, b) => b.size - a.size)[0];
+      first.referenced_by = [{ object: "verified-owner.o", archive: null }];
+      const identity = {
+        name: first.mangled,
+        address: first.address,
+        source: first.source,
+      };
+      const owner = {
+        ...first,
+        mangled: "_ZTVfixture",
+        demangled: "vtable for fixture",
+        address: first.address + 100,
+        size: 76,
+        called_by: [],
+        referenced_by: [],
+      };
+      report.symbols.push(owner, {
+        ...owner,
+        demangled: "wrong fragment",
+        source: "map",
+        address: owner.address + 20,
+      });
+      const pass = {
+        status: "analyzed" as const,
+        tool: "fixture-objdump",
+        reason: null,
+      };
+      report.reference_analysis = {
+        schema: 1,
+        disassembly: pass,
+        static_data: pass,
+        object_references: pass,
+        edges: [
+          {
+            source: {
+              name: owner.mangled,
+              address: owner.address,
+              source: owner.source,
+            },
+            target: identity,
+            kind: "static_data",
+            offset: 72,
+          },
+        ],
+        roots: [{ symbol: identity, kind: "elf_entry" }],
+        unexplained: [],
+        unresolved: [],
+        limitations: ["Indirect calls are not resolved."],
+      };
+      await route.fulfill({ json: report });
+    });
+    await page.goto(server.url, { waitUntil: "networkidle" });
+    await page.locator("#blink-flash-canvas").focus();
+    await page.keyboard.press("Enter");
+    await page.locator(".symbol-reference").first().hover();
+    const popup = page.locator("#symbol-reference-popup");
+    await popup.waitFor({ state: "visible" });
+    const text = (await popup.textContent()) ?? "";
+    const triggerBox = await page
+      .locator(".symbol-reference")
+      .first()
+      .boundingBox();
+    const popupBox = await popup.boundingBox();
+    assert.ok(triggerBox && popupBox);
+    assert.ok(
+      popupBox.y + popupBox.height <= triggerBox.y ||
+        popupBox.y >= triggerBox.y + triggerBox.height,
+      "Reference popup must not cover its trigger",
+    );
+    assert.match(text, /Confirmed retention root/);
+    assert.match(text, /Static pointer owners · 1/);
+    assert.match(text, /verified-owner.o/);
+    assert.match(text, /vtable for fixture \+ 0x48/);
+    assert.doesNotMatch(text, /wrong fragment/);
+    assert.match(text, /Disassembly references · 0/);
+    assert.match(text, /not proven runtime callers/);
+    assert.match(text, /static data: analyzed/);
+    await page.locator("#close-modal").click();
+    await page.route("**/*-references.json", async (route) => {
+      const response = await route.fetch();
+      const audit = referenceAuditSchema.parse(await response.json());
+      await route.fulfill({ json: { ...audit, elf_digest: "0".repeat(64) } });
+    });
+    await page.locator("#blink-flash-canvas").focus();
+    await page.keyboard.press("Enter");
+    await page.locator(".symbol-reference").first().hover();
+    await popup.waitFor({ state: "visible" });
+    const unverified = (await popup.textContent()) ?? "";
+    assert.match(unverified, /Reference analysis unverified/);
+    assert.doesNotMatch(
+      unverified,
+      /Confirmed retention root|static data: analyzed|vtable for fixture|verified-owner.o/,
+    );
+    assert.match(
+      (await page.locator("#bloat-report > .note").textContent()) ?? "",
+      /Reference audit provenance mismatch/,
+    );
+    await page.locator("#close-modal").click();
+    await page.route("**/*-references.json", async (route) => {
+      const response = await route.fetch();
+      const audit = referenceAuditSchema.parse(await response.json());
+      await route.fulfill({
+        json: {
+          ...audit,
+          elf_verified: false,
+          disassembly: "error",
+          warnings: ["ELF provenance mismatch"],
+        },
+      });
+    });
+    await page.locator("#blink-flash-canvas").focus();
+    await page.keyboard.press("Enter");
+    await page.locator(".symbol-reference").first().hover();
+    await popup.waitFor({ state: "visible" });
+    assert.match(
+      (await popup.textContent()) ?? "",
+      /Reference analysis unverified/,
+    );
+    assert.doesNotMatch(
+      (await popup.textContent()) ?? "",
+      /Confirmed retention root|static data: analyzed|vtable for fixture|verified-owner.o/,
+    );
+    assert.match(
+      (await page.locator("#bloat-report > .note").textContent()) ?? "",
+      /Reference audit ELF verification failed/,
+    );
   } finally {
     await browser.close();
     await server.close();

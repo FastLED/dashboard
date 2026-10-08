@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "report": "data/reports/uno/dec101a1268e013ef42deee644ff58883179d61a-a141af35a5e1.json",
+  "elf_digest": "3b5d12d7a7de4dd23275d43a215cbc0fd46934628d73d8ee4a37a983fbefea61",
+  "fbuild": "2.5.38",
+  "elf_verified": true,
+  "analyzed_at": "2026-10-08T00:53:40.510Z",
+  "entry_address": 0,
+  "disassembly": "analyzed",
+  "cross_reference_table": "absent",
+  "incoming_edges": 64,
+  "outgoing_edges": 64,
+  "object_references": 0,
+  "unexplained_symbols": [
+    "__vector_16 @ 0x87e (nm)",
+    "__udivmodsi4 @ 0xe66 (nm)",
+    "leds @ 0x80016a (nm)",
+    "_GLOBAL__sub_I__Z19cled_contoller_sizev @ 0x912 (nm)",
+    "__do_global_ctors @ 0x9c (nm)",
+    "__do_copy_data @ 0x76 (nm)",
+    "_ZTV8NEOPIXELILh3EE @ 0x800114 (nm)",
+    "_ZTV19ClocklessControllerILh3ELi4ELi10ELi6EL6EOrder66ELi0ELb0ELi10EE @ 0x800114 (nm)",
+    "_ZTV14CLEDController @ 0x800100 (nm)",
+    "__do_clear_bss @ 0x8c (nm)",
+    "_ZL16gControllersData @ 0x800154 (nm)",
+    "FastLED @ 0x8001a4 (nm)",
+    "__usmulhisi3_tail @ 0xecc (nm)",
+    "__usmulhisi3 @ 0xec8 (nm)",
+    "_ZZN8CFastLED8countFPSEiE9lastframe @ 0x80014e (nm)",
+    "_ZL8lastshow @ 0x800166 (nm)",
+    "__tcf_0 @ 0x85c (nm)",
+    "_ZZN8CFastLED8countFPSEiE2br @ 0x800152 (nm)",
+    "_ZL21gTimeErrorAccum256ths @ 0x80012a (nm)"
+  ],
+  "unresolved_names": [
+    ".do_clear_bss_start @ 0x96",
+    "L_1130 @ 0xb34",
+    "L_293 @ 0x2ca",
+    "L_597 @ 0x60e",
+    "__divmodhi4_exit @ 0xe64",
+    "__divmodhi4_neg1 @ 0xe56",
+    "__divmodhi4_neg2 @ 0xe5e",
+    "__udivmodhi4_ep @ 0xf02",
+    "__udivmodsi4_ep @ 0xe8c",
+    "_exit @ 0xf2a"
+  ],
+  "warnings": [
+    "Linker map has no Cross Reference Table."
+  ]
+}

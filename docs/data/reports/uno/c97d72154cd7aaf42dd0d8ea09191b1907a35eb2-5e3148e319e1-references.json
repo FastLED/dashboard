@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "report": "data/reports/uno/c97d72154cd7aaf42dd0d8ea09191b1907a35eb2-5e3148e319e1.json",
+  "elf_digest": "5c59d04e5c0fe6587e4b4307a52b04ec662dc70091edc7709249e4f79f4a413e",
+  "fbuild": "2.5.38",
+  "elf_verified": true,
+  "analyzed_at": "2026-10-09T05:20:18.042Z",
+  "entry_address": 0,
+  "disassembly": "analyzed",
+  "cross_reference_table": "absent",
+  "incoming_edges": 61,
+  "outgoing_edges": 61,
+  "object_references": 0,
+  "unexplained_symbols": [
+    "__vector_16 @ 0x968 (nm)",
+    "_GLOBAL__I_65535_0_main_34d2.cpp.o.49917 @ 0x9fc (nm)",
+    "_ZN2fl9platforms22fastled_watchdog_init3Ev @ 0x76 (nm)",
+    "__do_global_ctors @ 0xb6 (nm)",
+    "__do_copy_data @ 0x90 (nm)",
+    "__vector_11 @ 0x756 (nm)",
+    "__do_clear_bss @ 0xa6 (nm)",
+    "_ZTV16APA102ControllerILh11ELh13ELN2fl6EOrderE10ELm2ELNS0_26FiveBitGammaCorrectionModeE0ELm0ELm4294967295EE @ 0x80010e (nm)",
+    "_ZL16gControllersData @ 0x800154 (nm)",
+    "_ZTVN2fl14CLEDControllerE @ 0x800100 (nm)",
+    "__usmulhisi3_tail @ 0xc54 (nm)",
+    "_ZZN2fl20AVRHardwareSPIOutputILh11ELh13ELm2EE10shouldWaitEbE5sWait @ 0x80011e (nm)"
+  ],
+  "unresolved_names": [
+    ".do_clear_bss_start @ 0xb0",
+    "L_377 @ 0x35c",
+    "__DATA_REGION_ORIGIN__ @ 0x800060",
+    "__data_end @ 0x80011e",
+    "__divmodhi4_exit @ 0xc4e",
+    "__divmodhi4_neg1 @ 0xc40",
+    "__divmodhi4_neg2 @ 0xc48",
+    "__udivmodhi4_ep @ 0xc74",
+    "__udivmodsi4_ep @ 0xbec",
+    "__vectors @ 0x0",
+    "_exit @ 0xc9c"
+  ],
+  "warnings": [
+    "Linker map has no Cross Reference Table."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "report": "data/reports/uno/ebf8c2823c486158a046d8e1e682d3143580ae4e-78a0f620203e.json",
+  "elf_digest": "de0191bfc6d2b89db2c8bcaff7420ba206f8c7c66d2ef05b6a67e6adf59966a0",
+  "fbuild": "2.5.39",
+  "elf_verified": true,
+  "analyzed_at": "2026-10-09T09:41:42.456Z",
+  "entry_address": 0,
+  "disassembly": "analyzed",
+  "cross_reference_table": "absent",
+  "incoming_edges": 101,
+  "outgoing_edges": 101,
+  "object_references": 0,
+  "unexplained_symbols": [
+    "Serial @ 0x800213 (nm)",
+    "_GLOBAL__I_65535_0_main_34d2.cpp.o.53735 @ 0xe92 (nm)",
+    "__vector_16 @ 0xdfe (nm)",
+    "__vector_18 @ 0xb1a (nm)",
+    "__vector_19 @ 0xace (nm)",
+    "_ZL16gControllersData @ 0x8001e9 (nm)",
+    "_ZTVN2fl19ClocklessControllerILh3ENS_20TIMING_WS2812_800KHZELNS_6EOrderE66ELi0ELb0ELi280EEE @ 0x80013b (nm)",
+    "_ZTV8NEOPIXELILh3EE @ 0x80013b (nm)",
+    "_ZTVN2fl14CLEDControllerE @ 0x800121 (nm)",
+    "_ZN2fl9platforms22fastled_watchdog_init3Ev @ 0x76 (nm)",
+    "__do_global_ctors @ 0xb6 (nm)",
+    "__do_copy_data @ 0x90 (nm)",
+    "__vector_11 @ 0xdea (nm)",
+    "_Z14serialEventRunv @ 0x2de (nm)",
+    "_ZTV14HardwareSerial @ 0x800157 (nm)",
+    "__do_clear_bss @ 0xa6 (nm)",
+    "__usmulhisi3_tail @ 0x11ec (nm)",
+    "timer_millis @ 0x80016a (nm)",
+    "__usmulhisi3 @ 0x11e8 (nm)",
+    "_ZZN2fl6detail25async_log_flush_timer_isrEPvE14isr_fire_count @ 0x80016e (nm)",
+    "_ZZN2fl20avr_time_accumulatorEvE21gTimeErrorAccum256ths @ 0x800172 (nm)"
+  ],
+  "unresolved_names": [
+    ".do_clear_bss_start @ 0xb0",
+    "L_1007 @ 0x88e",
+    "L_703 @ 0x54a",
+    "__DATA_REGION_ORIGIN__ @ 0x800060",
+    "__divmodhi4_exit @ 0x11e6",
+    "__divmodhi4_neg1 @ 0x11d8",
+    "__divmodhi4_neg2 @ 0x11e0",
+    "__udivmodhi4_ep @ 0x120c",
+    "__udivmodsi4_ep @ 0x1184",
+    "__vectors @ 0x0",
+    "_exit @ 0x1234"
+  ],
+  "warnings": [
+    "Linker map has no Cross Reference Table."
+  ]
+}

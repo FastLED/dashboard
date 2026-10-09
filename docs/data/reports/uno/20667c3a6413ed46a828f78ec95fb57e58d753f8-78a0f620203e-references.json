@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "report": "data/reports/uno/20667c3a6413ed46a828f78ec95fb57e58d753f8-78a0f620203e.json",
+  "elf_digest": "e0dd1c43e0fd93c64bf97a8808b5f5d4c6b2fe4caf7dd3ea8ea50a5762ca7514",
+  "fbuild": "2.5.39",
+  "elf_verified": true,
+  "analyzed_at": "2026-10-09T09:41:12.561Z",
+  "entry_address": 0,
+  "disassembly": "analyzed",
+  "cross_reference_table": "absent",
+  "incoming_edges": 75,
+  "outgoing_edges": 75,
+  "object_references": 0,
+  "unexplained_symbols": [
+    "__vector_16 @ 0xb26 (nm)",
+    "_GLOBAL__sub_I__Z19cled_contoller_sizev @ 0xbba (nm)",
+    "__do_global_ctors @ 0x9c (nm)",
+    "__do_copy_data @ 0x76 (nm)",
+    "_ZTV8NEOPIXELILh3EE @ 0x800114 (nm)",
+    "_ZTV19ClocklessControllerILh3ELi4ELi10ELi6ELN2fl6EOrderE66ELi0ELb0ELi10EE @ 0x800114 (nm)",
+    "_ZTV14CLEDController @ 0x800100 (nm)",
+    "__do_clear_bss @ 0x8c (nm)",
+    "_ZL16gControllersData @ 0x80016d (nm)",
+    "__usmulhisi3_tail @ 0xe3c (nm)",
+    "__usmulhisi3 @ 0xe38 (nm)",
+    "__tcf_1 @ 0xb04 (nm)",
+    "_ZL21gTimeErrorAccum256ths @ 0x80012a (nm)"
+  ],
+  "unresolved_names": [
+    ".do_clear_bss_start @ 0x96",
+    "L_520 @ 0x572",
+    "L_824 @ 0x8b6",
+    "__divmodhi4_exit @ 0xdd4",
+    "__divmodhi4_neg1 @ 0xdc6",
+    "__divmodhi4_neg2 @ 0xdce",
+    "__udivmodhi4_ep @ 0xe72",
+    "__udivmodsi4_ep @ 0xdfc",
+    "__vectors @ 0x0",
+    "_exit @ 0xe9a"
+  ],
+  "warnings": [
+    "Linker map has no Cross Reference Table."
+  ]
+}
